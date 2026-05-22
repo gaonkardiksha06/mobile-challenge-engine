@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "RN Fundamentals",
+    "slug": "rn-fundamentals",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "rnfundamentals",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

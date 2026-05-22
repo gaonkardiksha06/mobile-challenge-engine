@@ -1,0 +1,19 @@
+{
+  "challengeId": "14-anime-streaming-ui",
+  "challengeName": "Anime Streaming UI",
+  "difficulty": "advanced",
+  "estimatedTime": "6-10 hours",
+  "skills": [
+    "UI design",
+    "FlatList",
+    "Navigation"
+  ],
+  "filesToCheck": [
+    "app/anime/[id].tsx"
+  ],
+  "patternsRequired": [
+    "FlatList",
+    "useNavigation"
+  ],
+  "tier": "advanced"
+}

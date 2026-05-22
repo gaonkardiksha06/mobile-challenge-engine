@@ -1,0 +1,13 @@
+{
+  "name": "challenge-engine-scripts",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Utility scripts for Challenge Engine",
+  "scripts": {
+    "validate": "node validate-structure.js",
+    "health": "node health-check.js",
+    "ci-validate": "node ci-validate.js"
+  },
+  "keywords": ["challenge-engine", "scripts", "utilities"],
+  "license": "MIT"
+}

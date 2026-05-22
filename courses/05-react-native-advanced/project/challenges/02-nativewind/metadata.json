@@ -1,0 +1,19 @@
+{
+  "challengeId": "02-nativewind",
+  "challengeName": "NativeWind",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Tailwind styling",
+    "Responsive layouts",
+    "Tablet support"
+  ],
+  "filesToCheck": [
+    "app/(tabs)/index.tsx",
+    "tailwind.config.js"
+  ],
+  "patternsRequired": [
+    "className",
+    "nativewind"
+  ]
+}

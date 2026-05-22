@@ -1,0 +1,7 @@
+{
+  "name": "global-review-engine",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pathway-level review aggregation engine",
+  "main": "run-all-reviews.js"
+}

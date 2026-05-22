@@ -1,0 +1,20 @@
+{
+  "challengeId": "03-firebase",
+  "challengeName": "Firebase",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Firebase Auth",
+    "Firestore",
+    "Storage"
+  ],
+  "filesToCheck": [
+    "lib/firebase.ts",
+    "app/chat.tsx",
+    "components/ProfileImageUpload.tsx"
+  ],
+  "patternsRequired": [
+    "firebase",
+    "useEffect"
+  ]
+}

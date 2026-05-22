@@ -1,0 +1,19 @@
+{
+  "challengeId": "03-play-store-prep",
+  "challengeName": "Play Store Prep",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Screenshots",
+    "App icon",
+    "Privacy policy",
+    "Signed release"
+  ],
+  "filesToCheck": [
+    "app.json",
+    "store-assets/README.md"
+  ],
+  "patternsRequired": [
+    "release"
+  ]
+}

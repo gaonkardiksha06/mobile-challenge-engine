@@ -1,0 +1,49 @@
+{
+  "pathwayName": "Mobile & Full-Stack Engineer",
+  "pathwayVersion": "1.0.0",
+  "courses": [
+    {
+      "id": "03-react-native-fundamentals",
+      "name": "React Native Fundamentals",
+      "weight": 0.25,
+      "required": true
+    },
+    {
+      "id": "04-backend-basics",
+      "name": "Backend Basics",
+      "weight": 0.2,
+      "required": true
+    },
+    {
+      "id": "05-react-native-advanced",
+      "name": "Advanced React Native",
+      "weight": 0.2,
+      "required": true
+    },
+    {
+      "id": "06-challenge-missions",
+      "name": "Challenge Missions",
+      "weight": 0.2,
+      "required": true
+    },
+    {
+      "id": "07-deployment",
+      "name": "Deployment",
+      "weight": 0.15,
+      "required": true
+    }
+  ],
+  "badgeLevels": {
+    "gold": { "minScore": 90, "minCompletion": 100 },
+    "silver": { "minScore": 75, "minCompletion": 75 },
+    "bronze": { "minScore": 60, "minCompletion": 50 }
+  },
+  "scoring": {
+    "functionalTests": 0.35,
+    "codeQuality": 0.15,
+    "architecture": 0.1,
+    "bestPractices": 0.1,
+    "e2eTests": 0.15,
+    "aiReview": 0.15
+  }
+}

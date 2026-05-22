@@ -1,0 +1,22 @@
+{
+  "challengeId": "02-navigation-system",
+  "challengeName": "Navigation System",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "React Navigation",
+    "Stack navigation",
+    "Tabs",
+    "Route params",
+    "Dynamic headers"
+  ],
+  "filesToCheck": [
+    "app/_layout.tsx",
+    "app/(tabs)/_layout.tsx",
+    "app/details/[username].tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useNavigation"
+  ]
+}

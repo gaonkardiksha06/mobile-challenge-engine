@@ -1,0 +1,22 @@
+{
+  "challengeId": "01-redux-toolkit",
+  "challengeName": "Redux Toolkit",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Store",
+    "Slice",
+    "Actions",
+    "createAsyncThunk"
+  ],
+  "filesToCheck": [
+    "store/index.ts",
+    "features/counter/counterSlice.ts",
+    "features/todos/todoSlice.ts"
+  ],
+  "patternsRequired": [
+    "redux",
+    "createSlice",
+    "useSelector"
+  ]
+}

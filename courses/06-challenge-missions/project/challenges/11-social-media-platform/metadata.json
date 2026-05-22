@@ -1,0 +1,20 @@
+{
+  "challengeId": "11-social-media-platform",
+  "challengeName": "Social Media Platform",
+  "difficulty": "advanced",
+  "estimatedTime": "6-10 hours",
+  "skills": [
+    "Auth",
+    "Feed",
+    "Firebase",
+    "Upload"
+  ],
+  "filesToCheck": [
+    "app/feed.tsx"
+  ],
+  "patternsRequired": [
+    "firebase",
+    "FlatList"
+  ],
+  "tier": "advanced"
+}

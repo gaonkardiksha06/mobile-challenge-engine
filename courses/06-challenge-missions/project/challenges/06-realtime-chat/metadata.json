@@ -1,0 +1,19 @@
+{
+  "challengeId": "06-realtime-chat",
+  "challengeName": "Realtime Chat",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Firebase",
+    "FlatList",
+    "Auth"
+  ],
+  "filesToCheck": [
+    "app/chat.tsx"
+  ],
+  "patternsRequired": [
+    "firebase",
+    "FlatList"
+  ],
+  "tier": "intermediate"
+}

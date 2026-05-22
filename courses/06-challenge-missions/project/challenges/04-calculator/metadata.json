@@ -1,0 +1,17 @@
+{
+  "challengeId": "04-calculator",
+  "challengeName": "Calculator",
+  "difficulty": "beginner",
+  "estimatedTime": "2-4 hours",
+  "skills": [
+    "useState",
+    "UI layout"
+  ],
+  "filesToCheck": [
+    "app/index.tsx"
+  ],
+  "patternsRequired": [
+    "useState"
+  ],
+  "tier": "beginner"
+}

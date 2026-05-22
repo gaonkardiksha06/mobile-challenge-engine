@@ -1,0 +1,19 @@
+{
+  "challengeId": "09-ai-recipe-app",
+  "challengeName": "AI Recipe App",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "API",
+    "Forms",
+    "Loading states"
+  ],
+  "filesToCheck": [
+    "app/recipes.tsx"
+  ],
+  "patternsRequired": [
+    "fetch",
+    "useState"
+  ],
+  "tier": "intermediate"
+}

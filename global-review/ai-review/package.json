@@ -1,0 +1,6 @@
+{
+  "name": "global-ai-review",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pathway-level AI review aggregation"
+}

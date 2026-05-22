@@ -1,0 +1,25 @@
+{
+  "challengeId": "07-mini-social-feed",
+  "challengeName": "Mini Social Feed (Capstone)",
+  "difficulty": "advanced",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Auth UI",
+    "Navigation",
+    "API posts",
+    "AsyncStorage",
+    "FlatList",
+    "Profile"
+  ],
+  "filesToCheck": [
+    "app/(tabs)/feed.tsx",
+    "app/(tabs)/profile.tsx",
+    "app/_layout.tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useEffect",
+    "FlatList",
+    "useState"
+  ]
+}

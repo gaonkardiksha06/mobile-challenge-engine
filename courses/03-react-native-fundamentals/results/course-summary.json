@@ -1,0 +1,29 @@
+{
+  "courseId": "03-react-native-fundamentals",
+  "courseName": "React Native Fundamentals",
+  "lastUpdated": "2026-05-21T11:38:05.079Z",
+  "totalChallenges": 7,
+  "completedChallenges": 2,
+  "averageScore": 83.2,
+  "completionPercentage": 28.6,
+  "badgeLevel": "none",
+  "challengeResults": [
+    {
+      "challengeId": "01-expo-setup-basics",
+      "challengeName": "Expo Setup & Basics",
+      "score": 83.2,
+      "passed": true
+    },
+    {
+      "challengeId": "02-navigation-system",
+      "challengeName": "Navigation System",
+      "score": 83.2,
+      "passed": true
+    }
+  ],
+  "skillStrengths": [
+    "Expo Setup & Basics",
+    "Navigation System"
+  ],
+  "improvementAreas": []
+}

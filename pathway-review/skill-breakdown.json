@@ -1,0 +1,42 @@
+{
+  "skills": {
+    "react-fundamentals": {
+      "name": "React Fundamentals",
+      "categories": [
+        "Component Architecture",
+        "Hooks & State Management",
+        "Event Handling",
+        "Props & Composition",
+        "Conditional Rendering",
+        "Lists & Keys"
+      ]
+    },
+    "rtk-query": {
+      "name": "RTK Query",
+      "categories": [
+        "API Integration",
+        "Data Fetching",
+        "Caching Strategies",
+        "Mutation Handling",
+        "Error Handling",
+        "Loading States"
+      ]
+    },
+    "nextjs-app-router": {
+      "name": "Next.js App Router",
+      "categories": [
+        "Server Components",
+        "Client Components",
+        "API Routes",
+        "Routing & Navigation",
+        "Data Fetching",
+        "Metadata & SEO"
+      ]
+    }
+  },
+  "progression": {
+    "beginner": ["Component Architecture", "Props & Composition", "Event Handling"],
+    "intermediate": ["Hooks & State Management", "API Integration", "Data Fetching"],
+    "advanced": ["Caching Strategies", "Server Components", "Performance Optimization"]
+  }
+}

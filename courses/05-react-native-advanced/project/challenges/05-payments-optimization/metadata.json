@@ -1,0 +1,21 @@
+{
+  "challengeId": "05-payments-optimization",
+  "challengeName": "Payments & Optimization",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Stripe",
+    "Memoization",
+    "Lazy loading",
+    "Performance"
+  ],
+  "filesToCheck": [
+    "app/checkout.tsx",
+    "components/ProductList.tsx"
+  ],
+  "patternsRequired": [
+    "useMemo",
+    "useCallback",
+    "React.memo"
+  ]
+}

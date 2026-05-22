@@ -1,0 +1,22 @@
+{
+  "challengeId": "04-forms-validation",
+  "challengeName": "Forms & Validation",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "TextInput",
+    "useState",
+    "Form validation",
+    "Multi-step forms"
+  ],
+  "filesToCheck": [
+    "app/auth/login.tsx",
+    "app/auth/signup.tsx",
+    "components/MultiStepForm.tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useState",
+    "TextInput"
+  ]
+}
