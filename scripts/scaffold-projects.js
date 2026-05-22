@@ -17,10 +17,10 @@ function write(path, content) {
 
 // --- React Native / Expo courses ---
 const rnCourses = [
-  '03-react-native-fundamentals',
-  '05-react-native-advanced',
-  '06-challenge-missions',
-  '07-deployment',
+  '01-react-native-fundamentals',
+  '03-react-native-advanced',
+  '04-challenge-missions',
+  '05-deployment',
 ];
 
 const expoPackage = {
@@ -268,13 +268,13 @@ npm run review -- --challenge=01-expo-setup-basics
 }
 
 // --- Backend course ---
-const backendBase = join(ROOT, 'courses', '04-backend-basics', 'project');
-console.log('🖥️ Scaffolding 04-backend-basics');
+const backendBase = join(ROOT, 'courses', '02-backend-basics', 'project');
+console.log('🖥️ Scaffolding 02-backend-basics');
 write(
   join(backendBase, 'package.json'),
   JSON.stringify(
     {
-      name: '04-backend-basics',
+      name: '02-backend-basics',
       version: '1.0.0',
       type: 'module',
       scripts: {

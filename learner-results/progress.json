@@ -1,93 +1,62 @@
 {
-  "lastUpdated": "2026-05-21T11:38:05.269Z",
+  "lastUpdated": "2026-05-22T12:27:09.271Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 20.8,
-    "completionPercentage": 28.6,
+    "overallScore": 0,
+    "completionPercentage": 0,
     "badgeLevel": "none",
-    "totalChallenges": 7,
-    "completedChallenges": 2
+    "totalChallenges": 35,
+    "completedChallenges": 0
   },
   "courses": {
-    "03-react-native-fundamentals": {
-      "courseId": "03-react-native-fundamentals",
+    "01-react-native-fundamentals": {
+      "courseId": "01-react-native-fundamentals",
       "courseName": "React Native Fundamentals",
-      "averageScore": 83.2,
-      "completionPercentage": 28.6,
+      "averageScore": 0,
+      "completionPercentage": 0,
       "badgeLevel": "none",
       "totalChallenges": 7,
-      "completedChallenges": 2,
-      "challenges": {
-        "01-expo-setup-basics": {
-          "challengeId": "01-expo-setup-basics",
-          "challengeName": "Expo Setup & Basics",
-          "passed": true,
-          "score": 83.2,
-          "lastRun": "2026-05-21T11:36:59.380Z",
-          "scores": {
-            "functionalTests": 100,
-            "codeQuality": 100,
-            "architecture": 100,
-            "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
-          }
-        },
-        "02-navigation-system": {
-          "challengeId": "02-navigation-system",
-          "challengeName": "Navigation System",
-          "passed": true,
-          "score": 83.2,
-          "lastRun": "2026-05-21T11:17:19.630Z",
-          "scores": {
-            "functionalTests": 100,
-            "codeQuality": 100,
-            "architecture": 100,
-            "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
-          }
-        }
-      }
+      "completedChallenges": 0,
+      "challenges": {}
     },
-    "04-backend-basics": {
-      "courseId": "04-backend-basics",
+    "02-backend-basics": {
+      "courseId": "02-backend-basics",
       "courseName": "Backend Basics",
       "averageScore": 0,
       "completionPercentage": 0,
       "badgeLevel": "none",
-      "totalChallenges": 0,
+      "totalChallenges": 5,
       "completedChallenges": 0,
       "challenges": {}
     },
-    "05-react-native-advanced": {
-      "courseId": "05-react-native-advanced",
+    "03-react-native-advanced": {
+      "courseId": "03-react-native-advanced",
       "courseName": "Advanced React Native",
       "averageScore": 0,
       "completionPercentage": 0,
       "badgeLevel": "none",
-      "totalChallenges": 0,
+      "totalChallenges": 6,
       "completedChallenges": 0,
       "challenges": {}
     },
-    "06-challenge-missions": {
-      "courseId": "06-challenge-missions",
+    "04-challenge-missions": {
+      "courseId": "04-challenge-missions",
       "courseName": "Challenge Missions",
       "averageScore": 0,
       "completionPercentage": 0,
       "badgeLevel": "none",
-      "totalChallenges": 0,
+      "totalChallenges": 14,
       "completedChallenges": 0,
       "challenges": {}
     },
-    "07-deployment": {
-      "courseId": "07-deployment",
+    "05-deployment": {
+      "courseId": "05-deployment",
       "courseName": "Deployment",
       "averageScore": 0,
       "completionPercentage": 0,
       "badgeLevel": "none",
-      "totalChallenges": 0,
+      "totalChallenges": 3,
       "completedChallenges": 0,
       "challenges": {}
     }

@@ -33,22 +33,24 @@ npm run dashboard
 **Run an Expo course:**
 
 ```bash
-cd courses/03-react-native-fundamentals/project
+cd courses/01-react-native-fundamentals/project
 npm install
 npx expo start
 ```
 
+Each course `project/README.md` lists extra packages to install (e.g. AsyncStorage, Redux, EAS CLI). Challenge READMEs such as `06-async-storage` also include install steps where needed.
+
 **Run a challenge review:**
 
 ```bash
-cd courses/03-react-native-fundamentals/project
+cd courses/01-react-native-fundamentals/project
 npm run review -- --challenge=01-expo-setup-basics
 ```
 
 Or from repo root:
 
 ```bash
-npm run review:challenge -- --course=03-react-native-fundamentals --challenge=01-expo-setup-basics
+npm run review:challenge -- --course=01-react-native-fundamentals --challenge=01-expo-setup-basics
 ```
 
 ## Challenge locations
@@ -56,7 +58,7 @@ npm run review:challenge -- --course=03-react-native-fundamentals --challenge=01
 Instructions live in each challenge folder:
 
 ```
-courses/03-react-native-fundamentals/project/challenges/01-expo-setup-basics/README.md
+courses/01-react-native-fundamentals/project/challenges/01-expo-setup-basics/README.md
 ```
 
 Use the in-app **Challenges** tab (Expo) or open READMEs in your editor.
@@ -79,6 +81,7 @@ GROQ_API_KEY=your_key_here
 
 ## Documentation
 
+- **[LEARNER-SETUP.md](./LEARNER-SETUP.md)** — Tools and packages to install for course challenges
 - **[SYSTEM.md](./SYSTEM.md)** — Architecture, curriculum map, extending the engine
 - Reference: `challenge-engine/SYSTEM.md` (web pathway)
 
@@ -109,24 +112,59 @@ Results are written to:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 📈 Progress Summary
 
-**Last updated:** 5/21/2026, 5:08:05 PM
+**Last updated:** 5/22/2026, 5:57:09 PM
 
 ### Pathway
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 2 / 7 (28.6%) |
-| Overall score | 20.8% |
+| Challenges completed | 0 / 35 (0%) |
+| Overall score | 0% |
 
 ### By course
 
 | Course | Completed | Score | Status |
 |--------|-----------|-------|--------|
-| React Native Fundamentals | 2/7 (28.6%) | 83.2% | Pass |
-| Backend Basics | 0/0 (0%) | 0% | Pass |
-| Advanced React Native | 0/0 (0%) | 0% | Pass |
-| Challenge Missions | 0/0 (0%) | 0% | Pass |
-| Deployment | 0/0 (0%) | 0% | Pass |
+| React Native Fundamentals | 0/7 (0%) | 0% | Pass |
+| Backend Basics | 0/5 (0%) | 0% | Pass |
+| Advanced React Native | 0/6 (0%) | 0% | Pass |
+| Challenge Missions | 0/14 (0%) | 0% | Pass |
+| Deployment | 0/3 (0%) | 0% | Pass |
 

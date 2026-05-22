@@ -2,7 +2,7 @@
 
 **Technical reference for the React Native, backend, missions, and deployment automation system.**
 
-Based on the [Challenge Engine](https://github.com/sparkplustech/challenge-engine-react) architecture (`SYSTEM.md`). This repo implements **Phases 3–7** of the mobile/full-stack curriculum.
+Based on the [Challenge Engine](https://github.com/sparkplustech/challenge-engine-react) architecture (`SYSTEM.md`). This repo implements **Phases 1–5** of the mobile/full-stack curriculum.
 
 ---
 
@@ -10,11 +10,11 @@ Based on the [Challenge Engine](https://github.com/sparkplustech/challenge-engin
 
 | Phase | Course ID | Challenges | Capstone |
 |-------|-----------|------------|----------|
-| 3 — RN Fundamentals | `03-react-native-fundamentals` | 7 | Mini Social Feed |
-| 4 — Backend Basics | `04-backend-basics` | 5 | Blog Backend API |
-| 5 — Advanced RN | `05-react-native-advanced` | 6 | Full E-Commerce App |
-| 6 — Missions | `06-challenge-missions` | 14 | Tiered projects |
-| 7 — Deployment | `07-deployment` | 3 | Play Store prep |
+| 1 — RN Fundamentals | `01-react-native-fundamentals` | 7 | Mini Social Feed |
+| 2 — Backend Basics | `02-backend-basics` | 5 | Blog Backend API |
+| 3 — Advanced RN | `03-react-native-advanced` | 6 | Full E-Commerce App |
+| 4 — Missions | `04-challenge-missions` | 14 | Tiered projects |
+| 5 — Deployment | `05-deployment` | 3 | Play Store prep |
 
 **Total:** 35 challenges across 5 courses.
 
@@ -25,16 +25,16 @@ Based on the [Challenge Engine](https://github.com/sparkplustech/challenge-engin
 ```
 mobile-challenge-engine/
 ├── courses/
-│   ├── 03-react-native-fundamentals/
+│   ├── 01-react-native-fundamentals/
 │   │   ├── project/              # Expo app (Expo Router)
 │   │   ├── review-engine/
 │   │   ├── ai-review/
 │   │   ├── course-config.json
 │   │   └── results/
-│   ├── 04-backend-basics/        # Node + Express + MongoDB
-│   ├── 05-react-native-advanced/
-│   ├── 06-challenge-missions/
-│   └── 07-deployment/
+│   ├── 02-backend-basics/        # Node + Express + MongoDB
+│   ├── 03-react-native-advanced/
+│   ├── 04-challenge-missions/
+│   └── 05-deployment/
 ├── global-review/
 ├── pathway-review/pathway-config.json
 ├── scripts/                      # setup, review, progress, generate-mobile-courses.js
@@ -47,7 +47,7 @@ mobile-challenge-engine/
 
 ## Challenge Curriculum Map
 
-### Phase 3 — React Native Fundamentals
+### Phase 1 — React Native Fundamentals
 
 | ID | Name | Parts |
 |----|------|-------|
@@ -59,7 +59,7 @@ mobile-challenge-engine/
 | `06-async-storage` | AsyncStorage | Notes, login persistence, theme |
 | `07-mini-social-feed` | Capstone | Auth + nav + API feed + storage + profile |
 
-### Phase 4 — Backend Basics
+### Phase 2 — Backend Basics
 
 | ID | Name |
 |----|------|
@@ -69,7 +69,7 @@ mobile-challenge-engine/
 | `04-jwt-authentication` | Register, login, protected routes |
 | `05-blog-backend-api` | Capstone |
 
-### Phase 5 — Advanced React Native
+### Phase 3 — Advanced React Native
 
 | ID | Name |
 |----|------|
@@ -80,13 +80,13 @@ mobile-challenge-engine/
 | `05-payments-optimization` | Stripe checkout, memoization |
 | `06-full-ecommerce-app` | Capstone |
 
-### Phase 6 — Challenge Missions
+### Phase 4 — Challenge Missions
 
 **Beginner:** habit-tracker, pokemon-explorer, notes-app, calculator, meme-viewer  
 **Intermediate:** realtime-chat, expense-tracker, movie-app, ai-recipe-app  
 **Advanced:** food-delivery, social-media-platform, full-marketplace, fitness-tracker, anime-streaming-ui
 
-### Phase 7 — Deployment
+### Phase 5 — Deployment
 
 `01-apk-build`, `02-expo-eas`, `03-play-store-prep`
 
@@ -125,8 +125,8 @@ Use `testID` on interactive elements for RN tests (not DOM `id`).
 npm run setup
 npm run dashboard:build && npm run dashboard
 npm run review:all
-npm run review:course -- --course=03-react-native-fundamentals
-npm run review:challenge -- --course=03-react-native-fundamentals --challenge=01-expo-setup-basics
+npm run review:course -- --course=01-react-native-fundamentals
+npm run review:challenge -- --course=01-react-native-fundamentals --challenge=01-expo-setup-basics
 npm run review:changed
 npm run progress:update
 npm run generate:courses   # Regenerate README/metadata from scripts/generate-mobile-courses.js
@@ -135,7 +135,7 @@ npm run generate:courses   # Regenerate README/metadata from scripts/generate-mo
 **Expo dev (course project):**
 
 ```bash
-cd courses/03-react-native-fundamentals/project
+cd courses/01-react-native-fundamentals/project
 npm install
 npx expo start
 ```
@@ -143,7 +143,7 @@ npx expo start
 **Backend dev:**
 
 ```bash
-cd courses/04-backend-basics/project
+cd courses/02-backend-basics/project
 npm install
 npm run dev
 ```

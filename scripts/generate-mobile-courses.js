@@ -12,7 +12,7 @@ const ROOT = join(__dirname, '..');
 
 const COURSES = [
   {
-    id: '03-react-native-fundamentals',
+    id: '01-react-native-fundamentals',
     name: 'React Native Fundamentals',
     description: 'Expo, components, navigation, lists, forms, APIs, and AsyncStorage',
     challenges: [
@@ -109,7 +109,7 @@ const COURSES = [
     ],
   },
   {
-    id: '04-backend-basics',
+    id: '02-backend-basics',
     name: 'Backend Basics',
     description: 'Node.js, Express, MongoDB, and JWT authentication',
     challenges: [
@@ -156,7 +156,7 @@ const COURSES = [
     ],
   },
   {
-    id: '05-react-native-advanced',
+    id: '03-react-native-advanced',
     name: 'Advanced React Native',
     description: 'Redux Toolkit, NativeWind, Firebase, maps, payments, optimization',
     challenges: [
@@ -217,7 +217,7 @@ const COURSES = [
     ],
   },
   {
-    id: '06-challenge-missions',
+    id: '04-challenge-missions',
     name: 'Challenge Missions',
     description: 'Beginner, intermediate, and advanced mission projects',
     challenges: [
@@ -238,7 +238,7 @@ const COURSES = [
     ],
   },
   {
-    id: '07-deployment',
+    id: '05-deployment',
     name: 'Deployment',
     description: 'APK builds, Expo EAS, and Play Store preparation',
     challenges: [

@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "Mobile Challenges",
+    "slug": "mobile-challenges",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "mobilechallenges",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "android": {
+      "package": "com.mobilechallenges.app",
+      "versionCode": 1,
+      "permissions": []
+    },
+    "ios": {
+      "bundleIdentifier": "com.mobilechallenges.app",
+      "buildNumber": "1"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "expo-build": "eas build --platform android --profile preview",
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}
