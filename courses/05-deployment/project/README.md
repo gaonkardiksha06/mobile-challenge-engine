@@ -2,18 +2,18 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 5/22/2026, 5:56:54 PM*
+*Auto-updated when you run review. Last run: 6/8/2026, 12:45:42 pm*
 
 | Metric | Value |
 |--------|-------|
 | Challenges completed | 0 / 3 (0%) |
-| Average score | 0% |
+| Average score | 75% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| APK Build | APK, Android build, Device testing | — |
-| Expo EAS | EAS Build, eas.json, Cloud build | — |
-| Play Store Prep | Screenshots, App icon, Privacy policy, Signed release | — |
+| APK Build | APK, Android build, Device testing | Not passed |
+| Expo EAS | EAS Build, eas.json, Cloud build | Not passed |
+| Play Store Prep | Screenshots, App icon, Privacy policy, Signed release | Not passed |
 
 ## Getting started
 

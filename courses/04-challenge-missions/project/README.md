@@ -2,29 +2,29 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 5/22/2026, 5:56:54 PM*
+*Auto-updated when you run review. Last run: 6/8/2026, 12:45:00 pm*
 
 | Metric | Value |
 |--------|-------|
 | Challenges completed | 0 / 14 (0%) |
-| Average score | 0% |
+| Average score | 71.8% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| Habit Tracker | useState, FlatList, AsyncStorage | — |
-| Pokemon Explorer | fetch, FlatList, Navigation | — |
-| Notes App | AsyncStorage, CRUD, TextInput | — |
-| Calculator | useState, UI layout | — |
-| Meme Viewer | fetch, Image, ScrollView | — |
-| Realtime Chat | Firebase, FlatList, Auth | — |
-| Expense Tracker | Redux, Charts, Forms | — |
-| Movie App | API, Search, Navigation | — |
-| AI Recipe App | API, Forms, Loading states | — |
-| Food Delivery | Maps, Cart, Navigation | — |
-| Social Media Platform | Auth, Feed, Firebase, Upload | — |
-| Full Marketplace | Redux, Payments, Search | — |
-| Fitness Tracker | Charts, AsyncStorage, Notifications | — |
-| Anime Streaming UI | UI design, FlatList, Navigation | — |
+| Habit Tracker | useState, FlatList, AsyncStorage | Not passed |
+| Pokemon Explorer | fetch, FlatList, Navigation | Not passed |
+| Notes App | AsyncStorage, CRUD, TextInput | Not passed |
+| Calculator | useState, UI layout | Not passed |
+| Meme Viewer | fetch, Image, ScrollView | Not passed |
+| Realtime Chat | Firebase, FlatList, Auth | Not passed |
+| Expense Tracker | Redux, Charts, Forms | Not passed |
+| Movie App | API, Search, Navigation | Not passed |
+| AI Recipe App | API, Forms, Loading states | Not passed |
+| Food Delivery | Maps, Cart, Navigation | Not passed |
+| Social Media Platform | Auth, Feed, Firebase, Upload | Not passed |
+| Full Marketplace | Redux, Payments, Search | Not passed |
+| Fitness Tracker | Charts, AsyncStorage, Notifications | Not passed |
+| Anime Streaming UI | UI design, FlatList, Navigation | Not passed |
 
 ## Getting started
 

@@ -2,21 +2,21 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 5/22/2026, 5:56:54 PM*
+*Auto-updated when you run review. Last run: 6/8/2026, 12:42:02 pm*
 
 | Metric | Value |
 |--------|-------|
 | Challenges completed | 0 / 6 (0%) |
-| Average score | 0% |
+| Average score | 73.4% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| Redux Toolkit | Store, Slice, Actions, createAsyncThunk | — |
-| NativeWind | Tailwind styling, Responsive layouts, Tablet support | — |
-| Firebase | Firebase Auth, Firestore, Storage | — |
-| Notifications & Maps | Push notifications, Maps, Location | — |
-| Payments & Optimization | Stripe, Memoization, Lazy loading, Performance | — |
-| Full E-Commerce App (Capstone) | Auth, Redux cart, Payments, Maps, Firebase, AsyncStorage | — |
+| Redux Toolkit | Store, Slice, Actions, createAsyncThunk | Not passed |
+| NativeWind | Tailwind styling, Responsive layouts, Tablet support | Not passed |
+| Firebase | Firebase Auth, Firestore, Storage | Not passed |
+| Notifications & Maps | Push notifications, Maps, Location | Not passed |
+| Payments & Optimization | Stripe, Memoization, Lazy loading, Performance | Not passed |
+| Full E-Commerce App (Capstone) | Auth, Redux cart, Payments, Maps, Firebase, AsyncStorage | Not passed |
 
 ## Getting started
 

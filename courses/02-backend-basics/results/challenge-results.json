@@ -1,1 +1,705 @@
-[]
+[
+  {
+    "challengeId": "01-nodejs-basics",
+    "challengeName": "Node.js Basics",
+    "timestamp": "2026-08-06T07:09:47.282Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "01-nodejs-basics"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "01-nodejs-basics passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000193380,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1786000192885,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "http",
+        "fs"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/server.js",
+          "patternsFound": [
+            "http",
+            "fs"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/fs-utils.js",
+          "patternsFound": [
+            "fs"
+          ],
+          "patternsMissing": [
+            "http"
+          ]
+        },
+        {
+          "file": "src/math.js",
+          "patternsFound": [],
+          "patternsMissing": [
+            "http",
+            "fs"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-01.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "01-nodejs-basics",
+      "timestamp": "2026-08-06T07:09:58.922Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a logical organization of features.",
+        "The use of TypeScript and JavaScript patterns is appropriate for Node.js.",
+        "The code includes automated testing props for interactive elements."
+      ],
+      "improvements": [
+        "The `readNotesFile` function catches all errors, which may mask bugs. Consider catching specific errors instead.",
+        "The `writeNotesFile` function creates the directory recursively, but does not check if the file already exists. Consider adding a check to avoid overwriting existing files.",
+        "The `server.js` file includes a commented-out console.log statement. Consider removing it to avoid potential issues in production environments."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for Node.js development. However, there are a few areas that can be improved to make the code more robust and maintainable."
+    },
+    "aiResults": {
+      "challengeId": "01-nodejs-basics",
+      "timestamp": "2026-08-06T07:09:58.922Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a logical organization of features.",
+        "The use of TypeScript and JavaScript patterns is appropriate for Node.js.",
+        "The code includes automated testing props for interactive elements."
+      ],
+      "improvements": [
+        "The `readNotesFile` function catches all errors, which may mask bugs. Consider catching specific errors instead.",
+        "The `writeNotesFile` function creates the directory recursively, but does not check if the file already exists. Consider adding a check to avoid overwriting existing files.",
+        "The `server.js` file includes a commented-out console.log statement. Consider removing it to avoid potential issues in production environments."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for Node.js development. However, there are a few areas that can be improved to make the code more robust and maintainable."
+    }
+  },
+  {
+    "challengeId": "02-express-apis",
+    "challengeName": "Express.js APIs",
+    "timestamp": "2026-08-06T07:10:00.523Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "02-express-apis"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "02-express-apis passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000205648,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1786000205245,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "express",
+        "middleware"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/app.js",
+          "patternsFound": [
+            "express",
+            "middleware"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/notes.js",
+          "patternsFound": [
+            "express"
+          ],
+          "patternsMissing": [
+            "middleware"
+          ]
+        },
+        {
+          "file": "src/middleware/logger.js",
+          "patternsFound": [],
+          "patternsMissing": [
+            "express",
+            "middleware"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-02.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "02-express-apis",
+      "timestamp": "2026-08-06T07:10:10.714Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between different modules.",
+        "The use of TypeScript and Express.js is well-implemented, with proper handling of errors and middleware.",
+        "The code includes automated tests, which is a great practice for ensuring the quality of the code."
+      ],
+      "improvements": [
+        "The `notesCache` variable in `src/routes/notes.js` is not properly synchronized, which could lead to data inconsistencies. Consider using a more robust caching mechanism, such as Redis or a database.",
+        "The `errorHandler` function in `src/middleware/logger.js` does not handle errors properly. It should be modified to handle errors in a more robust way, such as by logging the error and sending a response to the client.",
+        "The code does not include any input validation for the `title` and `body` fields in the `POST /api/notes` endpoint. Consider adding validation to ensure that these fields are properly formatted and do not contain malicious data."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-implemented, but there are some areas that need improvement. With some additional attention to caching, error handling, and input validation, this code could be even more robust and maintainable."
+    },
+    "aiResults": {
+      "challengeId": "02-express-apis",
+      "timestamp": "2026-08-06T07:10:10.714Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between different modules.",
+        "The use of TypeScript and Express.js is well-implemented, with proper handling of errors and middleware.",
+        "The code includes automated tests, which is a great practice for ensuring the quality of the code."
+      ],
+      "improvements": [
+        "The `notesCache` variable in `src/routes/notes.js` is not properly synchronized, which could lead to data inconsistencies. Consider using a more robust caching mechanism, such as Redis or a database.",
+        "The `errorHandler` function in `src/middleware/logger.js` does not handle errors properly. It should be modified to handle errors in a more robust way, such as by logging the error and sending a response to the client.",
+        "The code does not include any input validation for the `title` and `body` fields in the `POST /api/notes` endpoint. Consider adding validation to ensure that these fields are properly formatted and do not contain malicious data."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-implemented, but there are some areas that need improvement. With some additional attention to caching, error handling, and input validation, this code could be even more robust and maintainable."
+    }
+  },
+  {
+    "challengeId": "03-mongodb",
+    "challengeName": "MongoDB",
+    "timestamp": "2026-08-06T07:10:11.773Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "03-mongodb"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "03-mongodb passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000216670,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1786000216223,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "mongoose",
+        "schema"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/db.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/models/User.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/users.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-03.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "03-mongodb",
+      "timestamp": "2026-08-06T07:10:21.916Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript is a good practice for a Node.js project.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "The `connectDB` function in `src/db.js` can be improved by adding error handling for the case where the connection is not established.",
+        "In `src/routes/users.js`, the error handling in the catch blocks can be improved by providing more informative error messages.",
+        "The `User` model in `src/models/User.js` can be improved by adding validation for the passwordHash field to ensure it meets the required complexity."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and maintainable."
+    },
+    "aiResults": {
+      "challengeId": "03-mongodb",
+      "timestamp": "2026-08-06T07:10:21.916Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript is a good practice for a Node.js project.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "The `connectDB` function in `src/db.js` can be improved by adding error handling for the case where the connection is not established.",
+        "In `src/routes/users.js`, the error handling in the catch blocks can be improved by providing more informative error messages.",
+        "The `User` model in `src/models/User.js` can be improved by adding validation for the passwordHash field to ensure it meets the required complexity."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and maintainable."
+    }
+  },
+  {
+    "challengeId": "04-jwt-authentication",
+    "challengeName": "JWT Authentication",
+    "timestamp": "2026-08-06T07:10:22.675Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "04-jwt-authentication"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "04-jwt-authentication passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000227428,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1786000227012,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "jwt",
+        "bcrypt"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/routes/auth.js",
+          "patternsFound": [
+            "bcrypt"
+          ],
+          "patternsMissing": [
+            "jwt"
+          ]
+        },
+        {
+          "file": "src/middleware/auth.js",
+          "patternsFound": [
+            "jwt"
+          ],
+          "patternsMissing": [
+            "bcrypt"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-04.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "04-jwt-authentication",
+      "timestamp": "2026-08-06T07:10:31.958Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the router and middleware.",
+        "The use of TypeScript and JavaScript patterns appropriate for Node.js is a good practice.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "In the `auth.js` file, the `requireAuth` function can be improved by adding a check for the `req.user` property before calling `jwt.verify` to avoid potential errors.",
+        "In the `auth.js` file, the `signToken` function can be improved by adding a check for the `payload` parameter to ensure it's an object before calling `jwt.sign`.",
+        "In the `auth.js` file, the `JWT_SECRET` variable can be moved to an environment variable or a configuration file to make it easier to manage and secure."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-documented, but there are some areas for improvement to make it more robust and secure. With a few tweaks, this code can be even more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "04-jwt-authentication",
+      "timestamp": "2026-08-06T07:10:31.958Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and easy to follow, with clear separation of concerns between the router and middleware.",
+        "The use of TypeScript and JavaScript patterns appropriate for Node.js is a good practice.",
+        "The code is well-documented with clear and concise comments."
+      ],
+      "improvements": [
+        "In the `auth.js` file, the `requireAuth` function can be improved by adding a check for the `req.user` property before calling `jwt.verify` to avoid potential errors.",
+        "In the `auth.js` file, the `signToken` function can be improved by adding a check for the `payload` parameter to ensure it's an object before calling `jwt.sign`.",
+        "In the `auth.js` file, the `JWT_SECRET` variable can be moved to an environment variable or a configuration file to make it easier to manage and secure."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and well-documented, but there are some areas for improvement to make it more robust and secure. With a few tweaks, this code can be even more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "05-blog-backend-api",
+    "challengeName": "Blog Backend API (Capstone)",
+    "timestamp": "2026-08-06T07:10:32.926Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 0
+    },
+    "totalScore": 62.5,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "05-blog-backend-api"
+              ],
+              "duration": 10,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "05-blog-backend-api passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000237421,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1786000237019,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "express",
+        "jwt",
+        "mongoose"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/app.js",
+          "patternsFound": [
+            "express",
+            "jwt"
+          ],
+          "patternsMissing": [
+            "mongoose"
+          ]
+        },
+        {
+          "file": "src/routes/posts.js",
+          "patternsFound": [
+            "express",
+            "jwt",
+            "mongoose"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/auth.js",
+          "patternsFound": [
+            "express"
+          ],
+          "patternsMissing": [
+            "jwt",
+            "mongoose"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-05.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "05-blog-backend-api",
+      "timestamp": "2026-08-06T07:10:42.458Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3947, Requested 2722. Please try again in 6.69s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "05-blog-backend-api",
+      "timestamp": "2026-08-06T07:10:42.458Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3947, Requested 2722. Please try again in 6.69s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  }
+]

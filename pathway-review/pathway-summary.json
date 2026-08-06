@@ -1,9 +1,129 @@
 {
   "pathwayName": "Mobile & Full-Stack Engineer",
-  "overallScore": 0,
-  "completionPercentage": 0,
+  "version": "1.0.0",
+  "lastUpdated": "2026-08-06T07:15:47.027Z",
+  "overallScore": 72.9,
+  "completionPercentage": 2.9,
   "badgeLevel": "none",
+  "courses": [
+    {
+      "courseId": "01-react-native-fundamentals",
+      "courseName": "React Native Fundamentals",
+      "score": 72,
+      "completion": 14.3,
+      "badgeLevel": "none",
+      "skillStrengths": [
+        "Expo Setup & Basics"
+      ],
+      "improvementAreas": [
+        "Forms & Validation",
+        "API Integration",
+        "Mini Social Feed (Capstone)"
+      ]
+    },
+    {
+      "courseId": "02-backend-basics",
+      "courseName": "Backend Basics",
+      "score": 73.1,
+      "completion": 0,
+      "badgeLevel": "none",
+      "skillStrengths": [],
+      "improvementAreas": [
+        "Blog Backend API (Capstone)"
+      ]
+    },
+    {
+      "courseId": "03-react-native-advanced",
+      "courseName": "Advanced React Native",
+      "score": 73.4,
+      "completion": 0,
+      "badgeLevel": "none",
+      "skillStrengths": [],
+      "improvementAreas": [
+        "Firebase"
+      ]
+    },
+    {
+      "courseId": "04-challenge-missions",
+      "courseName": "Challenge Missions",
+      "score": 71.8,
+      "completion": 0,
+      "badgeLevel": "none",
+      "skillStrengths": [],
+      "improvementAreas": [
+        "Pokemon Explorer",
+        "Meme Viewer",
+        "Food Delivery",
+        "Anime Streaming UI"
+      ]
+    },
+    {
+      "courseId": "05-deployment",
+      "courseName": "Deployment",
+      "score": 75,
+      "completion": 0,
+      "badgeLevel": "none",
+      "skillStrengths": [],
+      "improvementAreas": []
+    }
+  ],
   "totalChallenges": 35,
-  "completedChallenges": 0,
-  "courses": []
+  "completedChallenges": 1,
+  "averageScore": 72.91,
+  "skillStrengths": [
+    "Expo Setup & Basics"
+  ],
+  "improvementAreas": [
+    "Forms & Validation",
+    "API Integration",
+    "Mini Social Feed (Capstone)",
+    "Blog Backend API (Capstone)",
+    "Firebase",
+    "Pokemon Explorer",
+    "Meme Viewer",
+    "Food Delivery",
+    "Anime Streaming UI"
+  ],
+  "aiInsights": {
+    "overallReadability": 85,
+    "overallMaintainability": 87,
+    "commonStrengths": [
+      "The code includes test IDs for interactive elements, making it easier to write automated tests.",
+      "The code is well-structured and follows a consistent naming convention.",
+      "The code is well-organized and follows a consistent naming convention.",
+      "The code includes test IDs for interactive elements, which is a great practice for automated testing.",
+      "The code is well-documented with clear and concise comments."
+    ],
+    "commonImprovements": [
+      "Some of the styles could be extracted into a separate file or a theme object to make them more reusable and maintainable.",
+      "The `styles` object in each component is quite large and could be broken down into smaller, more manageable objects.",
+      "There are no type annotations for the `styles` objects, which could make it harder to catch type-related errors.",
+      "Some of the styles are hardcoded directly in the components, which can make it harder to maintain and update. Consider moving them to a separate stylesheet or using a CSS-in-JS solution like Styled Components.",
+      "The `useLayoutEffect` hook in the `DetailsScreen` component can be simplified by using the `useFocusEffect` hook from Expo Router, which is specifically designed for handling focus-related effects."
+    ],
+    "courseBreakdown": [
+      {
+        "courseId": "01-react-native-fundamentals",
+        "feedbackCount": 7
+      },
+      {
+        "courseId": "02-backend-basics",
+        "feedbackCount": 5
+      },
+      {
+        "courseId": "03-react-native-advanced",
+        "feedbackCount": 6
+      },
+      {
+        "courseId": "04-challenge-missions",
+        "feedbackCount": 14
+      },
+      {
+        "courseId": "05-deployment",
+        "feedbackCount": 3
+      }
+    ]
+  },
+  "repositoryUrl": "https://github.com/sparkplustech/mobile-challenge-engine.git",
+  "commitSha": "92e1f84d9ac7c797702e734b4f3b7fbf8e867c42"
 }

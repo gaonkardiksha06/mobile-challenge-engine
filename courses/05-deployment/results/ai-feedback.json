@@ -1,1 +1,69 @@
-[]
+[
+  {
+    "challengeId": "01-apk-build",
+    "challengeName": "APK Build",
+    "aiReview": {
+      "challengeId": "01-apk-build",
+      "timestamp": "2026-08-06T07:15:18.469Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and Expo is appropriate for the project.",
+        "The configuration files (app.json and eas.json) are well-organized and easy to understand."
+      ],
+      "improvements": [
+        "The 'permissions' array in the 'android' section of app.json is empty. It would be better to include the necessary permissions for the app to function correctly.",
+        "The 'eas' section in app.json contains a projectId that is not being used. It would be better to remove this section or use the projectId for something useful.",
+        "The 'build' section in eas.json has a 'development' profile that is not being used. It would be better to remove this profile or use it for something useful."
+      ],
+      "readability": 80,
+      "maintainability": 85,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and efficient. With some minor adjustments, the code can reach a score of 90% or higher."
+    }
+  },
+  {
+    "challengeId": "02-expo-eas",
+    "challengeName": "Expo EAS",
+    "aiReview": {
+      "challengeId": "02-expo-eas",
+      "timestamp": "2026-08-06T07:15:30.641Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is consistent throughout the codebase.",
+        "The `eas.json` file is well-formatted and easy to understand."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments explaining the purpose of each section and the configuration options used.",
+        "The `eas.json` file could have more descriptive variable names, such as `androidBuildType` instead of `buildType`.",
+        "Consider adding JSDoc comments to the `eas.json` file to explain the purpose of each property and its expected values."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows the required patterns for React Native/Expo. However, there are some minor improvements that can be made to increase code readability and maintainability. Overall, the code is solid and meets the requirements of the challenge."
+    }
+  },
+  {
+    "challengeId": "03-play-store-prep",
+    "challengeName": "Play Store Prep",
+    "aiReview": {
+      "challengeId": "03-play-store-prep",
+      "timestamp": "2026-08-06T07:15:42.015Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is a good practice, making the code more maintainable and scalable."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments to explain the configuration options and their purposes.",
+        "The `store-assets/README.md` file is a good checklist, but it could be more comprehensive and include more detailed instructions for each step."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and comprehensive. With some additional comments and instructions, this code could be considered excellent."
+    }
+  }
+]

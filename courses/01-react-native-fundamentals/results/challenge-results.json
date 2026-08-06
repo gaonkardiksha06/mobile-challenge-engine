@@ -1,1 +1,1169 @@
-[]
+[
+  {
+    "challengeId": "01-expo-setup-basics",
+    "challengeName": "Expo Setup & Basics",
+    "timestamp": "2026-08-06T07:07:24.236Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 83
+    },
+    "totalScore": 89.95,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "01-expo-setup-basics"
+              ],
+              "duration": 8,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "01-expo-setup-basics has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000052171,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1786000051158,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "StyleSheet"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/(tabs)/index.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "StyleSheet"
+          ],
+          "patternsMissing": [
+            "useState"
+          ]
+        },
+        {
+          "file": "components/ProfileCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "StyleSheet"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/FeatureCards.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "StyleSheet"
+          ],
+          "patternsMissing": [
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-01.spec.ts",
+          "file": "challenge-01.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "01-expo-setup-basics",
+              "file": "challenge-01.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders home screen with profile card",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8805,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-06T07:08:00.487Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-e30d25cd391158709dd0",
+                  "file": "challenge-01.spec.ts",
+                  "line": 13,
+                  "column": 7
+                },
+                {
+                  "title": "follow button toggles state",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3671,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-06T07:08:11.255Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-993d1b1df776376a6ae7",
+                  "file": "challenge-01.spec.ts",
+                  "line": 21,
+                  "column": 7
+                },
+                {
+                  "title": "renders three feature cards in a row",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 879,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-06T07:08:14.957Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-154da91f0b95a2350369",
+                  "file": "challenge-01.spec.ts",
+                  "line": 28,
+                  "column": 7
+                },
+                {
+                  "title": "view profile button is visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1031,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-06T07:08:15.856Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-bf0430168a92b30e5dd0",
+                  "file": "challenge-01.spec.ts",
+                  "line": 35,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "01-expo-setup-basics",
+      "timestamp": "2026-08-06T07:08:25.356Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and Expo Router is well-integrated into the application.",
+        "The code includes test IDs for interactive elements, which is a good practice for automated testing."
+      ],
+      "improvements": [
+        "Some of the styles could be extracted into a separate file or a theme object to make them more reusable and maintainable.",
+        "The `styles` object in each component is quite large and could be broken down into smaller, more manageable objects.",
+        "There are no type annotations for the `styles` objects, which could make it harder to catch type-related errors."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "01-expo-setup-basics",
+      "timestamp": "2026-08-06T07:08:25.356Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and Expo Router is well-integrated into the application.",
+        "The code includes test IDs for interactive elements, which is a good practice for automated testing."
+      ],
+      "improvements": [
+        "Some of the styles could be extracted into a separate file or a theme object to make them more reusable and maintainable.",
+        "The `styles` object in each component is quite large and could be broken down into smaller, more manageable objects.",
+        "There are no type annotations for the `styles` objects, which could make it harder to catch type-related errors."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "02-navigation-system",
+    "challengeName": "Navigation System",
+    "timestamp": "2026-08-06T07:08:28.316Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "02-navigation-system"
+              ],
+              "duration": 8,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "02-navigation-system has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000118027,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1786000116844,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useNavigation"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useNavigation"
+          ]
+        },
+        {
+          "file": "app/(tabs)/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useNavigation"
+          ]
+        },
+        {
+          "file": "app/details/[username].tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useNavigation"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-02.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "02-navigation-system",
+      "timestamp": "2026-08-06T07:08:43.722Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code uses a consistent and organized structure, making it easy to follow and understand.",
+        "The use of TypeScript and Expo Router provides a solid foundation for the navigation system.",
+        "The code includes test IDs for interactive elements, which is a great practice for automated testing."
+      ],
+      "improvements": [
+        "Some of the styles are hardcoded directly in the components, which can make it harder to maintain and update. Consider moving them to a separate stylesheet or using a CSS-in-JS solution like Styled Components.",
+        "The `useLayoutEffect` hook in the `DetailsScreen` component can be simplified by using the `useFocusEffect` hook from Expo Router, which is specifically designed for handling focus-related effects.",
+        "The `RootLayout` component has a complex logic for handling authentication and routing. Consider breaking it down into smaller, more manageable functions or components to improve maintainability."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for navigation systems in React Native. However, there are some areas that can be improved to make the code more maintainable and efficient. With a few tweaks, this code can reach an even higher level of quality and scalability."
+    },
+    "aiResults": {
+      "challengeId": "02-navigation-system",
+      "timestamp": "2026-08-06T07:08:43.722Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code uses a consistent and organized structure, making it easy to follow and understand.",
+        "The use of TypeScript and Expo Router provides a solid foundation for the navigation system.",
+        "The code includes test IDs for interactive elements, which is a great practice for automated testing."
+      ],
+      "improvements": [
+        "Some of the styles are hardcoded directly in the components, which can make it harder to maintain and update. Consider moving them to a separate stylesheet or using a CSS-in-JS solution like Styled Components.",
+        "The `useLayoutEffect` hook in the `DetailsScreen` component can be simplified by using the `useFocusEffect` hook from Expo Router, which is specifically designed for handling focus-related effects.",
+        "The `RootLayout` component has a complex logic for handling authentication and routing. Consider breaking it down into smaller, more manageable functions or components to improve maintainability."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for navigation systems in React Native. However, there are some areas that can be improved to make the code more maintainable and efficient. With a few tweaks, this code can reach an even higher level of quality and scalability."
+    }
+  },
+  {
+    "challengeId": "03-lists-data-rendering",
+    "challengeName": "Lists & Data Rendering",
+    "timestamp": "2026-08-06T07:08:44.411Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 74.95,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "03-lists-data-rendering"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "03-lists-data-rendering has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000130772,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1786000129922,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "useEffect",
+        "FlatList"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "components/PostFeed.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "useEffect",
+            "FlatList"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/ImageGallery.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "FlatList"
+          ]
+        },
+        {
+          "file": "components/SearchBar.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "FlatList"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-03.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "03-lists-data-rendering",
+      "timestamp": "2026-08-06T07:08:55.774Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code uses a clear and consistent naming convention, making it easy to understand and maintain.",
+        "The use of TypeScript and React Native components is well-structured and follows best practices.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "The `PostFeed` component has a complex logic for handling loading and search functionality. Consider breaking it down into smaller, more manageable components.",
+        "The `ImageGallery` component uses a hardcoded list of images. Consider fetching images from a remote API or a data storage service for a more scalable solution.",
+        "The `SearchBar` component uses a `useState` hook to store the search query. Consider using a more robust state management solution, such as Redux or MobX, for larger applications."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are areas for improvement in terms of complexity and scalability. With some refactoring and optimization, this code can become even more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "03-lists-data-rendering",
+      "timestamp": "2026-08-06T07:08:55.774Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code uses a clear and consistent naming convention, making it easy to understand and maintain.",
+        "The use of TypeScript and React Native components is well-structured and follows best practices.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "The `PostFeed` component has a complex logic for handling loading and search functionality. Consider breaking it down into smaller, more manageable components.",
+        "The `ImageGallery` component uses a hardcoded list of images. Consider fetching images from a remote API or a data storage service for a more scalable solution.",
+        "The `SearchBar` component uses a `useState` hook to store the search query. Consider using a more robust state management solution, such as Redux or MobX, for larger applications."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are areas for improvement in terms of complexity and scalability. With some refactoring and optimization, this code can become even more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "04-forms-validation",
+    "challengeName": "Forms & Validation",
+    "timestamp": "2026-08-06T07:08:56.806Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 0
+    },
+    "totalScore": 62.5,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "04-forms-validation"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "04-forms-validation has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000143334,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1786000142452,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "TextInput"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/auth/login.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "app/auth/signup.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/MultiStepForm.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-04.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "04-forms-validation",
+      "timestamp": "2026-08-06T07:09:08.722Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4804, Requested 3909. Please try again in 27.13s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "04-forms-validation",
+      "timestamp": "2026-08-06T07:09:08.722Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4804, Requested 3909. Please try again in 27.13s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "05-api-integration",
+    "challengeName": "API Integration",
+    "timestamp": "2026-08-06T07:09:08.769Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 0
+    },
+    "totalScore": 62.5,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "05-api-integration"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "05-api-integration has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000154417,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1786000153511,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "useState",
+        "fetch"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "components/UserList.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "fetch"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/WeatherSearch.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "fetch"
+          ],
+          "patternsMissing": [
+            "useEffect"
+          ]
+        },
+        {
+          "file": "lib/api.ts",
+          "patternsFound": [
+            "fetch"
+          ],
+          "patternsMissing": [
+            "functionalComponent",
+            "useEffect",
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-05.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "05-api-integration",
+      "timestamp": "2026-08-06T07:09:19.610Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3706, Requested 3320. Please try again in 10.26s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "05-api-integration",
+      "timestamp": "2026-08-06T07:09:19.610Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3706, Requested 3320. Please try again in 10.26s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "06-async-storage",
+    "challengeName": "AsyncStorage",
+    "timestamp": "2026-08-06T07:09:19.752Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 88
+    },
+    "totalScore": 75.7,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "06-async-storage"
+              ],
+              "duration": 5,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "06-async-storage has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000165851,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-06.test.tsx",
+          "startTime": 1786000164905,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "useState",
+        "AsyncStorage"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "lib/storage.ts",
+          "patternsFound": [
+            "functionalComponent",
+            "AsyncStorage"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "useState"
+          ]
+        },
+        {
+          "file": "hooks/useAuthStorage.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "AsyncStorage"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "hooks/useThemeStorage.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "AsyncStorage"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-06.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "06-async-storage",
+      "timestamp": "2026-08-06T07:09:30.521Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent naming convention.",
+        "The use of TypeScript and async/await syntax makes the code easy to read and understand.",
+        "The separation of concerns between storage and authentication/theming logic is a good practice."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive. For example, `getNotes` could be renamed to `loadNotesFromStorage`.",
+        "The `useAuthStorage` and `useThemeStorage` hooks could be refactored to use a more consistent naming convention for their state variables (e.g., `authState` and `themeState` instead of `user` and `theme`).",
+        "The `useEffect` hooks in `useAuthStorage` and `useThemeStorage` could be improved by adding a dependency array to prevent unnecessary re-renders."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices for React Native development. However, there are some minor improvements that could be made to enhance readability and maintainability."
+    },
+    "aiResults": {
+      "challengeId": "06-async-storage",
+      "timestamp": "2026-08-06T07:09:30.521Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent naming convention.",
+        "The use of TypeScript and async/await syntax makes the code easy to read and understand.",
+        "The separation of concerns between storage and authentication/theming logic is a good practice."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive. For example, `getNotes` could be renamed to `loadNotesFromStorage`.",
+        "The `useAuthStorage` and `useThemeStorage` hooks could be refactored to use a more consistent naming convention for their state variables (e.g., `authState` and `themeState` instead of `user` and `theme`).",
+        "The `useEffect` hooks in `useAuthStorage` and `useThemeStorage` could be improved by adding a dependency array to prevent unnecessary re-renders."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows good practices for React Native development. However, there are some minor improvements that could be made to enhance readability and maintainability."
+    }
+  },
+  {
+    "challengeId": "07-mini-social-feed",
+    "challengeName": "Mini Social Feed (Capstone)",
+    "timestamp": "2026-08-06T07:09:31.513Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 0
+    },
+    "totalScore": 62.5,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "07-mini-social-feed"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "07-mini-social-feed has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786000177099,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-07.test.tsx",
+          "startTime": 1786000176359,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "FlatList",
+        "useState"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/(tabs)/feed.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "FlatList",
+            "useState"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "app/(tabs)/profile.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "FlatList",
+            "useState"
+          ]
+        },
+        {
+          "file": "app/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect"
+          ],
+          "patternsMissing": [
+            "FlatList",
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\e2e\\challenge-07.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "07-mini-social-feed",
+      "timestamp": "2026-08-06T07:09:42.370Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3319, Requested 2864. Please try again in 1.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    },
+    "aiResults": {
+      "challengeId": "07-mini-social-feed",
+      "timestamp": "2026-08-06T07:09:42.370Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3319, Requested 2864. Please try again in 1.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  }
+]
