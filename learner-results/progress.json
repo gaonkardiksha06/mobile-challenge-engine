@@ -1,30 +1,30 @@
 {
-  "lastUpdated": "2026-08-15T04:47:00.290Z",
+  "lastUpdated": "2026-08-15T08:26:01.058Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 90.5,
-    "completionPercentage": 17.1,
-    "badgeLevel": "silver",
+    "overallScore": 78.6,
+    "completionPercentage": 20,
+    "badgeLevel": "none",
     "totalChallenges": 35,
-    "completedChallenges": 6
+    "completedChallenges": 7
   },
   "courses": {
     "01-react-native-fundamentals": {
       "courseId": "01-react-native-fundamentals",
       "courseName": "React Native Fundamentals",
-      "averageScore": 92.7,
-      "completionPercentage": 85.7,
-      "badgeLevel": "silver",
+      "averageScore": 94.9,
+      "completionPercentage": 100,
+      "badgeLevel": "gold",
       "totalChallenges": 7,
-      "completedChallenges": 6,
+      "completedChallenges": 7,
       "challenges": {
         "01-expo-setup-basics": {
           "challengeId": "01-expo-setup-basics",
           "challengeName": "Expo Setup & Basics",
           "passed": true,
           "score": 97.45,
-          "lastRun": "2026-08-15T04:38:57.135Z",
+          "lastRun": "2026-08-15T08:14:23.505Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -39,7 +39,7 @@
           "challengeName": "Navigation System",
           "passed": true,
           "score": 98.2,
-          "lastRun": "2026-08-15T04:39:28.439Z",
+          "lastRun": "2026-08-15T08:15:30.564Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -53,14 +53,14 @@
           "challengeId": "03-lists-data-rendering",
           "challengeName": "Lists & Data Rendering",
           "passed": true,
-          "score": 83.2,
-          "lastRun": "2026-08-15T04:39:56.536Z",
+          "score": 98.2,
+          "lastRun": "2026-08-15T08:16:34.978Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 88
           }
         },
@@ -68,14 +68,14 @@
           "challengeId": "04-forms-validation",
           "challengeName": "Forms & Validation",
           "passed": true,
-          "score": 93.7,
-          "lastRun": "2026-08-15T04:44:07.679Z",
+          "score": 97.45,
+          "lastRun": "2026-08-15T08:18:08.131Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 75,
+            "e2eTests": 100,
             "aiReview": 83
           }
         },
@@ -84,7 +84,7 @@
           "challengeName": "API Integration",
           "passed": true,
           "score": 98.2,
-          "lastRun": "2026-08-15T04:45:17.240Z",
+          "lastRun": "2026-08-15T08:19:11.322Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -99,7 +99,7 @@
           "challengeName": "AsyncStorage",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-08-15T04:45:55.331Z",
+          "lastRun": "2026-08-15T08:20:17.662Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -112,16 +112,16 @@
         "07-mini-social-feed": {
           "challengeId": "07-mini-social-feed",
           "challengeName": "Mini Social Feed (Capstone)",
-          "passed": false,
-          "score": 77.5,
-          "lastRun": "2026-08-15T04:47:00.290Z",
+          "passed": true,
+          "score": 89.95,
+          "lastRun": "2026-08-15T08:22:46.566Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 50,
-            "aiReview": 0
+            "aiReview": 83
           }
         }
       }

@@ -1,9 +1,10 @@
 {
   "expo": {
-    "name": "RN Fundamentals",
-    "slug": "rn-fundamentals",
+    "name": "MyProfileApp",
+    "slug": "myprofileapp",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
     "scheme": "rnfundamentals",
     "userInterfaceStyle": "dark",
     "newArchEnabled": true,

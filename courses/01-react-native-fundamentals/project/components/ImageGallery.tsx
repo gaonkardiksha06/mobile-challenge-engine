@@ -1,77 +1,146 @@
-import { useState } from 'react';
-import { View, Text, Image, ScrollView, Pressable, StyleSheet } from 'react-native';
+import { useState, useEffect } from 'react';
+import {
+  View,
+  Text,
+  Image,
+  FlatList,
+  ScrollView,
+  Pressable,
+  ActivityIndicator,
+  StyleSheet,
+} from 'react-native';
 
-const GALLERY_IMAGES = [
-  { id: '1', uri: 'https://picsum.photos/400/300?random=1', label: 'Sunset' },
-  { id: '2', uri: 'https://picsum.photos/400/300?random=2', label: 'Mountains' },
-  { id: '3', uri: 'https://picsum.photos/400/300?random=3', label: 'City' },
-  { id: '4', uri: 'https://picsum.photos/400/300?random=4', label: 'Ocean' },
+type GalleryImage = {
+  id: string;
+  category: string;
+  uri: string;
+};
+
+const CATEGORIES = ['All', 'Nature', 'City', 'Food', 'Travel'];
+
+const MOCK_IMAGES: GalleryImage[] = [
+  { id: '1', category: 'Nature', uri: 'https://picsum.photos/seed/nature1/300' },
+  { id: '2', category: 'City', uri: 'https://picsum.photos/seed/city1/300' },
+  { id: '3', category: 'Food', uri: 'https://picsum.photos/seed/food1/300' },
+  { id: '4', category: 'Travel', uri: 'https://picsum.photos/seed/travel1/300' },
+  { id: '5', category: 'Nature', uri: 'https://picsum.photos/seed/nature2/300' },
+  { id: '6', category: 'City', uri: 'https://picsum.photos/seed/city2/300' },
 ];
 
-const CATEGORIES = ['All', 'Nature', 'Urban', 'Travel', 'Food', 'Tech'];
-
 export default function ImageGallery() {
-  const [activeCategory, setActiveCategory] = useState('All');
+  const [images, setImages] = useState<GalleryImage[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [selectedCategory, setSelectedCategory] = useState('All');
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setImages(MOCK_IMAGES);
+      setLoading(false);
+    }, 600);
+    return () => clearTimeout(timer);
+  }, []);
+
+  const filteredImages =
+    selectedCategory === 'All'
+      ? images
+      : images.filter((img) => img.category === selectedCategory);
 
   return (
     <View style={styles.container} testID="image-gallery">
-      <Text style={styles.sectionTitle}>Categories</Text>
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
-        contentContainerStyle={styles.categoryRow}
+        style={styles.categoryScroll}
+        contentContainerStyle={styles.categoryContent}
         testID="category-scroll"
       >
-        {CATEGORIES.map((cat) => (
+        {CATEGORIES.map((category) => (
           <Pressable
-            key={cat}
-            style={[styles.chip, activeCategory === cat && styles.chipActive]}
-            onPress={() => setActiveCategory(cat)}
-            testID={`category-${cat}`}
+            key={category}
+            onPress={() => setSelectedCategory(category)}
+            testID={`category-${category}`}
+            style={[
+              styles.categoryChip,
+              selectedCategory === category && styles.categoryChipActive,
+            ]}
           >
-            <Text style={[styles.chipText, activeCategory === cat && styles.chipTextActive]}>
-              {cat}
+            <Text
+              style={[
+                styles.categoryText,
+                selectedCategory === category && styles.categoryTextActive,
+              ]}
+            >
+              {category}
             </Text>
           </Pressable>
         ))}
       </ScrollView>
 
-      <Text style={styles.sectionTitle}>Gallery ({activeCategory})</Text>
-      <ScrollView testID="gallery-scroll">
-        {GALLERY_IMAGES.map((img) => (
-          <View key={img.id} style={styles.imageCard}>
-            <Image source={{ uri: img.uri }} style={styles.image} testID={`gallery-image-${img.id}`} />
-            <Text style={styles.imageLabel}>{img.label}</Text>
-          </View>
-        ))}
-      </ScrollView>
+      {loading ? (
+        <View style={styles.centerState} testID="gallery-loading">
+          <ActivityIndicator color="#38bdf8" size="large" />
+        </View>
+      ) : filteredImages.length === 0 ? (
+        <View style={styles.centerState} testID="empty-state">
+          <Text style={styles.emptyText}>No Data</Text>
+        </View>
+      ) : (
+        <FlatList
+          data={filteredImages}
+          keyExtractor={(item) => item.id}
+          numColumns={2}
+          testID="gallery-scroll"
+          columnWrapperStyle={styles.row}
+          contentContainerStyle={styles.listContent}
+          renderItem={({ item }) => (
+            <Image source={{ uri: item.uri }} style={styles.image} testID={`gallery-image-${item.id}`} />
+          )}
+        />
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: { width: '100%' },
-  sectionTitle: {
-    fontSize: 18,
-    fontWeight: '700',
-    color: '#f8fafc',
-    marginBottom: 12,
-    marginTop: 8,
-  },
-  categoryRow: { paddingBottom: 16, gap: 8 },
-  chip: {
-    backgroundColor: '#1e293b',
+  categoryScroll: { marginBottom: 16 },
+  categoryContent: { paddingRight: 8, gap: 8 },
+  categoryChip: {
     paddingHorizontal: 16,
     paddingVertical: 8,
-    borderRadius: 20,
-    marginRight: 8,
+    borderRadius: 100,
+    backgroundColor: '#1e293b',
     borderWidth: 1,
     borderColor: '#334155',
+    marginRight: 8,
   },
-  chipActive: { backgroundColor: '#38bdf8', borderColor: '#38bdf8' },
-  chipText: { color: '#94a3b8', fontWeight: '600' },
-  chipTextActive: { color: '#0f172a' },
-  imageCard: { marginBottom: 16 },
-  image: { width: '100%', height: 200, borderRadius: 12 },
-  imageLabel: { marginTop: 8, fontSize: 14, color: '#94a3b8' },
+  categoryChipActive: {
+    backgroundColor: '#38bdf8',
+    borderColor: '#38bdf8',
+  },
+  categoryText: {
+    color: '#94a3b8',
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  categoryTextActive: {
+    color: '#0f172a',
+  },
+  row: { gap: 12, marginBottom: 12 },
+  listContent: { paddingBottom: 12 },
+  image: {
+    flex: 1,
+    aspectRatio: 1,
+    borderRadius: 12,
+    backgroundColor: '#1e293b',
+  },
+  centerState: {
+    paddingVertical: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  emptyText: {
+    color: '#94a3b8',
+    fontSize: 15,
+  },
 });

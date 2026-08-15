@@ -1,36 +1,30 @@
 {
-  "name": "mobile-challenge-engine",
+  "name": "profile-app",
   "version": "1.0.0",
-  "description": "Automated skill assessment for React Native, backend, and mobile deployment pathways",
-  "type": "module",
+  "main": "expo-router/entry",
   "scripts": {
-    "review:all": "node global-review/run-all-reviews.js",
-    "review:changed": "node scripts/run-review-changed.js",
-    "review:course": "node scripts/run-review-course.js",
-    "review:challenge": "node scripts/run-review-challenge.js",
-    "progress:update": "node scripts/update-progress.js",
-    "test:ai-review": "node scripts/test-ai-review.js",
-    "e2e": "node scripts/e2e-test.js",
-    "setup": "node scripts/setup.js",
-    "generate:courses": "node scripts/generate-mobile-courses.js",
-    "test": "echo \"Run tests in individual course projects\"",
-    "dashboard": "cd dashboard && node server.js",
-    "dashboard:build": "cd dashboard/app && npm install && npm run build",
-    "dashboard:api": "cd dashboard && node server.js",
-    "dashboard:ui:dev": "cd dashboard/app && npm run dev",
-    "dashboard:dev": "concurrently -n api,ui -c blue,green \"npm run dashboard:api\" \"npm run dashboard:ui:dev\""
+    "start": "expo start",
+    "web": "expo start --web",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "expo": "~51.0.0",
+    "expo-router": "~3.5.0",
+    "expo-splash-screen": "~0.27.0",
+    "expo-status-bar": "~1.12.0",
+    "@expo-google-fonts/inter": "^0.2.3",
+    "react": "18.2.0",
+    "react-native": "0.74.0",
+    "react-native-safe-area-context": "4.10.1",
+    "react-native-screens": "3.31.1"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@babel/core": "^7.20.0",
+    "eslint": "^8.57.0",
+    "eslint-config-expo": "^7.0.0",
+    "typescript": "^5.3.0"
   },
-  "keywords": [
-    "education",
-    "react-native",
-    "expo",
-    "nodejs",
-    "mobile",
-    "challenge-engine"
-  ],
-  "author": "",
-  "license": "MIT"
+  "private": true
 }

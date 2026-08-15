@@ -1,89 +1,88 @@
-import { useEffect, useState, useMemo } from 'react';
-import { View, Text, FlatList, ActivityIndicator, StyleSheet } from 'react-native';
+import { useState, useEffect } from 'react';
+import { View, Text, Image, FlatList, ActivityIndicator, StyleSheet } from 'react-native';
 import SearchBar from './SearchBar';
 
 type Post = {
   id: string;
   username: string;
-  content: string;
+  avatar: string;
+  caption: string;
   likes: number;
 };
 
-const SAMPLE_POSTS: Post[] = [
-  { id: '1', username: 'alex_dev', content: 'Just shipped my first Expo app!', likes: 42 },
-  { id: '2', username: 'mobile_guru', content: 'FlatList makes scrolling feeds easy.', likes: 128 },
-  { id: '3', username: 'sakshi_dev', content: 'Learning React Native fundamentals.', likes: 56 },
-  { id: '4', username: 'ui_crafts', content: 'Dark mode + rounded cards look great.', likes: 91 },
-  { id: '5', username: 'api_ninja', content: 'fetch + useEffect = happy data loading.', likes: 33 },
+const MOCK_POSTS: Post[] = [
+  { id: '1', username: '@codewithnina', avatar: 'https://i.pravatar.cc/100?u=nina', caption: 'Learning React Native has been fun.', likes: 42 },
+  { id: '2', username: '@devraj', avatar: 'https://i.pravatar.cc/100?u=devraj', caption: 'Flexbox finally clicked for me.', likes: 84 },
+  { id: '3', username: '@sakshi_dev', avatar: 'https://i.pravatar.cc/100?u=sakshi_dev', caption: 'Shipped a new feature today 🚀', likes: 128 },
+  { id: '4', username: '@aisha.codes', avatar: 'https://i.pravatar.cc/100?u=aisha', caption: 'Dark mode everything.', likes: 57 },
 ];
 
 export default function PostFeed() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState(true);
-  const [searchQuery, setSearchQuery] = useState('');
+  const [query, setQuery] = useState('');
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setPosts(SAMPLE_POSTS);
+      setPosts(MOCK_POSTS);
       setLoading(false);
-    }, 800);
+    }, 600);
     return () => clearTimeout(timer);
   }, []);
 
-  const filteredPosts = useMemo(() => {
-    const q = searchQuery.trim().toLowerCase();
-    if (!q) return posts;
-    return posts.filter(
-      (p) => p.username.toLowerCase().includes(q) || p.content.toLowerCase().includes(q)
-    );
-  }, [posts, searchQuery]);
-
-  if (loading) {
-    return (
-      <View style={styles.centered} testID="loading-spinner">
-        <ActivityIndicator size="large" color="#38bdf8" />
-        <Text style={styles.loadingText}>Loading posts...</Text>
-      </View>
-    );
-  }
+  const filteredPosts = posts.filter(
+    (post) =>
+      post.username.toLowerCase().includes(query.toLowerCase()) ||
+      post.caption.toLowerCase().includes(query.toLowerCase())
+  );
 
   return (
     <View style={styles.container} testID="post-feed">
-      <SearchBar onSearch={setSearchQuery} />
-      <FlatList
-        data={filteredPosts}
-        keyExtractor={(item) => item.id}
-        testID="post-list"
-        ListEmptyComponent={
-          <View style={styles.empty} testID="empty-state">
-            <Text style={styles.emptyText}>No Data</Text>
-          </View>
-        }
-        renderItem={({ item }) => (
-          <View style={styles.card} testID={`post-${item.id}`}>
-            <Text style={styles.username}>@{item.username}</Text>
-            <Text style={styles.content}>{item.content}</Text>
-            <Text style={styles.likes}>{item.likes} likes</Text>
-          </View>
-        )}
-      />
+      <SearchBar onSearch={setQuery} placeholder="Search posts or usernames" />
+
+      {loading ? (
+        <View style={styles.centerState} testID="feed-loading">
+          <ActivityIndicator color="#38bdf8" size="large" />
+        </View>
+      ) : filteredPosts.length === 0 ? (
+        <View style={styles.centerState} testID="empty-state">
+          <Text style={styles.emptyText}>No Data</Text>
+        </View>
+      ) : (
+        <FlatList
+          data={filteredPosts}
+          keyExtractor={(item) => item.id}
+          testID="post-list"
+          renderItem={({ item }) => (
+            <View style={styles.post} testID={`post-${item.id}`}>
+              <Image source={{ uri: item.avatar }} style={styles.avatar} />
+              <View style={styles.postBody}>
+                <Text style={styles.username}>{item.username}</Text>
+                <Text style={styles.caption}>{item.caption}</Text>
+                <Text style={styles.likes}>{item.likes} likes</Text>
+              </View>
+            </View>
+          )}
+        />
+      )}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, width: '100%' },
-  centered: { flex: 1, justifyContent: 'center', alignItems: 'center', padding: 24 },
-  loadingText: { marginTop: 12, color: '#94a3b8', fontSize: 16 },
-  card: {
+  container: { width: '100%' },
+  post: {
+    flexDirection: 'row',
     backgroundColor: '#1e293b',
     borderRadius: 12,
-    padding: 16,
+    padding: 14,
     marginBottom: 12,
   },
-  username: { fontSize: 16, fontWeight: '700', color: '#38bdf8', marginBottom: 6 },
-  content: { fontSize: 15, color: '#f8fafc', lineHeight: 22, marginBottom: 8 },
-  likes: { fontSize: 13, color: '#94a3b8' },
-  empty: { padding: 32, alignItems: 'center' },
-  emptyText: { fontSize: 18, color: '#64748b', fontWeight: '600' },
+  avatar: { width: 44, height: 44, borderRadius: 22, marginRight: 12 },
+  postBody: { flex: 1 },
+  username: { color: '#f8fafc', fontWeight: '700', fontSize: 14, marginBottom: 4 },
+  caption: { color: '#cbd5e1', fontSize: 14, marginBottom: 6, lineHeight: 19 },
+  likes: { color: '#94a3b8', fontSize: 13 },
+  centerState: { paddingVertical: 40, alignItems: 'center', justifyContent: 'center' },
+  emptyText: { color: '#94a3b8', fontSize: 15 },
 });

@@ -2,22 +2,22 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 6/8/2026, 12:39:42 pm*
+*Auto-updated when you run review. Last run: 15/8/2026, 1:55:58 pm*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 1 / 7 (14.3%) |
-| Average score | 72% |
+| Challenges completed | 7 / 7 (100%) |
+| Average score | 94.9% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
 | Expo Setup & Basics | Expo, Components, Flexbox, Styling, View, Text, Image, Button | Passed |
-| Navigation System | React Navigation, Stack navigation, Tabs, Route params, Dynamic headers | Not passed |
-| Lists & Data Rendering | FlatList, ScrollView, map(), Search filter, Empty states, Loading | Not passed |
-| Forms & Validation | TextInput, useState, Form validation, Multi-step forms | Not passed |
-| API Integration | fetch, async/await, useEffect, Loading states, Error handling | Not passed |
-| AsyncStorage | AsyncStorage, Local persistence, Theme preference, Auto-login | Not passed |
-| Mini Social Feed (Capstone) | Auth UI, Navigation, API posts, AsyncStorage, FlatList, Profile | Not passed |
+| Navigation System | React Navigation, Stack navigation, Tabs, Route params, Dynamic headers | Passed |
+| Lists & Data Rendering | FlatList, ScrollView, map(), Search filter, Empty states, Loading | Passed |
+| Forms & Validation | TextInput, useState, Form validation, Multi-step forms | Passed |
+| API Integration | fetch, async/await, useEffect, Loading states, Error handling | Passed |
+| AsyncStorage | AsyncStorage, Local persistence, Theme preference, Auto-login | Passed |
+| Mini Social Feed (Capstone) | Auth UI, Navigation, API posts, AsyncStorage, FlatList, Profile | Passed |
 
 ## Getting started
 
