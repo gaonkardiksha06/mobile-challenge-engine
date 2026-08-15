@@ -1,33 +1,33 @@
 {
-  "lastUpdated": "2026-08-06T07:15:43.560Z",
+  "lastUpdated": "2026-08-15T04:47:00.290Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 72.9,
-    "completionPercentage": 2.9,
-    "badgeLevel": "none",
+    "overallScore": 90.5,
+    "completionPercentage": 17.1,
+    "badgeLevel": "silver",
     "totalChallenges": 35,
-    "completedChallenges": 1
+    "completedChallenges": 6
   },
   "courses": {
     "01-react-native-fundamentals": {
       "courseId": "01-react-native-fundamentals",
       "courseName": "React Native Fundamentals",
-      "averageScore": 72,
-      "completionPercentage": 14.3,
-      "badgeLevel": "none",
+      "averageScore": 92.7,
+      "completionPercentage": 85.7,
+      "badgeLevel": "silver",
       "totalChallenges": 7,
-      "completedChallenges": 1,
+      "completedChallenges": 6,
       "challenges": {
         "01-expo-setup-basics": {
           "challengeId": "01-expo-setup-basics",
           "challengeName": "Expo Setup & Basics",
           "passed": true,
-          "score": 89.95,
-          "lastRun": "2026-08-06T07:07:24.236Z",
+          "score": 97.45,
+          "lastRun": "2026-08-15T04:38:57.135Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 100,
@@ -37,90 +37,90 @@
         "02-navigation-system": {
           "challengeId": "02-navigation-system",
           "challengeName": "Navigation System",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:08:28.316Z",
+          "passed": true,
+          "score": 98.2,
+          "lastRun": "2026-08-15T04:39:28.439Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 88
           }
         },
         "03-lists-data-rendering": {
           "challengeId": "03-lists-data-rendering",
           "challengeName": "Lists & Data Rendering",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:08:44.411Z",
+          "passed": true,
+          "score": 83.2,
+          "lastRun": "2026-08-15T04:39:56.536Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
-            "architecture": 100,
-            "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
-          }
-        },
-        "04-forms-validation": {
-          "challengeId": "04-forms-validation",
-          "challengeName": "Forms & Validation",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:08:56.806Z",
-          "scores": {
-            "functionalTests": 100,
-            "codeQuality": 50,
-            "architecture": 100,
-            "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
-          }
-        },
-        "05-api-integration": {
-          "challengeId": "05-api-integration",
-          "challengeName": "API Integration",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:09:08.769Z",
-          "scores": {
-            "functionalTests": 100,
-            "codeQuality": 50,
-            "architecture": 100,
-            "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
-          }
-        },
-        "06-async-storage": {
-          "challengeId": "06-async-storage",
-          "challengeName": "AsyncStorage",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:09:19.752Z",
-          "scores": {
-            "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 0,
             "aiReview": 88
           }
         },
+        "04-forms-validation": {
+          "challengeId": "04-forms-validation",
+          "challengeName": "Forms & Validation",
+          "passed": true,
+          "score": 93.7,
+          "lastRun": "2026-08-15T04:44:07.679Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 75,
+            "aiReview": 83
+          }
+        },
+        "05-api-integration": {
+          "challengeId": "05-api-integration",
+          "challengeName": "API Integration",
+          "passed": true,
+          "score": 98.2,
+          "lastRun": "2026-08-15T04:45:17.240Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 88
+          }
+        },
+        "06-async-storage": {
+          "challengeId": "06-async-storage",
+          "challengeName": "AsyncStorage",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-15T04:45:55.331Z",
+          "scores": {
+            "functionalTests": 100,
+            "codeQuality": 100,
+            "architecture": 100,
+            "bestPractices": 100,
+            "e2eTests": 100,
+            "aiReview": 0
+          }
+        },
         "07-mini-social-feed": {
           "challengeId": "07-mini-social-feed",
           "challengeName": "Mini Social Feed (Capstone)",
           "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:09:31.513Z",
+          "score": 77.5,
+          "lastRun": "2026-08-15T04:47:00.290Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 50,
             "aiReview": 0
           }
         }

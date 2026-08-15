@@ -1,62 +1,63 @@
 {
   "courseId": "01-react-native-fundamentals",
   "courseName": "React Native Fundamentals",
-  "lastUpdated": "2026-08-06T07:09:42.413Z",
+  "lastUpdated": "2026-08-15T04:51:07.370Z",
   "totalChallenges": 7,
-  "completedChallenges": 1,
-  "averageScore": 72,
-  "completionPercentage": 14.3,
-  "badgeLevel": "none",
+  "completedChallenges": 6,
+  "averageScore": 90.5,
+  "completionPercentage": 85.7,
+  "badgeLevel": "silver",
   "challengeResults": [
     {
       "challengeId": "01-expo-setup-basics",
       "challengeName": "Expo Setup & Basics",
-      "score": 89.95,
+      "score": 97.45,
       "passed": true
     },
     {
       "challengeId": "02-navigation-system",
       "challengeName": "Navigation System",
-      "score": 75.7,
-      "passed": false
+      "score": 98.2,
+      "passed": true
     },
     {
       "challengeId": "03-lists-data-rendering",
       "challengeName": "Lists & Data Rendering",
-      "score": 74.95,
-      "passed": false
+      "score": 83.2,
+      "passed": true
     },
     {
       "challengeId": "04-forms-validation",
       "challengeName": "Forms & Validation",
-      "score": 62.5,
-      "passed": false
+      "score": 93.7,
+      "passed": true
     },
     {
       "challengeId": "05-api-integration",
       "challengeName": "API Integration",
-      "score": 62.5,
-      "passed": false
+      "score": 98.2,
+      "passed": true
     },
     {
       "challengeId": "06-async-storage",
       "challengeName": "AsyncStorage",
-      "score": 75.7,
-      "passed": false
+      "score": 85,
+      "passed": true
     },
     {
       "challengeId": "07-mini-social-feed",
       "challengeName": "Mini Social Feed (Capstone)",
-      "score": 62.5,
+      "score": 77.5,
       "passed": false
     }
   ],
   "skillStrengths": [
-    "Expo Setup & Basics"
-  ],
-  "improvementAreas": [
+    "Expo Setup & Basics",
+    "Navigation System",
+    "Lists & Data Rendering",
     "Forms & Validation",
     "API Integration",
-    "Mini Social Feed (Capstone)"
-  ]
+    "AsyncStorage"
+  ],
+  "improvementAreas": []
 }
