@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Stack, useRouter, useSegments } from 'expo-router';
-import { useAuthStorage } from '../hooks/useAuthStorage';
+import { AuthProvider, useAuthStorage } from '../hooks/useAuthStorage';
 
 const headerStyle = {
   backgroundColor: '#1e293b',
@@ -13,9 +13,9 @@ const headerTitleStyle = {
   fontSize: 18,
 };
 
-export default function RootLayout() {
+function RootLayoutNav() {
   const { isLoggedIn, loading } = useAuthStorage();
-  const segments = useSegments();
+  const segments = useSegments() as unknown as string[];
   const router = useRouter();
 
   useEffect(() => {
@@ -52,5 +52,13 @@ export default function RootLayout() {
       />
       <Stack.Screen name="challenge/[id]" options={{ title: 'Challenge' }} />
     </Stack>
+  );
+}
+
+export default function RootLayout() {
+  return (
+    <AuthProvider>
+      <RootLayoutNav />
+    </AuthProvider>
   );
 }
