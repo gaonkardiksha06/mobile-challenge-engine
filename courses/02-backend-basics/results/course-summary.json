@@ -1,11 +1,11 @@
 {
   "courseId": "02-backend-basics",
   "courseName": "Backend Basics",
-  "lastUpdated": "2026-08-18T05:55:15.030Z",
+  "lastUpdated": "2026-08-18T09:47:56.014Z",
   "totalChallenges": 5,
-  "completedChallenges": 1,
-  "averageScore": 73,
-  "completionPercentage": 20,
+  "completedChallenges": 2,
+  "averageScore": 76,
+  "completionPercentage": 40,
   "badgeLevel": "none",
   "challengeResults": [
     {
@@ -17,8 +17,8 @@
     {
       "challengeId": "02-express-apis",
       "challengeName": "Express.js APIs",
-      "score": 70,
-      "passed": false
+      "score": 85,
+      "passed": true
     },
     {
       "challengeId": "03-mongodb",
@@ -40,7 +40,8 @@
     }
   ],
   "skillStrengths": [
-    "Node.js Basics"
+    "Node.js Basics",
+    "Express.js APIs"
   ],
   "improvementAreas": []
 }

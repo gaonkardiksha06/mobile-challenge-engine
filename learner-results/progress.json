@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-18T05:55:15.664Z",
+  "lastUpdated": "2026-08-18T09:47:56.740Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 79.4,
-    "completionPercentage": 22.9,
+    "overallScore": 80,
+    "completionPercentage": 25.7,
     "badgeLevel": "none",
     "totalChallenges": 35,
-    "completedChallenges": 8
+    "completedChallenges": 9
   },
   "courses": {
     "01-react-native-fundamentals": {
@@ -129,18 +129,18 @@
     "02-backend-basics": {
       "courseId": "02-backend-basics",
       "courseName": "Backend Basics",
-      "averageScore": 73,
-      "completionPercentage": 20,
+      "averageScore": 76,
+      "completionPercentage": 40,
       "badgeLevel": "none",
       "totalChallenges": 5,
-      "completedChallenges": 1,
+      "completedChallenges": 2,
       "challenges": {
         "01-nodejs-basics": {
           "challengeId": "01-nodejs-basics",
           "challengeName": "Node.js Basics",
           "passed": true,
           "score": 85,
-          "lastRun": "2026-08-18T05:54:33.470Z",
+          "lastRun": "2026-08-18T09:46:52.115Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -153,15 +153,15 @@
         "02-express-apis": {
           "challengeId": "02-express-apis",
           "challengeName": "Express.js APIs",
-          "passed": false,
-          "score": 70,
-          "lastRun": "2026-08-18T05:54:50.257Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-08-18T09:47:13.365Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
@@ -170,7 +170,7 @@
           "challengeName": "MongoDB",
           "passed": false,
           "score": 70,
-          "lastRun": "2026-08-18T05:54:58.156Z",
+          "lastRun": "2026-08-18T09:47:32.787Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -185,7 +185,7 @@
           "challengeName": "JWT Authentication",
           "passed": false,
           "score": 70,
-          "lastRun": "2026-08-18T05:55:04.030Z",
+          "lastRun": "2026-08-18T09:47:42.296Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
@@ -200,7 +200,7 @@
           "challengeName": "Blog Backend API (Capstone)",
           "passed": false,
           "score": 70,
-          "lastRun": "2026-08-18T05:55:09.160Z",
+          "lastRun": "2026-08-18T09:47:49.546Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
