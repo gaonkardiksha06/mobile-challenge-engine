@@ -186,15 +186,19 @@ Results are written to:
 
 
 
+
+
+
+
 ## 📈 Progress Summary
 
-**Last updated:** 15/8/2026, 3:16:54 pm
+**Last updated:** 18/8/2026, 11:25:15 am
 
 ### Pathway
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 7 / 35 (20%) |
+| Challenges completed | 8 / 35 (22.9%) |
 | Overall score | 79.4% |
 
 ### By course
@@ -202,7 +206,7 @@ Results are written to:
 | Course | Completed | Score | Status |
 |--------|-----------|-------|--------|
 | React Native Fundamentals | 7/7 (100%) | 98.1% | Pass |
-| Backend Basics | 0/5 (0%) | 73.1% | Fail |
+| Backend Basics | 1/5 (20%) | 73% | Fail |
 | Advanced React Native | 0/6 (0%) | 73.4% | Fail |
 | Challenge Missions | 0/14 (0%) | 71.8% | Fail |
 | Deployment | 0/3 (0%) | 75% | Fail |

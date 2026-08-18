@@ -2,17 +2,17 @@
   {
     "challengeId": "01-nodejs-basics",
     "challengeName": "Node.js Basics",
-    "timestamp": "2026-08-06T07:09:47.282Z",
+    "timestamp": "2026-08-18T05:54:33.470Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -28,7 +28,7 @@
               "ancestorTitles": [
                 "01-nodejs-basics"
               ],
-              "duration": 4,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "01-nodejs-basics passes baseline",
@@ -40,20 +40,83 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000193380,
+          "endTime": 1787032478702,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1786000192885,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1787032478418,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\fs-utils.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\math.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\server.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -99,63 +162,308 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-01.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 7,
+      "passedTests": 7,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-01.spec.ts",
+          "file": "challenge-01.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 01 - Node.js Basics API",
+              "file": "challenge-01.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "GET / returns the API welcome message and route list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 94,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:48.955Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-046b9f2336f1d02cfc39",
+                  "file": "challenge-01.spec.ts",
+                  "line": 4,
+                  "column": 3
+                },
+                {
+                  "title": "GET /notes returns current file content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 24,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.115Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-71f26a44c1926adaa1a6",
+                  "file": "challenge-01.spec.ts",
+                  "line": 13,
+                  "column": 3
+                },
+                {
+                  "title": "POST /notes overwrites the notes file",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 35,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.157Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-34afc161208a34ab993a",
+                  "file": "challenge-01.spec.ts",
+                  "line": 21,
+                  "column": 3
+                },
+                {
+                  "title": "POST /notes/append adds a line without erasing existing content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 54,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.208Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-0d42ad8e106ec04086e7",
+                  "file": "challenge-01.spec.ts",
+                  "line": 32,
+                  "column": 3
+                },
+                {
+                  "title": "GET /notes/stats returns computed statistics for current content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 36,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.280Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-97c9d3a15fc131444ab0",
+                  "file": "challenge-01.spec.ts",
+                  "line": 48,
+                  "column": 3
+                },
+                {
+                  "title": "POST /notes/append rejects an empty line",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.331Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-edccfe5fe1ec4d13affa",
+                  "file": "challenge-01.spec.ts",
+                  "line": 61,
+                  "column": 3
+                },
+                {
+                  "title": "unknown route returns 404",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T05:54:49.355Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-8654df99a3395fb7d2d9",
+                  "file": "challenge-01.spec.ts",
+                  "line": 68,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-06T07:09:58.922Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:54:49.997Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a logical organization of features.",
-        "The use of TypeScript and JavaScript patterns is appropriate for Node.js.",
-        "The code includes automated testing props for interactive elements."
-      ],
-      "improvements": [
-        "The `readNotesFile` function catches all errors, which may mask bugs. Consider catching specific errors instead.",
-        "The `writeNotesFile` function creates the directory recursively, but does not check if the file already exists. Consider adding a check to avoid overwriting existing files.",
-        "The `server.js` file includes a commented-out console.log statement. Consider removing it to avoid potential issues in production environments."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Node.js development. However, there are a few areas that can be improved to make the code more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-06T07:09:58.922Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:54:49.997Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a logical organization of features.",
-        "The use of TypeScript and JavaScript patterns is appropriate for Node.js.",
-        "The code includes automated testing props for interactive elements."
-      ],
-      "improvements": [
-        "The `readNotesFile` function catches all errors, which may mask bugs. Consider catching specific errors instead.",
-        "The `writeNotesFile` function creates the directory recursively, but does not check if the file already exists. Consider adding a check to avoid overwriting existing files.",
-        "The `server.js` file includes a commented-out console.log statement. Consider removing it to avoid potential issues in production environments."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Node.js development. However, there are a few areas that can be improved to make the code more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "02-express-apis",
     "challengeName": "Express.js APIs",
-    "timestamp": "2026-08-06T07:10:00.523Z",
+    "timestamp": "2026-08-18T05:54:50.257Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 88
+      "aiReview": 0
     },
-    "totalScore": 75.7,
+    "totalScore": 70,
     "passed": false,
     "errors": [],
     "warnings": [],
@@ -172,7 +480,7 @@
               "ancestorTitles": [
                 "02-express-apis"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "02-express-apis passes baseline",
@@ -184,20 +492,83 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000205648,
+          "endTime": 1787032494710,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1786000205245,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1787032494432,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\logger.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\notes.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -245,61 +616,47 @@
     "e2eResults": {
       "score": 0,
       "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-02.spec.ts",
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-02.spec.ts",
       "details": []
     },
     "aiReviewResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-06T07:10:10.714Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:54:58.072Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between different modules.",
-        "The use of TypeScript and Express.js is well-implemented, with proper handling of errors and middleware.",
-        "The code includes automated tests, which is a great practice for ensuring the quality of the code."
-      ],
-      "improvements": [
-        "The `notesCache` variable in `src/routes/notes.js` is not properly synchronized, which could lead to data inconsistencies. Consider using a more robust caching mechanism, such as Redis or a database.",
-        "The `errorHandler` function in `src/middleware/logger.js` does not handle errors properly. It should be modified to handle errors in a more robust way, such as by logging the error and sending a response to the client.",
-        "The code does not include any input validation for the `title` and `body` fields in the `POST /api/notes` endpoint. Consider adding validation to ensure that these fields are properly formatted and do not contain malicious data."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are some areas that need improvement. With some additional attention to caching, error handling, and input validation, this code could be even more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-06T07:10:10.714Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:54:58.072Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between different modules.",
-        "The use of TypeScript and Express.js is well-implemented, with proper handling of errors and middleware.",
-        "The code includes automated tests, which is a great practice for ensuring the quality of the code."
-      ],
-      "improvements": [
-        "The `notesCache` variable in `src/routes/notes.js` is not properly synchronized, which could lead to data inconsistencies. Consider using a more robust caching mechanism, such as Redis or a database.",
-        "The `errorHandler` function in `src/middleware/logger.js` does not handle errors properly. It should be modified to handle errors in a more robust way, such as by logging the error and sending a response to the client.",
-        "The code does not include any input validation for the `title` and `body` fields in the `POST /api/notes` endpoint. Consider adding validation to ensure that these fields are properly formatted and do not contain malicious data."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are some areas that need improvement. With some additional attention to caching, error handling, and input validation, this code could be even more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "03-mongodb",
     "challengeName": "MongoDB",
-    "timestamp": "2026-08-06T07:10:11.773Z",
+    "timestamp": "2026-08-18T05:54:58.156Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 88
+      "aiReview": 0
     },
-    "totalScore": 75.7,
+    "totalScore": 70,
     "passed": false,
     "errors": [],
     "warnings": [],
@@ -316,7 +673,7 @@
               "ancestorTitles": [
                 "03-mongodb"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "03-mongodb passes baseline",
@@ -328,20 +685,83 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000216670,
+          "endTime": 1787032501054,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1786000216223,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1787032500861,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\db.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\models\\User.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\users.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -388,61 +808,47 @@
     "e2eResults": {
       "score": 0,
       "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-03.spec.ts",
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-03.spec.ts",
       "details": []
     },
     "aiReviewResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-06T07:10:21.916Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:55:03.977Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript is a good practice for a Node.js project.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "The `connectDB` function in `src/db.js` can be improved by adding error handling for the case where the connection is not established.",
-        "In `src/routes/users.js`, the error handling in the catch blocks can be improved by providing more informative error messages.",
-        "The `User` model in `src/models/User.js` can be improved by adding validation for the passwordHash field to ensure it meets the required complexity."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-06T07:10:21.916Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:55:03.977Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript is a good practice for a Node.js project.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "The `connectDB` function in `src/db.js` can be improved by adding error handling for the case where the connection is not established.",
-        "In `src/routes/users.js`, the error handling in the catch blocks can be improved by providing more informative error messages.",
-        "The `User` model in `src/models/User.js` can be improved by adding validation for the passwordHash field to ensure it meets the required complexity."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and maintainable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "04-jwt-authentication",
     "challengeName": "JWT Authentication",
-    "timestamp": "2026-08-06T07:10:22.675Z",
+    "timestamp": "2026-08-18T05:55:04.030Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 88
+      "aiReview": 0
     },
-    "totalScore": 75.7,
+    "totalScore": 70,
     "passed": false,
     "errors": [],
     "warnings": [],
@@ -459,7 +865,7 @@
               "ancestorTitles": [
                 "04-jwt-authentication"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "04-jwt-authentication passes baseline",
@@ -471,20 +877,63 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000227428,
+          "endTime": 1787032506475,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1786000227012,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1787032506283,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -525,61 +974,47 @@
     "e2eResults": {
       "score": 0,
       "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-04.spec.ts",
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-04.spec.ts",
       "details": []
     },
     "aiReviewResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-06T07:10:31.958Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:55:09.110Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the router and middleware.",
-        "The use of TypeScript and JavaScript patterns appropriate for Node.js is a good practice.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "In the `auth.js` file, the `requireAuth` function can be improved by adding a check for the `req.user` property before calling `jwt.verify` to avoid potential errors.",
-        "In the `auth.js` file, the `signToken` function can be improved by adding a check for the `payload` parameter to ensure it's an object before calling `jwt.sign`.",
-        "In the `auth.js` file, the `JWT_SECRET` variable can be moved to an environment variable or a configuration file to make it easier to manage and secure."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-documented, but there are some areas for improvement to make it more robust and secure. With a few tweaks, this code can be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-06T07:10:31.958Z",
-      "score": 88,
+      "timestamp": "2026-08-18T05:55:09.110Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the router and middleware.",
-        "The use of TypeScript and JavaScript patterns appropriate for Node.js is a good practice.",
-        "The code is well-documented with clear and concise comments."
-      ],
-      "improvements": [
-        "In the `auth.js` file, the `requireAuth` function can be improved by adding a check for the `req.user` property before calling `jwt.verify` to avoid potential errors.",
-        "In the `auth.js` file, the `signToken` function can be improved by adding a check for the `payload` parameter to ensure it's an object before calling `jwt.sign`.",
-        "In the `auth.js` file, the `JWT_SECRET` variable can be moved to an environment variable or a configuration file to make it easier to manage and secure."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-documented, but there are some areas for improvement to make it more robust and secure. With a few tweaks, this code can be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "05-blog-backend-api",
     "challengeName": "Blog Backend API (Capstone)",
-    "timestamp": "2026-08-06T07:10:32.926Z",
+    "timestamp": "2026-08-18T05:55:09.160Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
       "aiReview": 0
     },
-    "totalScore": 62.5,
+    "totalScore": 70,
     "passed": false,
     "errors": [],
     "warnings": [],
@@ -596,7 +1031,7 @@
               "ancestorTitles": [
                 "05-blog-backend-api"
               ],
-              "duration": 10,
+              "duration": 1,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "05-blog-backend-api passes baseline",
@@ -608,20 +1043,83 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000237421,
+          "endTime": 1787032511788,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1786000237019,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1787032511601,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\posts.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": [
+            {
+              "ruleId": "no-extra-semi",
+              "replacedBy": []
+            },
+            {
+              "ruleId": "no-mixed-spaces-and-tabs",
+              "replacedBy": []
+            }
+          ]
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -674,12 +1172,12 @@
     "e2eResults": {
       "score": 0,
       "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-05.spec.ts",
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-05.spec.ts",
       "details": []
     },
     "aiReviewResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-06T07:10:42.458Z",
+      "timestamp": "2026-08-18T05:55:14.984Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -687,11 +1185,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3947, Requested 2722. Please try again in 6.69s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-06T07:10:42.458Z",
+      "timestamp": "2026-08-18T05:55:14.984Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -699,7 +1197,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3947, Requested 2722. Please try again in 6.69s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   }
 ]

@@ -1,20 +1,48 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const NOTES_PATH = path.join(__dirname, '..', 'data', 'notes.json');
+const DATA_DIR = path.join(__dirname, '..', 'data');
+const NOTES_FILE = path.join(DATA_DIR, 'notes.txt');
 
-export async function readNotesFile() {
+/**
+ * @returns {Promise<void>}
+ */
+async function ensureDataDir() {
+  await mkdir(DATA_DIR, { recursive: true });
+}
+
+/**
+ * @returns {Promise<string>}
+ */
+export async function readNotes() {
+  await ensureDataDir();
   try {
-    const raw = await fs.readFile(NOTES_PATH, 'utf-8');
-    return JSON.parse(raw);
-  } catch {
-    return [];
+    return await readFile(NOTES_FILE, 'utf8');
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return '';
+    }
+    throw error;
   }
 }
 
-export async function writeNotesFile(notes) {
-  await fs.mkdir(path.dirname(NOTES_PATH), { recursive: true });
-  await fs.writeFile(NOTES_PATH, JSON.stringify(notes, null, 2), 'utf-8');
+/**
+ * @param {string} content
+ * @returns {Promise<void>}
+ */
+export async function writeNotes(content) {
+  await ensureDataDir();
+  await writeFile(NOTES_FILE, content, 'utf8');
+}
+
+/**
+ * @param {string} line
+ * @returns {Promise<void>}
+ */
+export async function appendNote(line) {
+  const existing = await readNotes();
+  const updated = existing.length > 0 ? `${existing}${line}\n` : `${line}\n`;
+  await writeNotes(updated);
 }
