@@ -2,16 +2,16 @@
   {
     "challengeId": "01-nodejs-basics",
     "challengeName": "Node.js Basics",
-    "timestamp": "2026-08-18T09:46:52.115Z",
+    "timestamp": "2026-08-18T12:46:41.139Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 100,
+      "codeQuality": 98,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 85,
+    "totalScore": 84.7,
     "passed": true,
     "errors": [],
     "warnings": [],
@@ -40,21 +40,21 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787046415442,
+          "endTime": 1787057205386,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1787046415176,
+          "startTime": 1787057205151,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 100,
+      "score": 98,
       "passed": true,
-      "totalIssues": 0,
+      "totalIssues": 1,
       "errors": 0,
-      "warnings": 0,
+      "warnings": 1,
       "details": [
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\fs-utils.js",
@@ -65,16 +65,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\math.js",
@@ -85,36 +76,34 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\server.js",
-          "messages": [],
+          "messages": [
+            {
+              "ruleId": null,
+              "message": "Unused eslint-disable directive (no problems were reported from 'no-unused-vars').",
+              "line": 98,
+              "column": 1,
+              "severity": 1,
+              "fix": {
+                "range": [
+                  2200,
+                  2242
+                ],
+                "text": " "
+              }
+            }
+          ],
           "suppressedMessages": [],
           "errorCount": 0,
           "fatalErrorCount": 0,
-          "warningCount": 0,
+          "warningCount": 1,
           "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "fixableWarningCount": 1,
+          "source": "import 'dotenv/config';\r\n\r\nimport { createServer } from 'node:http';\r\nimport express from 'express';\r\n\r\nimport mainApp from './app.js';\r\nimport { connectDB } from './db.js';\r\nimport { readNotes, writeNotes, appendNote } from './fs-utils.js';\r\nimport { average, max, lineLengths } from './math.js';\r\nimport { logger } from './logger.js';\r\n\r\nconst PORT = process.env.PORT || 3000;\r\n\r\n// Legacy Challenge 01 server\r\nconst server = express();\r\n\r\nserver.use(express.json());\r\n\r\nserver.get('/', (_req, res) => {\r\n  res.json({\r\n    message: 'Node.js Basics API',\r\n    routes: [\r\n      'GET /notes',\r\n      'POST /notes  { \"content\": string }',\r\n      'POST /notes/append  { \"line\": string }',\r\n      'GET /notes/stats',\r\n    ],\r\n  });\r\n});\r\n\r\nserver.get('/notes', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    res.json({ content });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes', async (req, res, next) => {\r\n  try {\r\n    const { content } = req.body ?? {};\r\n\r\n    if (typeof content !== 'string') {\r\n      return res.status(400).json({\r\n        error: '\"content\" must be a string',\r\n      });\r\n    }\r\n\r\n    await writeNotes(content);\r\n    await logger.info('Notes file overwritten');\r\n\r\n    return res.json({\r\n      message: 'Notes saved',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes/append', async (req, res, next) => {\r\n  try {\r\n    const { line } = req.body ?? {};\r\n\r\n    if (typeof line !== 'string' || line.length === 0) {\r\n      return res.status(400).json({\r\n        error: '\"line\" must be a non-empty string',\r\n      });\r\n    }\r\n\r\n    await appendNote(line);\r\n    await logger.info('Note appended');\r\n\r\n    return res.json({\r\n      message: 'Note appended',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.get('/notes/stats', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    const lengths = lineLengths(content);\r\n\r\n    res.json({\r\n      lineCount: lengths.length,\r\n      averageLineLength: average(lengths),\r\n      longestLine: max(lengths),\r\n    });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\n// Legacy error handler\r\n// eslint-disable-next-line no-unused-vars\r\nserver.use((err, _req, res, _next) => {\r\n  logger.error(err.message);\r\n  res.status(500).json({\r\n    error: 'Internal server error',\r\n  });\r\n});\r\n\r\n// Mount the Express application containing /health and /api/*\r\nserver.use(mainApp);\r\n\r\nconst httpServer = createServer(server);\r\n\r\nasync function startServer() {\r\n  try {\r\n    await connectDB();\r\n  } catch (error) {\r\n    logger.error(`DB connection failed: ${error.message}`);\r\n  }\r\n\r\n  httpServer.listen(PORT, () => {\r\n    logger.info(`Server listening on port ${PORT}`);\r\n  });\r\n}\r\n\r\nif (process.env.NODE_ENV !== 'test') {\r\n  startServer();\r\n}\r\n\r\nexport default httpServer;",
+          "usedDeprecatedRules": []
         }
       ]
     },
@@ -197,12 +186,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 528,
+                          "duration": 79,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:08.889Z",
+                          "startTime": "2026-08-18T12:46:58.317Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -231,12 +220,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 21,
+                          "duration": 35,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.488Z",
+                          "startTime": "2026-08-18T12:46:58.454Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -265,12 +254,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 44,
+                          "duration": 57,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.527Z",
+                          "startTime": "2026-08-18T12:46:58.519Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -299,12 +288,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 59,
+                          "duration": 48,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.584Z",
+                          "startTime": "2026-08-18T12:46:58.596Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -333,12 +322,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 50,
+                          "duration": 34,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.667Z",
+                          "startTime": "2026-08-18T12:46:58.658Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -367,12 +356,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11,
+                          "duration": 9,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.736Z",
+                          "startTime": "2026-08-18T12:46:58.705Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -401,12 +390,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 11,
+                          "duration": 9,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:09.762Z",
+                          "startTime": "2026-08-18T12:46:58.727Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -428,7 +417,7 @@
     },
     "aiReviewResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-18T09:47:10.693Z",
+      "timestamp": "2026-08-18T12:46:59.340Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -440,7 +429,7 @@
     },
     "aiResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-18T09:47:10.693Z",
+      "timestamp": "2026-08-18T12:46:59.340Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -454,16 +443,16 @@
   {
     "challengeId": "02-express-apis",
     "challengeName": "Express.js APIs",
-    "timestamp": "2026-08-18T09:47:13.365Z",
+    "timestamp": "2026-08-18T12:46:59.551Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 100,
+      "codeQuality": 98,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 85,
+    "totalScore": 84.7,
     "passed": true,
     "errors": [],
     "warnings": [],
@@ -480,7 +469,7 @@
               "ancestorTitles": [
                 "02-express-apis"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "02-express-apis passes baseline",
@@ -492,21 +481,21 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787046438678,
+          "endTime": 1787057224261,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1787046438369,
+          "startTime": 1787057223912,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 100,
+      "score": 98,
       "passed": true,
-      "totalIssues": 0,
+      "totalIssues": 1,
       "errors": 0,
-      "warnings": 0,
+      "warnings": 1,
       "details": [
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
@@ -517,36 +506,34 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\logger.js",
-          "messages": [],
+          "messages": [
+            {
+              "ruleId": null,
+              "message": "Unused eslint-disable directive (no problems were reported from 'no-console').",
+              "line": 5,
+              "column": 5,
+              "severity": 1,
+              "fix": {
+                "range": [
+                  152,
+                  190
+                ],
+                "text": " "
+              }
+            }
+          ],
           "suppressedMessages": [],
           "errorCount": 0,
           "fatalErrorCount": 0,
-          "warningCount": 0,
+          "warningCount": 1,
           "fixableErrorCount": 0,
-          "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "fixableWarningCount": 1,
+          "source": "export function requestLogger(req, res, next) {\r\n  const start = Date.now();\r\n  res.on('finish', () => {\r\n    const duration = Date.now() - start;\r\n    // eslint-disable-next-line no-console\r\n    console.log(`${req.method} ${req.originalUrl} ${res.statusCode} ${duration}ms`);\r\n  });\r\n  next();\r\n}\r\n\r\nexport function errorHandler(err, _req, res, _next) {\r\n  res.status(err.status || 500).json({\r\n    error: err.message || 'Internal server error',\r\n  });\r\n}\r\n",
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\notes.js",
@@ -557,16 +544,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         }
       ]
     },
@@ -649,12 +627,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 64,
+                          "duration": 66,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.690Z",
+                          "startTime": "2026-08-18T12:47:18.930Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -688,7 +666,7 @@
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.836Z",
+                          "startTime": "2026-08-18T12:47:19.060Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -717,12 +695,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 16,
+                          "duration": 20,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.889Z",
+                          "startTime": "2026-08-18T12:47:19.115Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -751,12 +729,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 29,
+                          "duration": 38,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.918Z",
+                          "startTime": "2026-08-18T12:47:19.150Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -785,12 +763,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 15,
+                          "duration": 19,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.960Z",
+                          "startTime": "2026-08-18T12:47:19.205Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -819,12 +797,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 8,
+                          "duration": 16,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:31.987Z",
+                          "startTime": "2026-08-18T12:47:19.240Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -853,12 +831,12 @@
                           "workerIndex": 0,
                           "parallelIndex": 0,
                           "status": "passed",
-                          "duration": 12,
+                          "duration": 9,
                           "errors": [],
                           "stdout": [],
                           "stderr": [],
                           "retry": 0,
-                          "startTime": "2026-08-18T09:47:32.004Z",
+                          "startTime": "2026-08-18T12:47:19.270Z",
                           "annotations": [],
                           "attachments": []
                         }
@@ -880,7 +858,7 @@
     },
     "aiReviewResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-18T09:47:32.646Z",
+      "timestamp": "2026-08-18T12:47:19.865Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -892,7 +870,7 @@
     },
     "aiResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-18T09:47:32.646Z",
+      "timestamp": "2026-08-18T12:47:19.865Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -906,17 +884,17 @@
   {
     "challengeId": "03-mongodb",
     "challengeName": "MongoDB",
-    "timestamp": "2026-08-18T09:47:32.787Z",
+    "timestamp": "2026-08-18T12:47:19.902Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 70,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -932,7 +910,7 @@
               "ancestorTitles": [
                 "03-mongodb"
               ],
-              "duration": 2,
+              "duration": 5,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "03-mongodb passes baseline",
@@ -944,10 +922,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787046458462,
+          "endTime": 1787057245665,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1787046458153,
+          "startTime": 1787057245393,
           "status": "passed",
           "summary": ""
         }
@@ -969,16 +947,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\models\\User.js",
@@ -989,16 +958,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\users.js",
@@ -1009,16 +969,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         }
       ]
     },
@@ -1065,14 +1016,273 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-03.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 7,
+      "passedTests": 7,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-03.spec.ts",
+          "file": "challenge-03.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 03 - MongoDB",
+              "file": "challenge-03.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "GET /api/users returns an array",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 91,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.112Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-fad29afdd8e63f538dbd",
+                  "file": "challenge-03.spec.ts",
+                  "line": 4,
+                  "column": 3
+                },
+                {
+                  "title": "POST /api/users creates a user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 52,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.248Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-514e389091a8c7c49c9b",
+                  "file": "challenge-03.spec.ts",
+                  "line": 13,
+                  "column": 3
+                },
+                {
+                  "title": "POST /api/users without required fields returns an error",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 8,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.312Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-2ee56fee36c93a78ff24",
+                  "file": "challenge-03.spec.ts",
+                  "line": 33,
+                  "column": 3
+                },
+                {
+                  "title": "PUT /api/users/:id updates a user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 79,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.332Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-981a0187de795d46a28c",
+                  "file": "challenge-03.spec.ts",
+                  "line": 45,
+                  "column": 3
+                },
+                {
+                  "title": "DELETE /api/users/:id removes a user",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 75,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.439Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-86e36689496f3082922d",
+                  "file": "challenge-03.spec.ts",
+                  "line": 71,
+                  "column": 3
+                },
+                {
+                  "title": "GET /api/users/:id for a missing user returns 404",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 11,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.547Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-22f24d7c8da2ae154467",
+                  "file": "challenge-03.spec.ts",
+                  "line": 92,
+                  "column": 3
+                },
+                {
+                  "title": "DELETE /api/users/:id for a missing user returns 404",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 60000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "",
+                      "projectName": "",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 10,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-18T12:47:38.575Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-056d273267a56f4d2ad2",
+                  "file": "challenge-03.spec.ts",
+                  "line": 103,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-18T09:47:42.016Z",
+      "timestamp": "2026-08-18T12:47:39.300Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1084,7 +1294,7 @@
     },
     "aiResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-18T09:47:42.016Z",
+      "timestamp": "2026-08-18T12:47:39.300Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1098,7 +1308,7 @@
   {
     "challengeId": "04-jwt-authentication",
     "challengeName": "JWT Authentication",
-    "timestamp": "2026-08-18T09:47:42.296Z",
+    "timestamp": "2026-08-18T12:47:39.341Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -1124,7 +1334,7 @@
               "ancestorTitles": [
                 "04-jwt-authentication"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "04-jwt-authentication passes baseline",
@@ -1136,10 +1346,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787046465777,
+          "endTime": 1787057264559,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1787046465463,
+          "startTime": 1787057264237,
           "status": "passed",
           "summary": ""
         }
@@ -1161,16 +1371,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
@@ -1181,16 +1382,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         }
       ]
     },
@@ -1238,7 +1430,7 @@
     },
     "aiReviewResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-18T09:47:49.471Z",
+      "timestamp": "2026-08-18T12:47:49.472Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1250,7 +1442,7 @@
     },
     "aiResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-18T09:47:49.471Z",
+      "timestamp": "2026-08-18T12:47:49.472Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1264,7 +1456,7 @@
   {
     "challengeId": "05-blog-backend-api",
     "challengeName": "Blog Backend API (Capstone)",
-    "timestamp": "2026-08-18T09:47:49.546Z",
+    "timestamp": "2026-08-18T12:47:49.521Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -1290,7 +1482,7 @@
               "ancestorTitles": [
                 "05-blog-backend-api"
               ],
-              "duration": 2,
+              "duration": 6,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "05-blog-backend-api passes baseline",
@@ -1302,10 +1494,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787046472495,
+          "endTime": 1787057272264,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1787046472259,
+          "startTime": 1787057272068,
           "status": "passed",
           "summary": ""
         }
@@ -1327,16 +1519,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
@@ -1347,16 +1530,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\posts.js",
@@ -1367,16 +1541,7 @@
           "warningCount": 0,
           "fixableErrorCount": 0,
           "fixableWarningCount": 0,
-          "usedDeprecatedRules": [
-            {
-              "ruleId": "no-extra-semi",
-              "replacedBy": []
-            },
-            {
-              "ruleId": "no-mixed-spaces-and-tabs",
-              "replacedBy": []
-            }
-          ]
+          "usedDeprecatedRules": []
         }
       ]
     },
@@ -1436,7 +1601,7 @@
     },
     "aiReviewResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-18T09:47:55.831Z",
+      "timestamp": "2026-08-18T12:47:56.125Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1448,7 +1613,7 @@
     },
     "aiResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-18T09:47:55.831Z",
+      "timestamp": "2026-08-18T12:47:56.125Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
