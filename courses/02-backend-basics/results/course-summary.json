@@ -1,7 +1,7 @@
 {
   "courseId": "02-backend-basics",
   "courseName": "Backend Basics",
-  "lastUpdated": "2026-08-19T05:42:54.765Z",
+  "lastUpdated": "2026-08-19T06:19:09.539Z",
   "totalChallenges": 5,
   "completedChallenges": 4,
   "averageScore": 81.3,
@@ -11,8 +11,8 @@
     {
       "challengeId": "01-nodejs-basics",
       "challengeName": "Node.js Basics",
-      "score": 77.2,
-      "passed": false
+      "score": 82,
+      "passed": true
     },
     {
       "challengeId": "02-express-apis",
@@ -23,8 +23,8 @@
     {
       "challengeId": "03-mongodb",
       "challengeName": "MongoDB",
-      "score": 82.45,
-      "passed": true
+      "score": 77.5,
+      "passed": false
     },
     {
       "challengeId": "04-jwt-authentication",
@@ -40,8 +40,8 @@
     }
   ],
   "skillStrengths": [
+    "Node.js Basics",
     "Express.js APIs",
-    "MongoDB",
     "JWT Authentication",
     "Blog Backend API (Capstone)"
   ],

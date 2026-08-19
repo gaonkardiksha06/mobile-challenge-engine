@@ -112,7 +112,11 @@ async function startServer() {
   try {
     await connectDB();
   } catch (error) {
-    logger.error(`DB connection failed: ${error.message}`);
+     await logger.error(`DB connection failed: ${error.message}`);
+    // Fail fast: don't accept traffic if the database never connected,
+    // otherwise every /api/* request would fail with a confusing
+    // connection error instead of the process refusing to start.
+    process.exit(1);
   }
 
   httpServer.listen(PORT, () => {

@@ -51,10 +51,15 @@ router.post('/', requireAuth, async (req, res, next) => {
 
 router.put('/:id', requireAuth, async (req, res, next) => {
   try {
+    const { title, body } = req.body; // whitelist: authorId can never be reassigned via body
+    const update = {};
+    if (title !== undefined) update.title = title;
+    if (body !== undefined) update.body = body;
+
     const post = await Post.findOneAndUpdate(
       { _id: req.params.id, authorId: req.user.id },
-      req.body,
-      { new: true }
+      update,
+      { new: true, runValidators: true }
     );
     if (!post) return res.status(404).json({ error: 'Post not found' });
     res.json(post);
