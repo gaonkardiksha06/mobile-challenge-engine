@@ -11,14 +11,19 @@ router.post('/register', async (req, res, next) => {
     if (!username || !email || !password) {
       return res.status(400).json({ error: 'username, email, and password are required' });
     }
+
     const passwordHash = await bcrypt.hash(password, 10);
     const user = await User.create({ username, email, passwordHash });
     const token = signToken({ id: user._id, username: user.username });
+
     res.status(201).json({
       token,
       user: { id: user._id, username: user.username, email: user.email },
     });
   } catch (err) {
+    if (err.code === 11000) {
+      return res.status(409).json({ error: 'Username or email already in use' });
+    }
     next(err);
   }
 });
@@ -26,10 +31,16 @@ router.post('/register', async (req, res, next) => {
 router.post('/login', async (req, res, next) => {
   try {
     const { email, password } = req.body;
+    if (!email || !password) {
+      return res.status(400).json({ error: 'email and password are required' });
+    }
+
     const user = await User.findOne({ email });
     if (!user) return res.status(401).json({ error: 'Invalid credentials' });
+
     const valid = await bcrypt.compare(password, user.passwordHash);
     if (!valid) return res.status(401).json({ error: 'Invalid credentials' });
+
     const token = signToken({ id: user._id, username: user.username });
     res.json({
       token,

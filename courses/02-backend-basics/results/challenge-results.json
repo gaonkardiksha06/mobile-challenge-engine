@@ -2,17 +2,17 @@
   {
     "challengeId": "01-nodejs-basics",
     "challengeName": "Node.js Basics",
-    "timestamp": "2026-08-18T12:46:41.139Z",
+    "timestamp": "2026-08-19T05:41:40.180Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 98,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 100,
-      "aiReview": 0
+      "e2eTests": 0,
+      "aiReview": 50
     },
-    "totalScore": 84.7,
-    "passed": true,
+    "totalScore": 77.2,
+    "passed": false,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -28,7 +28,7 @@
               "ancestorTitles": [
                 "01-nodejs-basics"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "01-nodejs-basics passes baseline",
@@ -40,10 +40,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787057205386,
+          "endTime": 1787118103516,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1787057205151,
+          "startTime": 1787118103276,
           "status": "passed",
           "summary": ""
         }
@@ -151,308 +151,58 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 100,
-      "passed": true,
-      "totalTests": 7,
-      "passedTests": 7,
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
       "failedTests": 0,
-      "details": [
-        {
-          "title": "challenge-01.spec.ts",
-          "file": "challenge-01.spec.ts",
-          "column": 0,
-          "line": 0,
-          "specs": [],
-          "suites": [
-            {
-              "title": "Challenge 01 - Node.js Basics API",
-              "file": "challenge-01.spec.ts",
-              "line": 3,
-              "column": 6,
-              "specs": [
-                {
-                  "title": "GET / returns the API welcome message and route list",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 79,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.317Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-046b9f2336f1d02cfc39",
-                  "file": "challenge-01.spec.ts",
-                  "line": 4,
-                  "column": 3
-                },
-                {
-                  "title": "GET /notes returns current file content",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 35,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.454Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-71f26a44c1926adaa1a6",
-                  "file": "challenge-01.spec.ts",
-                  "line": 13,
-                  "column": 3
-                },
-                {
-                  "title": "POST /notes overwrites the notes file",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 57,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.519Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-34afc161208a34ab993a",
-                  "file": "challenge-01.spec.ts",
-                  "line": 21,
-                  "column": 3
-                },
-                {
-                  "title": "POST /notes/append adds a line without erasing existing content",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 48,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.596Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-0d42ad8e106ec04086e7",
-                  "file": "challenge-01.spec.ts",
-                  "line": 32,
-                  "column": 3
-                },
-                {
-                  "title": "GET /notes/stats returns computed statistics for current content",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 34,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.658Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-97c9d3a15fc131444ab0",
-                  "file": "challenge-01.spec.ts",
-                  "line": 48,
-                  "column": 3
-                },
-                {
-                  "title": "POST /notes/append rejects an empty line",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.705Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-edccfe5fe1ec4d13affa",
-                  "file": "challenge-01.spec.ts",
-                  "line": 61,
-                  "column": 3
-                },
-                {
-                  "title": "unknown route returns 404",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:46:58.727Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "77d07a436f655ce05c79-8654df99a3395fb7d2d9",
-                  "file": "challenge-01.spec.ts",
-                  "line": 68,
-                  "column": 3
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "screenshots": []
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-01.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-18T12:46:59.340Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:41:56.709Z",
+      "score": 50,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
     },
     "aiResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-18T12:46:59.340Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:41:56.709Z",
+      "score": 50,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
     }
   },
   {
     "challengeId": "02-express-apis",
     "challengeName": "Express.js APIs",
-    "timestamp": "2026-08-18T12:46:59.551Z",
+    "timestamp": "2026-08-19T05:41:58.897Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 98,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 100,
-      "aiReview": 0
+      "e2eTests": 0,
+      "aiReview": 83
     },
-    "totalScore": 84.7,
+    "totalScore": 82.15,
     "passed": true,
     "errors": [],
     "warnings": [],
@@ -481,10 +231,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787057224261,
+          "endTime": 1787118123417,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1787057223912,
+          "startTime": 1787118123217,
           "status": "passed",
           "summary": ""
         }
@@ -592,308 +342,66 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 100,
-      "passed": true,
-      "totalTests": 7,
-      "passedTests": 7,
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
       "failedTests": 0,
-      "details": [
-        {
-          "title": "challenge-02.spec.ts",
-          "file": "challenge-02.spec.ts",
-          "column": 0,
-          "line": 0,
-          "specs": [],
-          "suites": [
-            {
-              "title": "Challenge 02 - Express APIs",
-              "file": "challenge-02.spec.ts",
-              "line": 3,
-              "column": 6,
-              "specs": [
-                {
-                  "title": "GET /api/notes returns an array",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 66,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:18.930Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-0f617870db648b7e3e53",
-                  "file": "challenge-02.spec.ts",
-                  "line": 4,
-                  "column": 3
-                },
-                {
-                  "title": "POST /api/notes creates a note",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 40,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.060Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-027b66cd1eaca554575f",
-                  "file": "challenge-02.spec.ts",
-                  "line": 12,
-                  "column": 3
-                },
-                {
-                  "title": "POST /api/notes without a title returns 400",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 20,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.115Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-ffa38d11aa215ac7475a",
-                  "file": "challenge-02.spec.ts",
-                  "line": 28,
-                  "column": 3
-                },
-                {
-                  "title": "DELETE /api/notes/:id removes the note",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 38,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.150Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-8b41fe6f4ca1c1dbacc0",
-                  "file": "challenge-02.spec.ts",
-                  "line": 38,
-                  "column": 3
-                },
-                {
-                  "title": "DELETE /api/notes/:id for a missing note returns 404",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 19,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.205Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-c3948b132d376d9b4b8e",
-                  "file": "challenge-02.spec.ts",
-                  "line": 52,
-                  "column": 3
-                },
-                {
-                  "title": "GET /health confirms the Express app is mounted",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 16,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.240Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-b6516fbd89b3a4a57e53",
-                  "file": "challenge-02.spec.ts",
-                  "line": 60,
-                  "column": 3
-                },
-                {
-                  "title": "unknown route returns 404 via Express error handling",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 9,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:19.270Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "42dc79384a61c0717494-545c44c21b66c78e8f5e",
-                  "file": "challenge-02.spec.ts",
-                  "line": 68,
-                  "column": 3
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "screenshots": []
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-02.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-18T12:47:19.865Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:15.033Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Straightforward async/await usage for file I/O and route handling.",
+        "Consistent use of HTTP status codes and JSON responses."
+      ],
+      "improvements": [
+        "Improve the notes cache logic – use a strict null check (`if (notesCache === null)`) so an empty array is cached correctly, and consider adding a simple mutex or file lock to avoid race conditions on concurrent writes.",
+        "Replace the `console.log` in the request logger with a proper logging library (e.g., Winston) or remove it entirely for production to satisfy the no‑console‑log requirement.",
+        "Add TypeScript type definitions for request bodies and router responses, and perform explicit validation (e.g., using a schema validator) to guard against malformed input."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean, functional, and follows good Express patterns. With a few adjustments to caching, logging, and type safety, it will be robust, maintainable, and ready for production."
     },
     "aiResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-18T12:47:19.865Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:15.033Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Straightforward async/await usage for file I/O and route handling.",
+        "Consistent use of HTTP status codes and JSON responses."
+      ],
+      "improvements": [
+        "Improve the notes cache logic – use a strict null check (`if (notesCache === null)`) so an empty array is cached correctly, and consider adding a simple mutex or file lock to avoid race conditions on concurrent writes.",
+        "Replace the `console.log` in the request logger with a proper logging library (e.g., Winston) or remove it entirely for production to satisfy the no‑console‑log requirement.",
+        "Add TypeScript type definitions for request bodies and router responses, and perform explicit validation (e.g., using a schema validator) to guard against malformed input."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean, functional, and follows good Express patterns. With a few adjustments to caching, logging, and type safety, it will be robust, maintainable, and ready for production."
     }
   },
   {
     "challengeId": "03-mongodb",
     "challengeName": "MongoDB",
-    "timestamp": "2026-08-18T12:47:19.902Z",
+    "timestamp": "2026-08-19T05:42:16.584Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 100,
-      "aiReview": 0
+      "e2eTests": 0,
+      "aiReview": 83
     },
-    "totalScore": 85,
+    "totalScore": 82.45,
     "passed": true,
     "errors": [],
     "warnings": [],
@@ -910,7 +418,7 @@
               "ancestorTitles": [
                 "03-mongodb"
               ],
-              "duration": 5,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "03-mongodb passes baseline",
@@ -922,10 +430,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787057245665,
+          "endTime": 1787118141007,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1787057245393,
+          "startTime": 1787118140763,
           "status": "passed",
           "summary": ""
         }
@@ -1016,309 +524,67 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 100,
-      "passed": true,
-      "totalTests": 7,
-      "passedTests": 7,
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
       "failedTests": 0,
-      "details": [
-        {
-          "title": "challenge-03.spec.ts",
-          "file": "challenge-03.spec.ts",
-          "column": 0,
-          "line": 0,
-          "specs": [],
-          "suites": [
-            {
-              "title": "Challenge 03 - MongoDB",
-              "file": "challenge-03.spec.ts",
-              "line": 3,
-              "column": 6,
-              "specs": [
-                {
-                  "title": "GET /api/users returns an array",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 91,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.112Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-fad29afdd8e63f538dbd",
-                  "file": "challenge-03.spec.ts",
-                  "line": 4,
-                  "column": 3
-                },
-                {
-                  "title": "POST /api/users creates a user",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 52,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.248Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-514e389091a8c7c49c9b",
-                  "file": "challenge-03.spec.ts",
-                  "line": 13,
-                  "column": 3
-                },
-                {
-                  "title": "POST /api/users without required fields returns an error",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 8,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.312Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-2ee56fee36c93a78ff24",
-                  "file": "challenge-03.spec.ts",
-                  "line": 33,
-                  "column": 3
-                },
-                {
-                  "title": "PUT /api/users/:id updates a user",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 79,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.332Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-981a0187de795d46a28c",
-                  "file": "challenge-03.spec.ts",
-                  "line": 45,
-                  "column": 3
-                },
-                {
-                  "title": "DELETE /api/users/:id removes a user",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 75,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.439Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-86e36689496f3082922d",
-                  "file": "challenge-03.spec.ts",
-                  "line": 71,
-                  "column": 3
-                },
-                {
-                  "title": "GET /api/users/:id for a missing user returns 404",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 11,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.547Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-22f24d7c8da2ae154467",
-                  "file": "challenge-03.spec.ts",
-                  "line": 92,
-                  "column": 3
-                },
-                {
-                  "title": "DELETE /api/users/:id for a missing user returns 404",
-                  "ok": true,
-                  "tags": [],
-                  "tests": [
-                    {
-                      "timeout": 60000,
-                      "annotations": [],
-                      "expectedStatus": "passed",
-                      "projectId": "",
-                      "projectName": "",
-                      "results": [
-                        {
-                          "workerIndex": 0,
-                          "parallelIndex": 0,
-                          "status": "passed",
-                          "duration": 10,
-                          "errors": [],
-                          "stdout": [],
-                          "stderr": [],
-                          "retry": 0,
-                          "startTime": "2026-08-18T12:47:38.575Z",
-                          "annotations": [],
-                          "attachments": []
-                        }
-                      ],
-                      "status": "expected"
-                    }
-                  ],
-                  "id": "abe74fb7538c55bf8146-056d273267a56f4d2ad2",
-                  "file": "challenge-03.spec.ts",
-                  "line": 103,
-                  "column": 3
-                }
-              ]
-            }
-          ]
-        }
-      ],
-      "screenshots": []
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-03.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-18T12:47:39.300Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:32.815Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns: database connection, model definition, and route handlers are in distinct files.",
+        "Consistent error handling and use of async/await make the flow easy to follow.",
+        "Sensitive data (password) is explicitly removed from responses, improving security awareness."
+      ],
+      "improvements": [
+        "Extract the ObjectId validation into a reusable middleware to avoid duplication across routes.",
+        "Hash passwords before storing them (e.g., with bcrypt) and validate email format to prevent invalid data.",
+        "Add TypeScript type annotations or JSDoc comments for better type safety and IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a CRUD API with MongoDB and Mongoose. It follows good coding practices and is easy to read, but it could be further hardened by adding password hashing, input validation, and reducing duplicated logic."
     },
     "aiResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-18T12:47:39.300Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:32.815Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns: database connection, model definition, and route handlers are in distinct files.",
+        "Consistent error handling and use of async/await make the flow easy to follow.",
+        "Sensitive data (password) is explicitly removed from responses, improving security awareness."
+      ],
+      "improvements": [
+        "Extract the ObjectId validation into a reusable middleware to avoid duplication across routes.",
+        "Hash passwords before storing them (e.g., with bcrypt) and validate email format to prevent invalid data.",
+        "Add TypeScript type annotations or JSDoc comments for better type safety and IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a CRUD API with MongoDB and Mongoose. It follows good coding practices and is easy to read, but it could be further hardened by adding password hashing, input validation, and reducing duplicated logic."
     }
   },
   {
     "challengeId": "04-jwt-authentication",
     "challengeName": "JWT Authentication",
-    "timestamp": "2026-08-18T12:47:39.341Z",
+    "timestamp": "2026-08-19T05:42:34.179Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 0
+      "aiReview": 83
     },
-    "totalScore": 70,
-    "passed": false,
+    "totalScore": 82.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1346,10 +612,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787057264559,
+          "endTime": 1787118158896,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1787057264237,
+          "startTime": 1787118158649,
           "status": "passed",
           "summary": ""
         }
@@ -1430,43 +696,57 @@
     },
     "aiReviewResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-18T12:47:49.472Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:44.682Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes, middleware, and model interactions.",
+        "Comprehensive error handling with appropriate HTTP status codes."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request payloads, JWT payload, and the `req.user` property to catch type errors at compile time.",
+        "Centralize request validation (e.g., using express-validator) to avoid duplicated checks and improve testability.",
+        "Move hard‑coded status messages and error codes into a constants module to make them easier to maintain and internationalize."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid security practices and clean code structure. With a few type safety enhancements and a more modular validation approach, it will be even more robust and easier to extend."
     },
     "aiResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-18T12:47:49.472Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:44.682Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes, middleware, and model interactions.",
+        "Comprehensive error handling with appropriate HTTP status codes."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request payloads, JWT payload, and the `req.user` property to catch type errors at compile time.",
+        "Centralize request validation (e.g., using express-validator) to avoid duplicated checks and improve testability.",
+        "Move hard‑coded status messages and error codes into a constants module to make them easier to maintain and internationalize."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid security practices and clean code structure. With a few type safety enhancements and a more modular validation approach, it will be even more robust and easier to extend."
     }
   },
   {
     "challengeId": "05-blog-backend-api",
     "challengeName": "Blog Backend API (Capstone)",
-    "timestamp": "2026-08-18T12:47:49.521Z",
+    "timestamp": "2026-08-19T05:42:46.188Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 0
+      "aiReview": 83
     },
-    "totalScore": 70,
-    "passed": false,
+    "totalScore": 82.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1482,7 +762,7 @@
               "ancestorTitles": [
                 "05-blog-backend-api"
               ],
-              "duration": 6,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "05-blog-backend-api passes baseline",
@@ -1494,10 +774,10 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787057272264,
+          "endTime": 1787118168869,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1787057272068,
+          "startTime": 1787118168668,
           "status": "passed",
           "summary": ""
         }
@@ -1601,27 +881,41 @@
     },
     "aiReviewResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-18T12:47:56.125Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:53.495Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routing, middleware, and business logic are neatly organized.",
+        "Consistent use of async/await with try/catch blocks and a centralized error handler improves code clarity.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access."
+      ],
+      "improvements": [
+        "Move the Post schema (and any other schemas) into dedicated model files to keep routes lean and improve testability.",
+        "Add request validation (e.g., using express‑validator or a custom middleware) to enforce required fields and data types before hitting the database.",
+        "Externalize sensitive configuration such as the JWT secret to environment variables and reference them via `process.env` rather than hard‑coding or importing directly."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a RESTful API with JWT authentication and MongoDB persistence. While the code is readable and maintainable, a few architectural refinements—particularly around schema organization, input validation, and configuration management—would elevate the project to production‑ready quality."
     },
     "aiResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-18T12:47:56.125Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:53.495Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routing, middleware, and business logic are neatly organized.",
+        "Consistent use of async/await with try/catch blocks and a centralized error handler improves code clarity.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access."
+      ],
+      "improvements": [
+        "Move the Post schema (and any other schemas) into dedicated model files to keep routes lean and improve testability.",
+        "Add request validation (e.g., using express‑validator or a custom middleware) to enforce required fields and data types before hitting the database.",
+        "Externalize sensitive configuration such as the JWT secret to environment variables and reference them via `process.env` rather than hard‑coding or importing directly."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a RESTful API with JWT authentication and MongoDB persistence. While the code is readable and maintainable, a few architectural refinements—particularly around schema organization, input validation, and configuration management—would elevate the project to production‑ready quality."
     }
   }
 ]

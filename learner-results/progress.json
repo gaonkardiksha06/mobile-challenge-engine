@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-18T12:47:56.709Z",
+  "lastUpdated": "2026-08-19T05:42:55.347Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 80.6,
-    "completionPercentage": 28.6,
+    "overallScore": 81.1,
+    "completionPercentage": 31.4,
     "badgeLevel": "none",
     "totalChallenges": 35,
-    "completedChallenges": 10
+    "completedChallenges": 11
   },
   "courses": {
     "01-react-native-fundamentals": {
@@ -129,85 +129,85 @@
     "02-backend-basics": {
       "courseId": "02-backend-basics",
       "courseName": "Backend Basics",
-      "averageScore": 78.9,
-      "completionPercentage": 60,
-      "badgeLevel": "bronze",
+      "averageScore": 81.3,
+      "completionPercentage": 80,
+      "badgeLevel": "silver",
       "totalChallenges": 5,
-      "completedChallenges": 3,
+      "completedChallenges": 4,
       "challenges": {
         "01-nodejs-basics": {
           "challengeId": "01-nodejs-basics",
           "challengeName": "Node.js Basics",
-          "passed": true,
-          "score": 84.7,
-          "lastRun": "2026-08-18T12:46:41.139Z",
+          "passed": false,
+          "score": 77.2,
+          "lastRun": "2026-08-19T05:41:40.180Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 98,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
-            "aiReview": 0
+            "e2eTests": 0,
+            "aiReview": 50
           }
         },
         "02-express-apis": {
           "challengeId": "02-express-apis",
           "challengeName": "Express.js APIs",
           "passed": true,
-          "score": 84.7,
-          "lastRun": "2026-08-18T12:46:59.551Z",
+          "score": 82.15,
+          "lastRun": "2026-08-19T05:41:58.897Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 98,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
-            "aiReview": 0
+            "e2eTests": 0,
+            "aiReview": 83
           }
         },
         "03-mongodb": {
           "challengeId": "03-mongodb",
           "challengeName": "MongoDB",
           "passed": true,
-          "score": 85,
-          "lastRun": "2026-08-18T12:47:19.902Z",
+          "score": 82.45,
+          "lastRun": "2026-08-19T05:42:16.584Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 100,
-            "aiReview": 0
+            "e2eTests": 0,
+            "aiReview": 83
           }
         },
         "04-jwt-authentication": {
           "challengeId": "04-jwt-authentication",
           "challengeName": "JWT Authentication",
-          "passed": false,
-          "score": 70,
-          "lastRun": "2026-08-18T12:47:39.341Z",
+          "passed": true,
+          "score": 82.45,
+          "lastRun": "2026-08-19T05:42:34.179Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 0,
-            "aiReview": 0
+            "aiReview": 83
           }
         },
         "05-blog-backend-api": {
           "challengeId": "05-blog-backend-api",
           "challengeName": "Blog Backend API (Capstone)",
-          "passed": false,
-          "score": 70,
-          "lastRun": "2026-08-18T12:47:49.521Z",
+          "passed": true,
+          "score": 82.45,
+          "lastRun": "2026-08-19T05:42:46.188Z",
           "scores": {
             "functionalTests": 100,
             "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
             "e2eTests": 0,
-            "aiReview": 0
+            "aiReview": 83
           }
         }
       }

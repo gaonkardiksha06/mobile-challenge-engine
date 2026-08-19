@@ -4,15 +4,18 @@
     "challengeName": "Node.js Basics",
     "aiReview": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-18T12:46:59.340Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:41:56.709Z",
+      "score": 50,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
     }
   },
   {
@@ -20,15 +23,22 @@
     "challengeName": "Express.js APIs",
     "aiReview": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-18T12:47:19.865Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:15.033Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Straightforward async/await usage for file I/O and route handling.",
+        "Consistent use of HTTP status codes and JSON responses."
+      ],
+      "improvements": [
+        "Improve the notes cache logic – use a strict null check (`if (notesCache === null)`) so an empty array is cached correctly, and consider adding a simple mutex or file lock to avoid race conditions on concurrent writes.",
+        "Replace the `console.log` in the request logger with a proper logging library (e.g., Winston) or remove it entirely for production to satisfy the no‑console‑log requirement.",
+        "Add TypeScript type definitions for request bodies and router responses, and perform explicit validation (e.g., using a schema validator) to guard against malformed input."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean, functional, and follows good Express patterns. With a few adjustments to caching, logging, and type safety, it will be robust, maintainable, and ready for production."
     }
   },
   {
@@ -36,15 +46,22 @@
     "challengeName": "MongoDB",
     "aiReview": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-18T12:47:39.300Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:32.815Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns: database connection, model definition, and route handlers are in distinct files.",
+        "Consistent error handling and use of async/await make the flow easy to follow.",
+        "Sensitive data (password) is explicitly removed from responses, improving security awareness."
+      ],
+      "improvements": [
+        "Extract the ObjectId validation into a reusable middleware to avoid duplication across routes.",
+        "Hash passwords before storing them (e.g., with bcrypt) and validate email format to prevent invalid data.",
+        "Add TypeScript type annotations or JSDoc comments for better type safety and IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a CRUD API with MongoDB and Mongoose. It follows good coding practices and is easy to read, but it could be further hardened by adding password hashing, input validation, and reducing duplicated logic."
     }
   },
   {
@@ -52,15 +69,22 @@
     "challengeName": "JWT Authentication",
     "aiReview": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-18T12:47:49.472Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:44.682Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes, middleware, and model interactions.",
+        "Comprehensive error handling with appropriate HTTP status codes."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request payloads, JWT payload, and the `req.user` property to catch type errors at compile time.",
+        "Centralize request validation (e.g., using express-validator) to avoid duplicated checks and improve testability.",
+        "Move hard‑coded status messages and error codes into a constants module to make them easier to maintain and internationalize."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid security practices and clean code structure. With a few type safety enhancements and a more modular validation approach, it will be even more robust and easier to extend."
     }
   },
   {
@@ -68,15 +92,22 @@
     "challengeName": "Blog Backend API (Capstone)",
     "aiReview": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-18T12:47:56.125Z",
-      "score": 0,
+      "timestamp": "2026-08-19T05:42:53.495Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
+      "strengths": [
+        "Clear separation of concerns – routing, middleware, and business logic are neatly organized.",
+        "Consistent use of async/await with try/catch blocks and a centralized error handler improves code clarity.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access."
+      ],
+      "improvements": [
+        "Move the Post schema (and any other schemas) into dedicated model files to keep routes lean and improve testability.",
+        "Add request validation (e.g., using express‑validator or a custom middleware) to enforce required fields and data types before hitting the database.",
+        "Externalize sensitive configuration such as the JWT secret to environment variables and reference them via `process.env` rather than hard‑coding or importing directly."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates solid fundamentals for a RESTful API with JWT authentication and MongoDB persistence. While the code is readable and maintainable, a few architectural refinements—particularly around schema organization, input validation, and configuration management—would elevate the project to production‑ready quality."
     }
   }
 ]
