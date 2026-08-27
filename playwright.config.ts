@@ -1,5 +1,6 @@
 import { defineConfig } from '@playwright/test';
 
+// Decide port dynamically: use CI port if set, otherwise default to 3000
 const port = process.env.PLAYWRIGHT_APP_PORT || (process.env.CI ? '5174' : '3000');
 
 export default defineConfig({
@@ -15,7 +16,8 @@ export default defineConfig({
     baseURL: `http://localhost:${port}`,
   },
   webServer: {
-    command: 'node src/server.js',
+    // ✅ Use the same entry point as your package.json scripts
+    command: 'npm run dev',
     url: `http://localhost:${port}`,
     reuseExistingServer: !process.env.CI,
     timeout: 60_000,

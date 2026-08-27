@@ -1,59 +1,112 @@
 // src/routes/posts.js
+
 import express from "express";
-import mongoose from "mongoose";
 import { requireAuth } from "../middleware/auth.js";
+import Post from "../models/Post.js";
 
 const router = express.Router();
 
-// Post model
-const PostSchema = new mongoose.Schema({
-  title: String,
-  content: String,
-  author: { type: mongoose.Schema.Types.ObjectId, ref: "User" },
-});
-const Post = mongoose.model("Post", PostSchema);
-
 // Create post
 router.post("/", requireAuth, async (req, res) => {
-  const post = new Post({ ...req.body, author: req.user.id });
-  await post.save();
-  res.status(201).json(post);
+  try {
+    const { title, content } = req.body;
+
+    const post = await Post.create({
+      title,
+      content,
+      author: req.user.id,
+    });
+
+    res.status(201).json(post);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
 });
 
 // Get all posts
-router.get("/", async (_, res) => {
-  const posts = await Post.find();
-  res.json(posts);
+router.get("/", async (_req, res) => {
+  try {
+    const posts = await Post.find().populate(
+      "author",
+      "email"
+    );
+
+    res.json(posts);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
 });
 
 // Get single post
 router.get("/:id", async (req, res) => {
-  const post = await Post.findById(req.params.id);
-  if (!post) return res.status(404).json({ error: "Post not found" });
-  res.json(post);
+  try {
+    const post = await Post.findById(req.params.id);
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
+    res.json(post);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
 });
 
 // Update post
 router.put("/:id", requireAuth, async (req, res) => {
-  const post = await Post.findById(req.params.id);
-  if (!post) return res.status(404).json({ error: "Post not found" });
-  if (post.author.toString() !== req.user.id) {
-    return res.status(403).json({ error: "Not your post" });
+  try {
+    const post = await Post.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
+    res.json(post);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
   }
-  Object.assign(post, req.body);
-  await post.save();
-  res.json(post);
 });
 
 // Delete post
 router.delete("/:id", requireAuth, async (req, res) => {
-  const post = await Post.findById(req.params.id);
-  if (!post) return res.status(404).json({ error: "Post not found" });
-  if (post.author.toString() !== req.user.id) {
-    return res.status(403).json({ error: "Not your post" });
+  try {
+    const post = await Post.findByIdAndDelete(
+      req.params.id
+    );
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
+    res.json({
+      message: "Post deleted",
+    });
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
   }
-  await post.deleteOne();
-  res.json({ message: "Post deleted" });
 });
 
 export default router;

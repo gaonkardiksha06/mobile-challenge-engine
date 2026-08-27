@@ -1,242 +1,45 @@
-# Mobile Challenge Engine
-
-Automated skill assessment for **React Native**, **Node/Express backends**, **advanced mobile features**, **mission projects**, and **deployment** — following the same architecture as the [web Challenge Engine](https://github.com/sparkplustech/challenge-engine-react).
-
-## Pathway: Mobile & Full-Stack Engineer
-
-| Course | Challenges | Focus |
-|--------|------------|--------|
-| React Native Fundamentals | 7 | Expo, UI, navigation, lists, forms, API, AsyncStorage |
-| Backend Basics | 5 | Node, Express, MongoDB, JWT |
-| Advanced React Native | 6 | Redux, NativeWind, Firebase, maps, payments |
-| Challenge Missions | 14 | Beginner → advanced app projects |
-| Deployment | 3 | APK, EAS, Play Store |
-
-**35 challenges** total. Pass each challenge at **≥ 80%** via the automated review engine.
-
-## Quick start
-
-```bash
-git clone <your-repo-url>
-cd mobile-challenge-engine
-npm run setup
-```
-
-**Dashboard** (browse challenges, run reviews):
-
-```bash
-npm run dashboard:build
-npm run dashboard
-# http://localhost:7700
-```
-
-**Run an Expo course:**
-
-```bash
-cd courses/01-react-native-fundamentals/project
-npm install
-npx expo start
-```
-
-Each course `project/README.md` lists extra packages to install (e.g. AsyncStorage, Redux, EAS CLI). Challenge READMEs such as `06-async-storage` also include install steps where needed.
-
-**Run a challenge review:**
-
-```bash
-cd courses/01-react-native-fundamentals/project
-npm run review -- --challenge=01-expo-setup-basics
-```
-
-Or from repo root:
-
-```bash
-npm run review:challenge -- --course=01-react-native-fundamentals --challenge=01-expo-setup-basics
-```
-
-## Challenge locations
-
-Instructions live in each challenge folder:
-
-```
-courses/01-react-native-fundamentals/project/challenges/01-expo-setup-basics/README.md
-```
-
-Use the in-app **Challenges** tab (Expo) or open READMEs in your editor.
-
-## Review & scoring
-
-Six layers: functional tests, ESLint, architecture patterns, best practices, E2E (when configured), AI review (Groq).
-
-```bash
-npm run review:all          # All courses
-npm run review:changed      # Git-changed challenges only
-npm run progress:update     # Refresh learner-results/progress.json
-```
-
-Optional AI review: create `.env` at repo root:
-
-```
-GROQ_API_KEY=your_key_here
-```
-
-## Documentation
-
-- **[LEARNER-SETUP.md](./LEARNER-SETUP.md)** — Tools and packages to install for course challenges
-- **[SYSTEM.md](./SYSTEM.md)** — Architecture, curriculum map, extending the engine
-- Reference: `challenge-engine/SYSTEM.md` (web pathway)
-
-## Regenerate curriculum files
-
-After editing `scripts/generate-mobile-courses.js`:
-
-```bash
-npm run generate:courses
-```
-
-## Progress evidence
-
-Results are written to:
-
-- `courses/{course}/results/challenge-results.json`
-- `learner-results/progress.json`
-- Course `project/README.md` evidence table (after review)
-
----
-
-**License:** MIT
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## 📈 Progress Summary
-
-**Last updated:** 19/8/2026, 11:12:55 am
-
-### Pathway
-
-| Metric | Value |
-|--------|-------|
-| Challenges completed | 11 / 35 (31.4%) |
-| Overall score | 81.1% |
-
-### By course
-
-| Course | Completed | Score | Status |
-|--------|-----------|-------|--------|
-| React Native Fundamentals | 7/7 (100%) | 98.1% | Pass |
-| Backend Basics | 4/5 (80%) | 81.3% | Fail |
-| Advanced React Native | 0/6 (0%) | 73.4% | Fail |
-| Challenge Missions | 0/14 (0%) | 71.8% | Fail |
-| Deployment | 0/3 (0%) | 75% | Fail |
+# Backend Basics
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 27/8/2026, 2:37:36 pm*
+*Auto-updated when you run review. Last run: 27/8/2026, 10:24:19 am*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 0 / 5 (0%) |
-| Average score | 53.6% |
+| Challenges completed | 4 / 5 (80%) |
+| Average score | 81.3% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| Node.js Basics | Modules, npm, File system, HTTP server | Not passed |
-| Express.js APIs | Express, Routes, Middleware, REST | Not passed |
+| Node.js Basics | Modules, npm, File system, HTTP server | Passed |
+| Express.js APIs | Express, Routes, Middleware, REST | Passed |
 | MongoDB | Mongoose, Schemas, CRUD, MongoDB Atlas | Not passed |
-| JWT Authentication | bcrypt, JWT, Protected routes | Not passed |
-| Blog Backend API (Capstone) | User auth, CRUD posts, JWT protection, MongoDB | Not passed |
+| JWT Authentication | bcrypt, JWT, Protected routes | Passed |
+| Blog Backend API (Capstone) | User auth, CRUD posts, JWT protection, MongoDB | Passed |
+
+## Getting started
+
+```bash
+npm install
+npm run dev
+```
+
+## Setup notes for learners
+
+1. **MongoDB (challenges 03–05):** Install [MongoDB Community](https://www.mongodb.com/try/download/community) locally, or use [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) and set:
+
+   ```bash
+   set MONGO_URI=mongodb://127.0.0.1:27017/mobile_challenge
+   ```
+
+2. **JWT secret (optional):** `set JWT_SECRET=your-secret-here`
+
+3. **ESLint:** This project uses `.eslintrc.cjs` at the project root. Run `npm run lint` before review.
+
+4. **Jest:** Tests live in `tests/challenge-XX.test.tsx`. Run `npm test` from the project folder.
+
+## Run a challenge review
+
+```bash
+npm run review -- --challenge=01-nodejs-basics
+```

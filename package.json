@@ -2,9 +2,10 @@
   "name": "02-backend-basics",
   "version": "1.0.0",
   "type": "module",
-  "main": "src/app.js",
+  "main": "src/server.js",
   "scripts": {
-    "start": "node src/app.js",
+    "start": "node src/server.js",
+    "dev": "node src/server.js",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "review": "node ../review-engine/index.js"
   },

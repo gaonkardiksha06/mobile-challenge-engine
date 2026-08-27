@@ -1,12 +1,13 @@
-// src/models/User.js
 import mongoose from "mongoose";
 
-const schema = new mongoose.Schema(
+const userSchema = new mongoose.Schema(
   {
+    username: { type: String, required: true, trim: true },
     email: { type: String, required: true, unique: true, trim: true },
     password: { type: String, required: true }, // store hashed password here
   },
   { timestamps: true }
 );
 
-export const User = mongoose.models.User || mongoose.model("User", schema);
+// ✅ Prevent recompilation errors in dev/test
+export const User = mongoose.models.User || mongoose.model("User", userSchema);

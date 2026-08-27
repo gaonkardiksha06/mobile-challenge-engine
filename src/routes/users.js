@@ -1,4 +1,3 @@
-// src/routes/users.js
 import express from "express";
 import bcrypt from "bcrypt";
 import mongoose from "mongoose";
@@ -6,29 +5,33 @@ import { User } from "../models/User.js";
 
 const router = express.Router();
 
-// GET all users
+// ✅ GET all users
 router.get("/", async (_req, res) => {
   try {
     const users = await User.find({}, { password: 0 });
     res.status(200).json(users);
-  } catch (err) {
+  } catch {
     res.status(500).json({ error: "Internal server error" });
   }
 });
 
-// POST create user
+// ✅ POST create user
 router.post("/", async (req, res) => {
   try {
-    const { email, password } = req.body;
-    if (!email || !password) {
-      return res.status(400).json({ error: "email and password are required" });
+    const { username, email, password } = req.body;
+    if (!username || !email || !password) {
+      return res.status(400).json({ error: "All fields required" });
     }
 
     const hashed = await bcrypt.hash(password, 10);
-    const user = new User({ email, password: hashed });
+    const user = new User({ username, email, password: hashed });
     await user.save();
 
-    res.status(201).json({ _id: user._id.toString(), email: user.email });
+    res.status(201).json({
+      _id: user._id.toString(),
+      username: user.username,
+      email: user.email,
+    });
   } catch (err) {
     if (err.code === 11000) {
       return res.status(409).json({ error: "Email already exists" });
@@ -37,7 +40,7 @@ router.post("/", async (req, res) => {
   }
 });
 
-// PUT update user
+// ✅ PUT update user
 router.put("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -45,23 +48,32 @@ router.put("/:id", async (req, res) => {
       return res.status(404).json({ error: "User not found" });
     }
 
-    const { email, password } = req.body;
+    const { username, email, password } = req.body;
     const update = {};
+    if (username) update.username = username;
     if (email) update.email = email;
     if (password) update.password = await bcrypt.hash(password, 10);
 
-    const user = await User.findByIdAndUpdate(id, update, { new: true });
+    const user = await User.findByIdAndUpdate(id, update, {
+      new: true,
+      runValidators: true,
+    });
+
     if (!user) {
       return res.status(404).json({ error: "User not found" });
     }
 
-    res.status(200).json({ _id: user._id.toString(), email: user.email });
-  } catch (err) {
+    res.status(200).json({
+      _id: user._id.toString(),
+      username: user.username,
+      email: user.email,
+    });
+  } catch {
     res.status(500).json({ error: "Internal server error" });
   }
 });
 
-// DELETE remove user
+// ✅ DELETE remove user
 router.delete("/:id", async (req, res) => {
   try {
     const { id } = req.params;
@@ -75,7 +87,7 @@ router.delete("/:id", async (req, res) => {
     }
 
     res.status(200).json({ deleted: true });
-  } catch (err) {
+  } catch {
     res.status(500).json({ error: "Internal server error" });
   }
 });
