@@ -1,0 +1,22 @@
+{
+  "challengeId": "05-blog-backend-api",
+  "challengeName": "Blog Backend API (Capstone)",
+  "difficulty": "advanced",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "User auth",
+    "CRUD posts",
+    "JWT protection",
+    "MongoDB"
+  ],
+  "filesToCheck": [
+    "src/app.js",
+    "src/routes/posts.js",
+    "src/routes/auth.js"
+  ],
+  "patternsRequired": [
+    "express",
+    "jwt",
+    "mongoose"
+  ]
+}

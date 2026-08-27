@@ -1,0 +1,21 @@
+{
+  "challengeId": "01-nodejs-basics",
+  "challengeName": "Node.js Basics",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Modules",
+    "npm",
+    "File system",
+    "HTTP server"
+  ],
+  "filesToCheck": [
+    "src/server.js",
+    "src/fs-utils.js",
+    "src/math.js"
+  ],
+  "patternsRequired": [
+    "http",
+    "fs"
+  ]
+}

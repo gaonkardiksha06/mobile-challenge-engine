@@ -1,0 +1,21 @@
+{
+  "challengeId": "03-mongodb",
+  "challengeName": "MongoDB",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Mongoose",
+    "Schemas",
+    "CRUD",
+    "MongoDB Atlas"
+  ],
+  "filesToCheck": [
+    "src/db.js",
+    "src/models/User.js",
+    "src/routes/users.js"
+  ],
+  "patternsRequired": [
+    "mongoose",
+    "schema"
+  ]
+}

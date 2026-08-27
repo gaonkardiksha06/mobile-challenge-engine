@@ -224,3 +224,19 @@ Results are written to:
 | Challenge Missions | 0/14 (0%) | 71.8% | Fail |
 | Deployment | 0/3 (0%) | 75% | Fail |
 
+## 📊 Progress Evidence
+
+*Auto-updated when you run review. Last run: 27/8/2026, 2:37:36 pm*
+
+| Metric | Value |
+|--------|-------|
+| Challenges completed | 0 / 5 (0%) |
+| Average score | 53.6% |
+
+| Challenge | Skills covered | Status |
+|-----------|----------------|--------|
+| Node.js Basics | Modules, npm, File system, HTTP server | Not passed |
+| Express.js APIs | Express, Routes, Middleware, REST | Not passed |
+| MongoDB | Mongoose, Schemas, CRUD, MongoDB Atlas | Not passed |
+| JWT Authentication | bcrypt, JWT, Protected routes | Not passed |
+| Blog Backend API (Capstone) | User auth, CRUD posts, JWT protection, MongoDB | Not passed |

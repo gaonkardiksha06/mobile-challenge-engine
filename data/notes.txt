@@ -1,0 +1,3 @@
+await request.post('/notes', {
+  data: { content: 'abc\nabcdef' },
+});

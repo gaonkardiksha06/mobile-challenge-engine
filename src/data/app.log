@@ -1,0 +1,433 @@
+[2026-08-19T11:07:17.927Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:14:3)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T11:14:29.239Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:14:3)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T11:16:31.069Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:14:3)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T11:20:01.180Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:14:3)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T11:23:57.499Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:14:3)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T11:55:39.415Z] ERROR: Database connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2026-08-19T11:55:39.418Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:13:5)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:106:5)
+[2026-08-19T12:00:45.948Z] ERROR: Database connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2026-08-19T12:00:45.951Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:13:5)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:106:5)
+[2026-08-19T12:08:50.085Z] ERROR: Database connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2026-08-19T12:08:50.088Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:13:5)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:106:5)
+[2026-08-19T13:11:23.546Z] INFO: Database connected
+[2026-08-19T13:11:23.548Z] INFO: Server listening on port 3000
+[2026-08-19T13:25:00.389Z] INFO: Server listening on port 3000
+[2026-08-19T13:25:00.387Z] INFO: Database connected
+[2026-08-19T13:29:37.438Z] INFO: Server listening on port 3000
+[2026-08-19T13:29:37.436Z] INFO: Database connected
+[2026-08-19T13:29:40.204Z] INFO: Notes file overwritten
+[2026-08-19T13:29:40.260Z] INFO: Notes file overwritten
+[2026-08-19T13:29:40.273Z] INFO: Note appended
+[2026-08-19T13:29:40.328Z] INFO: Notes file overwritten
+[2026-08-19T13:29:40.399Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T13:32:28.887Z] INFO: Database connected
+[2026-08-19T13:32:28.890Z] INFO: Server listening on port 5174
+[2026-08-19T13:32:31.740Z] INFO: Notes file overwritten
+[2026-08-19T13:32:31.789Z] INFO: Notes file overwritten
+[2026-08-19T13:32:31.804Z] INFO: Note appended
+[2026-08-19T13:32:31.871Z] INFO: Notes file overwritten
+[2026-08-19T13:32:31.957Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T13:32:54.057Z] INFO: Database connected
+[2026-08-19T13:32:54.059Z] INFO: Server listening on port 5174
+[2026-08-19T13:32:55.781Z] INFO: GET /api/notes 404 2ms
+[2026-08-19T13:32:57.845Z] INFO: GET /api/notes 404 1ms
+[2026-08-19T13:32:59.359Z] INFO: POST /api/notes 404 0ms
+[2026-08-19T13:33:00.858Z] INFO: POST /api/notes 404 0ms
+[2026-08-19T13:33:03.153Z] INFO: POST /api/notes 404 1ms
+[2026-08-19T13:33:05.178Z] INFO: POST /api/notes 404 0ms
+[2026-08-19T13:33:06.705Z] INFO: POST /api/notes 404 0ms
+[2026-08-19T13:33:06.713Z] INFO: DELETE /api/notes/undefined 404 1ms
+[2026-08-19T13:33:08.868Z] INFO: POST /api/notes 404 1ms
+[2026-08-19T13:33:08.888Z] INFO: DELETE /api/notes/undefined 404 0ms
+[2026-08-19T13:33:10.605Z] INFO: DELETE /api/notes/does-not-exist 404 1ms
+[2026-08-19T13:33:10.633Z] INFO: GET /health 200 0ms
+[2026-08-19T13:33:10.657Z] INFO: GET /api/nope 404 1ms
+[2026-08-19T13:33:33.416Z] INFO: Server listening on port 5174
+[2026-08-19T13:33:33.413Z] INFO: Database connected
+[2026-08-19T13:33:35.779Z] INFO: GET /api/users 200 30ms
+[2026-08-19T13:33:35.838Z] INFO: POST /api/users 500 7ms
+[2026-08-19T13:33:37.907Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:33:39.929Z] INFO: POST /api/users 400 0ms
+[2026-08-19T13:33:39.962Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:33:41.936Z] INFO: POST /api/users 500 3ms
+[2026-08-19T13:33:44.253Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:33:45.759Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:33:47.244Z] INFO: GET /api/users/does-not-exist 404 3ms
+[2026-08-19T13:33:47.300Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T13:40:23.875Z] INFO: Database connected
+[2026-08-19T13:40:23.873Z] INFO: Server listening on port 5174
+[2026-08-19T13:40:27.184Z] INFO: Notes file overwritten
+[2026-08-19T13:40:27.345Z] INFO: Notes file overwritten
+[2026-08-19T13:40:27.394Z] INFO: Note appended
+[2026-08-19T13:40:27.516Z] INFO: Notes file overwritten
+[2026-08-19T13:40:27.598Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T13:40:47.769Z] INFO: Database connected
+[2026-08-19T13:40:47.767Z] INFO: Server listening on port 5174
+[2026-08-19T13:40:49.800Z] INFO: GET /api/notes 200 3ms
+[2026-08-19T13:40:51.486Z] INFO: GET /api/notes 200 2ms
+[2026-08-19T13:40:52.861Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:40:54.262Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:40:55.781Z] INFO: POST /api/notes 400 0ms
+[2026-08-19T13:40:55.816Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:40:55.827Z] INFO: DELETE /api/notes/undefined 404 0ms
+[2026-08-19T13:40:57.735Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:40:57.747Z] INFO: DELETE /api/notes/undefined 404 1ms
+[2026-08-19T13:40:59.141Z] INFO: DELETE /api/notes/does-not-exist 404 0ms
+[2026-08-19T13:40:59.169Z] INFO: GET /health 200 0ms
+[2026-08-19T13:40:59.192Z] INFO: GET /api/nope 404 0ms
+[2026-08-19T13:41:19.518Z] INFO: Database connected
+[2026-08-19T13:41:19.515Z] INFO: Server listening on port 5174
+[2026-08-19T13:41:22.019Z] INFO: GET /api/users 200 1065ms
+[2026-08-19T13:41:22.102Z] INFO: POST /api/users 500 8ms
+[2026-08-19T13:41:23.490Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:41:24.727Z] INFO: POST /api/users 400 1ms
+[2026-08-19T13:41:24.754Z] INFO: POST /api/users 500 2ms
+[2026-08-19T13:41:25.929Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:41:27.515Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:41:28.959Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:41:30.510Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T13:41:30.546Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T13:45:11.496Z] INFO: Server listening on port 3000
+[2026-08-19T13:45:11.493Z] INFO: Database connected
+[2026-08-19T13:45:13.460Z] INFO: GET /api/notes 200 2ms
+[2026-08-19T13:45:15.245Z] INFO: POST /api/notes 400 0ms
+[2026-08-19T13:45:16.583Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:45:16.611Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:45:16.621Z] INFO: DELETE /api/notes/undefined 404 1ms
+[2026-08-19T13:45:17.933Z] INFO: DELETE /api/notes/does-not-exist 404 1ms
+[2026-08-19T13:45:17.965Z] INFO: GET /health 200 1ms
+[2026-08-19T13:45:17.999Z] INFO: GET /api/nope 404 3ms
+[2026-08-19T13:53:16.698Z] INFO: Server listening on port 3000
+[2026-08-19T13:53:16.695Z] INFO: Database connected
+[2026-08-19T13:53:18.238Z] INFO: GET /api/notes 200 2ms
+[2026-08-19T13:53:18.292Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T13:53:18.292Z] INFO: Note created
+[2026-08-19T13:53:18.308Z] INFO: GET /api/notes 200 0ms
+[2026-08-19T13:53:18.339Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T13:53:18.374Z] INFO: Note created
+[2026-08-19T13:53:18.374Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T13:53:18.381Z] INFO: Note deleted
+[2026-08-19T13:53:18.381Z] INFO: DELETE /api/notes/1787147598373 200 1ms
+[2026-08-19T13:53:18.390Z] INFO: GET /api/notes 200 0ms
+[2026-08-19T13:53:18.419Z] INFO: DELETE /api/notes/does-not-exist 404 1ms
+[2026-08-19T13:53:18.442Z] INFO: GET /health 200 1ms
+[2026-08-19T13:53:18.484Z] INFO: GET /api/nope 404 1ms
+[2026-08-19T13:56:16.891Z] INFO: Server listening on port 5174
+[2026-08-19T13:56:16.888Z] INFO: Database connected
+[2026-08-19T13:56:18.556Z] INFO: Notes file overwritten
+[2026-08-19T13:56:18.590Z] INFO: Notes file overwritten
+[2026-08-19T13:56:18.605Z] ERROR: Error: EBUSY: resource busy or locked, open 'D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\src\data\notes.txt'
+    at async open (node:internal/fs/promises:638:25)
+    at async writeFile (node:internal/fs/promises:1212:14)
+    at async writeNotes (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/fs-utils.js:24:3)
+    at async appendNote (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/fs-utils.js:31:3)
+    at async file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:64:5
+[2026-08-19T13:56:19.917Z] INFO: Notes file overwritten
+[2026-08-19T13:56:19.963Z] INFO: Note appended
+[2026-08-19T13:56:20.019Z] INFO: Notes file overwritten
+[2026-08-19T13:56:20.069Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T13:56:38.933Z] INFO: Server listening on port 5174
+[2026-08-19T13:56:38.929Z] INFO: Database connected
+[2026-08-19T13:56:41.355Z] INFO: GET /api/notes 200 2ms
+[2026-08-19T13:56:41.424Z] INFO: Note created
+[2026-08-19T13:56:41.424Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T13:56:41.439Z] INFO: GET /api/notes 200 0ms
+[2026-08-19T13:56:41.463Z] INFO: POST /api/notes 400 0ms
+[2026-08-19T13:56:41.487Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T13:56:41.487Z] INFO: Note created
+[2026-08-19T13:56:41.492Z] INFO: Note deleted
+[2026-08-19T13:56:41.492Z] INFO: DELETE /api/notes/1787147801485 200 1ms
+[2026-08-19T13:56:41.501Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T13:56:41.522Z] INFO: DELETE /api/notes/does-not-exist 404 1ms
+[2026-08-19T13:56:41.542Z] INFO: GET /health 200 1ms
+[2026-08-19T13:56:41.561Z] INFO: GET /api/nope 404 1ms
+[2026-08-19T13:56:58.594Z] INFO: Server listening on port 5174
+[2026-08-19T13:56:58.592Z] INFO: Database connected
+[2026-08-19T13:57:00.392Z] INFO: GET /api/users 200 30ms
+[2026-08-19T13:57:00.443Z] INFO: POST /api/users 500 8ms
+[2026-08-19T13:57:01.756Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:57:03.355Z] INFO: POST /api/users 400 1ms
+[2026-08-19T13:57:03.396Z] INFO: POST /api/users 500 2ms
+[2026-08-19T13:57:05.007Z] INFO: POST /api/users 500 2ms
+[2026-08-19T13:57:06.322Z] INFO: POST /api/users 500 2ms
+[2026-08-19T13:57:07.561Z] INFO: POST /api/users 500 1ms
+[2026-08-19T13:57:09.078Z] INFO: GET /api/users/does-not-exist 404 2ms
+[2026-08-19T13:57:09.127Z] INFO: DELETE /api/users/does-not-exist 404 0ms
+[2026-08-19T17:30:31.876Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:13:5)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:106:5)
+[2026-08-19T17:30:31.872Z] ERROR: Database connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2026-08-19T17:45:33.224Z] ERROR: DB connection failed: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+    at _handleConnectionErrors (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1169:11)
+    at NativeConnection.openUri (D:\SPARK+\mobile-challenge-engine\courses\02-backend-basics\project\node_modules\mongoose\lib\connection.js:1100:11)
+    at runNextTicks (node:internal/process/task_queues:65:5)
+    at process.processTimers (node:internal/timers:526:9)
+    at async connectDB (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/db.js:12:5)
+    at async startServer (file:///D:/SPARK+/mobile-challenge-engine/courses/02-backend-basics/project/src/server.js:104:5)
+[2026-08-19T17:45:33.215Z] ERROR: Database connection failed: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+[2026-08-19T17:48:48.709Z] INFO: Server listening on port 3000
+[2026-08-19T17:48:48.712Z] INFO: Database connected
+[2026-08-19T17:48:51.189Z] INFO: GET /api/users 200 259ms
+[2026-08-19T17:48:51.354Z] INFO: POST /api/users 500 92ms
+[2026-08-19T17:48:53.033Z] INFO: POST /api/users 400 0ms
+[2026-08-19T17:48:53.143Z] INFO: POST /api/users 500 73ms
+[2026-08-19T17:48:54.501Z] INFO: POST /api/users 500 69ms
+[2026-08-19T17:48:55.857Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T17:48:55.889Z] INFO: DELETE /api/users/does-not-exist 500 3ms
+[2026-08-19T17:54:18.366Z] INFO: Database connected
+[2026-08-19T17:54:18.369Z] INFO: Server listening on port 3000
+[2026-08-19T17:54:19.997Z] INFO: GET /api/users 200 63ms
+[2026-08-19T17:54:20.191Z] INFO: User created: e2e-user-1787162060040
+[2026-08-19T17:54:20.191Z] INFO: POST /api/users 201 129ms
+[2026-08-19T17:54:20.235Z] INFO: POST /api/users 400 0ms
+[2026-08-19T17:54:20.381Z] INFO: User created: update-user-1787162060262
+[2026-08-19T17:54:20.381Z] INFO: POST /api/users 201 112ms
+[2026-08-19T17:54:20.391Z] INFO: PUT /api/users/undefined 500 4ms
+[2026-08-19T17:54:21.996Z] INFO: User created: delete-user-1787162061816
+[2026-08-19T17:54:21.997Z] INFO: POST /api/users 201 147ms
+[2026-08-19T17:54:22.021Z] INFO: DELETE /api/users/undefined 500 3ms
+[2026-08-19T17:54:23.659Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T17:54:23.699Z] INFO: DELETE /api/users/does-not-exist 500 2ms
+[2026-08-19T17:56:21.017Z] INFO: Database connected
+[2026-08-19T17:56:21.019Z] INFO: Server listening on port 3000
+[2026-08-19T17:56:23.300Z] INFO: GET /api/users 200 29ms
+[2026-08-19T17:56:23.464Z] INFO: POST /api/users 201 103ms
+[2026-08-19T17:56:23.507Z] INFO: POST /api/users 400 1ms
+[2026-08-19T17:56:23.651Z] INFO: POST /api/users 201 93ms
+[2026-08-19T17:56:23.659Z] INFO: PUT /api/users/undefined 500 2ms
+[2026-08-19T17:56:25.235Z] INFO: POST /api/users 201 121ms
+[2026-08-19T17:56:25.259Z] INFO: DELETE /api/users/undefined 500 2ms
+[2026-08-19T17:56:27.162Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T17:56:27.212Z] INFO: DELETE /api/users/does-not-exist 500 2ms
+[2026-08-19T17:58:07.476Z] INFO: Server listening on port 3000
+[2026-08-19T17:58:07.473Z] INFO: Database connected
+[2026-08-19T17:58:09.622Z] INFO: GET /api/users 200 71ms
+[2026-08-19T17:58:09.797Z] INFO: POST /api/users 201 113ms
+[2026-08-19T17:58:09.830Z] INFO: POST /api/users 400 0ms
+[2026-08-19T17:58:09.962Z] INFO: POST /api/users 201 97ms
+[2026-08-19T17:58:09.972Z] INFO: PUT /api/users/undefined 500 5ms
+[2026-08-19T17:58:11.751Z] INFO: POST /api/users 201 100ms
+[2026-08-19T17:58:11.764Z] INFO: DELETE /api/users/undefined 500 1ms
+[2026-08-19T17:58:13.271Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T17:58:13.317Z] INFO: DELETE /api/users/does-not-exist 500 2ms
+[2026-08-19T18:01:16.543Z] INFO: Database connected
+[2026-08-19T18:01:16.546Z] INFO: Server listening on port 3000
+[2026-08-19T18:01:18.769Z] INFO: GET /api/users 404 1ms
+[2026-08-19T18:01:20.120Z] INFO: POST /api/users 404 1ms
+[2026-08-19T18:01:22.098Z] INFO: POST /api/users 404 0ms
+[2026-08-19T18:01:23.402Z] INFO: POST /api/users 404 1ms
+[2026-08-19T18:01:24.712Z] INFO: POST /api/users 404 1ms
+[2026-08-19T18:01:26.003Z] INFO: GET /api/users/does-not-exist 404 0ms
+[2026-08-19T18:01:26.034Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:07:49.324Z] INFO: Server listening on port 3000
+[2026-08-19T18:07:49.321Z] INFO: Database connected
+[2026-08-19T18:07:51.614Z] INFO: GET /api/users 200 50ms
+[2026-08-19T18:07:51.788Z] INFO: POST /api/users 201 125ms
+[2026-08-19T18:07:51.858Z] INFO: POST /api/users 400 1ms
+[2026-08-19T18:07:52.011Z] INFO: POST /api/users 201 118ms
+[2026-08-19T18:07:52.021Z] INFO: PUT /api/users/undefined 404 1ms
+[2026-08-19T18:07:53.428Z] INFO: POST /api/users 201 118ms
+[2026-08-19T18:07:53.445Z] INFO: DELETE /api/users/undefined 404 2ms
+[2026-08-19T18:07:55.100Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T18:07:55.137Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:10:57.535Z] INFO: Database connected
+[2026-08-19T18:10:57.537Z] INFO: Server listening on port 3000
+[2026-08-19T18:10:59.444Z] INFO: GET /api/users 200 56ms
+[2026-08-19T18:10:59.616Z] INFO: POST /api/users 201 115ms
+[2026-08-19T18:10:59.648Z] INFO: POST /api/users 400 0ms
+[2026-08-19T18:10:59.814Z] INFO: POST /api/users 201 135ms
+[2026-08-19T18:10:59.833Z] INFO: PUT /api/users/undefined 500 8ms
+[2026-08-19T18:11:01.166Z] INFO: POST /api/users 201 106ms
+[2026-08-19T18:11:01.190Z] INFO: DELETE /api/users/undefined 500 1ms
+[2026-08-19T18:11:02.984Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T18:11:03.028Z] INFO: DELETE /api/users/does-not-exist 500 2ms
+[2026-08-19T18:12:58.958Z] INFO: Database connected
+[2026-08-19T18:12:58.960Z] INFO: Server listening on port 3000
+[2026-08-19T18:13:01.005Z] INFO: GET /api/users 200 28ms
+[2026-08-19T18:13:01.149Z] INFO: POST /api/users 201 98ms
+[2026-08-19T18:13:01.178Z] INFO: POST /api/users 400 1ms
+[2026-08-19T18:13:01.311Z] INFO: POST /api/users 201 98ms
+[2026-08-19T18:13:01.321Z] INFO: PUT /api/users/undefined 404 2ms
+[2026-08-19T18:13:02.604Z] INFO: POST /api/users 201 83ms
+[2026-08-19T18:13:02.618Z] INFO: DELETE /api/users/undefined 404 1ms
+[2026-08-19T18:13:04.142Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T18:13:04.177Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:17:35.552Z] INFO: Database connected
+[2026-08-19T18:17:35.554Z] INFO: Server listening on port 3000
+[2026-08-19T18:17:37.440Z] INFO: GET /api/users 200 58ms
+[2026-08-19T18:17:37.606Z] INFO: POST /api/users 201 118ms
+[2026-08-19T18:17:37.640Z] INFO: POST /api/users 400 0ms
+[2026-08-19T18:17:37.780Z] INFO: POST /api/users 201 112ms
+[2026-08-19T18:17:37.795Z] INFO: PUT /api/users/undefined 404 3ms
+[2026-08-19T18:17:39.105Z] INFO: POST /api/users 201 105ms
+[2026-08-19T18:17:39.131Z] INFO: DELETE /api/users/undefined 404 1ms
+[2026-08-19T18:17:40.629Z] INFO: GET /api/users/does-not-exist 404 2ms
+[2026-08-19T18:17:40.667Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:21:05.730Z] INFO: Database connected
+[2026-08-19T18:21:05.732Z] INFO: Server listening on port 3000
+[2026-08-19T18:21:07.647Z] INFO: GET /api/users 200 31ms
+[2026-08-19T18:21:07.808Z] INFO: POST /api/users 201 101ms
+[2026-08-19T18:21:07.842Z] INFO: POST /api/users 400 1ms
+[2026-08-19T18:21:07.966Z] INFO: POST /api/users 201 94ms
+[2026-08-19T18:21:07.997Z] INFO: PUT /api/users/6a85f413b013f1b8690cb82e 200 26ms
+[2026-08-19T18:21:08.127Z] INFO: POST /api/users 201 95ms
+[2026-08-19T18:21:08.154Z] INFO: DELETE /api/users/6a85f414b013f1b8690cb831 200 23ms
+[2026-08-19T18:21:08.188Z] INFO: GET /api/users/does-not-exist 404 2ms
+[2026-08-19T18:21:08.222Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:22:26.185Z] INFO: Server listening on port 5174
+[2026-08-19T18:22:26.183Z] INFO: Database connected
+[2026-08-19T18:22:28.658Z] INFO: Notes file overwritten
+[2026-08-19T18:22:28.703Z] INFO: Notes file overwritten
+[2026-08-19T18:22:28.726Z] INFO: Note appended
+[2026-08-19T18:22:28.807Z] INFO: Notes file overwritten
+[2026-08-19T18:22:28.892Z] INFO: GET /does-not-exist 404 2ms
+[2026-08-19T18:22:49.569Z] INFO: Server listening on port 5174
+[2026-08-19T18:22:49.566Z] INFO: Database connected
+[2026-08-19T18:22:51.718Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:22:51.778Z] INFO: Note created
+[2026-08-19T18:22:51.779Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T18:22:51.795Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:22:51.833Z] INFO: POST /api/notes 400 0ms
+[2026-08-19T18:22:51.857Z] INFO: Note created
+[2026-08-19T18:22:51.857Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T18:22:51.870Z] INFO: Note deleted
+[2026-08-19T18:22:51.870Z] INFO: DELETE /api/notes/1787163771856 200 1ms
+[2026-08-19T18:22:51.876Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:22:51.901Z] INFO: DELETE /api/notes/does-not-exist 404 2ms
+[2026-08-19T18:22:51.927Z] INFO: GET /health 200 2ms
+[2026-08-19T18:22:51.954Z] INFO: GET /api/nope 404 1ms
+[2026-08-19T18:23:09.583Z] INFO: Server listening on port 5174
+[2026-08-19T18:23:09.582Z] INFO: Database connected
+[2026-08-19T18:23:10.976Z] INFO: GET /api/users 200 58ms
+[2026-08-19T18:23:11.139Z] INFO: POST /api/users 201 117ms
+[2026-08-19T18:23:11.168Z] INFO: POST /api/users 400 0ms
+[2026-08-19T18:23:11.305Z] INFO: POST /api/users 201 116ms
+[2026-08-19T18:23:11.361Z] INFO: PUT /api/users/6a85f48f4a4524744a1e2a2b 200 48ms
+[2026-08-19T18:23:11.569Z] INFO: POST /api/users 201 155ms
+[2026-08-19T18:23:11.620Z] INFO: DELETE /api/users/6a85f48f4a4524744a1e2a2e 200 45ms
+[2026-08-19T18:23:11.669Z] INFO: GET /api/users/does-not-exist 404 2ms
+[2026-08-19T18:23:11.698Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:31:52.533Z] INFO: Server listening on port 5174
+[2026-08-19T18:31:52.535Z] INFO: Database connected
+[2026-08-19T18:31:54.801Z] INFO: Notes file overwritten
+[2026-08-19T18:31:54.838Z] INFO: Notes file overwritten
+[2026-08-19T18:31:54.852Z] INFO: Note appended
+[2026-08-19T18:31:54.901Z] INFO: Notes file overwritten
+[2026-08-19T18:31:54.957Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T18:32:14.080Z] INFO: Database connected
+[2026-08-19T18:32:14.082Z] INFO: Server listening on port 5174
+[2026-08-19T18:32:16.172Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:32:16.215Z] INFO: Note created
+[2026-08-19T18:32:16.215Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T18:32:16.228Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:32:16.256Z] INFO: POST /api/notes 400 0ms
+[2026-08-19T18:32:16.275Z] INFO: Note created
+[2026-08-19T18:32:16.275Z] INFO: POST /api/notes 201 0ms
+[2026-08-19T18:32:16.285Z] INFO: Note deleted
+[2026-08-19T18:32:16.285Z] INFO: DELETE /api/notes/1787164336274 200 2ms
+[2026-08-19T18:32:16.289Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T18:32:16.310Z] INFO: DELETE /api/notes/does-not-exist 404 1ms
+[2026-08-19T18:32:16.331Z] INFO: GET /health 200 0ms
+[2026-08-19T18:32:16.349Z] INFO: GET /api/nope 404 1ms
+[2026-08-19T18:32:32.019Z] INFO: Server listening on port 5174
+[2026-08-19T18:32:32.017Z] INFO: Database connected
+[2026-08-19T18:32:33.732Z] INFO: GET /api/users 200 32ms
+[2026-08-19T18:32:33.873Z] INFO: POST /api/users 201 105ms
+[2026-08-19T18:32:33.906Z] INFO: POST /api/users 400 1ms
+[2026-08-19T18:32:34.030Z] INFO: POST /api/users 201 95ms
+[2026-08-19T18:32:34.067Z] INFO: PUT /api/users/6a85f6c2c23d17c02405b1d9 200 31ms
+[2026-08-19T18:32:34.213Z] INFO: POST /api/users 201 98ms
+[2026-08-19T18:32:34.249Z] INFO: DELETE /api/users/6a85f6c2c23d17c02405b1dc 200 31ms
+[2026-08-19T18:32:34.292Z] INFO: GET /api/users/does-not-exist 404 2ms
+[2026-08-19T18:32:34.320Z] INFO: DELETE /api/users/does-not-exist 404 1ms
+[2026-08-19T18:38:51.757Z] INFO: Database connected
+[2026-08-19T18:38:51.759Z] INFO: Server listening on port 3000
+[2026-08-19T18:38:53.949Z] INFO: POST /auth/register 404 1ms
+[2026-08-19T18:43:34.853Z] INFO: Server listening on port 3000
+[2026-08-19T18:43:34.851Z] INFO: Database connected
+[2026-08-19T18:47:44.494Z] INFO: Database connected
+[2026-08-19T18:47:44.496Z] INFO: Server listening on port 3000
+[2026-08-19T18:52:49.344Z] INFO: Server listening on port 3000
+[2026-08-19T18:52:49.346Z] INFO: Database connected
+[2026-08-19T18:56:37.103Z] INFO: Database connected
+[2026-08-19T18:56:37.106Z] INFO: Server listening on port 3000
+[2026-08-19T19:01:02.546Z] INFO: Server listening on port 3000
+[2026-08-19T19:01:02.542Z] INFO: Database connected
+[2026-08-19T19:04:21.512Z] INFO: Database connected
+[2026-08-19T19:04:21.516Z] INFO: Server listening on port 3000
+[2026-08-19T19:10:13.074Z] INFO: Server listening on port 3000
+[2026-08-19T19:10:13.072Z] INFO: Database connected
+[2026-08-19T19:19:39.084Z] INFO: Server listening on port 3000
+[2026-08-19T19:19:39.082Z] INFO: Database connected
+[2026-08-19T19:20:51.157Z] INFO: Server listening on port 5174
+[2026-08-19T19:20:51.154Z] INFO: Database connected
+[2026-08-19T19:20:53.349Z] INFO: Notes file overwritten
+[2026-08-19T19:20:53.389Z] INFO: Notes file overwritten
+[2026-08-19T19:20:53.403Z] INFO: Note appended
+[2026-08-19T19:20:53.461Z] INFO: Notes file overwritten
+[2026-08-19T19:20:53.527Z] INFO: GET /does-not-exist 404 1ms
+[2026-08-19T19:21:13.540Z] INFO: Server listening on port 5174
+[2026-08-19T19:21:13.537Z] INFO: Database connected
+[2026-08-19T19:21:14.946Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T19:21:14.995Z] INFO: POST /api/notes 201 0ms
+[2026-08-19T19:21:14.995Z] INFO: Note created
+[2026-08-19T19:21:15.007Z] INFO: GET /api/notes 200 0ms
+[2026-08-19T19:21:15.029Z] INFO: POST /api/notes 400 1ms
+[2026-08-19T19:21:15.055Z] INFO: Note created
+[2026-08-19T19:21:15.055Z] INFO: POST /api/notes 201 1ms
+[2026-08-19T19:21:15.061Z] INFO: Note deleted
+[2026-08-19T19:21:15.061Z] INFO: DELETE /api/notes/1787167275054 200 2ms
+[2026-08-19T19:21:15.070Z] INFO: GET /api/notes 200 1ms
+[2026-08-19T19:21:15.091Z] INFO: DELETE /api/notes/does-not-exist 404 2ms
+[2026-08-19T19:21:15.114Z] INFO: GET /health 200 1ms
+[2026-08-19T19:21:15.133Z] INFO: GET /api/nope 404 0ms
+[2026-08-19T19:21:33.176Z] INFO: Server listening on port 5174
+[2026-08-19T19:21:33.174Z] INFO: Database connected
+[2026-08-19T19:21:35.592Z] INFO: GET /api/users 200 33ms
+[2026-08-19T19:21:35.740Z] INFO: POST /api/users 201 105ms
+[2026-08-19T19:21:37.042Z] INFO: POST /api/users 201 82ms
+[2026-08-19T19:21:38.728Z] INFO: POST /api/users 400 1ms
+[2026-08-19T19:21:38.848Z] INFO: POST /api/users 201 88ms
+[2026-08-19T19:21:38.882Z] INFO: PUT /api/users/6a860242548c70a67629cb18 200 27ms
+[2026-08-19T19:21:40.320Z] INFO: POST /api/users 201 89ms
+[2026-08-19T19:21:40.355Z] INFO: PUT /api/users/6a860244548c70a67629cb1b 200 23ms
+[2026-08-19T19:21:41.697Z] INFO: POST /api/users 201 83ms
+[2026-08-19T19:21:41.729Z] INFO: DELETE /api/users/6a860245548c70a67629cb1e 200 20ms
+[2026-08-19T19:21:41.762Z] INFO: GET /api/users/does-not-exist 404 1ms
+[2026-08-19T19:21:41.788Z] INFO: DELETE /api/users/does-not-exist 404 0ms
+[2026-08-19T19:21:59.697Z] INFO: Server listening on port 5174
+[2026-08-19T19:21:59.699Z] INFO: Database connected
