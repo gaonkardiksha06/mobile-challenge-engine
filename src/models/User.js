@@ -1,13 +1,31 @@
 import mongoose from "mongoose";
 
+// schema
 const userSchema = new mongoose.Schema(
   {
-    username: { type: String, required: true, trim: true },
-    email: { type: String, required: true, unique: true, trim: true },
-    password: { type: String, required: true }, // store hashed password here
+    username: {
+      type: String,
+      required: true,
+      trim: true,
+    },
+    email: {
+      type: String,
+      required: true,
+      unique: true,
+      trim: true,
+    },
+    password: {
+      type: String,
+      required: true,
+    },
   },
-  { timestamps: true }
+  {
+    timestamps: true,
+  }
 );
 
-// ✅ Prevent recompilation errors in dev/test
-export const User = mongoose.models.User || mongoose.model("User", userSchema);
+const User =
+  mongoose.models.User || mongoose.model("User", userSchema);
+
+export { User };
+export default User;
