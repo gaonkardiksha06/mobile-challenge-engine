@@ -14,11 +14,6 @@ import { requestLogger, errorHandler } from "./middleware/logger.js";
 
 const app = express();
 
-// MongoDB connection
-if (process.env.MONGO_URI) {
-  mongoose.connect(process.env.MONGO_URI).catch(() => {});
-}
-
 // Middleware
 app.use(cors());
 app.use(express.json());
@@ -37,6 +32,7 @@ app.get("/health", (_req, res) => {
 app.use("/api/notes", notesRouter);
 app.use("/api/users", usersRouter);
 app.use("/api/auth", authRouter);
+app.use("/auth", authRouter);
 app.use("/api/posts", postsRouter);
 
 // 404 handler
