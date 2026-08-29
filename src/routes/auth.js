@@ -1,9 +1,9 @@
+
 // src/routes/auth.js
 
 import express from "express";
 import bcrypt from "bcryptjs";
-import jwt from "jsonwebtoken";
-import { requireAuth } from "../middleware/auth.js";
+import { requireAuth, signToken } from "../middleware/auth.js";
 import { User } from "../models/User.js";
 
 const router = express.Router();
@@ -34,11 +34,11 @@ router.delete("/test-cleanup", async (req, res) => {
 // Register
 router.post("/register", async (req, res) => {
   try {
-    const { email, password } = req.body;
+    const { username, email, password } = req.body;
 
-    if (!email || !password) {
+    if (!username || !email || !password) {
       return res.status(400).json({
-        error: "Email and password are required",
+        error: "Username, email and password are required",
       });
     }
 
@@ -53,12 +53,14 @@ router.post("/register", async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const user = await User.create({
+      username,
       email,
       password: hashedPassword,
     });
 
     res.status(201).json({
       _id: user._id.toString(),
+      username: user.username,
       email: user.email,
     });
   } catch {
@@ -98,18 +100,14 @@ router.post("/login", async (req, res) => {
       });
     }
 
-    const token = jwt.sign(
-      {
-        id: user._id,
-        email: user.email,
-      },
-      process.env.JWT_SECRET,
-      {
-        expiresIn: "1h",
-      }
-    );
+    const token = signToken({
+      id: user._id.toString(),
+      email: user.email,
+    });
 
-    res.json({ token });
+    res.json({
+      token,
+    });
   } catch {
     res.status(500).json({
       error: "Internal server error",
@@ -133,6 +131,7 @@ router.get("/profile", requireAuth, async (req, res) => {
 
     res.json({
       _id: user._id.toString(),
+      username: user.username,
       email: user.email,
     });
   } catch {
@@ -143,3 +142,4 @@ router.get("/profile", requireAuth, async (req, res) => {
 });
 
 export default router;
+

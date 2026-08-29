@@ -2,19 +2,19 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 29/8/2026, 10:06:06 am*
+*Auto-updated when you run review. Last run: 29/8/2026, 1:28:34 pm*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 3 / 5 (60%) |
-| Average score | 80.7% |
+| Challenges completed | 4 / 5 (80%) |
+| Average score | 80% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
 | Node.js Basics | Modules, npm, File system, HTTP server | Passed |
 | Express.js APIs | Express, Routes, Middleware, REST | Not passed |
 | MongoDB | Mongoose, Schemas, CRUD, MongoDB Atlas | Passed |
-| JWT Authentication | bcrypt, JWT, Protected routes | Not passed |
+| JWT Authentication | bcrypt, JWT, Protected routes | Passed |
 | Blog Backend API (Capstone) | User auth, CRUD posts, JWT protection, MongoDB | Passed |
 
 ## Getting started
