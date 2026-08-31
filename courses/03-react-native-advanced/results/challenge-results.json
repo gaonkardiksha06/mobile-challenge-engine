@@ -2,17 +2,17 @@
   {
     "challengeId": "01-redux-toolkit",
     "challengeName": "Redux Toolkit",
-    "timestamp": "2026-08-06T07:10:47.331Z",
+    "timestamp": "2026-08-31T09:41:04.529Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 94,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 84.1,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -28,7 +28,7 @@
               "ancestorTitles": [
                 "challenge-01"
               ],
-              "duration": 19,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-01 passes baseline",
@@ -40,20 +40,80 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000254190,
+          "endTime": 1788169269439,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1786000253325,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788169269093,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 94,
+      "passed": true,
+      "totalIssues": 3,
+      "errors": 0,
+      "warnings": 3,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\features\\counter\\counterSlice.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\features\\todos\\todoSlice.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\store\\index.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -105,64 +165,96 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-01.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-01.spec.ts",
+          "file": "challenge-01.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Redux Toolkit challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:41:16.968Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "77d07a436f655ce05c79-4c1a92d4cd0d9bd7c132",
+              "file": "challenge-01.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "01-redux-toolkit",
-      "timestamp": "2026-08-06T07:10:59.579Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:17.142Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The use of Redux Toolkit simplifies the Redux setup and provides a more efficient way to manage state.",
-        "The code is well-organized, with each feature (counter, todos, cart) in its own slice.",
-        "The use of TypeScript adds type safety and improves code maintainability."
-      ],
-      "improvements": [
-        "In the `counterSlice.ts` file, the `reset` reducer can be simplified to `state.value = 0;` instead of creating a new function.",
-        "In the `todoSlice.ts` file, the `extraReducers` can be simplified by using the `builder.addCase` method with a single argument, like this: `.addCase(fetchProducts.pending, (state) => { ... })`.",
-        "In both `counterSlice.ts` and `todoSlice.ts`, the `PayloadAction` type can be imported from `@reduxjs/toolkit` instead of being imported from `@types/redux`."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Redux Toolkit. However, there are some minor improvements that can be made to simplify the code and improve maintainability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "01-redux-toolkit",
-      "timestamp": "2026-08-06T07:10:59.579Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:17.142Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The use of Redux Toolkit simplifies the Redux setup and provides a more efficient way to manage state.",
-        "The code is well-organized, with each feature (counter, todos, cart) in its own slice.",
-        "The use of TypeScript adds type safety and improves code maintainability."
-      ],
-      "improvements": [
-        "In the `counterSlice.ts` file, the `reset` reducer can be simplified to `state.value = 0;` instead of creating a new function.",
-        "In the `todoSlice.ts` file, the `extraReducers` can be simplified by using the `builder.addCase` method with a single argument, like this: `.addCase(fetchProducts.pending, (state) => { ... })`.",
-        "In both `counterSlice.ts` and `todoSlice.ts`, the `PayloadAction` type can be imported from `@reduxjs/toolkit` instead of being imported from `@types/redux`."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Redux Toolkit. However, there are some minor improvements that can be made to simplify the code and improve maintainability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "02-nativewind",
     "challengeName": "NativeWind",
-    "timestamp": "2026-08-06T07:11:01.571Z",
+    "timestamp": "2026-08-31T09:41:17.368Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 98,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 84.7,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -178,7 +270,7 @@
               "ancestorTitles": [
                 "challenge-02"
               ],
-              "duration": 10,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-02 passes baseline",
@@ -190,20 +282,53 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000267408,
+          "endTime": 1788169282173,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1786000266710,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788169281820,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 98,
+      "passed": true,
+      "totalIssues": 1,
+      "errors": 0,
+      "warnings": 1,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\(tabs)\\index.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tailwind.config.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -241,64 +366,96 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-02.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-02.spec.ts",
+          "file": "challenge-02.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "NativeWind challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:41:29.806Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "42dc79384a61c0717494-4ee8269bc19ffafa89fe",
+              "file": "challenge-02.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "02-nativewind",
-      "timestamp": "2026-08-06T07:11:12.552Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:29.946Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "Effective use of Tailwind styling for a responsive UI",
-        "Proper implementation of tablet breakpoints",
-        "Use of `testID` props for automated testing"
-      ],
-      "improvements": [
-        "Consider using a more specific import for `nativewind` instead of importing the entire utility library",
-        "Add a `key` prop to the `ReduxDemo` component to prevent React from re-rendering the entire component tree when the demo changes",
-        "Use a more specific class name for the `ScrollView` content container to avoid potential conflicts with other classes"
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "This code demonstrates a good understanding of Tailwind styling and responsive layouts, with a strong focus on maintainability and automated testing. However, there are a few areas for improvement to take the code to the next level."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "02-nativewind",
-      "timestamp": "2026-08-06T07:11:12.552Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:29.946Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "Effective use of Tailwind styling for a responsive UI",
-        "Proper implementation of tablet breakpoints",
-        "Use of `testID` props for automated testing"
-      ],
-      "improvements": [
-        "Consider using a more specific import for `nativewind` instead of importing the entire utility library",
-        "Add a `key` prop to the `ReduxDemo` component to prevent React from re-rendering the entire component tree when the demo changes",
-        "Use a more specific class name for the `ScrollView` content container to avoid potential conflicts with other classes"
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "This code demonstrates a good understanding of Tailwind styling and responsive layouts, with a strong focus on maintainability and automated testing. However, there are a few areas for improvement to take the code to the next level."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "03-firebase",
     "challengeName": "Firebase",
-    "timestamp": "2026-08-06T07:11:13.321Z",
+    "timestamp": "2026-08-31T09:41:29.996Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 94,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 62.5,
-    "passed": false,
+    "totalScore": 84.1,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -314,7 +471,7 @@
               "ancestorTitles": [
                 "challenge-03"
               ],
-              "duration": 3,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-03 passes baseline",
@@ -326,20 +483,80 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000279174,
+          "endTime": 1788169294776,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1786000278482,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788169294431,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 94,
+      "passed": true,
+      "totalIssues": 3,
+      "errors": 0,
+      "warnings": 3,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\chat.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\components\\ProfileImageUpload.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\lib\\firebase.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -385,14 +602,60 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-03.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-03.spec.ts",
+          "file": "challenge-03.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Firebase challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:41:42.123Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "abe74fb7538c55bf8146-05d73d08f9c085ae1743",
+              "file": "challenge-03.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "03-firebase",
-      "timestamp": "2026-08-06T07:11:24.582Z",
+      "timestamp": "2026-08-31T09:41:42.264Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -400,11 +663,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3749, Requested 2734. Please try again in 4.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "03-firebase",
-      "timestamp": "2026-08-06T07:11:24.582Z",
+      "timestamp": "2026-08-31T09:41:42.264Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -412,23 +675,23 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 3749, Requested 2734. Please try again in 4.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "04-notifications-maps",
     "challengeName": "Notifications & Maps",
-    "timestamp": "2026-08-06T07:11:24.644Z",
+    "timestamp": "2026-08-31T09:41:42.348Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 96,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 84.4,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -444,7 +707,7 @@
               "ancestorTitles": [
                 "challenge-04"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-04 passes baseline",
@@ -456,20 +719,61 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000290562,
+          "endTime": 1788169307442,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1786000289637,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788169307096,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 96,
+      "passed": true,
+      "totalIssues": 2,
+      "errors": 0,
+      "warnings": 2,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\map.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\lib\\notifications.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -508,64 +812,96 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-04.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-04.spec.ts",
+          "file": "challenge-04.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Notifications and Maps challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 11,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:41:54.974Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "0401c8ab289c6ab836d0-98db6f9673ea7e7e8ec8",
+              "file": "challenge-04.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "04-notifications-maps",
-      "timestamp": "2026-08-06T07:11:36.671Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:55.148Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and Expo's notification library is well-implemented.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `registerForPushNotifications` function could be improved by adding a check for the permission status before requesting it. This would prevent unnecessary permission requests.",
-        "The `scheduleLocalNotification` function could be improved by adding a check for the notification schedule status. This would prevent duplicate notifications from being scheduled.",
-        "The `MapScreen` component could be improved by adding a loading state to handle the case where the map region is not yet loaded."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are a few areas for improvement to make it more robust and maintainable. With a few tweaks, this code could easily meet the 80% review threshold."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "04-notifications-maps",
-      "timestamp": "2026-08-06T07:11:36.671Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:41:55.148Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and Expo's notification library is well-implemented.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `registerForPushNotifications` function could be improved by adding a check for the permission status before requesting it. This would prevent unnecessary permission requests.",
-        "The `scheduleLocalNotification` function could be improved by adding a check for the notification schedule status. This would prevent duplicate notifications from being scheduled.",
-        "The `MapScreen` component could be improved by adding a loading state to handle the case where the map region is not yet loaded."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are a few areas for improvement to make it more robust and maintainable. With a few tweaks, this code could easily meet the 80% review threshold."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "05-payments-optimization",
     "challengeName": "Payments & Optimization",
-    "timestamp": "2026-08-06T07:11:37.245Z",
+    "timestamp": "2026-08-31T09:41:55.501Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 96,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 84.4,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -581,7 +917,7 @@
               "ancestorTitles": [
                 "challenge-05"
               ],
-              "duration": 9,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-05 passes baseline",
@@ -593,20 +929,61 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000304129,
+          "endTime": 1788169320277,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1786000303424,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788169319719,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 96,
+      "passed": true,
+      "totalIssues": 2,
+      "errors": 0,
+      "warnings": 2,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\checkout.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\components\\ProductList.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -647,64 +1024,96 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-05.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-05.spec.ts",
+          "file": "challenge-05.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Payments and Optimization challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:42:09.018Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ec25b63e8ac6a5e53e87-920d1b7cc4fcedf83932",
+              "file": "challenge-05.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "05-payments-optimization",
-      "timestamp": "2026-08-06T07:11:49.441Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:42:09.178Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "Effective use of React hooks (useMemo, useCallback, useState) for optimization and memoization.",
-        "Clear separation of concerns between components (CheckoutScreen and ProductList).",
-        "Use of TypeScript for type safety and code organization."
-      ],
-      "improvements": [
-        "Consider adding a loading indicator or a message to handle the case when the user is not signed in to Firebase.",
-        "The ProductList component could benefit from a more robust sorting mechanism, potentially using a library like lodash.",
-        "The styles for the components are defined inline, which can make the code harder to maintain. Consider moving them to a separate file or using a CSS-in-JS solution."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-organized, and the use of React hooks and TypeScript is effective. However, there are some areas where the code can be improved for better maintainability and readability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "05-payments-optimization",
-      "timestamp": "2026-08-06T07:11:49.441Z",
-      "score": 88,
+      "timestamp": "2026-08-31T09:42:09.178Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "Effective use of React hooks (useMemo, useCallback, useState) for optimization and memoization.",
-        "Clear separation of concerns between components (CheckoutScreen and ProductList).",
-        "Use of TypeScript for type safety and code organization."
-      ],
-      "improvements": [
-        "Consider adding a loading indicator or a message to handle the case when the user is not signed in to Firebase.",
-        "The ProductList component could benefit from a more robust sorting mechanism, potentially using a library like lodash.",
-        "The styles for the components are defined inline, which can make the code harder to maintain. Consider moving them to a separate file or using a CSS-in-JS solution."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-organized, and the use of React hooks and TypeScript is effective. However, there are some areas where the code can be improved for better maintainability and readability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   },
   {
     "challengeId": "06-full-ecommerce-app",
     "challengeName": "Full E-Commerce App (Capstone)",
-    "timestamp": "2026-08-06T07:11:50.312Z",
+    "timestamp": "2026-08-31T09:42:09.385Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 94,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 83
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 74.95,
-    "passed": false,
+    "totalScore": 84.1,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -720,7 +1129,7 @@
               "ancestorTitles": [
                 "challenge-06"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-06 passes baseline",
@@ -732,20 +1141,80 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000316152,
+          "endTime": 1788169334388,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-06.test.tsx",
-          "startTime": 1786000315489,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\challenge-06.test.tsx",
+          "startTime": 1788169333994,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 94,
+      "passed": true,
+      "totalIssues": 3,
+      "errors": 0,
+      "warnings": 3,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\_layout.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\app\\checkout.tsx",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\store\\cartSlice.ts",
+          "messages": [
+            {
+              "ruleId": null,
+              "fatal": false,
+              "severity": 1,
+              "message": "File ignored because of a matching ignore pattern. Use \"--no-ignore\" to disable file ignore settings or use \"--no-warn-ignored\" to suppress this warning.",
+              "nodeType": null
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "warningCount": 1,
+          "fatalErrorCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -796,48 +1265,80 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\03-react-native-advanced\\project\\tests\\e2e\\challenge-06.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-06.spec.ts",
+          "file": "challenge-06.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [
+            {
+              "title": "Full E-Commerce App challenge",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-08-31T09:42:22.026Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "fdfd0a4bbce1fa4a4eed-d0ec7b1aa821b7cf09c2",
+              "file": "challenge-06.spec.ts",
+              "line": 3,
+              "column": 5
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "06-full-ecommerce-app",
-      "timestamp": "2026-08-06T07:12:01.502Z",
-      "score": 83,
+      "timestamp": "2026-08-31T09:42:22.279Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and Redux for state management is a good practice.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `cartSlice` reducer could be refactored to use a more functional approach, reducing the need for mutable state.",
-        "The `handlePay` function could be simplified by removing the dependency on the `clearCart` action.",
-        "The `styles` object could be extracted into a separate file to improve code organization and reusability."
-      ],
-      "readability": 80,
-      "maintainability": 85,
-      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient. With some refactoring, the code can reach a higher level of quality and readability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     },
     "aiResults": {
       "challengeId": "06-full-ecommerce-app",
-      "timestamp": "2026-08-06T07:12:01.502Z",
-      "score": 83,
+      "timestamp": "2026-08-31T09:42:22.279Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a consistent naming convention.",
-        "The use of TypeScript and Redux for state management is a good practice.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `cartSlice` reducer could be refactored to use a more functional approach, reducing the need for mutable state.",
-        "The `handlePay` function could be simplified by removing the dependency on the `clearCart` action.",
-        "The `styles` object could be extracted into a separate file to improve code organization and reusability."
-      ],
-      "readability": 80,
-      "maintainability": 85,
-      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and efficient. With some refactoring, the code can reach a higher level of quality and readability."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (404): The model `llama-3.1-8b-instant` does not exist or you do not have access to it."
     }
   }
 ]
