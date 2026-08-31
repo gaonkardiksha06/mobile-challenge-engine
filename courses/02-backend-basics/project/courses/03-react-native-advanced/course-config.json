@@ -1,0 +1,50 @@
+{
+  "courseId": "03-react-native-advanced",
+  "courseName": "Advanced React Native",
+  "description": "Redux Toolkit, NativeWind, Firebase, maps, payments, optimization",
+  "version": "1.0.0",
+  "challenges": [
+    {
+      "id": "01-redux-toolkit",
+      "name": "Redux Toolkit",
+      "weight": 0.167
+    },
+    {
+      "id": "02-nativewind",
+      "name": "NativeWind",
+      "weight": 0.167
+    },
+    {
+      "id": "03-firebase",
+      "name": "Firebase",
+      "weight": 0.167
+    },
+    {
+      "id": "04-notifications-maps",
+      "name": "Notifications & Maps",
+      "weight": 0.167
+    },
+    {
+      "id": "05-payments-optimization",
+      "name": "Payments & Optimization",
+      "weight": 0.167
+    },
+    {
+      "id": "06-full-ecommerce-app",
+      "name": "Full E-Commerce App (Capstone)",
+      "weight": 0.167
+    }
+  ],
+  "scoring": {
+    "functionalTests": 0.35,
+    "codeQuality": 0.15,
+    "architecture": 0.1,
+    "bestPractices": 0.1,
+    "e2eTests": 0.15,
+    "aiReview": 0.15
+  },
+  "requirements": {
+    "minScore": 80,
+    "minCompletion": 100
+  }
+}

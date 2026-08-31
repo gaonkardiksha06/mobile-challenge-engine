@@ -1,0 +1,19 @@
+{
+  "challengeId": "01-habit-tracker",
+  "challengeName": "Habit Tracker",
+  "difficulty": "beginner",
+  "estimatedTime": "2-4 hours",
+  "skills": [
+    "useState",
+    "FlatList",
+    "AsyncStorage"
+  ],
+  "filesToCheck": [
+    "app/index.tsx"
+  ],
+  "patternsRequired": [
+    "useState",
+    "FlatList"
+  ],
+  "tier": "beginner"
+}

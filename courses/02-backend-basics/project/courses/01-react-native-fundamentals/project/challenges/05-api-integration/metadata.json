@@ -1,0 +1,24 @@
+{
+  "challengeId": "05-api-integration",
+  "challengeName": "API Integration",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "fetch",
+    "async/await",
+    "useEffect",
+    "Loading states",
+    "Error handling"
+  ],
+  "filesToCheck": [
+    "components/UserList.tsx",
+    "components/WeatherSearch.tsx",
+    "lib/api.ts"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useEffect",
+    "useState",
+    "fetch"
+  ]
+}

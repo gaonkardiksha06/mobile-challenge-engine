@@ -1,0 +1,113 @@
+[
+  {
+    "challengeId": "01-nodejs-basics",
+    "challengeName": "Node.js Basics",
+    "aiReview": {
+      "challengeId": "01-nodejs-basics",
+      "timestamp": "2026-08-19T06:18:14.197Z",
+      "score": 82,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – the server, file utilities, and math helpers are in distinct modules.",
+        "Consistent async/await usage and error handling across routes.",
+        "Use of environment variables and a dedicated logger keeps production code clean."
+      ],
+      "improvements": [
+        "Add JSDoc type annotations (or TypeScript typings) for all exported functions to improve type safety and IDE support.",
+        "Centralise the data directory path and file names in a single config module to avoid duplication and make future changes easier.",
+        "Implement a small unit‑test suite for `fs-utils.js` and `math.js` to catch regressions and enforce contract expectations."
+      ],
+      "readability": 85,
+      "maintainability": 78,
+      "overall": "The codebase demonstrates solid fundamentals for a Node.js project, with clear structure and robust error handling. Enhancing type safety, configuration centralisation, and test coverage will raise maintainability and reduce the risk of future bugs."
+    }
+  },
+  {
+    "challengeId": "02-express-apis",
+    "challengeName": "Express.js APIs",
+    "aiReview": {
+      "challengeId": "02-express-apis",
+      "timestamp": "2026-08-19T06:18:32.588Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Consistent use of async/await with proper status codes and JSON responses.",
+        "Simple in-memory caching of notes improves performance without adding complexity."
+      ],
+      "improvements": [
+        "Add explicit error handling for async file operations (try/catch) so that unexpected I/O errors are forwarded to the error middleware.",
+        "Introduce TypeScript typings or JSDoc annotations for request bodies and response shapes to aid future refactoring and IDE support.",
+        "Validate request payloads more robustly (e.g., ensure `body` is a string) and consider using a validation library to avoid duplicated logic across routes."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean and functional, with a solid structure that meets the core requirements. Minor enhancements around error handling and type safety would raise the code quality further and make it easier to maintain as the project grows."
+    }
+  },
+  {
+    "challengeId": "03-mongodb",
+    "challengeName": "MongoDB",
+    "aiReview": {
+      "challengeId": "03-mongodb",
+      "timestamp": "2026-08-19T06:18:48.943Z",
+      "score": 50,
+      "feedback": [],
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
+    }
+  },
+  {
+    "challengeId": "04-jwt-authentication",
+    "challengeName": "JWT Authentication",
+    "aiReview": {
+      "challengeId": "04-jwt-authentication",
+      "timestamp": "2026-08-19T06:18:59.624Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes are defined in `auth.js` while authentication logic lives in `auth.js` middleware.",
+        "Robust error handling for duplicate keys and authentication failures."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request bodies, payloads, and middleware to catch type errors early.",
+        "Extract error messages and status codes into constants or a helper module to avoid duplication and improve consistency.",
+        "Validate environment variables (e.g., `JWT_SECRET`) at application start and provide a clear error message if missing."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates a solid grasp of JWT authentication fundamentals with clean, readable code. Minor enhancements around typing and configuration validation would elevate maintainability and reduce runtime surprises."
+    }
+  },
+  {
+    "challengeId": "05-blog-backend-api",
+    "challengeName": "Blog Backend API (Capstone)",
+    "aiReview": {
+      "challengeId": "05-blog-backend-api",
+      "timestamp": "2026-08-19T06:19:08.380Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns: routes, middleware, and models are organized into distinct files.",
+        "Consistent use of async/await with proper error handling via `next(err)` and a global error handler.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access control."
+      ],
+      "improvements": [
+        "Move the Mongoose schema definitions for `Post` (and any other models) into dedicated model files to avoid duplication and improve testability.",
+        "Add request payload validation (e.g., with Joi or express-validator) to guard against malformed input and provide more descriptive error messages.",
+        "Introduce TypeScript typings for request, response, and user objects to catch type errors at compile time and improve IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The codebase demonstrates solid architectural decisions and secure handling of authentication and CRUD operations. With a few refinements—particularly in model organization, input validation, and TypeScript typings—the project will achieve higher maintainability and robustness."
+    }
+  }
+]

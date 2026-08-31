@@ -1,0 +1,19 @@
+{
+  "challengeId": "12-full-marketplace",
+  "challengeName": "Full Marketplace",
+  "difficulty": "advanced",
+  "estimatedTime": "6-10 hours",
+  "skills": [
+    "Redux",
+    "Payments",
+    "Search"
+  ],
+  "filesToCheck": [
+    "app/shop.tsx"
+  ],
+  "patternsRequired": [
+    "redux",
+    "fetch"
+  ],
+  "tier": "advanced"
+}

@@ -1,0 +1,64 @@
+{
+  "courseId": "01-react-native-fundamentals",
+  "courseName": "React Native Fundamentals",
+  "lastUpdated": "2026-08-15T09:46:53.069Z",
+  "totalChallenges": 7,
+  "completedChallenges": 7,
+  "averageScore": 98.1,
+  "completionPercentage": 100,
+  "badgeLevel": "gold",
+  "challengeResults": [
+    {
+      "challengeId": "01-expo-setup-basics",
+      "challengeName": "Expo Setup & Basics",
+      "score": 97.45,
+      "passed": true
+    },
+    {
+      "challengeId": "02-navigation-system",
+      "challengeName": "Navigation System",
+      "score": 98.2,
+      "passed": true
+    },
+    {
+      "challengeId": "03-lists-data-rendering",
+      "challengeName": "Lists & Data Rendering",
+      "score": 98.2,
+      "passed": true
+    },
+    {
+      "challengeId": "04-forms-validation",
+      "challengeName": "Forms & Validation",
+      "score": 98.2,
+      "passed": true
+    },
+    {
+      "challengeId": "05-api-integration",
+      "challengeName": "API Integration",
+      "score": 98.2,
+      "passed": true
+    },
+    {
+      "challengeId": "06-async-storage",
+      "challengeName": "AsyncStorage",
+      "score": 98.2,
+      "passed": true
+    },
+    {
+      "challengeId": "07-mini-social-feed",
+      "challengeName": "Mini Social Feed (Capstone)",
+      "score": 98.2,
+      "passed": true
+    }
+  ],
+  "skillStrengths": [
+    "Expo Setup & Basics",
+    "Navigation System",
+    "Lists & Data Rendering",
+    "Forms & Validation",
+    "API Integration",
+    "AsyncStorage",
+    "Mini Social Feed (Capstone)"
+  ],
+  "improvementAreas": []
+}

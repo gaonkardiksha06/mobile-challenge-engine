@@ -1,0 +1,45 @@
+{
+  "courseId": "02-backend-basics",
+  "courseName": "Backend Basics",
+  "description": "Node.js, Express, MongoDB, and JWT authentication",
+  "version": "1.0.0",
+  "challenges": [
+    {
+      "id": "01-nodejs-basics",
+      "name": "Node.js Basics",
+      "weight": 0.2
+    },
+    {
+      "id": "02-express-apis",
+      "name": "Express.js APIs",
+      "weight": 0.2
+    },
+    {
+      "id": "03-mongodb",
+      "name": "MongoDB",
+      "weight": 0.2
+    },
+    {
+      "id": "04-jwt-authentication",
+      "name": "JWT Authentication",
+      "weight": 0.2
+    },
+    {
+      "id": "05-blog-backend-api",
+      "name": "Blog Backend API (Capstone)",
+      "weight": 0.2
+    }
+  ],
+  "scoring": {
+    "functionalTests": 0.35,
+    "codeQuality": 0.15,
+    "architecture": 0.1,
+    "bestPractices": 0.1,
+    "e2eTests": 0.15,
+    "aiReview": 0.15
+  },
+  "requirements": {
+    "minScore": 80,
+    "minCompletion": 100
+  }
+}

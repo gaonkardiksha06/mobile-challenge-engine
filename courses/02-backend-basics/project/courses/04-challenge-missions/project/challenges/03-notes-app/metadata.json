@@ -1,0 +1,19 @@
+{
+  "challengeId": "03-notes-app",
+  "challengeName": "Notes App",
+  "difficulty": "beginner",
+  "estimatedTime": "2-4 hours",
+  "skills": [
+    "AsyncStorage",
+    "CRUD",
+    "TextInput"
+  ],
+  "filesToCheck": [
+    "app/notes.tsx"
+  ],
+  "patternsRequired": [
+    "AsyncStorage",
+    "useState"
+  ],
+  "tier": "beginner"
+}

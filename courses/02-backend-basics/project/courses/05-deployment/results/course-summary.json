@@ -1,0 +1,32 @@
+{
+  "courseId": "05-deployment",
+  "courseName": "Deployment",
+  "lastUpdated": "2026-08-06T07:15:42.656Z",
+  "totalChallenges": 3,
+  "completedChallenges": 0,
+  "averageScore": 75,
+  "completionPercentage": 0,
+  "badgeLevel": "none",
+  "challengeResults": [
+    {
+      "challengeId": "01-apk-build",
+      "challengeName": "APK Build",
+      "score": 74.95,
+      "passed": false
+    },
+    {
+      "challengeId": "02-expo-eas",
+      "challengeName": "Expo EAS",
+      "score": 74.95,
+      "passed": false
+    },
+    {
+      "challengeId": "03-play-store-prep",
+      "challengeName": "Play Store Prep",
+      "score": 74.95,
+      "passed": false
+    }
+  ],
+  "skillStrengths": [],
+  "improvementAreas": []
+}

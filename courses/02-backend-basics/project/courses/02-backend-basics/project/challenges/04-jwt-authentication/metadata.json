@@ -1,0 +1,19 @@
+{
+  "challengeId": "04-jwt-authentication",
+  "challengeName": "JWT Authentication",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "bcrypt",
+    "JWT",
+    "Protected routes"
+  ],
+  "filesToCheck": [
+    "src/routes/auth.js",
+    "src/middleware/auth.js"
+  ],
+  "patternsRequired": [
+    "jwt",
+    "bcrypt"
+  ]
+}

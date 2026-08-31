@@ -1,0 +1,2404 @@
+[
+  {
+    "challengeId": "01-expo-setup-basics",
+    "challengeName": "Expo Setup & Basics",
+    "timestamp": "2026-08-15T09:40:33.406Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 83
+    },
+    "totalScore": 97.45,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "01-expo-setup-basics"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "01-expo-setup-basics has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786786843025,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1786786841866,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\(tabs)\\index.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\FeatureCards.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\ProfileCard.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "StyleSheet"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/(tabs)/index.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "StyleSheet"
+          ],
+          "patternsMissing": [
+            "useState"
+          ]
+        },
+        {
+          "file": "components/ProfileCard.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "StyleSheet"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/FeatureCards.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "StyleSheet"
+          ],
+          "patternsMissing": [
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-01.spec.ts",
+          "file": "challenge-01.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "01-expo-setup-basics",
+              "file": "challenge-01.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders home screen with profile card",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5254,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:41:15.663Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-e30d25cd391158709dd0",
+                  "file": "challenge-01.spec.ts",
+                  "line": 13,
+                  "column": 7
+                },
+                {
+                  "title": "follow button toggles state",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1448,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:41:22.279Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-993d1b1df776376a6ae7",
+                  "file": "challenge-01.spec.ts",
+                  "line": 21,
+                  "column": 7
+                },
+                {
+                  "title": "renders three feature cards in a row",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 927,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:41:23.767Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-154da91f0b95a2350369",
+                  "file": "challenge-01.spec.ts",
+                  "line": 28,
+                  "column": 7
+                },
+                {
+                  "title": "view profile button is visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 961,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:41:24.716Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-bf0430168a92b30e5dd0",
+                  "file": "challenge-01.spec.ts",
+                  "line": 35,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "01-expo-setup-basics",
+      "timestamp": "2026-08-15T09:41:26.622Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code uses TypeScript, which is a significant strength, especially in a React Native project.",
+        "The use of Expo Router and Pressable components is a good practice.",
+        "The code is well-organized, with each component having its own file and styles defined in a separate file."
+      ],
+      "improvements": [
+        "The code could benefit from more consistent naming conventions. For example, some variables and function names use camelCase, while others use PascalCase.",
+        "There are some magic numbers in the code (e.g., 80, 17, 14, etc.). These numbers could be replaced with named constants to improve readability and maintainability.",
+        "The FeatureCards component uses a hardcoded array of features. Consider loading this data from a separate file or API to make the component more reusable and maintainable."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and uses good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "01-expo-setup-basics",
+      "timestamp": "2026-08-15T09:41:26.622Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code uses TypeScript, which is a significant strength, especially in a React Native project.",
+        "The use of Expo Router and Pressable components is a good practice.",
+        "The code is well-organized, with each component having its own file and styles defined in a separate file."
+      ],
+      "improvements": [
+        "The code could benefit from more consistent naming conventions. For example, some variables and function names use camelCase, while others use PascalCase.",
+        "There are some magic numbers in the code (e.g., 80, 17, 14, etc.). These numbers could be replaced with named constants to improve readability and maintainability.",
+        "The FeatureCards component uses a hardcoded array of features. Consider loading this data from a separate file or API to make the component more reusable and maintainable."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and uses good practices, but there are some areas for improvement to make it more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "02-navigation-system",
+    "challengeName": "Navigation System",
+    "timestamp": "2026-08-15T09:41:28.077Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "02-navigation-system"
+              ],
+              "duration": 6,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "02-navigation-system has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786786898712,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1786786897871,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\(tabs)\\_layout.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\_layout.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\details\\[username].tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useNavigation"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useNavigation"
+          ]
+        },
+        {
+          "file": "app/(tabs)/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useNavigation"
+          ]
+        },
+        {
+          "file": "app/details/[username].tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useNavigation"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-02.spec.ts",
+          "file": "challenge-02.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "02-navigation-system",
+              "file": "challenge-02.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Home screen is visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4990,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:42:06.009Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-aecdd9f81e6cb9a66b64",
+                  "file": "challenge-02.spec.ts",
+                  "line": 22,
+                  "column": 7
+                },
+                {
+                  "title": "Home navigates to Details with username parameter",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1231,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:42:12.451Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-3bf81a64fa386756fce6",
+                  "file": "challenge-02.spec.ts",
+                  "line": 27,
+                  "column": 7
+                },
+                {
+                  "title": "bottom tabs show Home, Search and Profile",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1014,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:42:13.709Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-006dbf12529b58c80cfc",
+                  "file": "challenge-02.spec.ts",
+                  "line": 36,
+                  "column": 7
+                },
+                {
+                  "title": "dynamic Details header shows username",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1009,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:42:14.750Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-4ec7dd9ee2553e3b8823",
+                  "file": "challenge-02.spec.ts",
+                  "line": 42,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "02-navigation-system",
+      "timestamp": "2026-08-15T09:42:16.806Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of TypeScript and Expo Router is well-implemented, making the codebase maintainable and scalable.",
+        "The code adheres to the required technical requirements, including the use of ESLint and automated testing.",
+        "The use of hooks and functional components is consistent throughout the codebase, making it easy to read and understand."
+      ],
+      "improvements": [
+        "The `RootLayoutNav` component is quite complex and could be broken down into smaller, more manageable components. This would improve code readability and maintainability.",
+        "Some of the styles are defined inline, which can make the code harder to read and maintain. Consider defining styles in separate files or using a CSS-in-JS solution.",
+        "The `useLayoutEffect` hook is used in the `DetailsScreen` component to update the title of the screen. However, this could be achieved using the `useNavigation` hook's `setOptions` method, which would make the code more concise and easier to read."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The codebase is well-structured and adheres to the required technical requirements. However, there are some areas that could be improved to make the code more maintainable and readable."
+    },
+    "aiResults": {
+      "challengeId": "02-navigation-system",
+      "timestamp": "2026-08-15T09:42:16.806Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of TypeScript and Expo Router is well-implemented, making the codebase maintainable and scalable.",
+        "The code adheres to the required technical requirements, including the use of ESLint and automated testing.",
+        "The use of hooks and functional components is consistent throughout the codebase, making it easy to read and understand."
+      ],
+      "improvements": [
+        "The `RootLayoutNav` component is quite complex and could be broken down into smaller, more manageable components. This would improve code readability and maintainability.",
+        "Some of the styles are defined inline, which can make the code harder to read and maintain. Consider defining styles in separate files or using a CSS-in-JS solution.",
+        "The `useLayoutEffect` hook is used in the `DetailsScreen` component to update the title of the screen. However, this could be achieved using the `useNavigation` hook's `setOptions` method, which would make the code more concise and easier to read."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The codebase is well-structured and adheres to the required technical requirements. However, there are some areas that could be improved to make the code more maintainable and readable."
+    }
+  },
+  {
+    "challengeId": "03-lists-data-rendering",
+    "challengeName": "Lists & Data Rendering",
+    "timestamp": "2026-08-15T09:42:17.872Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "03-lists-data-rendering"
+              ],
+              "duration": 7,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "03-lists-data-rendering has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786786947356,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1786786946525,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\ImageGallery.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\PostFeed.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\SearchBar.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "useEffect",
+        "FlatList"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "components/PostFeed.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "useEffect",
+            "FlatList"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/ImageGallery.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "useEffect",
+            "FlatList"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/SearchBar.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "FlatList"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-03.spec.ts",
+          "file": "challenge-03.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "03-lists-data-rendering",
+              "file": "challenge-03.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Image gallery and categories are visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5711,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:42:55.320Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-e07677627c0d804185ce",
+                  "file": "challenge-03.spec.ts",
+                  "line": 22,
+                  "column": 7
+                },
+                {
+                  "title": "Post feed displays posts and likes",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2192,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:02.491Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-c1ae982da3b9cf053920",
+                  "file": "challenge-03.spec.ts",
+                  "line": 31,
+                  "column": 7
+                },
+                {
+                  "title": "Search bar filters posts",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1810,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:04.710Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-48b78827e5c279069163",
+                  "file": "challenge-03.spec.ts",
+                  "line": 40,
+                  "column": 7
+                },
+                {
+                  "title": "Empty state is shown for no matching data",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1808,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:06.547Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-21d95278a604f3351dc0",
+                  "file": "challenge-03.spec.ts",
+                  "line": 51,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "03-lists-data-rendering",
+      "timestamp": "2026-08-15T09:43:09.542Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React Native provides a solid foundation for the application.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "Some of the styles are defined inline in the components, which can make it harder to maintain and update the styles. Consider moving them to a separate stylesheet or using a CSS-in-JS solution like styled-components.",
+        "The use of `setTimeout` to simulate a delay in the `useEffect` hook can be replaced with a more realistic approach, such as using a state machine or a library like `react-query` to handle data fetching.",
+        "The `handleChange` function in the `SearchBar` component can be simplified by using the `onChangeText` event directly, without the need for an intermediate `handleChange` function."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices, but there are some areas that can be improved for better maintainability and performance."
+    },
+    "aiResults": {
+      "challengeId": "03-lists-data-rendering",
+      "timestamp": "2026-08-15T09:43:09.542Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and React Native provides a solid foundation for the application.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "Some of the styles are defined inline in the components, which can make it harder to maintain and update the styles. Consider moving them to a separate stylesheet or using a CSS-in-JS solution like styled-components.",
+        "The use of `setTimeout` to simulate a delay in the `useEffect` hook can be replaced with a more realistic approach, such as using a state machine or a library like `react-query` to handle data fetching.",
+        "The `handleChange` function in the `SearchBar` component can be simplified by using the `onChangeText` event directly, without the need for an intermediate `handleChange` function."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices, but there are some areas that can be improved for better maintainability and performance."
+    }
+  },
+  {
+    "challengeId": "04-forms-validation",
+    "challengeName": "Forms & Validation",
+    "timestamp": "2026-08-15T09:43:10.870Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "04-forms-validation"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "04-forms-validation has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786787001519,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1786787000529,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\auth\\login.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\auth\\signup.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\MultiStepForm.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useState",
+        "TextInput"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/auth/login.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "app/auth/signup.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/MultiStepForm.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "TextInput"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-04.spec.ts",
+          "file": "challenge-04.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "04-forms-validation",
+              "file": "challenge-04.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Login form is visible and validates required fields",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5578,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:49.707Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-408cadb3c90c813ae7df",
+                  "file": "challenge-04.spec.ts",
+                  "line": 22,
+                  "column": 7
+                },
+                {
+                  "title": "Login validates password length",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1855,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:56.383Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-327f0731767996b13281",
+                  "file": "challenge-04.spec.ts",
+                  "line": 36,
+                  "column": 7
+                },
+                {
+                  "title": "Signup form validates fields and confirm password",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1453,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:58.262Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-40fd42ebfc1b96a7fcaa",
+                  "file": "challenge-04.spec.ts",
+                  "line": 49,
+                  "column": 7
+                },
+                {
+                  "title": "Multi-step form supports Next, Previous and Review",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1294,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:43:59.734Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-9a30013d32630bbcdce8",
+                  "file": "challenge-04.spec.ts",
+                  "line": 68,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "04-forms-validation",
+      "timestamp": "2026-08-15T09:44:01.918Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and organized into separate files for each feature.",
+        "The use of TypeScript and React Native provides a solid foundation for building a robust and scalable application.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "The `validate` function in both the login and signup screens could be extracted into a separate utility function to avoid code duplication.",
+        "The `canGoNext` function in the MultiStepForm component could be simplified by using a more concise conditional statement.",
+        "The styles for the form components could be extracted into a separate file to keep the code organized and make it easier to manage styles."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and performance. However, there are some areas where the code could be improved to make it more efficient and scalable."
+    },
+    "aiResults": {
+      "challengeId": "04-forms-validation",
+      "timestamp": "2026-08-15T09:44:01.918Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and organized into separate files for each feature.",
+        "The use of TypeScript and React Native provides a solid foundation for building a robust and scalable application.",
+        "The code includes test IDs for interactive elements, making it easier to write automated tests."
+      ],
+      "improvements": [
+        "The `validate` function in both the login and signup screens could be extracted into a separate utility function to avoid code duplication.",
+        "The `canGoNext` function in the MultiStepForm component could be simplified by using a more concise conditional statement.",
+        "The styles for the form components could be extracted into a separate file to keep the code organized and make it easier to manage styles."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and maintainable, with a good balance of readability and performance. However, there are some areas where the code could be improved to make it more efficient and scalable."
+    }
+  },
+  {
+    "challengeId": "05-api-integration",
+    "challengeName": "API Integration",
+    "timestamp": "2026-08-15T09:44:03.221Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "05-api-integration"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "05-api-integration has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786787053902,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1786787052805,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\UserList.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\components\\WeatherSearch.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\lib\\api.ts",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "useState",
+        "fetch"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "components/UserList.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "fetch"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "components/WeatherSearch.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useState",
+            "fetch"
+          ],
+          "patternsMissing": [
+            "useEffect"
+          ]
+        },
+        {
+          "file": "lib/api.ts",
+          "patternsFound": [
+            "fetch"
+          ],
+          "patternsMissing": [
+            "functionalComponent",
+            "useEffect",
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-05.spec.ts",
+          "file": "challenge-05.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "05-api-integration",
+              "file": "challenge-05.spec.ts",
+              "line": 5,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Weather search UI is visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6210,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:44:43.174Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-e4939bbcafd2a9be4491",
+                  "file": "challenge-05.spec.ts",
+                  "line": 22,
+                  "column": 7
+                },
+                {
+                  "title": "Weather search accepts a city",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2164,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:44:50.601Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-9ea3e2988ea801d8436d",
+                  "file": "challenge-05.spec.ts",
+                  "line": 30,
+                  "column": 7
+                },
+                {
+                  "title": "User list is visible",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1777,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:44:52.801Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-10cb95011270692b768b",
+                  "file": "challenge-05.spec.ts",
+                  "line": 39,
+                  "column": 7
+                },
+                {
+                  "title": "API error/retry UI is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1440,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:44:54.609Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-6a638b4da7966eabca25",
+                  "file": "challenge-05.spec.ts",
+                  "line": 45,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "05-api-integration",
+      "timestamp": "2026-08-15T09:44:56.974Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent structure.",
+        "The use of TypeScript and React Native is well-implemented.",
+        "The code includes proper error handling and loading states."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `loadUsers` and `search` functions.",
+        "The `fetchUsers` and `fetchPosts` functions in the `lib/api.ts` file could be combined into a single function to reduce code duplication.",
+        "The `fetchWeather` function in the `lib/api.ts` file could be improved by handling edge cases, such as when the city is not found or the API returns an error."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are some areas for improvement to make the code more maintainable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "05-api-integration",
+      "timestamp": "2026-08-15T09:44:56.974Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-organized and follows a consistent structure.",
+        "The use of TypeScript and React Native is well-implemented.",
+        "The code includes proper error handling and loading states."
+      ],
+      "improvements": [
+        "Some of the variable names could be more descriptive, such as `loadUsers` and `search` functions.",
+        "The `fetchUsers` and `fetchPosts` functions in the `lib/api.ts` file could be combined into a single function to reduce code duplication.",
+        "The `fetchWeather` function in the `lib/api.ts` file could be improved by handling edge cases, such as when the city is not found or the API returns an error."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are some areas for improvement to make the code more maintainable and efficient."
+    }
+  },
+  {
+    "challengeId": "06-async-storage",
+    "challengeName": "AsyncStorage",
+    "timestamp": "2026-08-15T09:44:57.993Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "06-async-storage"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "06-async-storage has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786787109566,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-06.test.tsx",
+          "startTime": 1786787108629,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\hooks\\useAuthStorage.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\hooks\\useThemeStorage.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\lib\\storage.ts",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "useState",
+        "AsyncStorage"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "lib/storage.ts",
+          "patternsFound": [
+            "functionalComponent",
+            "AsyncStorage"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "useState"
+          ]
+        },
+        {
+          "file": "hooks/useAuthStorage.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "AsyncStorage"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "hooks/useThemeStorage.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "useState",
+            "AsyncStorage"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-06.spec.ts",
+          "file": "challenge-06.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "06-async-storage",
+              "file": "challenge-06.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Profile screen shows theme toggle",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5393,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:45:41.418Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-7c4c1cb5fc79b3c06e6b",
+                  "file": "challenge-06.spec.ts",
+                  "line": 4,
+                  "column": 7
+                },
+                {
+                  "title": "Profile screen is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1414,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:45:48.209Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-f548975e4701507d3758",
+                  "file": "challenge-06.spec.ts",
+                  "line": 11,
+                  "column": 7
+                },
+                {
+                  "title": "Login screen is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1041,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:45:49.645Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-4c1aeb086b55face699d",
+                  "file": "challenge-06.spec.ts",
+                  "line": 17,
+                  "column": 7
+                },
+                {
+                  "title": "Theme toggle is interactive",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2057,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:45:50.708Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-02e1c90e29ed54d0ff35",
+                  "file": "challenge-06.spec.ts",
+                  "line": 26,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "06-async-storage",
+      "timestamp": "2026-08-15T09:45:53.851Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and type annotations is excellent, making the code more maintainable and self-documenting.",
+        "The separation of concerns between storage logic and UI components is good."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive. For example, `getNotes` could be `fetchNotesFromStorage`.",
+        "The `useEffect` hook in `useAuthStorage` and `useThemeStorage` could be optimized to only run when the component mounts or when the dependency changes.",
+        "The `toggleTheme` function in `useThemeStorage` could be simplified to use the ternary operator instead of a conditional statement."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and follows best practices. However, there are some minor improvements that can be made to make the code even more readable and efficient."
+    },
+    "aiResults": {
+      "challengeId": "06-async-storage",
+      "timestamp": "2026-08-15T09:45:53.851Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and type annotations is excellent, making the code more maintainable and self-documenting.",
+        "The separation of concerns between storage logic and UI components is good."
+      ],
+      "improvements": [
+        "Some of the function names could be more descriptive. For example, `getNotes` could be `fetchNotesFromStorage`.",
+        "The `useEffect` hook in `useAuthStorage` and `useThemeStorage` could be optimized to only run when the component mounts or when the dependency changes.",
+        "The `toggleTheme` function in `useThemeStorage` could be simplified to use the ternary operator instead of a conditional statement."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured, maintainable, and follows best practices. However, there are some minor improvements that can be made to make the code even more readable and efficient."
+    }
+  },
+  {
+    "challengeId": "07-mini-social-feed",
+    "challengeName": "Mini Social Feed (Capstone)",
+    "timestamp": "2026-08-15T09:45:54.670Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 100,
+      "aiReview": 88
+    },
+    "totalScore": 98.2,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "07-mini-social-feed"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "07-mini-social-feed has a passing baseline test",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "has a passing baseline test"
+            }
+          ],
+          "endTime": 1786787167358,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-07.test.tsx",
+          "startTime": 1786787166104,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\(tabs)\\feed.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\(tabs)\\profile.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\01-react-native-fundamentals\\project\\app\\_layout.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "functionalComponent",
+        "useEffect",
+        "FlatList",
+        "useState"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app/(tabs)/feed.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect",
+            "FlatList",
+            "useState"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "app/(tabs)/profile.tsx",
+          "patternsFound": [
+            "functionalComponent"
+          ],
+          "patternsMissing": [
+            "useEffect",
+            "FlatList",
+            "useState"
+          ]
+        },
+        {
+          "file": "app/_layout.tsx",
+          "patternsFound": [
+            "functionalComponent",
+            "useEffect"
+          ],
+          "patternsMissing": [
+            "FlatList",
+            "useState"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-07.spec.ts",
+          "file": "challenge-07.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "07-mini-social-feed",
+              "file": "challenge-07.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "Feed screen is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5283,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:46:39.257Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-e13a0fa854226de89271",
+                  "file": "challenge-07.spec.ts",
+                  "line": 4,
+                  "column": 7
+                },
+                {
+                  "title": "Profile screen is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1817,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:46:45.803Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-96c0f92e109e5a2d343e",
+                  "file": "challenge-07.spec.ts",
+                  "line": 14,
+                  "column": 7
+                },
+                {
+                  "title": "Profile shows login or user information",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1624,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:46:47.645Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-fb1abef835df9d0c90e6",
+                  "file": "challenge-07.spec.ts",
+                  "line": 26,
+                  "column": 7
+                },
+                {
+                  "title": "Feed contains post content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1504,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-08-15T09:46:49.288Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-db4009dae3b79e5e81b7",
+                  "file": "challenge-07.spec.ts",
+                  "line": 40,
+                  "column": 7
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
+    },
+    "aiReviewResults": {
+      "challengeId": "07-mini-social-feed",
+      "timestamp": "2026-08-15T09:46:52.035Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of TypeScript and Expo Router is well-implemented and follows best practices.",
+        "The code is well-organized and follows a consistent naming convention.",
+        "The use of hooks and functional components is efficient and easy to understand."
+      ],
+      "improvements": [
+        "Some of the styles are hardcoded and could be extracted into a separate file for better maintainability.",
+        "The `fetchPosts` function is not handled properly in case of an error. It would be better to handle the error in the component itself rather than just setting an error message.",
+        "The `useEffect` hook in the `FeedScreen` component is not properly cleaned up when the component is unmounted. This could lead to memory leaks."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are a few areas that could be improved for better maintainability and error handling."
+    },
+    "aiResults": {
+      "challengeId": "07-mini-social-feed",
+      "timestamp": "2026-08-15T09:46:52.035Z",
+      "score": 88,
+      "feedback": [],
+      "strengths": [
+        "The use of TypeScript and Expo Router is well-implemented and follows best practices.",
+        "The code is well-organized and follows a consistent naming convention.",
+        "The use of hooks and functional components is efficient and easy to understand."
+      ],
+      "improvements": [
+        "Some of the styles are hardcoded and could be extracted into a separate file for better maintainability.",
+        "The `fetchPosts` function is not handled properly in case of an error. It would be better to handle the error in the component itself rather than just setting an error message.",
+        "The `useEffect` hook in the `FeedScreen` component is not properly cleaned up when the component is unmounted. This could lead to memory leaks."
+      ],
+      "readability": 85,
+      "maintainability": 90,
+      "overall": "The code is well-structured and follows best practices for React Native development. However, there are a few areas that could be improved for better maintainability and error handling."
+    }
+  }
+]

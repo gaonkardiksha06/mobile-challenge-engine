@@ -1,0 +1,21 @@
+{
+  "challengeId": "02-express-apis",
+  "challengeName": "Express.js APIs",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Express",
+    "Routes",
+    "Middleware",
+    "REST"
+  ],
+  "filesToCheck": [
+    "src/app.js",
+    "src/routes/notes.js",
+    "src/middleware/logger.js"
+  ],
+  "patternsRequired": [
+    "express",
+    "middleware"
+  ]
+}

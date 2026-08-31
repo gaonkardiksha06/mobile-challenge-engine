@@ -1,43 +1,55 @@
-import { Router } from 'express';
-import { readNotesFile, writeNotesFile } from '../fs-utils.js';
+// src/routes/notes.js
 
-const router = Router();
-let notesCache = null;
+import express from "express";
 
-async function loadNotes() {
-  if (!notesCache) notesCache = await readNotesFile();
-  return notesCache;
-}
+const router = express.Router();
 
-router.get('/', async (_req, res) => {
-  const notes = await loadNotes();
+// In-memory notes store
+let notes = [];
+
+// GET /api/notes
+router.get("/", (_req, res) => {
   res.json(notes);
 });
 
-router.post('/', async (req, res) => {
+// POST /api/notes
+router.post("/", (req, res) => {
   const { title, body } = req.body;
-  if (!title?.trim()) return res.status(400).json({ error: 'Title is required' });
-  const notes = await loadNotes();
+
+  if (!title) {
+    return res.status(400).json({
+      error: '"title" is required',
+    });
+  }
+
   const note = {
-    id: String(Date.now()),
-    title: title.trim(),
-    body: body?.trim() ?? '',
-    createdAt: new Date().toISOString(),
+    id: Date.now().toString(),
+    title,
+    body,
   };
+
   notes.push(note);
-  notesCache = notes;
-  await writeNotesFile(notes);
-  res.status(201).json(note);
+
+  return res.status(201).json(note);
 });
 
-router.delete('/:id', async (req, res) => {
-  const notes = await loadNotes();
-  const index = notes.findIndex((n) => n.id === req.params.id);
-  if (index === -1) return res.status(404).json({ error: 'Note not found' });
-  const [removed] = notes.splice(index, 1);
-  notesCache = notes;
-  await writeNotesFile(notes);
-  res.json(removed);
+// DELETE /api/notes/:id
+router.delete("/:id", (req, res) => {
+  const { id } = req.params;
+
+  const index = notes.findIndex((note) => note.id === id);
+
+  if (index === -1) {
+    return res.status(404).json({
+      error: "Note not found",
+    });
+  }
+
+  notes.splice(index, 1);
+
+  return res.status(200).json({
+    message: "Note deleted",
+  });
 });
 
 export default router;

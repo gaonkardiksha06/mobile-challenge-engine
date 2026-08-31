@@ -1,0 +1,19 @@
+{
+  "challengeId": "04-notifications-maps",
+  "challengeName": "Notifications & Maps",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Push notifications",
+    "Maps",
+    "Location"
+  ],
+  "filesToCheck": [
+    "lib/notifications.ts",
+    "app/map.tsx"
+  ],
+  "patternsRequired": [
+    "expo-notifications",
+    "react-native-maps"
+  ]
+}

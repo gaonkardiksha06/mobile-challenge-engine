@@ -1,108 +1,175 @@
-import { Router } from 'express';
-import mongoose from 'mongoose';
+// routes using User schema CRUD operations
+import express from "express";
+import bcrypt from "bcrypt";
+import mongoose from "mongoose";
+import User from "../models/User.js";
 
-import { User } from '../models/User.js';
+const router = express.Router();
 
-// Routes use the Mongoose user schema
-const router = Router();
-
-// Get all users
-router.get('/', async (_req, res, next) => {
+/*
+ * READ ALL USERS
+ */
+router.get("/", async (_req, res) => {
   try {
-    const users = await User.find().select('-password');
-    res.json(users);
+    const users = await User.find({}, { password: 0 });
+
+    res.status(200).json(users);
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: "Internal server error",
+    });
   }
 });
 
-// Get one user
-router.get('/:id', async (req, res, next) => {
+/*
+ * READ ONE USER
+ */
+router.get("/:id", async (req, res) => {
   try {
-    if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(404).json({ error: 'User not found' });
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(404).json({
+        error: "User not found",
+      });
     }
 
-    const user = await User.findById(req.params.id).select('-password');
+    const user = await User.findById(id, {
+      password: 0,
+    });
 
     if (!user) {
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({
+        error: "User not found",
+      });
     }
 
-    res.json(user);
+    res.status(200).json(user);
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: "Internal server error",
+    });
   }
 });
 
-// Create user
-router.post('/', async (req, res, next) => {
+/*
+ * CREATE USER
+ */
+router.post("/", async (req, res) => {
   try {
     const { username, email, password } = req.body;
 
     if (!username || !email || !password) {
       return res.status(400).json({
-        error: 'username, email and password are required',
+        error: "All fields required",
       });
     }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const user = await User.create({
       username,
       email,
-      password,
+      password: hashedPassword,
     });
 
-    const responseUser = user.toObject();
-    delete responseUser.password;
-
-    res.status(201).json(responseUser);
+    res.status(201).json({
+      _id: user._id,
+      username: user.username,
+      email: user.email,
+    });
   } catch (err) {
-    next(err);
+    if (err.code === 11000) {
+      return res.status(409).json({
+        error: "Email already exists",
+      });
+    }
+
+    res.status(500).json({
+      error: "Internal server error",
+    });
   }
 });
 
-// Update user
-router.put('/:id', async (req, res, next) => {
+/*
+ * UPDATE USER
+ */
+router.put("/:id", async (req, res) => {
   try {
-    if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(404).json({ error: 'User not found' });
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(404).json({
+        error: "User not found",
+      });
+    }
+
+    const { username, email, password } = req.body;
+
+    const updateData = {};
+
+    if (username) updateData.username = username;
+    if (email) updateData.email = email;
+
+    if (password) {
+      updateData.password = await bcrypt.hash(password, 10);
     }
 
     const user = await User.findByIdAndUpdate(
-      req.params.id,
-      req.body,
+      id,
+      updateData,
       {
         new: true,
         runValidators: true,
       }
-    ).select('-password');
+    );
 
     if (!user) {
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({
+        error: "User not found",
+      });
     }
 
-    res.json(user);
+    res.status(200).json({
+      _id: user._id,
+      username: user.username,
+      email: user.email,
+    });
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: "Internal server error",
+    });
   }
 });
 
-// Delete user
-router.delete('/:id', async (req, res, next) => {
+/*
+ * DELETE USER
+ */
+router.delete("/:id", async (req, res) => {
   try {
-    if (!mongoose.isValidObjectId(req.params.id)) {
-      return res.status(404).json({ error: 'User not found' });
+    const { id } = req.params;
+
+    if (!mongoose.Types.ObjectId.isValid(id)) {
+      return res.status(404).json({
+        error: "User not found",
+      });
     }
 
-    const user = await User.findByIdAndDelete(req.params.id);
+    const user = await User.findByIdAndDelete(id);
 
     if (!user) {
-      return res.status(404).json({ error: 'User not found' });
+      return res.status(404).json({
+        error: "User not found",
+      });
     }
 
-    res.json({ deleted: true });
+    res.status(200).json({
+      deleted: true,
+    });
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: "Internal server error",
+    });
   }
 });
 

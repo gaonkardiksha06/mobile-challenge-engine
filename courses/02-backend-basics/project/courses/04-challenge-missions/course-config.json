@@ -1,0 +1,90 @@
+{
+  "courseId": "04-challenge-missions",
+  "courseName": "Challenge Missions",
+  "description": "Beginner, intermediate, and advanced mission projects",
+  "version": "1.0.0",
+  "challenges": [
+    {
+      "id": "01-habit-tracker",
+      "name": "Habit Tracker",
+      "weight": 0.071
+    },
+    {
+      "id": "02-pokemon-explorer",
+      "name": "Pokemon Explorer",
+      "weight": 0.071
+    },
+    {
+      "id": "03-notes-app",
+      "name": "Notes App",
+      "weight": 0.071
+    },
+    {
+      "id": "04-calculator",
+      "name": "Calculator",
+      "weight": 0.071
+    },
+    {
+      "id": "05-meme-viewer",
+      "name": "Meme Viewer",
+      "weight": 0.071
+    },
+    {
+      "id": "06-realtime-chat",
+      "name": "Realtime Chat",
+      "weight": 0.071
+    },
+    {
+      "id": "07-expense-tracker",
+      "name": "Expense Tracker",
+      "weight": 0.071
+    },
+    {
+      "id": "08-movie-app",
+      "name": "Movie App",
+      "weight": 0.071
+    },
+    {
+      "id": "09-ai-recipe-app",
+      "name": "AI Recipe App",
+      "weight": 0.071
+    },
+    {
+      "id": "10-food-delivery",
+      "name": "Food Delivery",
+      "weight": 0.071
+    },
+    {
+      "id": "11-social-media-platform",
+      "name": "Social Media Platform",
+      "weight": 0.071
+    },
+    {
+      "id": "12-full-marketplace",
+      "name": "Full Marketplace",
+      "weight": 0.071
+    },
+    {
+      "id": "13-fitness-tracker",
+      "name": "Fitness Tracker",
+      "weight": 0.071
+    },
+    {
+      "id": "14-anime-streaming-ui",
+      "name": "Anime Streaming UI",
+      "weight": 0.071
+    }
+  ],
+  "scoring": {
+    "functionalTests": 0.35,
+    "codeQuality": 0.15,
+    "architecture": 0.1,
+    "bestPractices": 0.1,
+    "e2eTests": 0.15,
+    "aiReview": 0.15
+  },
+  "requirements": {
+    "minScore": 80,
+    "minCompletion": 100
+  }
+}

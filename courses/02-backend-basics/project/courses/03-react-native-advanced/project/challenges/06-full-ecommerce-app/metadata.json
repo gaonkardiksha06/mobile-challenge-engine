@@ -1,0 +1,24 @@
+{
+  "challengeId": "06-full-ecommerce-app",
+  "challengeName": "Full E-Commerce App (Capstone)",
+  "difficulty": "advanced",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Auth",
+    "Redux cart",
+    "Payments",
+    "Maps",
+    "Firebase",
+    "AsyncStorage"
+  ],
+  "filesToCheck": [
+    "app/_layout.tsx",
+    "store/cartSlice.ts",
+    "app/checkout.tsx"
+  ],
+  "patternsRequired": [
+    "redux",
+    "firebase",
+    "useMemo"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "challengeId": "06-async-storage",
+  "challengeName": "AsyncStorage",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "AsyncStorage",
+    "Local persistence",
+    "Theme preference",
+    "Auto-login"
+  ],
+  "filesToCheck": [
+    "lib/storage.ts",
+    "hooks/useAuthStorage.tsx",
+    "hooks/useThemeStorage.tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useEffect",
+    "useState",
+    "AsyncStorage"
+  ]
+}

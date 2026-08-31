@@ -1,0 +1,18 @@
+{
+  "challengeId": "02-expo-eas",
+  "challengeName": "Expo EAS",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "EAS Build",
+    "eas.json",
+    "Cloud build"
+  ],
+  "filesToCheck": [
+    "eas.json",
+    "app.json"
+  ],
+  "patternsRequired": [
+    "eas"
+  ]
+}

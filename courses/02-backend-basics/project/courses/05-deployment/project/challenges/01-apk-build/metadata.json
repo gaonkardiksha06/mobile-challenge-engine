@@ -1,0 +1,18 @@
+{
+  "challengeId": "01-apk-build",
+  "challengeName": "APK Build",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "APK",
+    "Android build",
+    "Device testing"
+  ],
+  "filesToCheck": [
+    "app.json",
+    "eas.json"
+  ],
+  "patternsRequired": [
+    "expo-build"
+  ]
+}

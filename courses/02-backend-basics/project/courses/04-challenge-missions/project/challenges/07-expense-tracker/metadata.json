@@ -1,0 +1,19 @@
+{
+  "challengeId": "07-expense-tracker",
+  "challengeName": "Expense Tracker",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Redux",
+    "Charts",
+    "Forms"
+  ],
+  "filesToCheck": [
+    "store/expenseSlice.ts"
+  ],
+  "patternsRequired": [
+    "redux",
+    "useState"
+  ],
+  "tier": "intermediate"
+}

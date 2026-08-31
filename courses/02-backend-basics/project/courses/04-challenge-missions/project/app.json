@@ -1,0 +1,14 @@
+{
+  "expo": {
+    "name": "Mobile Challenges",
+    "slug": "mobile-challenges",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "mobilechallenges",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

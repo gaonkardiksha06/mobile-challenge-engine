@@ -1,80 +1,111 @@
-import { Router } from 'express';
-import mongoose from 'mongoose';
-import { requireAuth } from '../middleware/auth.js';
+// src/routes/posts.js
 
-/** Protected blog routes use jwt middleware */
+import express from "express";
+import { requireAuth } from "../middleware/auth.js";
+import Post from "../models/Post.js";
 
-const postSchema = new mongoose.Schema(
-  {
-    title: { type: String, required: true },
-    body: { type: String, required: true },
-    authorId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-  },
-  { timestamps: true }
-);
+const router = express.Router();
 
-const Post = mongoose.models.Post || mongoose.model('Post', postSchema);
-const router = Router();
-
-router.get('/', async (_req, res, next) => {
+// Create post
+router.post("/", requireAuth, async (req, res) => {
   try {
-    const posts = await Post.find().sort({ createdAt: -1 });
-    res.json(posts);
-  } catch (err) {
-    next(err);
-  }
-});
+    const { title, content } = req.body;
 
-router.get('/:id', async (req, res, next) => {
-  try {
-    const post = await Post.findById(req.params.id);
-    if (!post) return res.status(404).json({ error: 'Post not found' });
-    res.json(post);
-  } catch (err) {
-    next(err);
-  }
-});
-
-router.post('/', requireAuth, async (req, res, next) => {
-  try {
-    const { title, body } = req.body;
     const post = await Post.create({
       title,
-      body,
-      authorId: req.user.id,
+      content,
+      author: req.user.id,
     });
+
     res.status(201).json(post);
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: err.message,
+    });
   }
 });
 
-router.put('/:id', requireAuth, async (req, res, next) => {
+// Get all posts
+router.get("/", async (_req, res) => {
   try {
-    const { title, body } = req.body; // whitelist: authorId can never be reassigned via body
-    const update = {};
-    if (title !== undefined) update.title = title;
-    if (body !== undefined) update.body = body;
-
-    const post = await Post.findOneAndUpdate(
-      { _id: req.params.id, authorId: req.user.id },
-      update,
-      { new: true, runValidators: true }
+    const posts = await Post.find().populate(
+      "author",
+      "email"
     );
-    if (!post) return res.status(404).json({ error: 'Post not found' });
+
+    res.json(posts);
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
+  }
+});
+
+// Get single post
+router.get("/:id", async (req, res) => {
+  try {
+    const post = await Post.findById(req.params.id);
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
     res.json(post);
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: err.message,
+    });
   }
 });
 
-router.delete('/:id', requireAuth, async (req, res, next) => {
+// Update post
+router.put("/:id", requireAuth, async (req, res) => {
   try {
-    const post = await Post.findOneAndDelete({ _id: req.params.id, authorId: req.user.id });
-    if (!post) return res.status(404).json({ error: 'Post not found' });
-    res.json({ deleted: true });
+    const post = await Post.findByIdAndUpdate(
+      req.params.id,
+      req.body,
+      {
+        new: true,
+        runValidators: true,
+      }
+    );
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
+    res.json(post);
   } catch (err) {
-    next(err);
+    res.status(500).json({
+      error: err.message,
+    });
+  }
+});
+
+// Delete post
+router.delete("/:id", requireAuth, async (req, res) => {
+  try {
+    const post = await Post.findByIdAndDelete(
+      req.params.id
+    );
+
+    if (!post) {
+      return res.status(404).json({
+        error: "Post not found",
+      });
+    }
+
+    res.json({
+      message: "Post deleted",
+    });
+  } catch (err) {
+    res.status(500).json({
+      error: err.message,
+    });
   }
 });
 

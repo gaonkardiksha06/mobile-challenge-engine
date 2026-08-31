@@ -1,0 +1,25 @@
+{
+  "challengeId": "03-lists-data-rendering",
+  "challengeName": "Lists & Data Rendering",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "FlatList",
+    "ScrollView",
+    "map()",
+    "Search filter",
+    "Empty states",
+    "Loading"
+  ],
+  "filesToCheck": [
+    "components/PostFeed.tsx",
+    "components/ImageGallery.tsx",
+    "components/SearchBar.tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useState",
+    "useEffect",
+    "FlatList"
+  ]
+}

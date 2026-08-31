@@ -1,0 +1,394 @@
+[
+  {
+    "challengeId": "01-apk-build",
+    "challengeName": "APK Build",
+    "timestamp": "2026-08-06T07:15:06.080Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 74.95,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-01"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-01 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000513186,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1786000512375,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "expo-build"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app.json",
+          "patternsFound": [
+            "expo-build"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "eas.json",
+          "patternsFound": [
+            "expo-build"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\e2e\\challenge-01.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "01-apk-build",
+      "timestamp": "2026-08-06T07:15:18.469Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and Expo is appropriate for the project.",
+        "The configuration files (app.json and eas.json) are well-organized and easy to understand."
+      ],
+      "improvements": [
+        "The 'permissions' array in the 'android' section of app.json is empty. It would be better to include the necessary permissions for the app to function correctly.",
+        "The 'eas' section in app.json contains a projectId that is not being used. It would be better to remove this section or use the projectId for something useful.",
+        "The 'build' section in eas.json has a 'development' profile that is not being used. It would be better to remove this profile or use it for something useful."
+      ],
+      "readability": 80,
+      "maintainability": 85,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and efficient. With some minor adjustments, the code can reach a score of 90% or higher."
+    },
+    "aiResults": {
+      "challengeId": "01-apk-build",
+      "timestamp": "2026-08-06T07:15:18.469Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows a consistent naming convention.",
+        "The use of TypeScript and Expo is appropriate for the project.",
+        "The configuration files (app.json and eas.json) are well-organized and easy to understand."
+      ],
+      "improvements": [
+        "The 'permissions' array in the 'android' section of app.json is empty. It would be better to include the necessary permissions for the app to function correctly.",
+        "The 'eas' section in app.json contains a projectId that is not being used. It would be better to remove this section or use the projectId for something useful.",
+        "The 'build' section in eas.json has a 'development' profile that is not being used. It would be better to remove this profile or use it for something useful."
+      ],
+      "readability": 80,
+      "maintainability": 85,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more robust and efficient. With some minor adjustments, the code can reach a score of 90% or higher."
+    }
+  },
+  {
+    "challengeId": "02-expo-eas",
+    "challengeName": "Expo EAS",
+    "timestamp": "2026-08-06T07:15:19.827Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 74.95,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-02"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-02 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000525592,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1786000524954,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "eas"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "eas.json",
+          "patternsFound": [],
+          "patternsMissing": [
+            "eas"
+          ]
+        },
+        {
+          "file": "app.json",
+          "patternsFound": [
+            "eas"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\e2e\\challenge-02.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "02-expo-eas",
+      "timestamp": "2026-08-06T07:15:30.641Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is consistent throughout the codebase.",
+        "The `eas.json` file is well-formatted and easy to understand."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments explaining the purpose of each section and the configuration options used.",
+        "The `eas.json` file could have more descriptive variable names, such as `androidBuildType` instead of `buildType`.",
+        "Consider adding JSDoc comments to the `eas.json` file to explain the purpose of each property and its expected values."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows the required patterns for React Native/Expo. However, there are some minor improvements that can be made to increase code readability and maintainability. Overall, the code is solid and meets the requirements of the challenge."
+    },
+    "aiResults": {
+      "challengeId": "02-expo-eas",
+      "timestamp": "2026-08-06T07:15:30.641Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is consistent throughout the codebase.",
+        "The `eas.json` file is well-formatted and easy to understand."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments explaining the purpose of each section and the configuration options used.",
+        "The `eas.json` file could have more descriptive variable names, such as `androidBuildType` instead of `buildType`.",
+        "Consider adding JSDoc comments to the `eas.json` file to explain the purpose of each property and its expected values."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows the required patterns for React Native/Expo. However, there are some minor improvements that can be made to increase code readability and maintainability. Overall, the code is solid and meets the requirements of the challenge."
+    }
+  },
+  {
+    "challengeId": "03-play-store-prep",
+    "challengeName": "Play Store Prep",
+    "timestamp": "2026-08-06T07:15:31.401Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 50,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 74.95,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-03"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-03 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1786000537253,
+          "message": "",
+          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1786000536552,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 50,
+      "passed": false,
+      "error": "Could not parse linting results",
+      "details": []
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "release"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "app.json",
+          "patternsFound": [],
+          "patternsMissing": [
+            "release"
+          ]
+        },
+        {
+          "file": "store-assets/README.md",
+          "patternsFound": [
+            "release"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\05-deployment\\project\\tests\\e2e\\challenge-03.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "03-play-store-prep",
+      "timestamp": "2026-08-06T07:15:42.015Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is a good practice, making the code more maintainable and scalable."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments to explain the configuration options and their purposes.",
+        "The `store-assets/README.md` file is a good checklist, but it could be more comprehensive and include more detailed instructions for each step."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and comprehensive. With some additional comments and instructions, this code could be considered excellent."
+    },
+    "aiResults": {
+      "challengeId": "03-play-store-prep",
+      "timestamp": "2026-08-06T07:15:42.015Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "The code is well-structured and follows the required patterns for React Native/Expo.",
+        "The use of TypeScript is a good practice, making the code more maintainable and scalable."
+      ],
+      "improvements": [
+        "The `app.json` file could benefit from more comments to explain the configuration options and their purposes.",
+        "The `store-assets/README.md` file is a good checklist, but it could be more comprehensive and include more detailed instructions for each step."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The code is well-structured and follows good practices, but there are some areas for improvement to make it more maintainable and comprehensive. With some additional comments and instructions, this code could be considered excellent."
+    }
+  }
+]

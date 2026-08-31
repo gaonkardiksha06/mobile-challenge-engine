@@ -1,0 +1,19 @@
+{
+  "challengeId": "02-pokemon-explorer",
+  "challengeName": "Pokemon Explorer",
+  "difficulty": "beginner",
+  "estimatedTime": "2-4 hours",
+  "skills": [
+    "fetch",
+    "FlatList",
+    "Navigation"
+  ],
+  "filesToCheck": [
+    "app/pokemon/[id].tsx"
+  ],
+  "patternsRequired": [
+    "fetch",
+    "FlatList"
+  ],
+  "tier": "beginner"
+}

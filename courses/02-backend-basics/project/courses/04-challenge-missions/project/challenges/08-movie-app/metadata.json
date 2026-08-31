@@ -1,0 +1,19 @@
+{
+  "challengeId": "08-movie-app",
+  "challengeName": "Movie App",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "API",
+    "Search",
+    "Navigation"
+  ],
+  "filesToCheck": [
+    "app/movie/[id].tsx"
+  ],
+  "patternsRequired": [
+    "fetch",
+    "useState"
+  ],
+  "tier": "intermediate"
+}

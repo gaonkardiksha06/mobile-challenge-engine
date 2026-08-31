@@ -1,0 +1,55 @@
+{
+  "courseId": "01-react-native-fundamentals",
+  "courseName": "React Native Fundamentals",
+  "description": "Expo, components, navigation, lists, forms, APIs, and AsyncStorage",
+  "version": "1.0.0",
+  "challenges": [
+    {
+      "id": "01-expo-setup-basics",
+      "name": "Expo Setup & Basics",
+      "weight": 0.143
+    },
+    {
+      "id": "02-navigation-system",
+      "name": "Navigation System",
+      "weight": 0.143
+    },
+    {
+      "id": "03-lists-data-rendering",
+      "name": "Lists & Data Rendering",
+      "weight": 0.143
+    },
+    {
+      "id": "04-forms-validation",
+      "name": "Forms & Validation",
+      "weight": 0.143
+    },
+    {
+      "id": "05-api-integration",
+      "name": "API Integration",
+      "weight": 0.143
+    },
+    {
+      "id": "06-async-storage",
+      "name": "AsyncStorage",
+      "weight": 0.143
+    },
+    {
+      "id": "07-mini-social-feed",
+      "name": "Mini Social Feed (Capstone)",
+      "weight": 0.143
+    }
+  ],
+  "scoring": {
+    "functionalTests": 0.35,
+    "codeQuality": 0.15,
+    "architecture": 0.1,
+    "bestPractices": 0.1,
+    "e2eTests": 0.15,
+    "aiReview": 0.15
+  },
+  "requirements": {
+    "minScore": 80,
+    "minCompletion": 100
+  }
+}

@@ -1,0 +1,103 @@
+{
+  "courseId": "04-challenge-missions",
+  "courseName": "Challenge Missions",
+  "lastUpdated": "2026-08-06T07:15:00.238Z",
+  "totalChallenges": 14,
+  "completedChallenges": 0,
+  "averageScore": 71.8,
+  "completionPercentage": 0,
+  "badgeLevel": "none",
+  "challengeResults": [
+    {
+      "challengeId": "01-habit-tracker",
+      "challengeName": "Habit Tracker",
+      "score": 74.95,
+      "passed": false
+    },
+    {
+      "challengeId": "02-pokemon-explorer",
+      "challengeName": "Pokemon Explorer",
+      "score": 62.5,
+      "passed": false
+    },
+    {
+      "challengeId": "03-notes-app",
+      "challengeName": "Notes App",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "04-calculator",
+      "challengeName": "Calculator",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "05-meme-viewer",
+      "challengeName": "Meme Viewer",
+      "score": 62.5,
+      "passed": false
+    },
+    {
+      "challengeId": "06-realtime-chat",
+      "challengeName": "Realtime Chat",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "07-expense-tracker",
+      "challengeName": "Expense Tracker",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "08-movie-app",
+      "challengeName": "Movie App",
+      "score": 74.95,
+      "passed": false
+    },
+    {
+      "challengeId": "09-ai-recipe-app",
+      "challengeName": "AI Recipe App",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "10-food-delivery",
+      "challengeName": "Food Delivery",
+      "score": 62.5,
+      "passed": false
+    },
+    {
+      "challengeId": "11-social-media-platform",
+      "challengeName": "Social Media Platform",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "12-full-marketplace",
+      "challengeName": "Full Marketplace",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "13-fitness-tracker",
+      "challengeName": "Fitness Tracker",
+      "score": 75.7,
+      "passed": false
+    },
+    {
+      "challengeId": "14-anime-streaming-ui",
+      "challengeName": "Anime Streaming UI",
+      "score": 62.5,
+      "passed": false
+    }
+  ],
+  "skillStrengths": [],
+  "improvementAreas": [
+    "Pokemon Explorer",
+    "Meme Viewer",
+    "Food Delivery",
+    "Anime Streaming UI"
+  ]
+}

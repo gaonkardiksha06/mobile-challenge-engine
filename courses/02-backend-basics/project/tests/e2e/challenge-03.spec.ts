@@ -1,9 +1,9 @@
+// tests/e2e/challenge-03.spec.ts
 import { test, expect } from '@playwright/test';
 
 test.describe('Challenge 03 - MongoDB', () => {
   test('GET /api/users returns an array', async ({ request }) => {
     const res = await request.get('/api/users');
-
     expect(res.status()).toBe(200);
 
     const body = await res.json();
@@ -24,19 +24,14 @@ test.describe('Challenge 03 - MongoDB', () => {
     expect(res.status()).toBe(201);
 
     const user = await res.json();
-
     expect(user.username).toBeTruthy();
     expect(user.email).toBe(uniqueEmail);
     expect(user.password).toBeUndefined();
   });
 
-  test('POST /api/users without required fields returns an error', async ({
-    request,
-  }) => {
+  test('POST /api/users without required fields returns an error', async ({ request }) => {
     const res = await request.post('/api/users', {
-      data: {
-        username: 'missing-fields-user',
-      },
+      data: { username: 'missing-fields-user' },
     });
 
     expect(res.status()).toBe(400);
@@ -52,19 +47,15 @@ test.describe('Challenge 03 - MongoDB', () => {
     });
 
     expect(createRes.status()).toBe(201);
-
     const created = await createRes.json();
 
     const updateRes = await request.put(`/api/users/${created._id}`, {
-      data: {
-        username: 'updated-e2e-user',
-      },
+      data: { username: 'updated-e2e-user' },
     });
 
     expect(updateRes.status()).toBe(200);
 
     const updated = await updateRes.json();
-
     expect(updated.username).toBe('updated-e2e-user');
   });
 
@@ -78,33 +69,25 @@ test.describe('Challenge 03 - MongoDB', () => {
     });
 
     expect(createRes.status()).toBe(201);
-
     const created = await createRes.json();
 
     const deleteRes = await request.delete(`/api/users/${created._id}`);
-
     expect(deleteRes.status()).toBe(200);
 
     const body = await deleteRes.json();
     expect(body.deleted).toBe(true);
   });
 
-  test('GET /api/users/:id for a missing user returns 404', async ({
-    request,
-  }) => {
+  test('GET /api/users/:id for a missing user returns 404', async ({ request }) => {
     const res = await request.get('/api/users/does-not-exist');
-
     expect(res.status()).toBe(404);
 
     const body = await res.json();
     expect(body.error).toBeTruthy();
   });
 
-  test('DELETE /api/users/:id for a missing user returns 404', async ({
-    request,
-  }) => {
+  test('DELETE /api/users/:id for a missing user returns 404', async ({ request }) => {
     const res = await request.delete('/api/users/does-not-exist');
-
     expect(res.status()).toBe(404);
 
     const body = await res.json();

@@ -1,0 +1,921 @@
+[
+  {
+    "challengeId": "01-nodejs-basics",
+    "challengeName": "Node.js Basics",
+    "timestamp": "2026-08-19T06:17:57.088Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 98,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 82
+    },
+    "totalScore": 82,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "01-nodejs-basics"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "01-nodejs-basics passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1787120282060,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1787120281785,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 98,
+      "passed": true,
+      "totalIssues": 1,
+      "errors": 0,
+      "warnings": 1,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\fs-utils.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\math.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\server.js",
+          "messages": [
+            {
+              "ruleId": null,
+              "message": "Unused eslint-disable directive (no problems were reported from 'no-unused-vars').",
+              "line": 98,
+              "column": 1,
+              "severity": 1,
+              "fix": {
+                "range": [
+                  2200,
+                  2242
+                ],
+                "text": " "
+              }
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 1,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 1,
+          "source": "import 'dotenv/config';\r\n\r\nimport { createServer } from 'node:http';\r\nimport express from 'express';\r\n\r\nimport mainApp from './app.js';\r\nimport { connectDB } from './db.js';\r\nimport { readNotes, writeNotes, appendNote } from './fs-utils.js';\r\nimport { average, max, lineLengths } from './math.js';\r\nimport { logger } from './logger.js';\r\n\r\nconst PORT = process.env.PORT || 3000;\r\n\r\n// Legacy Challenge 01 server\r\nconst server = express();\r\n\r\nserver.use(express.json());\r\n\r\nserver.get('/', (_req, res) => {\r\n  res.json({\r\n    message: 'Node.js Basics API',\r\n    routes: [\r\n      'GET /notes',\r\n      'POST /notes  { \"content\": string }',\r\n      'POST /notes/append  { \"line\": string }',\r\n      'GET /notes/stats',\r\n    ],\r\n  });\r\n});\r\n\r\nserver.get('/notes', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    res.json({ content });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes', async (req, res, next) => {\r\n  try {\r\n    const { content } = req.body ?? {};\r\n\r\n    if (typeof content !== 'string') {\r\n      return res.status(400).json({\r\n        error: '\"content\" must be a string',\r\n      });\r\n    }\r\n\r\n    await writeNotes(content);\r\n    await logger.info('Notes file overwritten');\r\n\r\n    return res.json({\r\n      message: 'Notes saved',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes/append', async (req, res, next) => {\r\n  try {\r\n    const { line } = req.body ?? {};\r\n\r\n    if (typeof line !== 'string' || line.length === 0) {\r\n      return res.status(400).json({\r\n        error: '\"line\" must be a non-empty string',\r\n      });\r\n    }\r\n\r\n    await appendNote(line);\r\n    await logger.info('Note appended');\r\n\r\n    return res.json({\r\n      message: 'Note appended',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.get('/notes/stats', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    const lengths = lineLengths(content);\r\n\r\n    res.json({\r\n      lineCount: lengths.length,\r\n      averageLineLength: average(lengths),\r\n      longestLine: max(lengths),\r\n    });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\n// Legacy error handler\r\n// eslint-disable-next-line no-unused-vars\r\nserver.use((err, _req, res, _next) => {\r\n  logger.error(err.message);\r\n  res.status(500).json({\r\n    error: 'Internal server error',\r\n  });\r\n});\r\n\r\n// Mount the Express application containing /health and /api/*\r\nserver.use(mainApp);\r\n\r\nconst httpServer = createServer(server);\r\n\r\nasync function startServer() {\r\n  try {\r\n    await connectDB();\r\n  } catch (error) {\r\n    logger.error(`DB connection failed: ${error.message}`);\r\n  }\r\n\r\n  httpServer.listen(PORT, () => {\r\n    logger.info(`Server listening on port ${PORT}`);\r\n  });\r\n}\r\n\r\nif (process.env.NODE_ENV !== 'test') {\r\n  startServer();\r\n}\r\n\r\nexport default httpServer;",
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "http",
+        "fs"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/server.js",
+          "patternsFound": [
+            "http",
+            "fs"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/fs-utils.js",
+          "patternsFound": [
+            "fs"
+          ],
+          "patternsMissing": [
+            "http"
+          ]
+        },
+        {
+          "file": "src/math.js",
+          "patternsFound": [],
+          "patternsMissing": [
+            "http",
+            "fs"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-01.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
+    },
+    "aiReviewResults": {
+      "challengeId": "01-nodejs-basics",
+      "timestamp": "2026-08-19T06:18:14.197Z",
+      "score": 82,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – the server, file utilities, and math helpers are in distinct modules.",
+        "Consistent async/await usage and error handling across routes.",
+        "Use of environment variables and a dedicated logger keeps production code clean."
+      ],
+      "improvements": [
+        "Add JSDoc type annotations (or TypeScript typings) for all exported functions to improve type safety and IDE support.",
+        "Centralise the data directory path and file names in a single config module to avoid duplication and make future changes easier.",
+        "Implement a small unit‑test suite for `fs-utils.js` and `math.js` to catch regressions and enforce contract expectations."
+      ],
+      "readability": 85,
+      "maintainability": 78,
+      "overall": "The codebase demonstrates solid fundamentals for a Node.js project, with clear structure and robust error handling. Enhancing type safety, configuration centralisation, and test coverage will raise maintainability and reduce the risk of future bugs."
+    },
+    "aiResults": {
+      "challengeId": "01-nodejs-basics",
+      "timestamp": "2026-08-19T06:18:14.197Z",
+      "score": 82,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – the server, file utilities, and math helpers are in distinct modules.",
+        "Consistent async/await usage and error handling across routes.",
+        "Use of environment variables and a dedicated logger keeps production code clean."
+      ],
+      "improvements": [
+        "Add JSDoc type annotations (or TypeScript typings) for all exported functions to improve type safety and IDE support.",
+        "Centralise the data directory path and file names in a single config module to avoid duplication and make future changes easier.",
+        "Implement a small unit‑test suite for `fs-utils.js` and `math.js` to catch regressions and enforce contract expectations."
+      ],
+      "readability": 85,
+      "maintainability": 78,
+      "overall": "The codebase demonstrates solid fundamentals for a Node.js project, with clear structure and robust error handling. Enhancing type safety, configuration centralisation, and test coverage will raise maintainability and reduce the risk of future bugs."
+    }
+  },
+  {
+    "challengeId": "02-express-apis",
+    "challengeName": "Express.js APIs",
+    "timestamp": "2026-08-19T06:18:16.663Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 98,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 82.15,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "02-express-apis"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "02-express-apis passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1787120301301,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1787120301054,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 98,
+      "passed": true,
+      "totalIssues": 1,
+      "errors": 0,
+      "warnings": 1,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\logger.js",
+          "messages": [
+            {
+              "ruleId": null,
+              "message": "Unused eslint-disable directive (no problems were reported from 'no-console').",
+              "line": 5,
+              "column": 5,
+              "severity": 1,
+              "fix": {
+                "range": [
+                  152,
+                  190
+                ],
+                "text": " "
+              }
+            }
+          ],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 1,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 1,
+          "source": "export function requestLogger(req, res, next) {\r\n  const start = Date.now();\r\n  res.on('finish', () => {\r\n    const duration = Date.now() - start;\r\n    // eslint-disable-next-line no-console\r\n    console.log(`${req.method} ${req.originalUrl} ${res.statusCode} ${duration}ms`);\r\n  });\r\n  next();\r\n}\r\n\r\nexport function errorHandler(err, _req, res, _next) {\r\n  res.status(err.status || 500).json({\r\n    error: err.message || 'Internal server error',\r\n  });\r\n}\r\n",
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\notes.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "express",
+        "middleware"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/app.js",
+          "patternsFound": [
+            "express",
+            "middleware"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/notes.js",
+          "patternsFound": [
+            "express"
+          ],
+          "patternsMissing": [
+            "middleware"
+          ]
+        },
+        {
+          "file": "src/middleware/logger.js",
+          "patternsFound": [],
+          "patternsMissing": [
+            "express",
+            "middleware"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-02.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
+    },
+    "aiReviewResults": {
+      "challengeId": "02-express-apis",
+      "timestamp": "2026-08-19T06:18:32.588Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Consistent use of async/await with proper status codes and JSON responses.",
+        "Simple in-memory caching of notes improves performance without adding complexity."
+      ],
+      "improvements": [
+        "Add explicit error handling for async file operations (try/catch) so that unexpected I/O errors are forwarded to the error middleware.",
+        "Introduce TypeScript typings or JSDoc annotations for request bodies and response shapes to aid future refactoring and IDE support.",
+        "Validate request payloads more robustly (e.g., ensure `body` is a string) and consider using a validation library to avoid duplicated logic across routes."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean and functional, with a solid structure that meets the core requirements. Minor enhancements around error handling and type safety would raise the code quality further and make it easier to maintain as the project grows."
+    },
+    "aiResults": {
+      "challengeId": "02-express-apis",
+      "timestamp": "2026-08-19T06:18:32.588Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
+        "Consistent use of async/await with proper status codes and JSON responses.",
+        "Simple in-memory caching of notes improves performance without adding complexity."
+      ],
+      "improvements": [
+        "Add explicit error handling for async file operations (try/catch) so that unexpected I/O errors are forwarded to the error middleware.",
+        "Introduce TypeScript typings or JSDoc annotations for request bodies and response shapes to aid future refactoring and IDE support.",
+        "Validate request payloads more robustly (e.g., ensure `body` is a string) and consider using a validation library to avoid duplicated logic across routes."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is clean and functional, with a solid structure that meets the core requirements. Minor enhancements around error handling and type safety would raise the code quality further and make it easier to maintain as the project grows."
+    }
+  },
+  {
+    "challengeId": "03-mongodb",
+    "challengeName": "MongoDB",
+    "timestamp": "2026-08-19T06:18:33.981Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 50
+    },
+    "totalScore": 77.5,
+    "passed": false,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "03-mongodb"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "03-mongodb passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1787120318748,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1787120318320,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\db.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\models\\User.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\users.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "mongoose",
+        "schema"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/db.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/models/User.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/users.js",
+          "patternsFound": [
+            "mongoose",
+            "schema"
+          ],
+          "patternsMissing": []
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-03.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
+    },
+    "aiReviewResults": {
+      "challengeId": "03-mongodb",
+      "timestamp": "2026-08-19T06:18:48.943Z",
+      "score": 50,
+      "feedback": [],
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
+    },
+    "aiResults": {
+      "challengeId": "03-mongodb",
+      "timestamp": "2026-08-19T06:18:48.943Z",
+      "score": 50,
+      "feedback": [],
+      "strengths": [
+        "Code structure is reasonable"
+      ],
+      "improvements": [
+        "Code structure is reasonable"
+      ],
+      "readability": 50,
+      "maintainability": 50,
+      "overall": ""
+    }
+  },
+  {
+    "challengeId": "04-jwt-authentication",
+    "challengeName": "JWT Authentication",
+    "timestamp": "2026-08-19T06:18:50.819Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 82.45,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "04-jwt-authentication"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "04-jwt-authentication passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1787120335402,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1787120335121,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "jwt",
+        "bcrypt"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/routes/auth.js",
+          "patternsFound": [
+            "bcrypt"
+          ],
+          "patternsMissing": [
+            "jwt"
+          ]
+        },
+        {
+          "file": "src/middleware/auth.js",
+          "patternsFound": [
+            "jwt"
+          ],
+          "patternsMissing": [
+            "bcrypt"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-04.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "04-jwt-authentication",
+      "timestamp": "2026-08-19T06:18:59.624Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes are defined in `auth.js` while authentication logic lives in `auth.js` middleware.",
+        "Robust error handling for duplicate keys and authentication failures."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request bodies, payloads, and middleware to catch type errors early.",
+        "Extract error messages and status codes into constants or a helper module to avoid duplication and improve consistency.",
+        "Validate environment variables (e.g., `JWT_SECRET`) at application start and provide a clear error message if missing."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates a solid grasp of JWT authentication fundamentals with clean, readable code. Minor enhancements around typing and configuration validation would elevate maintainability and reduce runtime surprises."
+    },
+    "aiResults": {
+      "challengeId": "04-jwt-authentication",
+      "timestamp": "2026-08-19T06:18:59.624Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Secure handling of passwords with bcrypt and JWT token generation.",
+        "Clear separation of concerns: routes are defined in `auth.js` while authentication logic lives in `auth.js` middleware.",
+        "Robust error handling for duplicate keys and authentication failures."
+      ],
+      "improvements": [
+        "Add TypeScript typings for request bodies, payloads, and middleware to catch type errors early.",
+        "Extract error messages and status codes into constants or a helper module to avoid duplication and improve consistency.",
+        "Validate environment variables (e.g., `JWT_SECRET`) at application start and provide a clear error message if missing."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation demonstrates a solid grasp of JWT authentication fundamentals with clean, readable code. Minor enhancements around typing and configuration validation would elevate maintainability and reduce runtime surprises."
+    }
+  },
+  {
+    "challengeId": "05-blog-backend-api",
+    "challengeName": "Blog Backend API (Capstone)",
+    "timestamp": "2026-08-19T06:19:00.534Z",
+    "scores": {
+      "functionalTests": 100,
+      "codeQuality": 100,
+      "architecture": 100,
+      "bestPractices": 100,
+      "e2eTests": 0,
+      "aiReview": 83
+    },
+    "totalScore": 82.45,
+    "passed": true,
+    "errors": [],
+    "warnings": [],
+    "testResults": {
+      "score": 100,
+      "passed": true,
+      "totalTests": 1,
+      "passedTests": 1,
+      "failedTests": 0,
+      "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "05-blog-backend-api"
+              ],
+              "duration": 1,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "05-blog-backend-api passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1787120343410,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1787120343185,
+          "status": "passed",
+          "summary": ""
+        }
+      ]
+    },
+    "lintResults": {
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\auth.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        },
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\routes\\posts.js",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
+    },
+    "architectureResults": {
+      "score": 100,
+      "passed": true,
+      "patternsFound": [
+        "express",
+        "jwt",
+        "mongoose"
+      ],
+      "patternsMissing": [],
+      "details": [
+        {
+          "file": "src/app.js",
+          "patternsFound": [
+            "express",
+            "jwt"
+          ],
+          "patternsMissing": [
+            "mongoose"
+          ]
+        },
+        {
+          "file": "src/routes/posts.js",
+          "patternsFound": [
+            "express",
+            "jwt",
+            "mongoose"
+          ],
+          "patternsMissing": []
+        },
+        {
+          "file": "src/routes/auth.js",
+          "patternsFound": [
+            "express"
+          ],
+          "patternsMissing": [
+            "jwt",
+            "mongoose"
+          ]
+        }
+      ]
+    },
+    "bestPracticesResults": {
+      "score": 100,
+      "passed": true,
+      "issues": [],
+      "details": [],
+      "note": "No best practices requirements specified in challenge"
+    },
+    "e2eResults": {
+      "score": 0,
+      "passed": false,
+      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-05.spec.ts",
+      "details": []
+    },
+    "aiReviewResults": {
+      "challengeId": "05-blog-backend-api",
+      "timestamp": "2026-08-19T06:19:08.380Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns: routes, middleware, and models are organized into distinct files.",
+        "Consistent use of async/await with proper error handling via `next(err)` and a global error handler.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access control."
+      ],
+      "improvements": [
+        "Move the Mongoose schema definitions for `Post` (and any other models) into dedicated model files to avoid duplication and improve testability.",
+        "Add request payload validation (e.g., with Joi or express-validator) to guard against malformed input and provide more descriptive error messages.",
+        "Introduce TypeScript typings for request, response, and user objects to catch type errors at compile time and improve IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The codebase demonstrates solid architectural decisions and secure handling of authentication and CRUD operations. With a few refinements—particularly in model organization, input validation, and TypeScript typings—the project will achieve higher maintainability and robustness."
+    },
+    "aiResults": {
+      "challengeId": "05-blog-backend-api",
+      "timestamp": "2026-08-19T06:19:08.380Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns: routes, middleware, and models are organized into distinct files.",
+        "Consistent use of async/await with proper error handling via `next(err)` and a global error handler.",
+        "JWT protection is applied consistently to all mutating routes, ensuring secure access control."
+      ],
+      "improvements": [
+        "Move the Mongoose schema definitions for `Post` (and any other models) into dedicated model files to avoid duplication and improve testability.",
+        "Add request payload validation (e.g., with Joi or express-validator) to guard against malformed input and provide more descriptive error messages.",
+        "Introduce TypeScript typings for request, response, and user objects to catch type errors at compile time and improve IDE support."
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The codebase demonstrates solid architectural decisions and secure handling of authentication and CRUD operations. With a few refinements—particularly in model organization, input validation, and TypeScript typings—the project will achieve higher maintainability and robustness."
+    }
+  }
+]

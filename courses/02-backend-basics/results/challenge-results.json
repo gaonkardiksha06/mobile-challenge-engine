@@ -2,24 +2,24 @@
   {
     "challengeId": "01-nodejs-basics",
     "challengeName": "Node.js Basics",
-    "timestamp": "2026-08-19T06:17:57.088Z",
+    "timestamp": "2026-08-30T11:29:50.614Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 98,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 82
+      "aiReview": 85
     },
-    "totalScore": 82,
+    "totalScore": 82.75,
     "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
       "score": 100,
-      "passed": true,
-      "totalTests": 1,
-      "passedTests": 1,
+      "passed": false,
+      "totalTests": 5,
+      "passedTests": 5,
       "failedTests": 0,
       "details": [
         {
@@ -40,21 +40,132 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787120282060,
+          "endTime": 1788089395614,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1787120281785,
+          "startTime": 1788089395364,
           "status": "passed",
           "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-01"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-01 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089395731,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\03-react-native-advanced\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788089395619,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "01-nodejs-basics"
+              ],
+              "duration": 1,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "01-nodejs-basics passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089395827,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\02-backend-basics\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788089395736,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-01"
+              ],
+              "duration": 1,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-01 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089395928,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\05-deployment\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788089395835,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-01"
+              ],
+              "duration": 1,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-01 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089396029,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\04-challenge-missions\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788089395931,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [],
+          "coverage": {},
+          "endTime": 1788089396139,
+          "message": "  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-01.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788089396139,
+          "status": "failed",
+          "summary": ""
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- tests/challenge-01.test.tsx --json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\nPASS tests/challenge-01.test.tsx\nPASS courses/03-react-native-advanced/project/tests/challenge-01.test.tsx\nPASS courses/02-backend-basics/project/tests/challenge-01.test.tsx\nPASS courses/05-deployment/project/tests/challenge-01.test.tsx\nPASS courses/04-challenge-missions/project/tests/challenge-01.test.tsx\nFAIL courses/01-react-native-fundamentals/project/tests/challenge-01.test.tsx\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-01.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n\nTest Suites: 1 failed, 5 passed, 6 total\nTests:       5 passed, 5 total\nSnapshots:   0 total\nTime:        0.837 s, estimated 1 s\nRan all test suites matching /tests\\\\challenge-01.test.tsx/i.\n"
     },
     "lintResults": {
-      "score": 98,
+      "score": 100,
       "passed": true,
-      "totalIssues": 1,
+      "totalIssues": 0,
       "errors": 0,
-      "warnings": 1,
+      "warnings": 0,
       "details": [
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\fs-utils.js",
@@ -80,29 +191,13 @@
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\server.js",
-          "messages": [
-            {
-              "ruleId": null,
-              "message": "Unused eslint-disable directive (no problems were reported from 'no-unused-vars').",
-              "line": 98,
-              "column": 1,
-              "severity": 1,
-              "fix": {
-                "range": [
-                  2200,
-                  2242
-                ],
-                "text": " "
-              }
-            }
-          ],
+          "messages": [],
           "suppressedMessages": [],
           "errorCount": 0,
           "fatalErrorCount": 0,
-          "warningCount": 1,
+          "warningCount": 0,
           "fixableErrorCount": 0,
-          "fixableWarningCount": 1,
-          "source": "import 'dotenv/config';\r\n\r\nimport { createServer } from 'node:http';\r\nimport express from 'express';\r\n\r\nimport mainApp from './app.js';\r\nimport { connectDB } from './db.js';\r\nimport { readNotes, writeNotes, appendNote } from './fs-utils.js';\r\nimport { average, max, lineLengths } from './math.js';\r\nimport { logger } from './logger.js';\r\n\r\nconst PORT = process.env.PORT || 3000;\r\n\r\n// Legacy Challenge 01 server\r\nconst server = express();\r\n\r\nserver.use(express.json());\r\n\r\nserver.get('/', (_req, res) => {\r\n  res.json({\r\n    message: 'Node.js Basics API',\r\n    routes: [\r\n      'GET /notes',\r\n      'POST /notes  { \"content\": string }',\r\n      'POST /notes/append  { \"line\": string }',\r\n      'GET /notes/stats',\r\n    ],\r\n  });\r\n});\r\n\r\nserver.get('/notes', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    res.json({ content });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes', async (req, res, next) => {\r\n  try {\r\n    const { content } = req.body ?? {};\r\n\r\n    if (typeof content !== 'string') {\r\n      return res.status(400).json({\r\n        error: '\"content\" must be a string',\r\n      });\r\n    }\r\n\r\n    await writeNotes(content);\r\n    await logger.info('Notes file overwritten');\r\n\r\n    return res.json({\r\n      message: 'Notes saved',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.post('/notes/append', async (req, res, next) => {\r\n  try {\r\n    const { line } = req.body ?? {};\r\n\r\n    if (typeof line !== 'string' || line.length === 0) {\r\n      return res.status(400).json({\r\n        error: '\"line\" must be a non-empty string',\r\n      });\r\n    }\r\n\r\n    await appendNote(line);\r\n    await logger.info('Note appended');\r\n\r\n    return res.json({\r\n      message: 'Note appended',\r\n    });\r\n  } catch (error) {\r\n    return next(error);\r\n  }\r\n});\r\n\r\nserver.get('/notes/stats', async (_req, res, next) => {\r\n  try {\r\n    const content = await readNotes();\r\n    const lengths = lineLengths(content);\r\n\r\n    res.json({\r\n      lineCount: lengths.length,\r\n      averageLineLength: average(lengths),\r\n      longestLine: max(lengths),\r\n    });\r\n  } catch (error) {\r\n    next(error);\r\n  }\r\n});\r\n\r\n// Legacy error handler\r\n// eslint-disable-next-line no-unused-vars\r\nserver.use((err, _req, res, _next) => {\r\n  logger.error(err.message);\r\n  res.status(500).json({\r\n    error: 'Internal server error',\r\n  });\r\n});\r\n\r\n// Mount the Express application containing /health and /api/*\r\nserver.use(mainApp);\r\n\r\nconst httpServer = createServer(server);\r\n\r\nasync function startServer() {\r\n  try {\r\n    await connectDB();\r\n  } catch (error) {\r\n    logger.error(`DB connection failed: ${error.message}`);\r\n  }\r\n\r\n  httpServer.listen(PORT, () => {\r\n    logger.info(`Server listening on port ${PORT}`);\r\n  });\r\n}\r\n\r\nif (process.env.NODE_ENV !== 'test') {\r\n  startServer();\r\n}\r\n\r\nexport default httpServer;",
+          "fixableWarningCount": 0,
           "usedDeprecatedRules": []
         }
       ]
@@ -119,10 +214,11 @@
         {
           "file": "src/server.js",
           "patternsFound": [
-            "http",
-            "fs"
+            "http"
           ],
-          "patternsMissing": []
+          "patternsMissing": [
+            "fs"
+          ]
         },
         {
           "file": "src/fs-utils.js",
@@ -161,66 +257,141 @@
     },
     "aiReviewResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-19T06:18:14.197Z",
-      "score": 82,
+      "timestamp": "2026-08-30T11:31:10.570Z",
+      "score": 85,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns – the server, file utilities, and math helpers are in distinct modules.",
-        "Consistent async/await usage and error handling across routes.",
-        "Use of environment variables and a dedicated logger keeps production code clean."
+        "Clear separation of concerns – each module handles a single responsibility (server setup, file utilities, math helpers).",
+        "Consistent use of async/await and promises, making asynchronous logic straightforward.",
+        "Robust error handling for file operations, gracefully handling missing files."
       ],
       "improvements": [
-        "Add JSDoc type annotations (or TypeScript typings) for all exported functions to improve type safety and IDE support.",
-        "Centralise the data directory path and file names in a single config module to avoid duplication and make future changes easier.",
-        "Implement a small unit‑test suite for `fs-utils.js` and `math.js` to catch regressions and enforce contract expectations."
+        "Start the HTTP server only after a successful database connection to avoid serving requests when the DB is unavailable.",
+        "Add explicit error handling for the `httpServer.listen` call (e.g., catch port‑in‑use errors and exit the process).",
+        "Consider adding TypeScript typings or more detailed JSDoc annotations for the public functions to aid future maintainers."
       ],
-      "readability": 85,
-      "maintainability": 78,
-      "overall": "The codebase demonstrates solid fundamentals for a Node.js project, with clear structure and robust error handling. Enhancing type safety, configuration centralisation, and test coverage will raise maintainability and reduce the risk of future bugs."
+      "readability": 88,
+      "maintainability": 82,
+      "overall": "The codebase demonstrates solid fundamentals with clear, well‑structured modules and good async handling. Minor adjustments to the server startup flow and enhanced type safety would bring it to a higher standard."
     },
     "aiResults": {
       "challengeId": "01-nodejs-basics",
-      "timestamp": "2026-08-19T06:18:14.197Z",
-      "score": 82,
+      "timestamp": "2026-08-30T11:31:10.570Z",
+      "score": 85,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns – the server, file utilities, and math helpers are in distinct modules.",
-        "Consistent async/await usage and error handling across routes.",
-        "Use of environment variables and a dedicated logger keeps production code clean."
+        "Clear separation of concerns – each module handles a single responsibility (server setup, file utilities, math helpers).",
+        "Consistent use of async/await and promises, making asynchronous logic straightforward.",
+        "Robust error handling for file operations, gracefully handling missing files."
       ],
       "improvements": [
-        "Add JSDoc type annotations (or TypeScript typings) for all exported functions to improve type safety and IDE support.",
-        "Centralise the data directory path and file names in a single config module to avoid duplication and make future changes easier.",
-        "Implement a small unit‑test suite for `fs-utils.js` and `math.js` to catch regressions and enforce contract expectations."
+        "Start the HTTP server only after a successful database connection to avoid serving requests when the DB is unavailable.",
+        "Add explicit error handling for the `httpServer.listen` call (e.g., catch port‑in‑use errors and exit the process).",
+        "Consider adding TypeScript typings or more detailed JSDoc annotations for the public functions to aid future maintainers."
       ],
-      "readability": 85,
-      "maintainability": 78,
-      "overall": "The codebase demonstrates solid fundamentals for a Node.js project, with clear structure and robust error handling. Enhancing type safety, configuration centralisation, and test coverage will raise maintainability and reduce the risk of future bugs."
+      "readability": 88,
+      "maintainability": 82,
+      "overall": "The codebase demonstrates solid fundamentals with clear, well‑structured modules and good async handling. Minor adjustments to the server startup flow and enhanced type safety would bring it to a higher standard."
     }
   },
   {
     "challengeId": "02-express-apis",
     "challengeName": "Express.js APIs",
-    "timestamp": "2026-08-19T06:18:16.663Z",
+    "timestamp": "2026-08-30T11:31:14.220Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 98,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
       "aiReview": 83
     },
-    "totalScore": 82.15,
+    "totalScore": 82.45,
     "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
       "score": 100,
-      "passed": true,
-      "totalTests": 1,
-      "passedTests": 1,
+      "passed": false,
+      "totalTests": 5,
+      "passedTests": 5,
       "failedTests": 0,
       "details": [
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-02"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-02 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089481153,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\03-react-native-advanced\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089480879,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-02"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-02 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089481284,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\05-deployment\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089481159,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "02-express-apis"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "02-express-apis passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089481416,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089481291,
+          "status": "passed",
+          "summary": ""
+        },
         {
           "assertionResults": [
             {
@@ -239,21 +410,57 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787120301301,
+          "endTime": 1788089481550,
           "message": "",
-          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1787120301054,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\02-backend-basics\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089481425,
           "status": "passed",
           "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-02"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-02 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089481698,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\04-challenge-missions\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089481557,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [],
+          "coverage": {},
+          "endTime": 1788089481841,
+          "message": "  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-02.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788089481841,
+          "status": "failed",
+          "summary": ""
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- tests/challenge-02.test.tsx --json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\nPASS courses/03-react-native-advanced/project/tests/challenge-02.test.tsx\nPASS courses/05-deployment/project/tests/challenge-02.test.tsx\nPASS tests/challenge-02.test.tsx\nPASS courses/02-backend-basics/project/tests/challenge-02.test.tsx\nPASS courses/04-challenge-missions/project/tests/challenge-02.test.tsx\nFAIL courses/01-react-native-fundamentals/project/tests/challenge-02.test.tsx\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-02.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n\nTest Suites: 1 failed, 5 passed, 6 total\nTests:       5 passed, 5 total\nSnapshots:   0 total\nTime:        1.02 s\nRan all test suites matching /tests\\\\challenge-02.test.tsx/i.\n"
     },
     "lintResults": {
-      "score": 98,
+      "score": 100,
       "passed": true,
-      "totalIssues": 1,
+      "totalIssues": 0,
       "errors": 0,
-      "warnings": 1,
+      "warnings": 0,
       "details": [
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\app.js",
@@ -268,29 +475,13 @@
         },
         {
           "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\src\\middleware\\logger.js",
-          "messages": [
-            {
-              "ruleId": null,
-              "message": "Unused eslint-disable directive (no problems were reported from 'no-console').",
-              "line": 5,
-              "column": 5,
-              "severity": 1,
-              "fix": {
-                "range": [
-                  152,
-                  190
-                ],
-                "text": " "
-              }
-            }
-          ],
+          "messages": [],
           "suppressedMessages": [],
           "errorCount": 0,
           "fatalErrorCount": 0,
-          "warningCount": 1,
+          "warningCount": 0,
           "fixableErrorCount": 0,
-          "fixableWarningCount": 1,
-          "source": "export function requestLogger(req, res, next) {\r\n  const start = Date.now();\r\n  res.on('finish', () => {\r\n    const duration = Date.now() - start;\r\n    // eslint-disable-next-line no-console\r\n    console.log(`${req.method} ${req.originalUrl} ${res.statusCode} ${duration}ms`);\r\n  });\r\n  next();\r\n}\r\n\r\nexport function errorHandler(err, _req, res, _next) {\r\n  res.status(err.status || 500).json({\r\n    error: err.message || 'Internal server error',\r\n  });\r\n}\r\n",
+          "fixableWarningCount": 0,
           "usedDeprecatedRules": []
         },
         {
@@ -334,11 +525,11 @@
         },
         {
           "file": "src/middleware/logger.js",
-          "patternsFound": [],
-          "patternsMissing": [
+          "patternsFound": [
             "express",
             "middleware"
-          ]
+          ],
+          "patternsMissing": []
         }
       ]
     },
@@ -360,64 +551,64 @@
     },
     "aiReviewResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-19T06:18:32.588Z",
+      "timestamp": "2026-08-30T11:32:37.249Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
-        "Consistent use of async/await with proper status codes and JSON responses.",
-        "Simple in-memory caching of notes improves performance without adding complexity."
+        "Clear separation of concerns – routing, middleware, and app setup are neatly organized.",
+        "Consistent use of HTTP status codes and JSON responses throughout the API.",
+        "Simple, self‑contained in‑memory data store makes the example easy to understand."
       ],
       "improvements": [
-        "Add explicit error handling for async file operations (try/catch) so that unexpected I/O errors are forwarded to the error middleware.",
-        "Introduce TypeScript typings or JSDoc annotations for request bodies and response shapes to aid future refactoring and IDE support.",
-        "Validate request payloads more robustly (e.g., ensure `body` is a string) and consider using a validation library to avoid duplicated logic across routes."
+        "Add TypeScript type annotations (or JSDoc) for request/response objects and the `notes` array to improve type safety and IDE support.",
+        "Replace the `Date.now()` string ID with a proper UUID or MongoDB ObjectId to avoid collisions and improve uniqueness.",
+        "Enhance error handling by using a library like `http-errors` or custom error classes, and consider async/await patterns for future scalability."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The implementation is clean and functional, with a solid structure that meets the core requirements. Minor enhancements around error handling and type safety would raise the code quality further and make it easier to maintain as the project grows."
+      "overall": "The code is clean, well‑structured, and follows standard Express patterns, making it easy to read and maintain. A few type safety and ID generation improvements would elevate the quality for a production‑ready project."
     },
     "aiResults": {
       "challengeId": "02-express-apis",
-      "timestamp": "2026-08-19T06:18:32.588Z",
+      "timestamp": "2026-08-30T11:32:37.249Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns – routers, middleware, and app configuration are neatly organized.",
-        "Consistent use of async/await with proper status codes and JSON responses.",
-        "Simple in-memory caching of notes improves performance without adding complexity."
+        "Clear separation of concerns – routing, middleware, and app setup are neatly organized.",
+        "Consistent use of HTTP status codes and JSON responses throughout the API.",
+        "Simple, self‑contained in‑memory data store makes the example easy to understand."
       ],
       "improvements": [
-        "Add explicit error handling for async file operations (try/catch) so that unexpected I/O errors are forwarded to the error middleware.",
-        "Introduce TypeScript typings or JSDoc annotations for request bodies and response shapes to aid future refactoring and IDE support.",
-        "Validate request payloads more robustly (e.g., ensure `body` is a string) and consider using a validation library to avoid duplicated logic across routes."
+        "Add TypeScript type annotations (or JSDoc) for request/response objects and the `notes` array to improve type safety and IDE support.",
+        "Replace the `Date.now()` string ID with a proper UUID or MongoDB ObjectId to avoid collisions and improve uniqueness.",
+        "Enhance error handling by using a library like `http-errors` or custom error classes, and consider async/await patterns for future scalability."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The implementation is clean and functional, with a solid structure that meets the core requirements. Minor enhancements around error handling and type safety would raise the code quality further and make it easier to maintain as the project grows."
+      "overall": "The code is clean, well‑structured, and follows standard Express patterns, making it easy to read and maintain. A few type safety and ID generation improvements would elevate the quality for a production‑ready project."
     }
   },
   {
     "challengeId": "03-mongodb",
     "challengeName": "MongoDB",
-    "timestamp": "2026-08-19T06:18:33.981Z",
+    "timestamp": "2026-08-30T11:32:38.421Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
       "e2eTests": 0,
-      "aiReview": 50
+      "aiReview": 83
     },
-    "totalScore": 77.5,
-    "passed": false,
+    "totalScore": 82.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
       "score": 100,
-      "passed": true,
-      "totalTests": 1,
-      "passedTests": 1,
+      "passed": false,
+      "totalTests": 5,
+      "passedTests": 5,
       "failedTests": 0,
       "details": [
         {
@@ -426,7 +617,7 @@
               "ancestorTitles": [
                 "03-mongodb"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "03-mongodb passes baseline",
@@ -438,14 +629,125 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787120318748,
+          "endTime": 1788089565844,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1787120318320,
+          "startTime": 1788089565494,
           "status": "passed",
           "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-03"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-03 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089565982,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\04-challenge-missions\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788089565850,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "03-mongodb"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "03-mongodb passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089566232,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\02-backend-basics\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788089565991,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-03"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-03 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089566397,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\05-deployment\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788089566241,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-03"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-03 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089566560,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\03-react-native-advanced\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788089566403,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [],
+          "coverage": {},
+          "endTime": 1788089566719,
+          "message": "  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-03.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788089566719,
+          "status": "failed",
+          "summary": ""
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- tests/challenge-03.test.tsx --json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\nPASS tests/challenge-03.test.tsx\nPASS courses/04-challenge-missions/project/tests/challenge-03.test.tsx\nPASS courses/02-backend-basics/project/tests/challenge-03.test.tsx\nPASS courses/05-deployment/project/tests/challenge-03.test.tsx\nPASS courses/03-react-native-advanced/project/tests/challenge-03.test.tsx\nFAIL courses/01-react-native-fundamentals/project/tests/challenge-03.test.tsx\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-03.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n\nTest Suites: 1 failed, 5 passed, 6 total\nTests:       5 passed, 5 total\nSnapshots:   0 total\nTime:        1.295 s\nRan all test suites matching /tests\\\\challenge-03.test.tsx/i.\n"
     },
     "lintResults": {
       "score": 100,
@@ -542,39 +844,47 @@
     },
     "aiReviewResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-19T06:18:48.943Z",
-      "score": 50,
+      "timestamp": "2026-08-30T11:34:00.067Z",
+      "score": 83,
       "feedback": [],
       "strengths": [
-        "Code structure is reasonable"
+        "Clear separation of concerns: database connection, model definition, and route handlers are in distinct files.",
+        "Consistent use of async/await and proper error handling across all CRUD operations.",
+        "Password hashing with bcrypt and handling of duplicate email errors demonstrate good security practices."
       ],
       "improvements": [
-        "Code structure is reasonable"
+        "Introduce TypeScript type definitions for request bodies, responses, and Mongoose models to catch errors at compile time.",
+        "Move database logic into a dedicated service layer (e.g., UserService) to keep route handlers thin and improve testability.",
+        "Add validation middleware (e.g., using celebrate or Joi) to enforce schema constraints and email format before reaching the route handlers."
       ],
-      "readability": 50,
-      "maintainability": 50,
-      "overall": ""
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is solid and meets the core requirements with clean, readable code. Enhancing type safety, modularizing the data layer, and adding validation would further increase maintainability and robustness."
     },
     "aiResults": {
       "challengeId": "03-mongodb",
-      "timestamp": "2026-08-19T06:18:48.943Z",
-      "score": 50,
+      "timestamp": "2026-08-30T11:34:00.067Z",
+      "score": 83,
       "feedback": [],
       "strengths": [
-        "Code structure is reasonable"
+        "Clear separation of concerns: database connection, model definition, and route handlers are in distinct files.",
+        "Consistent use of async/await and proper error handling across all CRUD operations.",
+        "Password hashing with bcrypt and handling of duplicate email errors demonstrate good security practices."
       ],
       "improvements": [
-        "Code structure is reasonable"
+        "Introduce TypeScript type definitions for request bodies, responses, and Mongoose models to catch errors at compile time.",
+        "Move database logic into a dedicated service layer (e.g., UserService) to keep route handlers thin and improve testability.",
+        "Add validation middleware (e.g., using celebrate or Joi) to enforce schema constraints and email format before reaching the route handlers."
       ],
-      "readability": 50,
-      "maintainability": 50,
-      "overall": ""
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The implementation is solid and meets the core requirements with clean, readable code. Enhancing type safety, modularizing the data layer, and adding validation would further increase maintainability and robustness."
     }
   },
   {
     "challengeId": "04-jwt-authentication",
     "challengeName": "JWT Authentication",
-    "timestamp": "2026-08-19T06:18:50.819Z",
+    "timestamp": "2026-08-30T11:34:01.222Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -589,9 +899,9 @@
     "warnings": [],
     "testResults": {
       "score": 100,
-      "passed": true,
-      "totalTests": 1,
-      "passedTests": 1,
+      "passed": false,
+      "totalTests": 4,
+      "passedTests": 4,
       "failedTests": 0,
       "details": [
         {
@@ -600,7 +910,7 @@
               "ancestorTitles": [
                 "04-jwt-authentication"
               ],
-              "duration": 2,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "04-jwt-authentication passes baseline",
@@ -612,14 +922,100 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787120335402,
+          "endTime": 1788089647636,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1787120335121,
+          "startTime": 1788089647350,
           "status": "passed",
           "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-04"
+              ],
+              "duration": 4,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-04 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089647828,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\04-challenge-missions\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788089647647,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "04-jwt-authentication"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "04-jwt-authentication passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089648032,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\02-backend-basics\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788089647841,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-04"
+              ],
+              "duration": 1,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-04 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089648169,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\03-react-native-advanced\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788089648046,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [],
+          "coverage": {},
+          "endTime": 1788089648370,
+          "message": "  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-04.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788089648370,
+          "status": "failed",
+          "summary": ""
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- tests/challenge-04.test.tsx --json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\nPASS tests/challenge-04.test.tsx\nPASS courses/04-challenge-missions/project/tests/challenge-04.test.tsx\nPASS courses/02-backend-basics/project/tests/challenge-04.test.tsx\nPASS courses/03-react-native-advanced/project/tests/challenge-04.test.tsx\nFAIL courses/01-react-native-fundamentals/project/tests/challenge-04.test.tsx\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-04.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n\nTest Suites: 1 failed, 4 passed, 5 total\nTests:       4 passed, 4 total\nSnapshots:   0 total\nTime:        1.056 s\nRan all test suites matching /tests\\\\challenge-04.test.tsx/i.\n"
     },
     "lintResults": {
       "score": 100,
@@ -690,53 +1086,56 @@
     },
     "e2eResults": {
       "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-04.spec.ts",
-      "details": []
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-04.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-19T06:18:59.624Z",
+      "timestamp": "2026-08-30T11:35:19.908Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Secure handling of passwords with bcrypt and JWT token generation.",
-        "Clear separation of concerns: routes are defined in `auth.js` while authentication logic lives in `auth.js` middleware.",
-        "Robust error handling for duplicate keys and authentication failures."
+        "Passwords are securely hashed with bcrypt before storage.",
+        "JWT token generation and verification are encapsulated in middleware, keeping route handlers clean.",
+        "Environment variable validation ensures the JWT secret is present before the app starts."
       ],
       "improvements": [
-        "Add TypeScript typings for request bodies, payloads, and middleware to catch type errors early.",
-        "Extract error messages and status codes into constants or a helper module to avoid duplication and improve consistency.",
-        "Validate environment variables (e.g., `JWT_SECRET`) at application start and provide a clear error message if missing."
+        "Add explicit error parameters in catch blocks (e.g., `catch (err)`) and consider logging the error for debugging without exposing sensitive details.",
+        "Introduce request validation (e.g., using `express-validator`) to centralize and reuse validation logic instead of manual checks in each route.",
+        "Define TypeScript interfaces for request bodies and responses to improve type safety and IDE support."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The implementation demonstrates a solid grasp of JWT authentication fundamentals with clean, readable code. Minor enhancements around typing and configuration validation would elevate maintainability and reduce runtime surprises."
+      "overall": "The implementation covers the core JWT authentication flow with clear, concise code. Minor enhancements around error handling, validation, and type safety would elevate the code to production‑ready quality."
     },
     "aiResults": {
       "challengeId": "04-jwt-authentication",
-      "timestamp": "2026-08-19T06:18:59.624Z",
+      "timestamp": "2026-08-30T11:35:19.908Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Secure handling of passwords with bcrypt and JWT token generation.",
-        "Clear separation of concerns: routes are defined in `auth.js` while authentication logic lives in `auth.js` middleware.",
-        "Robust error handling for duplicate keys and authentication failures."
+        "Passwords are securely hashed with bcrypt before storage.",
+        "JWT token generation and verification are encapsulated in middleware, keeping route handlers clean.",
+        "Environment variable validation ensures the JWT secret is present before the app starts."
       ],
       "improvements": [
-        "Add TypeScript typings for request bodies, payloads, and middleware to catch type errors early.",
-        "Extract error messages and status codes into constants or a helper module to avoid duplication and improve consistency.",
-        "Validate environment variables (e.g., `JWT_SECRET`) at application start and provide a clear error message if missing."
+        "Add explicit error parameters in catch blocks (e.g., `catch (err)`) and consider logging the error for debugging without exposing sensitive details.",
+        "Introduce request validation (e.g., using `express-validator`) to centralize and reuse validation logic instead of manual checks in each route.",
+        "Define TypeScript interfaces for request bodies and responses to improve type safety and IDE support."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The implementation demonstrates a solid grasp of JWT authentication fundamentals with clean, readable code. Minor enhancements around typing and configuration validation would elevate maintainability and reduce runtime surprises."
+      "overall": "The implementation covers the core JWT authentication flow with clear, concise code. Minor enhancements around error handling, validation, and type safety would elevate the code to production‑ready quality."
     }
   },
   {
     "challengeId": "05-blog-backend-api",
     "challengeName": "Blog Backend API (Capstone)",
-    "timestamp": "2026-08-19T06:19:00.534Z",
+    "timestamp": "2026-08-30T11:35:20.774Z",
     "scores": {
       "functionalTests": 100,
       "codeQuality": 100,
@@ -751,9 +1150,9 @@
     "warnings": [],
     "testResults": {
       "score": 100,
-      "passed": true,
-      "totalTests": 1,
-      "passedTests": 1,
+      "passed": false,
+      "totalTests": 4,
+      "passedTests": 4,
       "failedTests": 0,
       "details": [
         {
@@ -774,14 +1173,100 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1787120343410,
+          "endTime": 1788089726037,
           "message": "",
           "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1787120343185,
+          "startTime": 1788089725803,
           "status": "passed",
           "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-05"
+              ],
+              "duration": 3,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-05 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089726140,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\03-react-native-advanced\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788089726041,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "05-blog-backend-api"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "05-blog-backend-api passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089726242,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\02-backend-basics\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788089726147,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [
+            {
+              "ancestorTitles": [
+                "challenge-05"
+              ],
+              "duration": 2,
+              "failureDetails": [],
+              "failureMessages": [],
+              "fullName": "challenge-05 passes baseline",
+              "invocations": 1,
+              "location": null,
+              "numPassingAsserts": 1,
+              "retryReasons": [],
+              "status": "passed",
+              "title": "passes baseline"
+            }
+          ],
+          "endTime": 1788089726344,
+          "message": "",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\04-challenge-missions\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788089726248,
+          "status": "passed",
+          "summary": ""
+        },
+        {
+          "assertionResults": [],
+          "coverage": {},
+          "endTime": 1788089726458,
+          "message": "  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-05.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n",
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788089726458,
+          "status": "failed",
+          "summary": ""
         }
-      ]
+      ],
+      "error": "Command failed: npm test -- tests/challenge-05.test.tsx --json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\nPASS tests/challenge-05.test.tsx\nPASS courses/03-react-native-advanced/project/tests/challenge-05.test.tsx\nPASS courses/02-backend-basics/project/tests/challenge-05.test.tsx\nPASS courses/04-challenge-missions/project/tests/challenge-05.test.tsx\nFAIL courses/01-react-native-fundamentals/project/tests/challenge-05.test.tsx\n  ● Test suite failed to run\n\n    Jest encountered an unexpected token\n\n    Jest failed to parse a file. This happens e.g. when your code or its dependencies use non-standard JavaScript syntax, or when Jest is not configured to support such syntax.\n\n    Out of the box Jest supports Babel, which will be used to transform your files into valid JS based on your Babel configuration.\n\n    By default \"node_modules\" folder is ignored by transformers.\n\n    Here's what you can do:\n     • If you are trying to use ECMAScript Modules, see https://jestjs.io/docs/ecmascript-modules for how to enable it.\n     • If you are trying to use TypeScript, see https://jestjs.io/docs/getting-started#using-typescript\n     • To have some of your \"node_modules\" files transformed, you can specify a custom \"transformIgnorePatterns\" in your config.\n     • If you need a custom transformation specify a \"transform\" option in your config.\n     • If you simply want to mock your non-JS modules (e.g. binary assets) you can stub them out with the \"moduleNameMapper\" config option.\n\n    You'll find more details and examples of these config options in the docs:\n    https://jestjs.io/docs/configuration\n    For information about custom transformations, see:\n    https://jestjs.io/docs/code-transformation\n\n    Details:\n\n    D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\courses\\01-react-native-fundamentals\\project\\tests\\challenge-05.test.tsx:1\n    ({\"Object.<anonymous>\":function(module,exports,require,__dirname,__filename,jest){import { describe, it, expect } from '@jest/globals';\n                                                                                      ^^^^^^\n\n    SyntaxError: Cannot use import statement outside a module\n\n      at Runtime.createScriptFromCode (node_modules/jest-runtime/build/index.js:1505:14)\n\nTest Suites: 1 failed, 4 passed, 5 total\nTests:       4 passed, 4 total\nSnapshots:   0 total\nTime:        0.704 s, estimated 1 s\nRan all test suites matching /tests\\\\challenge-05.test.tsx/i.\n"
     },
     "lintResults": {
       "score": 100,
@@ -839,20 +1324,20 @@
           "file": "src/app.js",
           "patternsFound": [
             "express",
-            "jwt"
-          ],
-          "patternsMissing": [
-            "mongoose"
-          ]
-        },
-        {
-          "file": "src/routes/posts.js",
-          "patternsFound": [
-            "express",
             "jwt",
             "mongoose"
           ],
           "patternsMissing": []
+        },
+        {
+          "file": "src/routes/posts.js",
+          "patternsFound": [
+            "express"
+          ],
+          "patternsMissing": [
+            "jwt",
+            "mongoose"
+          ]
         },
         {
           "file": "src/routes/auth.js",
@@ -875,47 +1360,50 @@
     },
     "e2eResults": {
       "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: D:\\SPARK+\\mobile-challenge-engine\\courses\\02-backend-basics\\project\\tests\\e2e\\challenge-05.spec.ts",
-      "details": []
+      "totalTests": 0,
+      "passedTests": 0,
+      "failedTests": 0,
+      "details": [],
+      "error": "Command failed: npx playwright test \"tests/e2e/challenge-05.spec.ts\" --reporter=json\nnpm warn Unknown env config \"challenge\". This will stop working in the next major version of npm.\n",
+      "passed": false
     },
     "aiReviewResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-19T06:19:08.380Z",
+      "timestamp": "2026-08-30T11:36:39.848Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns: routes, middleware, and models are organized into distinct files.",
-        "Consistent use of async/await with proper error handling via `next(err)` and a global error handler.",
-        "JWT protection is applied consistently to all mutating routes, ensuring secure access control."
+        "Clear separation of concerns: routes, middleware, and models are neatly organized.",
+        "Consistent use of async/await with proper error handling and status codes.",
+        "JWT authentication is correctly applied to protected routes, ensuring security."
       ],
       "improvements": [
-        "Move the Mongoose schema definitions for `Post` (and any other models) into dedicated model files to avoid duplication and improve testability.",
-        "Add request payload validation (e.g., with Joi or express-validator) to guard against malformed input and provide more descriptive error messages.",
-        "Introduce TypeScript typings for request, response, and user objects to catch type errors at compile time and improve IDE support."
+        "Introduce request validation (e.g., express‑validator or Joi) to guard against malformed input and reduce duplicated validation logic.",
+        "Centralize error handling by creating a helper that maps errors to HTTP responses, eliminating repetitive try/catch blocks across routes.",
+        "Add TypeScript type definitions for request bodies and the `req.user` object to improve type safety and IDE support."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The codebase demonstrates solid architectural decisions and secure handling of authentication and CRUD operations. With a few refinements—particularly in model organization, input validation, and TypeScript typings—the project will achieve higher maintainability and robustness."
+      "overall": "The implementation demonstrates solid fundamentals for a blog backend API, with clear routing and authentication. Enhancing validation, error handling, and type safety will elevate the code quality and future-proof the project."
     },
     "aiResults": {
       "challengeId": "05-blog-backend-api",
-      "timestamp": "2026-08-19T06:19:08.380Z",
+      "timestamp": "2026-08-30T11:36:39.848Z",
       "score": 83,
       "feedback": [],
       "strengths": [
-        "Clear separation of concerns: routes, middleware, and models are organized into distinct files.",
-        "Consistent use of async/await with proper error handling via `next(err)` and a global error handler.",
-        "JWT protection is applied consistently to all mutating routes, ensuring secure access control."
+        "Clear separation of concerns: routes, middleware, and models are neatly organized.",
+        "Consistent use of async/await with proper error handling and status codes.",
+        "JWT authentication is correctly applied to protected routes, ensuring security."
       ],
       "improvements": [
-        "Move the Mongoose schema definitions for `Post` (and any other models) into dedicated model files to avoid duplication and improve testability.",
-        "Add request payload validation (e.g., with Joi or express-validator) to guard against malformed input and provide more descriptive error messages.",
-        "Introduce TypeScript typings for request, response, and user objects to catch type errors at compile time and improve IDE support."
+        "Introduce request validation (e.g., express‑validator or Joi) to guard against malformed input and reduce duplicated validation logic.",
+        "Centralize error handling by creating a helper that maps errors to HTTP responses, eliminating repetitive try/catch blocks across routes.",
+        "Add TypeScript type definitions for request bodies and the `req.user` object to improve type safety and IDE support."
       ],
       "readability": 85,
       "maintainability": 80,
-      "overall": "The codebase demonstrates solid architectural decisions and secure handling of authentication and CRUD operations. With a few refinements—particularly in model organization, input validation, and TypeScript typings—the project will achieve higher maintainability and robustness."
+      "overall": "The implementation demonstrates solid fundamentals for a blog backend API, with clear routing and authentication. Enhancing validation, error handling, and type safety will elevate the code quality and future-proof the project."
     }
   }
 ]

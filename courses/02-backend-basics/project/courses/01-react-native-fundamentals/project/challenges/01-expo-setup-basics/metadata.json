@@ -1,0 +1,26 @@
+{
+  "challengeId": "01-expo-setup-basics",
+  "challengeName": "Expo Setup & Basics",
+  "difficulty": "intermediate",
+  "estimatedTime": "3-5 hours",
+  "skills": [
+    "Expo",
+    "Components",
+    "Flexbox",
+    "Styling",
+    "View",
+    "Text",
+    "Image",
+    "Button"
+  ],
+  "filesToCheck": [
+    "app/(tabs)/index.tsx",
+    "components/ProfileCard.tsx",
+    "components/FeatureCards.tsx"
+  ],
+  "patternsRequired": [
+    "functionalComponent",
+    "useState",
+    "StyleSheet"
+  ]
+}
