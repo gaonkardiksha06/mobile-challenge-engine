@@ -105,7 +105,11 @@ export default function MissionsHomeScreen() {
         scrollEnabled={false}
         testID="habit-list"
         renderItem={({ item }) => (
-          <Pressable style={styles.habitRow} onPress={() => toggleHabit(item.id)}>
+          <Pressable
+  style={styles.habitRow}
+  onPress={() => toggleHabit(item.id)}
+  testID={`habit-${item.id}`}
+>
             <Text style={[styles.habitText, item.done && styles.habitDone]}>
               {item.done ? '✓ ' : ''}{item.name}
             </Text>

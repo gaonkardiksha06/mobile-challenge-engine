@@ -24,6 +24,5 @@ export default [
       ecmaVersion: 'latest',
       sourceType: 'module',
     },
-    rules: {},
   },
 ];

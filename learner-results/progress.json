@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-08-31T09:42:23.074Z",
+  "lastUpdated": "2026-09-03T12:09:09.829Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 83.5,
-    "completionPercentage": 51.4,
-    "badgeLevel": "bronze",
+    "overallScore": 86.5,
+    "completionPercentage": 91.4,
+    "badgeLevel": "silver",
     "totalChallenges": 35,
-    "completedChallenges": 18
+    "completedChallenges": 32
   },
   "courses": {
     "01-react-native-fundamentals": {
@@ -316,220 +316,220 @@
     "04-challenge-missions": {
       "courseId": "04-challenge-missions",
       "courseName": "Challenge Missions",
-      "averageScore": 71.8,
-      "completionPercentage": 0,
-      "badgeLevel": "none",
+      "averageScore": 86.8,
+      "completionPercentage": 100,
+      "badgeLevel": "silver",
       "totalChallenges": 14,
-      "completedChallenges": 0,
+      "completedChallenges": 14,
       "challenges": {
         "01-habit-tracker": {
           "challengeId": "01-habit-tracker",
           "challengeName": "Habit Tracker",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:12:07.341Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:40:26.470Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "02-pokemon-explorer": {
           "challengeId": "02-pokemon-explorer",
           "challengeName": "Pokemon Explorer",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:12:20.523Z",
+          "passed": true,
+          "score": 97.45,
+          "lastRun": "2026-09-03T11:41:05.092Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
+            "e2eTests": 100,
+            "aiReview": 83
           }
         },
         "03-notes-app": {
           "challengeId": "03-notes-app",
           "challengeName": "Notes App",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:12:31.559Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:41:49.950Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "04-calculator": {
           "challengeId": "04-calculator",
           "challengeName": "Calculator",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:12:43.149Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:42:24.807Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "05-meme-viewer": {
           "challengeId": "05-meme-viewer",
           "challengeName": "Meme Viewer",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:12:57.259Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:42:54.278Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
         "06-realtime-chat": {
           "challengeId": "06-realtime-chat",
           "challengeName": "Realtime Chat",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:13:08.629Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:43:22.287Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "07-expense-tracker": {
           "challengeId": "07-expense-tracker",
           "challengeName": "Expense Tracker",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:13:23.369Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:43:48.524Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "08-movie-app": {
           "challengeId": "08-movie-app",
           "challengeName": "Movie App",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:13:35.435Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:44:17.374Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "09-ai-recipe-app": {
           "challengeId": "09-ai-recipe-app",
           "challengeName": "AI Recipe App",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:13:48.437Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:44:47.637Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "10-food-delivery": {
           "challengeId": "10-food-delivery",
           "challengeName": "Food Delivery",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:14:00.920Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:45:16.464Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
+            "e2eTests": 100,
             "aiReview": 0
           }
         },
         "11-social-media-platform": {
           "challengeId": "11-social-media-platform",
           "challengeName": "Social Media Platform",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:14:12.363Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:45:42.283Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "12-full-marketplace": {
           "challengeId": "12-full-marketplace",
           "challengeName": "Full Marketplace",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:14:24.733Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T11:46:11.836Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "13-fitness-tracker": {
           "challengeId": "13-fitness-tracker",
           "challengeName": "Fitness Tracker",
-          "passed": false,
-          "score": 75.7,
-          "lastRun": "2026-08-06T07:14:37.194Z",
+          "passed": true,
+          "score": 85,
+          "lastRun": "2026-09-03T12:08:32.403Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 88
+            "e2eTests": 100,
+            "aiReview": 0
           }
         },
         "14-anime-streaming-ui": {
           "challengeId": "14-anime-streaming-ui",
           "challengeName": "Anime Streaming UI",
-          "passed": false,
-          "score": 62.5,
-          "lastRun": "2026-08-06T07:14:49.182Z",
+          "passed": true,
+          "score": 97.45,
+          "lastRun": "2026-09-03T12:06:48.227Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 0
+            "e2eTests": 100,
+            "aiReview": 83
           }
         }
       }

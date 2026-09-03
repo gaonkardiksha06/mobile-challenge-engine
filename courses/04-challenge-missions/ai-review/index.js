@@ -1,39 +1,55 @@
-#!/usr/bin/env node
 
 /**
- * AI Review Layer for React Fundamentals Course
- * 
- * Uses Groq API (Llama 3.1 8B) to provide qualitative code review
+ * AI Review Layer for Challenge Missions Course
+ *
+ * Uses Groq API to provide qualitative code review.
  */
 
 import { readFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
-// Load .env from repo root if it exists
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
+
+// courses/04-challenge-missions/ai-review
+// -> mobile-challenge-engine
 const repoRoot = join(__dirname, '..', '..', '..');
+
 const envPath = join(repoRoot, '.env');
-if (existsSync(envPath)) {
+
+function loadGroqApiKey() {
+  if (!existsSync(envPath)) {
+    return '';
+  }
+
   const envContent = readFileSync(envPath, 'utf-8');
-  for (const line of envContent.split('\n')) {
-    const match = line.match(/^\s*GROQ_API_KEY\s*=\s*(.+?)\s*$/);
+
+  for (const line of envContent.split(/\r?\n/)) {
+    const match = line.match(
+      /^\s*GROQ_API_KEY\s*=\s*(.*?)\s*$/
+    );
+
     if (match) {
-      process.env.GROQ_API_KEY = match[1].trim().replace(/^["']|["']$/g, '');
-      break;
+      return match[1]
+        .trim()
+        .replace(/^["']|["']$/g, '');
     }
   }
+
+  return '';
 }
 
-const GROQ_API_KEY = process.env.GROQ_API_KEY || '';
-const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
-const MODEL = 'llama-3.1-8b-instant';
+const GROQ_API_URL =
+  'https://api.groq.com/openai/v1/chat/completions';
 
-/**
- * Reviews code using AI for qualitative feedback
- */
-export async function reviewCodeWithAI(challengeId, filesToReview, projectDir) {
+const MODEL = 'openai/gpt-oss-20b';
+
+export async function reviewCodeWithAI(
+  challengeId,
+  filesToReview,
+  projectDir
+) {
   const results = {
     challengeId,
     timestamp: new Date().toISOString(),
@@ -47,25 +63,67 @@ export async function reviewCodeWithAI(challengeId, filesToReview, projectDir) {
   };
 
   try {
-    // Load challenge README.md for context
-    const challengeDir = join(projectDir, 'challenges', challengeId);
-    const readmePath = join(challengeDir, 'README.md');
-    let challengeContext = '';
-    if (existsSync(readmePath)) {
-      challengeContext = readFileSync(readmePath, 'utf-8');
+    // -------------------------------------------------------
+    // Load API key
+    // -------------------------------------------------------
+
+    const GROQ_API_KEY =
+      process.env.GROQ_API_KEY || loadGroqApiKey();
+
+    if (!GROQ_API_KEY) {
+      return {
+        ...results,
+        error:
+          `GROQ_API_KEY not found. Expected it in ${envPath}`
+      };
     }
 
-    // Read all files to review
+    // -------------------------------------------------------
+    // Load challenge README
+    // -------------------------------------------------------
+
+    const challengeDir = join(
+      projectDir,
+      'challenges',
+      challengeId
+    );
+
+    const readmePath = join(
+      challengeDir,
+      'README.md'
+    );
+
+    let challengeContext = '';
+
+    if (existsSync(readmePath)) {
+      challengeContext = readFileSync(
+        readmePath,
+        'utf-8'
+      );
+    }
+
+    // -------------------------------------------------------
+    // Read files
+    // -------------------------------------------------------
+
     const codeSnippets = [];
-    for (const file of filesToReview) {
+
+    for (const file of filesToReview || []) {
       const filePath = join(projectDir, file);
-      if (existsSync(filePath)) {
-        const content = readFileSync(filePath, 'utf-8');
-        codeSnippets.push({
-          file,
-          content: content.substring(0, 5000) // Limit content size
-        });
+
+      if (!existsSync(filePath)) {
+        continue;
       }
+
+      const content = readFileSync(
+        filePath,
+        'utf-8'
+      );
+
+      codeSnippets.push({
+        file,
+        content: content.substring(0, 10000)
+      });
     }
 
     if (codeSnippets.length === 0) {
@@ -75,23 +133,31 @@ export async function reviewCodeWithAI(challengeId, filesToReview, projectDir) {
       };
     }
 
-    // Check if API key is available
-    if (!GROQ_API_KEY) {
-      return {
-        ...results,
-        error: 'GROQ_API_KEY environment variable not set. AI review skipped.',
-        score: 0
-      };
-    }
+    // -------------------------------------------------------
+    // Build prompt
+    // -------------------------------------------------------
 
-    // Prepare prompt
-    const prompt = buildReviewPrompt(challengeId, codeSnippets, challengeContext);
+    const prompt = buildReviewPrompt(
+      challengeId,
+      codeSnippets,
+      challengeContext
+    );
 
-    // Call Groq API
-    const aiResponse = await callGroqAPI(prompt);
+    // -------------------------------------------------------
+    // Call Groq
+    // -------------------------------------------------------
 
+    const aiResponse = await callGroqAPI(
+      prompt,
+      GROQ_API_KEY
+    );
+
+    // -------------------------------------------------------
     // Parse response
-    const parsedResponse = parseAIResponse(aiResponse);
+    // -------------------------------------------------------
+
+    const parsedResponse =
+      parseAIResponse(aiResponse);
 
     return {
       ...results,
@@ -100,133 +166,338 @@ export async function reviewCodeWithAI(challengeId, filesToReview, projectDir) {
     };
 
   } catch (error) {
+    console.error(
+      `❌ AI review error for ${challengeId}:`,
+      error.message
+    );
+
     return {
       ...results,
-      error: error.message
+      error: error.message,
+      score: 0
     };
   }
 }
 
-function buildReviewPrompt(challengeId, codeSnippets, challengeContext = '') {
-  const codeContext = codeSnippets.map(s => 
-    `File: ${s.file}\n\`\`\`typescript\n${s.content}\n\`\`\``
-  ).join('\n\n');
+// ---------------------------------------------------------
+// Build prompt
+// ---------------------------------------------------------
+
+function buildReviewPrompt(
+  challengeId,
+  codeSnippets,
+  challengeContext = ''
+) {
+  const codeContext = codeSnippets
+    .map(
+      snippet =>
+        `File: ${snippet.file}\n${snippet.content}`
+    )
+    .join('\n\n');
 
   const contextSection = challengeContext
-    ? `\n\n## Challenge Instructions and Requirements:\n${challengeContext.substring(0, 3000)}\n`
+    ? `
+Challenge Instructions and Requirements:
+${challengeContext.substring(0, 5000)}
+`
     : '';
 
-  return `You are an expert React code reviewer. Review the following code for challenge "${challengeId}".
+  return `
+You are an expert React Native and TypeScript code reviewer.
+
+Review the implementation for challenge "${challengeId}".
+
 ${contextSection}
+
+Code to review:
+
 ${codeContext}
 
-Provide a structured review focusing on:
-1. Code readability (0-100 score)
-2. Maintainability (0-100 score)
-3. Strengths (list 2-3 key strengths)
-4. Areas for improvement (list 2-3 specific improvements)
-5. Overall assessment (brief paragraph)
+Evaluate:
 
-Format your response as JSON:
+1. Code readability from 0 to 100.
+2. Code maintainability from 0 to 100.
+3. Two or three specific strengths.
+4. Two or three specific improvements.
+5. A brief overall assessment.
+
+Return ONLY valid JSON using exactly this structure:
+
 {
-  "readability": <number>,
-  "maintainability": <number>,
-  "strengths": ["strength1", "strength2"],
-  "improvements": ["improvement1", "improvement2"],
-  "overall": "<brief assessment>"
-}`;
+  "readability": 85,
+  "maintainability": 80,
+  "strengths": [
+    "Clear strength",
+    "Another strength"
+  ],
+  "improvements": [
+    "Specific improvement",
+    "Another specific improvement"
+  ],
+  "overall": "Brief overall assessment"
+}
+`;
 }
 
-async function callGroqAPI(prompt) {
-  const response = await fetch(GROQ_API_URL, {
-    method: 'POST',
-    headers: {
-      'Authorization': `Bearer ${GROQ_API_KEY}`,
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-      model: MODEL,
-      messages: [
-        {
-          role: 'system',
-          content: 'You are an expert React and TypeScript code reviewer. Provide constructive, specific feedback.'
-        },
-        {
-          role: 'user',
-          content: prompt
-        }
-      ],
-      temperature: 0.3,
-      max_tokens: 1000
-    })
-  });
+// ---------------------------------------------------------
+// Call Groq API
+// ---------------------------------------------------------
 
-  const data = await response.json().catch(() => ({}));
+async function callGroqAPI(
+  prompt,
+  apiKey
+) {
+  const response = await fetch(
+    GROQ_API_URL,
+    {
+      method: 'POST',
+
+      headers: {
+        Authorization: `Bearer ${apiKey}`,
+        'Content-Type': 'application/json'
+      },
+
+      body: JSON.stringify({
+        model: MODEL,
+
+        messages: [
+          {
+            role: 'system',
+            content:
+              'You are an expert React Native and TypeScript code reviewer. Return only valid JSON.'
+          },
+          {
+            role: 'user',
+            content: prompt
+          }
+        ],
+
+        temperature: 0.1,
+
+        max_completion_tokens: 2000,
+
+        reasoning_effort: 'low',
+
+        response_format: {
+          type: 'json_object'
+        }
+      })
+    }
+  );
+
+  const rawBody = await response.text();
+
+  let data;
+
+  try {
+    data = JSON.parse(rawBody);
+  } catch {
+    throw new Error(
+      `Groq returned invalid JSON: ${rawBody.substring(
+        0,
+        500
+      )}`
+    );
+  }
 
   if (!response.ok) {
-    const msg = data?.error?.message || data?.error || response.statusText;
-    throw new Error(`Groq API error (${response.status}): ${msg}`);
+    const message =
+      data?.error?.message ||
+      data?.error?.code ||
+      data?.error ||
+      response.statusText;
+
+    throw new Error(
+      `Groq API error (${response.status}): ${message}`
+    );
   }
 
-  const content = data?.choices?.[0]?.message?.content;
-  if (content == null || typeof content !== 'string') {
-    throw new Error('Groq API returned no content (check model/response shape)');
+  const content =
+    data?.choices?.[0]?.message?.content;
+
+  if (
+    typeof content !== 'string' ||
+    content.trim() === ''
+  ) {
+    throw new Error(
+      `Groq response contained no usable content. Response: ${JSON.stringify(
+        data,
+        null,
+        2
+      ).substring(0, 2000)}`
+    );
   }
-  return content;
+
+  return content.trim();
 }
 
+// ---------------------------------------------------------
+// Parse AI response
+// ---------------------------------------------------------
+
 function parseAIResponse(response) {
-  try {
-    // Try to extract JSON from response
-    const jsonMatch = response.match(/\{[\s\S]*\}/);
-    if (jsonMatch) {
-      return JSON.parse(jsonMatch[0]);
-    }
-  } catch (error) {
-    // Fallback parsing
+  if (
+    typeof response !== 'string' ||
+    response.trim() === ''
+  ) {
+    throw new Error(
+      'AI returned an empty response.'
+    );
   }
 
-  // Fallback: extract information manually
-  const readabilityMatch = response.match(/readability[:\s]+(\d+)/i);
-  const maintainabilityMatch = response.match(/maintainability[:\s]+(\d+)/i);
+  const trimmed = response.trim();
+
+  const candidates = [
+    trimmed,
+
+    trimmed
+      .replace(/^```json\s*/i, '')
+      .replace(/^```\s*/i, '')
+      .replace(/\s*```$/i, '')
+      .trim()
+  ];
+
+  const firstBrace = trimmed.indexOf('{');
+  const lastBrace = trimmed.lastIndexOf('}');
+
+  if (
+    firstBrace !== -1 &&
+    lastBrace !== -1 &&
+    lastBrace > firstBrace
+  ) {
+    candidates.push(
+      trimmed.substring(
+        firstBrace,
+        lastBrace + 1
+      )
+    );
+  }
+
+  for (const candidate of candidates) {
+    try {
+      const parsed = JSON.parse(candidate);
+
+      if (
+        parsed &&
+        typeof parsed === 'object'
+      ) {
+        return normalizeAIResponse(parsed);
+      }
+    } catch {
+      // Try next candidate.
+    }
+  }
+
+  throw new Error(
+    `Unable to parse Groq AI response: ${response.substring(
+      0,
+      500
+    )}`
+  );
+}
+
+// ---------------------------------------------------------
+// Normalize response
+// ---------------------------------------------------------
+
+function normalizeAIResponse(parsed) {
+  const readability = clampScore(
+    Number(parsed?.readability)
+  );
+
+  const maintainability = clampScore(
+    Number(parsed?.maintainability)
+  );
+
+  const strengths = Array.isArray(
+    parsed?.strengths
+  )
+    ? parsed.strengths
+        .filter(
+          item =>
+            typeof item === 'string' &&
+            item.trim().length > 0
+        )
+        .map(item => item.trim())
+        .slice(0, 5)
+    : [];
+
+  const improvements = Array.isArray(
+    parsed?.improvements
+  )
+    ? parsed.improvements
+        .filter(
+          item =>
+            typeof item === 'string' &&
+            item.trim().length > 0
+        )
+        .map(item => item.trim())
+        .slice(0, 5)
+    : [];
+
+  const feedback = Array.isArray(
+    parsed?.feedback
+  )
+    ? parsed.feedback
+        .filter(
+          item =>
+            typeof item === 'string' &&
+            item.trim().length > 0
+        )
+        .map(item => item.trim())
+        .slice(0, 5)
+    : [];
+
+  const overall =
+    typeof parsed?.overall === 'string'
+      ? parsed.overall.trim()
+      : '';
 
   return {
-    readability: readabilityMatch ? parseInt(readabilityMatch[1]) : 50,
-    maintainability: maintainabilityMatch ? parseInt(maintainabilityMatch[1]) : 50,
-    strengths: extractList(response, /strengths?/i),
-    improvements: extractList(response, /improvements?/i),
-    overall: response.substring(0, 500)
+    readability,
+    maintainability,
+    strengths,
+    improvements,
+    feedback,
+    overall
   };
 }
 
-function extractList(text, keyword) {
-  const lines = text.split('\n');
-  const list = [];
-  let inList = false;
-  const matchesKeyword = (line) =>
-    typeof keyword === 'string'
-      ? line.toLowerCase().includes(keyword)
-      : keyword.test(line);
+// ---------------------------------------------------------
+// Clamp scores
+// ---------------------------------------------------------
 
-  for (const line of lines) {
-    if (matchesKeyword(line)) {
-      inList = true;
-      continue;
-    }
-    if (inList && (line.trim().startsWith('-') || line.trim().match(/^\d+\./))) {
-      list.push(line.trim().replace(/^[-•\d.]+\s*/, ''));
-      if (list.length >= 3) break;
-    }
-    if (inList && line.trim() === '') {
-      break;
-    }
+function clampScore(value) {
+  if (!Number.isFinite(value)) {
+    return 50;
   }
 
-  return list.length > 0 ? list : ['Code structure is reasonable'];
+  return Math.min(
+    100,
+    Math.max(0, Math.round(value))
+  );
 }
 
+// ---------------------------------------------------------
+// Calculate AI score
+// ---------------------------------------------------------
+
 function calculateAIScore(parsedResponse) {
-  const readability = parsedResponse.readability || 50;
-  const maintainability = parsedResponse.maintainability || 50;
-  return Math.round((readability + maintainability) / 2);
+  const readability =
+    Number(parsedResponse?.readability);
+
+  const maintainability =
+    Number(parsedResponse?.maintainability);
+
+  if (
+    !Number.isFinite(readability) ||
+    !Number.isFinite(maintainability)
+  ) {
+    return 0;
+  }
+
+  return Math.round(
+    (readability + maintainability) / 2
+  );
 }
+

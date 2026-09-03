@@ -2,29 +2,29 @@
 
 ## 📊 Progress Evidence
 
-*Auto-updated when you run review. Last run: 6/8/2026, 12:45:00 pm*
+*Auto-updated when you run review. Last run: 3/9/2026, 5:39:08 pm*
 
 | Metric | Value |
 |--------|-------|
-| Challenges completed | 0 / 14 (0%) |
-| Average score | 71.8% |
+| Challenges completed | 14 / 14 (100%) |
+| Average score | 86.8% |
 
 | Challenge | Skills covered | Status |
 |-----------|----------------|--------|
-| Habit Tracker | useState, FlatList, AsyncStorage | Not passed |
-| Pokemon Explorer | fetch, FlatList, Navigation | Not passed |
-| Notes App | AsyncStorage, CRUD, TextInput | Not passed |
-| Calculator | useState, UI layout | Not passed |
-| Meme Viewer | fetch, Image, ScrollView | Not passed |
-| Realtime Chat | Firebase, FlatList, Auth | Not passed |
-| Expense Tracker | Redux, Charts, Forms | Not passed |
-| Movie App | API, Search, Navigation | Not passed |
-| AI Recipe App | API, Forms, Loading states | Not passed |
-| Food Delivery | Maps, Cart, Navigation | Not passed |
-| Social Media Platform | Auth, Feed, Firebase, Upload | Not passed |
-| Full Marketplace | Redux, Payments, Search | Not passed |
-| Fitness Tracker | Charts, AsyncStorage, Notifications | Not passed |
-| Anime Streaming UI | UI design, FlatList, Navigation | Not passed |
+| Habit Tracker | useState, FlatList, AsyncStorage | Passed |
+| Pokemon Explorer | fetch, FlatList, Navigation | Passed |
+| Notes App | AsyncStorage, CRUD, TextInput | Passed |
+| Calculator | useState, UI layout | Passed |
+| Meme Viewer | fetch, Image, ScrollView | Passed |
+| Realtime Chat | Firebase, FlatList, Auth | Passed |
+| Expense Tracker | Redux, Charts, Forms | Passed |
+| Movie App | API, Search, Navigation | Passed |
+| AI Recipe App | API, Forms, Loading states | Passed |
+| Food Delivery | Maps, Cart, Navigation | Passed |
+| Social Media Platform | Auth, Feed, Firebase, Upload | Passed |
+| Full Marketplace | Redux, Payments, Search | Passed |
+| Fitness Tracker | Charts, AsyncStorage, Notifications | Passed |
+| Anime Streaming UI | UI design, FlatList, Navigation | Passed |
 
 ## Getting started
 

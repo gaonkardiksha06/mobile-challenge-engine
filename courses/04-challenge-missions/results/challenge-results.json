@@ -2,17 +2,17 @@
   {
     "challengeId": "01-habit-tracker",
     "challengeName": "Habit Tracker",
-    "timestamp": "2026-08-06T07:12:07.341Z",
+    "timestamp": "2026-09-03T11:40:26.470Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 83
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 74.95,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -28,7 +28,7 @@
               "ancestorTitles": [
                 "challenge-01"
               ],
-              "duration": 4,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-01 passes baseline",
@@ -40,20 +40,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000334256,
+          "endTime": 1788435630933,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-01.test.tsx",
-          "startTime": 1786000333447,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-01.test.tsx",
+          "startTime": 1788435630290,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\index.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -82,64 +96,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-01.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-01.spec.ts",
+          "file": "challenge-01.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "01-habit-tracker",
+              "file": "challenge-01.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders the Habit Tracker section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6272,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:40:49.993Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-a7ebb593371863d69a8e",
+                  "file": "challenge-01.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "adds a new habit",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3214,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:40:57.704Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-1747dffc8bcf1808b219",
+                  "file": "challenge-01.spec.ts",
+                  "line": 27,
+                  "column": 3
+                },
+                {
+                  "title": "toggles a habit when pressed",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1489,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:01.002Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-ebdd83cfbb5054ebfac7",
+                  "file": "challenge-01.spec.ts",
+                  "line": 37,
+                  "column": 3
+                },
+                {
+                  "title": "renders calculator section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1041,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:02.540Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "77d07a436f655ce05c79-f00e354d3fd33f3fa017",
+                  "file": "challenge-01.spec.ts",
+                  "line": 63,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "01-habit-tracker",
-      "timestamp": "2026-08-06T07:12:19.538Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:41:04.526Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between different features.",
-        "The use of TypeScript and React hooks makes the code more maintainable and efficient.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `useEffect` hook is used extensively in the code, which can make it harder to understand the component's lifecycle. Consider breaking down the effects into smaller, more manageable chunks.",
-        "The `persistHabits` function is called multiple times in the code, which can lead to unnecessary re-renders. Consider memoizing the function or using a more efficient storage solution.",
-        "The `onCalcPress` function uses a `try-catch` block to handle errors, but it would be better to handle errors more explicitly and provide a more informative error message to the user."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and maintainable, but there are some areas that could be improved for better performance and error handling. With some refactoring and optimization, the code could reach a score of 90% or higher."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197767, Requested 2447. Please try again in 1m32.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "01-habit-tracker",
-      "timestamp": "2026-08-06T07:12:19.538Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:41:04.526Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between different features.",
-        "The use of TypeScript and React hooks makes the code more maintainable and efficient.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `useEffect` hook is used extensively in the code, which can make it harder to understand the component's lifecycle. Consider breaking down the effects into smaller, more manageable chunks.",
-        "The `persistHabits` function is called multiple times in the code, which can lead to unnecessary re-renders. Consider memoizing the function or using a more efficient storage solution.",
-        "The `onCalcPress` function uses a `try-catch` block to handle errors, but it would be better to handle errors more explicitly and provide a more informative error message to the user."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and maintainable, but there are some areas that could be improved for better performance and error handling. With some refactoring and optimization, the code could reach a score of 90% or higher."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197767, Requested 2447. Please try again in 1m32.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "02-pokemon-explorer",
     "challengeName": "Pokemon Explorer",
-    "timestamp": "2026-08-06T07:12:20.523Z",
+    "timestamp": "2026-09-03T11:41:05.092Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 0
+      "e2eTests": 100,
+      "aiReview": 83
     },
-    "totalScore": 62.5,
-    "passed": false,
+    "totalScore": 97.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -155,7 +312,7 @@
               "ancestorTitles": [
                 "challenge-02"
               ],
-              "duration": 3,
+              "duration": 4,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-02 passes baseline",
@@ -167,20 +324,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000346215,
+          "endTime": 1788435672576,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-02.test.tsx",
-          "startTime": 1786000345563,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-02.test.tsx",
+          "startTime": 1788435671637,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\pokemon\\[id].tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -209,50 +380,221 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-02.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-02.spec.ts",
+          "file": "challenge-02.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "02-pokemon-explorer",
+              "file": "challenge-02.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders the Pokemon Explorer list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 6471,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:35.250Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-506d5b841b65892bccfa",
+                  "file": "challenge-02.spec.ts",
+                  "line": 4,
+                  "column": 3
+                },
+                {
+                  "title": "displays multiple Pokemon",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2177,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:43.266Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-8256d162ab59abcae960",
+                  "file": "challenge-02.spec.ts",
+                  "line": 21,
+                  "column": 3
+                },
+                {
+                  "title": "navigates to Pokemon detail screen",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1580,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:45.502Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-1908b905ff034bd10d88",
+                  "file": "challenge-02.spec.ts",
+                  "line": 37,
+                  "column": 3
+                },
+                {
+                  "title": "renders Pokemon detail stats",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1037,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:41:47.131Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "42dc79384a61c0717494-6b5ec9323f3dc82b134d",
+                  "file": "challenge-02.spec.ts",
+                  "line": 62,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "02-pokemon-explorer",
-      "timestamp": "2026-08-06T07:12:31.516Z",
-      "score": 0,
+      "timestamp": "2026-09-03T11:41:49.212Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4549, Requested 1706. Please try again in 2.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Clear separation of concerns with useEffect for data fetching",
+        "Good use of testID props for automated testing",
+        "Consistent styling and theming"
+      ],
+      "improvements": [
+        "Add explicit error handling for network failures and display user-friendly message",
+        "Type guard for id to ensure it's a string before using in fetch",
+        "Consider memoizing derived arrays (types, stats, moves) to avoid re-computation on each render"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is well-structured, readable, and follows React Native best practices, but could benefit from more robust error handling and performance optimizations."
     },
     "aiResults": {
       "challengeId": "02-pokemon-explorer",
-      "timestamp": "2026-08-06T07:12:31.516Z",
-      "score": 0,
+      "timestamp": "2026-09-03T11:41:49.212Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4549, Requested 1706. Please try again in 2.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Clear separation of concerns with useEffect for data fetching",
+        "Good use of testID props for automated testing",
+        "Consistent styling and theming"
+      ],
+      "improvements": [
+        "Add explicit error handling for network failures and display user-friendly message",
+        "Type guard for id to ensure it's a string before using in fetch",
+        "Consider memoizing derived arrays (types, stats, moves) to avoid re-computation on each render"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is well-structured, readable, and follows React Native best practices, but could benefit from more robust error handling and performance optimizations."
     }
   },
   {
     "challengeId": "03-notes-app",
     "challengeName": "Notes App",
-    "timestamp": "2026-08-06T07:12:31.559Z",
+    "timestamp": "2026-09-03T11:41:49.950Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -280,20 +622,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000357577,
+          "endTime": 1788435717296,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-03.test.tsx",
-          "startTime": 1786000356798,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-03.test.tsx",
+          "startTime": 1788435716342,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\notes.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -322,64 +678,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-03.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-03.spec.ts",
+          "file": "challenge-03.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "03-notes-app",
+              "file": "challenge-03.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders the Notes App section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3446,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:17.430Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-7f8969d17a318fd75a9d",
+                  "file": "challenge-03.spec.ts",
+                  "line": 17,
+                  "column": 3
+                },
+                {
+                  "title": "adds a new note",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 724,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:21.635Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-1295ad2ddf6855319cc6",
+                  "file": "challenge-03.spec.ts",
+                  "line": 27,
+                  "column": 3
+                },
+                {
+                  "title": "deletes a note",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 872,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:22.381Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-e6a3cd8d26b4b2d1bacf",
+                  "file": "challenge-03.spec.ts",
+                  "line": 37,
+                  "column": 3
+                },
+                {
+                  "title": "does not save an empty note",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 630,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:23.268Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "abe74fb7538c55bf8146-ac14ba24f0e164cabcbf",
+                  "file": "challenge-03.spec.ts",
+                  "line": 65,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "03-notes-app",
-      "timestamp": "2026-08-06T07:12:42.617Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:24.757Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is called multiple times with different arguments. Consider refactoring it to handle different scenarios more elegantly.",
-        "The `deleteNote` function modifies the `notes` state directly. Consider using a more functional approach to update the state.",
-        "The styles are defined inline in the component. Consider extracting them into a separate file or using a CSS-in-JS solution for better maintainability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and functional, but could benefit from some improvements to make it more maintainable and efficient. With some refactoring, it has the potential to be a high-quality Notes App."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199525, Requested 1398. Please try again in 6m38.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "03-notes-app",
-      "timestamp": "2026-08-06T07:12:42.617Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:24.757Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is called multiple times with different arguments. Consider refactoring it to handle different scenarios more elegantly.",
-        "The `deleteNote` function modifies the `notes` state directly. Consider using a more functional approach to update the state.",
-        "The styles are defined inline in the component. Consider extracting them into a separate file or using a CSS-in-JS solution for better maintainability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and functional, but could benefit from some improvements to make it more maintainable and efficient. With some refactoring, it has the potential to be a high-quality Notes App."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199525, Requested 1398. Please try again in 6m38.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "04-calculator",
     "challengeName": "Calculator",
-    "timestamp": "2026-08-06T07:12:43.149Z",
+    "timestamp": "2026-09-03T11:42:24.807Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -395,7 +894,7 @@
               "ancestorTitles": [
                 "challenge-04"
               ],
-              "duration": 5,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-04 passes baseline",
@@ -407,20 +906,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000370388,
+          "endTime": 1788435750701,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-04.test.tsx",
-          "startTime": 1786000368630,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-04.test.tsx",
+          "startTime": 1788435750316,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\index.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -447,64 +960,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-04.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-04.spec.ts",
+          "file": "challenge-04.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "04-calculator",
+              "file": "challenge-04.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders the Calculator section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2796,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:47.230Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-965866d7ba3980e1c9ec",
+                  "file": "challenge-04.spec.ts",
+                  "line": 17,
+                  "column": 3
+                },
+                {
+                  "title": "performs addition",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 855,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:50.978Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-4ea2a934c95313fdfb9d",
+                  "file": "challenge-04.spec.ts",
+                  "line": 30,
+                  "column": 3
+                },
+                {
+                  "title": "performs multiplication",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 787,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:51.850Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-6102c4dcc694835ce337",
+                  "file": "challenge-04.spec.ts",
+                  "line": 39,
+                  "column": 3
+                },
+                {
+                  "title": "starts with display value 0",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 553,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:42:52.651Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "0401c8ab289c6ab836d0-5d50929b596a98bde6c6",
+                  "file": "challenge-04.spec.ts",
+                  "line": 48,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "04-calculator",
-      "timestamp": "2026-08-06T07:12:56.345Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:54.178Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a clear structure, making it easy to navigate and understand.",
-        "The use of TypeScript and React Native components is well-implemented, and the code is free of major syntax errors.",
-        "The code includes test IDs for interactive elements, which is a great practice for automated testing."
-      ],
-      "improvements": [
-        "The `onCalcPress` function is complex and could be refactored into smaller, more manageable functions to improve readability and maintainability.",
-        "The `useEffect` hook for fetching memes could be improved by adding a retry mechanism to handle cases where the API request fails.",
-        "The `styles` object is large and could be broken down into smaller, more focused objects to improve maintainability and reduce the risk of style conflicts."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are some areas for improvement to take it to the next level. With some refactoring and optimization, this code could be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199457, Requested 2430. Please try again in 13m35.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "04-calculator",
-      "timestamp": "2026-08-06T07:12:56.345Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:54.178Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a clear structure, making it easy to navigate and understand.",
-        "The use of TypeScript and React Native components is well-implemented, and the code is free of major syntax errors.",
-        "The code includes test IDs for interactive elements, which is a great practice for automated testing."
-      ],
-      "improvements": [
-        "The `onCalcPress` function is complex and could be refactored into smaller, more manageable functions to improve readability and maintainability.",
-        "The `useEffect` hook for fetching memes could be improved by adding a retry mechanism to handle cases where the API request fails.",
-        "The `styles` object is large and could be broken down into smaller, more focused objects to improve maintainability and reduce the risk of style conflicts."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are some areas for improvement to take it to the next level. With some refactoring and optimization, this code could be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199457, Requested 2430. Please try again in 13m35.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "05-meme-viewer",
     "challengeName": "Meme Viewer",
-    "timestamp": "2026-08-06T07:12:57.259Z",
+    "timestamp": "2026-09-03T11:42:54.278Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 62.5,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -520,7 +1176,7 @@
               "ancestorTitles": [
                 "challenge-05"
               ],
-              "duration": 4,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-05 passes baseline",
@@ -532,20 +1188,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000383320,
+          "endTime": 1788435779676,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-05.test.tsx",
-          "startTime": 1786000382670,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-05.test.tsx",
+          "startTime": 1788435779302,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\index.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -574,14 +1244,171 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-05.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-05.spec.ts",
+          "file": "challenge-05.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "05-meme-viewer",
+              "file": "challenge-05.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders the Meme Viewer section",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2040,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:14.601Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-71499cc159dcf32386a9",
+                  "file": "challenge-05.spec.ts",
+                  "line": 17,
+                  "column": 3
+                },
+                {
+                  "title": "loads meme content or fallback content",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 556,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:17.524Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-9499660c2c6046feb592",
+                  "file": "challenge-05.spec.ts",
+                  "line": 23,
+                  "column": 3
+                },
+                {
+                  "title": "renders meme content area",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 571,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:18.105Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-9a1d6a126f274389e685",
+                  "file": "challenge-05.spec.ts",
+                  "line": 35,
+                  "column": 3
+                },
+                {
+                  "title": "keeps the Meme Viewer visible after loading",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2532,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:18.691Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "ec25b63e8ac6a5e53e87-fb0670cbe5aaafa1b949",
+                  "file": "challenge-05.spec.ts",
+                  "line": 45,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "05-meme-viewer",
-      "timestamp": "2026-08-06T07:13:08.583Z",
+      "timestamp": "2026-09-03T11:43:22.110Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -589,11 +1416,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4558, Requested 2269. Please try again in 8.27s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199392, Requested 2327. Please try again in 12m22.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "05-meme-viewer",
-      "timestamp": "2026-08-06T07:13:08.583Z",
+      "timestamp": "2026-09-03T11:43:22.110Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -601,23 +1428,23 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4558, Requested 2269. Please try again in 8.27s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199392, Requested 2327. Please try again in 12m22.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "06-realtime-chat",
     "challengeName": "Realtime Chat",
-    "timestamp": "2026-08-06T07:13:08.629Z",
+    "timestamp": "2026-09-03T11:43:22.287Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -633,7 +1460,7 @@
               "ancestorTitles": [
                 "challenge-06"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-06 passes baseline",
@@ -645,20 +1472,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000394850,
+          "endTime": 1788435807376,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-06.test.tsx",
-          "startTime": 1786000393849,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-06.test.tsx",
+          "startTime": 1788435806955,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\chat.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -687,64 +1528,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-06.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-06.spec.ts",
+          "file": "challenge-06.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "06-realtime-chat",
+              "file": "challenge-06.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders chat UI",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2266,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:42.070Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-436fdf917921c3890d8e",
+                  "file": "challenge-06.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "shows initial realtime message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 529,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:45.705Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-96836baa7f4e27042565",
+                  "file": "challenge-06.spec.ts",
+                  "line": 21,
+                  "column": 3
+                },
+                {
+                  "title": "sends a message",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 623,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:46.251Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-1794a4b1b715fbbb407f",
+                  "file": "challenge-06.spec.ts",
+                  "line": 27,
+                  "column": 3
+                },
+                {
+                  "title": "uses authenticated author",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 809,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:43:46.894Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "fdfd0a4bbce1fa4a4eed-23de526907174a9a01fa",
+                  "file": "challenge-06.spec.ts",
+                  "line": 36,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "06-realtime-chat",
-      "timestamp": "2026-08-06T07:13:22.310Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:43:48.486Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and data management.",
-        "The use of TypeScript is a great choice, as it helps catch type-related errors early and improves code maintainability.",
-        "The code includes proper error handling and edge cases, such as trimming the input before sending a message."
-      ],
-      "improvements": [
-        "Consider adding a loading indicator or a message to indicate that the chat is loading or fetching data from the database.",
-        "The `FeedPostLike` type is not used anywhere in the code. Consider removing it to declutter the code and avoid confusion.",
-        "The `styles` object is defined at the bottom of the file. Consider moving it to the top of the file, as it's a constant and doesn't depend on any other variables."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-written and demonstrates a good understanding of React, TypeScript, and Firebase. With a few minor improvements, it can be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199331, Requested 1422. Please try again in 5m25.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "06-realtime-chat",
-      "timestamp": "2026-08-06T07:13:22.310Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:43:48.486Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and data management.",
-        "The use of TypeScript is a great choice, as it helps catch type-related errors early and improves code maintainability.",
-        "The code includes proper error handling and edge cases, such as trimming the input before sending a message."
-      ],
-      "improvements": [
-        "Consider adding a loading indicator or a message to indicate that the chat is loading or fetching data from the database.",
-        "The `FeedPostLike` type is not used anywhere in the code. Consider removing it to declutter the code and avoid confusion.",
-        "The `styles` object is defined at the bottom of the file. Consider moving it to the top of the file, as it's a constant and doesn't depend on any other variables."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-written and demonstrates a good understanding of React, TypeScript, and Firebase. With a few minor improvements, it can be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199331, Requested 1422. Please try again in 5m25.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "07-expense-tracker",
     "challengeName": "Expense Tracker",
-    "timestamp": "2026-08-06T07:13:23.369Z",
+    "timestamp": "2026-09-03T11:43:48.524Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -760,7 +1744,7 @@
               "ancestorTitles": [
                 "challenge-07"
               ],
-              "duration": 4,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-07 passes baseline",
@@ -772,20 +1756,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000410084,
+          "endTime": 1788435833971,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-07.test.tsx",
-          "startTime": 1786000408902,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-07.test.tsx",
+          "startTime": 1788435833597,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\store\\expenseSlice.ts",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -814,64 +1812,275 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-07.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 6,
+      "passedTests": 6,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-07.spec.ts",
+          "file": "challenge-07.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "07-expense-tracker",
+              "file": "challenge-07.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders expense tracker UI",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2496,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:09.317Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-7ea8a0c170a836b4a0ee",
+                  "file": "challenge-07.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "shows empty expense state",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 706,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:12.794Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-0988873dc554279edac5",
+                  "file": "challenge-07.spec.ts",
+                  "line": 22,
+                  "column": 3
+                },
+                {
+                  "title": "adds an expense",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 809,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:13.518Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-ec19aad4b8b5c28e642c",
+                  "file": "challenge-07.spec.ts",
+                  "line": 28,
+                  "column": 3
+                },
+                {
+                  "title": "updates category totals",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 714,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:14.364Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-48af374a59e8e8967e7c",
+                  "file": "challenge-07.spec.ts",
+                  "line": 44,
+                  "column": 3
+                },
+                {
+                  "title": "updates monthly summary",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 651,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:15.098Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-09f1e03fcc0bfa4bc954",
+                  "file": "challenge-07.spec.ts",
+                  "line": 57,
+                  "column": 3
+                },
+                {
+                  "title": "removes an expense",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 826,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:15.762Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "7e3ab03348c1d17f8ec0-39b917aece1e9d30962c",
+                  "file": "challenge-07.spec.ts",
+                  "line": 73,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "07-expense-tracker",
-      "timestamp": "2026-08-06T07:13:34.955Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:44:17.326Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The use of Redux toolkit's createSlice function simplifies the creation of the expense slice and makes it easier to manage state.",
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of type annotations and interfaces helps to improve code readability and maintainability."
-      ],
-      "improvements": [
-        "The useExpenseForm function is not necessary and can be removed as it's not being used anywhere in the code. It's better to keep the state management within the components.",
-        "The selectCategoryTotals and selectMonthlySummary functions can be memoized using React's useMemo hook to prevent unnecessary recalculations.",
-        "The expenseSlice reducer can be improved by adding a more robust error handling mechanism to handle cases where the action payload is not in the expected format."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Redux state management. However, there are some areas that can be improved to make the code more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199264, Requested 1096. Please try again in 2m35.519999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "07-expense-tracker",
-      "timestamp": "2026-08-06T07:13:34.955Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:44:17.326Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The use of Redux toolkit's createSlice function simplifies the creation of the expense slice and makes it easier to manage state.",
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of type annotations and interfaces helps to improve code readability and maintainability."
-      ],
-      "improvements": [
-        "The useExpenseForm function is not necessary and can be removed as it's not being used anywhere in the code. It's better to keep the state management within the components.",
-        "The selectCategoryTotals and selectMonthlySummary functions can be memoized using React's useMemo hook to prevent unnecessary recalculations.",
-        "The expenseSlice reducer can be improved by adding a more robust error handling mechanism to handle cases where the action payload is not in the expected format."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Redux state management. However, there are some areas that can be improved to make the code more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199264, Requested 1096. Please try again in 2m35.519999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "08-movie-app",
     "challengeName": "Movie App",
-    "timestamp": "2026-08-06T07:13:35.435Z",
+    "timestamp": "2026-09-03T11:44:17.374Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 83
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 74.95,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -887,7 +2096,7 @@
               "ancestorTitles": [
                 "challenge-08"
               ],
-              "duration": 4,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-08 passes baseline",
@@ -899,20 +2108,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000421224,
+          "endTime": 1788435862718,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-08.test.tsx",
-          "startTime": 1786000420525,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-08.test.tsx",
+          "startTime": 1788435862341,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\movie\\[id].tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -941,64 +2164,241 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-08.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 5,
+      "passedTests": 5,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-08.spec.ts",
+          "file": "challenge-08.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "08-movie-app",
+              "file": "challenge-08.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders movie search UI",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2362,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:37.225Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cc4b1dfc0eb6cfe77aae-72b8c18983738caa5fcf",
+                  "file": "challenge-08.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "shows movie results",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 576,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:40.652Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cc4b1dfc0eb6cfe77aae-b96225e21d0ef4d96d81",
+                  "file": "challenge-08.spec.ts",
+                  "line": 21,
+                  "column": 3
+                },
+                {
+                  "title": "searches for a movie",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1526,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:41.244Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cc4b1dfc0eb6cfe77aae-bdcf9e52c2fa8a123dde",
+                  "file": "challenge-08.spec.ts",
+                  "line": 31,
+                  "column": 3
+                },
+                {
+                  "title": "navigates to movie detail page",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1732,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:42.797Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cc4b1dfc0eb6cfe77aae-3f3e636b28b5d5152c0b",
+                  "file": "challenge-08.spec.ts",
+                  "line": 40,
+                  "column": 3
+                },
+                {
+                  "title": "adds and removes a movie from favorites",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2296,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:44:44.547Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "cc4b1dfc0eb6cfe77aae-7a3a9b0a7dd74c63493e",
+                  "file": "challenge-08.spec.ts",
+                  "line": 51,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "08-movie-app",
-      "timestamp": "2026-08-06T07:13:47.547Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:44:47.595Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a clear and consistent naming convention.",
-        "The use of TypeScript is well-implemented, and the type definitions are clear and concise.",
-        "The code includes a loading indicator and an error message, which is a good practice for user experience."
-      ],
-      "improvements": [
-        "The `fetch` call is not handled properly in case of an error. It's better to use `try-catch` block or `async/await` syntax to handle errors.",
-        "The code does not include any accessibility features, such as screen reader support or high contrast mode. Adding these features would improve the overall accessibility of the app.",
-        "The styles are defined in a separate object, but it would be better to extract them into a separate file or a CSS-in-JS solution, such as styled-components, to keep the code organized and reusable."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are some areas that need improvement to make it more maintainable and accessible."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199194, Requested 1681. Please try again in 6m18s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "08-movie-app",
-      "timestamp": "2026-08-06T07:13:47.547Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:44:47.595Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a clear and consistent naming convention.",
-        "The use of TypeScript is well-implemented, and the type definitions are clear and concise.",
-        "The code includes a loading indicator and an error message, which is a good practice for user experience."
-      ],
-      "improvements": [
-        "The `fetch` call is not handled properly in case of an error. It's better to use `try-catch` block or `async/await` syntax to handle errors.",
-        "The code does not include any accessibility features, such as screen reader support or high contrast mode. Adding these features would improve the overall accessibility of the app.",
-        "The styles are defined in a separate object, but it would be better to extract them into a separate file or a CSS-in-JS solution, such as styled-components, to keep the code organized and reusable."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are some areas that need improvement to make it more maintainable and accessible."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199194, Requested 1681. Please try again in 6m18s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "09-ai-recipe-app",
     "challengeName": "AI Recipe App",
-    "timestamp": "2026-08-06T07:13:48.437Z",
+    "timestamp": "2026-09-03T11:44:47.637Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1014,7 +2414,7 @@
               "ancestorTitles": [
                 "challenge-09"
               ],
-              "duration": 8,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-09 passes baseline",
@@ -1026,20 +2426,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000434894,
+          "endTime": 1788435892833,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-09.test.tsx",
-          "startTime": 1786000434043,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-09.test.tsx",
+          "startTime": 1788435892492,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\recipes.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1068,64 +2482,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-09.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-09.spec.ts",
+          "file": "challenge-09.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "09-ai-recipe-app",
+              "file": "challenge-09.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders ingredient input and generate button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1872,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:08.474Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-c696f705f8e95292ba39",
+                  "file": "challenge-09.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "accepts an ingredient",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 801,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:11.294Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-595a383cdc026770899f",
+                  "file": "challenge-09.spec.ts",
+                  "line": 20,
+                  "column": 3
+                },
+                {
+                  "title": "generates recipes",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1482,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:12.119Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-c78a42154bffaf3d4349",
+                  "file": "challenge-09.spec.ts",
+                  "line": 28,
+                  "column": 3
+                },
+                {
+                  "title": "saves and removes a recipe favorite",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1815,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:13.625Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "a1b04685a79f6082459c-8be6e46b679940be4577",
+                  "file": "challenge-09.spec.ts",
+                  "line": 37,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "09-ai-recipe-app",
-      "timestamp": "2026-08-06T07:14:00.056Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:45:16.411Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `generateRecipes` function is quite long and complex. Consider breaking it down into smaller, more manageable functions.",
-        "The error handling in the `generateRecipes` function is quite basic. Consider adding more robust error handling and logging to help diagnose issues.",
-        "The code could benefit from more comments and documentation to explain the purpose and behavior of each function and component."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but could benefit from some improvements to make it more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199127, Requested 2042. Please try again in 8m25.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "09-ai-recipe-app",
-      "timestamp": "2026-08-06T07:14:00.056Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:45:16.411Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `generateRecipes` function is quite long and complex. Consider breaking it down into smaller, more manageable functions.",
-        "The error handling in the `generateRecipes` function is quite basic. Consider adding more robust error handling and logging to help diagnose issues.",
-        "The code could benefit from more comments and documentation to explain the purpose and behavior of each function and component."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but could benefit from some improvements to make it more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199127, Requested 2042. Please try again in 8m25.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "10-food-delivery",
     "challengeName": "Food Delivery",
-    "timestamp": "2026-08-06T07:14:00.920Z",
+    "timestamp": "2026-09-03T11:45:16.464Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
+      "e2eTests": 100,
       "aiReview": 0
     },
-    "totalScore": 62.5,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1141,7 +2698,7 @@
               "ancestorTitles": [
                 "challenge-10"
               ],
-              "duration": 10,
+              "duration": 2,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-10 passes baseline",
@@ -1153,20 +2710,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000447341,
+          "endTime": 1788435921396,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-10.test.tsx",
-          "startTime": 1786000446333,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-10.test.tsx",
+          "startTime": 1788435920961,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\cart.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1195,14 +2766,171 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-10.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-10.spec.ts",
+          "file": "challenge-10.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "10-food-delivery",
+              "file": "challenge-10.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders food delivery cart",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2058,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:36.357Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-892a6817078f3334d170",
+                  "file": "challenge-10.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "renders delivery map",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 588,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:39.654Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-03c48835965742848b00",
+                  "file": "challenge-10.spec.ts",
+                  "line": 23,
+                  "column": 3
+                },
+                {
+                  "title": "renders cart total",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 552,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:40.262Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-3c95818cc0bafcaa2dbd",
+                  "file": "challenge-10.spec.ts",
+                  "line": 27,
+                  "column": 3
+                },
+                {
+                  "title": "place order button is available",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 562,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:45:40.829Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "2b6a150d93e258235d20-0bc4d761d0163965a5df",
+                  "file": "challenge-10.spec.ts",
+                  "line": 31,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "10-food-delivery",
-      "timestamp": "2026-08-06T07:14:12.327Z",
+      "timestamp": "2026-09-03T11:45:42.245Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1210,11 +2938,11 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4418, Requested 1626. Please try again in 440ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199068, Requested 1149. Please try again in 1m33.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "10-food-delivery",
-      "timestamp": "2026-08-06T07:14:12.327Z",
+      "timestamp": "2026-09-03T11:45:42.245Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -1222,23 +2950,23 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4418, Requested 1626. Please try again in 440ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199068, Requested 1149. Please try again in 1m33.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "11-social-media-platform",
     "challengeName": "Social Media Platform",
-    "timestamp": "2026-08-06T07:14:12.363Z",
+    "timestamp": "2026-09-03T11:45:42.283Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1254,7 +2982,7 @@
               "ancestorTitles": [
                 "challenge-11"
               ],
-              "duration": 3,
+              "duration": 4,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-11 passes baseline",
@@ -1266,20 +2994,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000458375,
+          "endTime": 1788435947586,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-11.test.tsx",
-          "startTime": 1786000457666,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-11.test.tsx",
+          "startTime": 1788435947214,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\feed.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1308,64 +3050,173 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-11.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-11.spec.ts",
+          "file": "challenge-11.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "11-social-media-platform",
+              "file": "challenge-11.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders social feed screen",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 4692,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:02.531Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1017095ef2170c8a8deb-2f2571f9c9b429e0f643",
+                  "file": "challenge-11.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "renders feed list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1016,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:08.312Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1017095ef2170c8a8deb-7114d93082fafce3bf12",
+                  "file": "challenge-11.spec.ts",
+                  "line": 23,
+                  "column": 3
+                },
+                {
+                  "title": "feed screen contains post content area",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 957,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:09.361Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "1017095ef2170c8a8deb-3bb1154ffcb154662a99",
+                  "file": "challenge-11.spec.ts",
+                  "line": 29,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "11-social-media-platform",
-      "timestamp": "2026-08-06T07:14:23.856Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:46:11.722Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the component and the styles.",
-        "The use of TypeScript and React Native components is well-implemented, making the code easy to understand and maintain.",
-        "The code includes a clear and concise implementation of the Firebase Firestore database, which is well-integrated with the React component."
-      ],
-      "improvements": [
-        "The `useEffect` hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component mounts. This can be achieved by adding `[firestore]` to the dependency array.",
-        "The `styles` object could be extracted into a separate file to improve maintainability and reusability. This would also make it easier to manage and update the styles across the application.",
-        "The `Post` type could be improved by adding more properties to represent the actual data structure of the posts. This would make the code more robust and easier to maintain."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and easy to follow, with a clear implementation of the Firebase Firestore database and React Native components. However, there are some areas for improvement, such as adding a dependency array to the `useEffect` hook and extracting the styles into a separate file."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198999, Requested 1146. Please try again in 1m2.639999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "11-social-media-platform",
-      "timestamp": "2026-08-06T07:14:23.856Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:46:11.722Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the component and the styles.",
-        "The use of TypeScript and React Native components is well-implemented, making the code easy to understand and maintain.",
-        "The code includes a clear and concise implementation of the Firebase Firestore database, which is well-integrated with the React component."
-      ],
-      "improvements": [
-        "The `useEffect` hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component mounts. This can be achieved by adding `[firestore]` to the dependency array.",
-        "The `styles` object could be extracted into a separate file to improve maintainability and reusability. This would also make it easier to manage and update the styles across the application.",
-        "The `Post` type could be improved by adding more properties to represent the actual data structure of the posts. This would make the code more robust and easier to maintain."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and easy to follow, with a clear implementation of the Firebase Firestore database and React Native components. However, there are some areas for improvement, such as adding a dependency array to the `useEffect` hook and extracting the styles into a separate file."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198999, Requested 1146. Please try again in 1m2.639999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "12-full-marketplace",
     "challengeName": "Full Marketplace",
-    "timestamp": "2026-08-06T07:14:24.733Z",
+    "timestamp": "2026-09-03T11:46:11.836Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1381,7 +3232,7 @@
               "ancestorTitles": [
                 "challenge-12"
               ],
-              "duration": 4,
+              "duration": 6,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-12 passes baseline",
@@ -1393,20 +3244,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000470642,
+          "endTime": 1788435986109,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-12.test.tsx",
-          "startTime": 1786000469946,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-12.test.tsx",
+          "startTime": 1788435984734,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\shop.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1435,64 +3300,207 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-12.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-12.spec.ts",
+          "file": "challenge-12.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "12-full-marketplace",
+              "file": "challenge-12.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "renders marketplace screen",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5831,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:46.526Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-a0256338309b9ec92487",
+                  "file": "challenge-12.spec.ts",
+                  "line": 15,
+                  "column": 3
+                },
+                {
+                  "title": "renders product list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2548,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:53.643Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-c15fbf13a00c5e1a749f",
+                  "file": "challenge-12.spec.ts",
+                  "line": 23,
+                  "column": 3
+                },
+                {
+                  "title": "renders product price",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 2489,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:56.210Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-057bb931321d2e573fcc",
+                  "file": "challenge-12.spec.ts",
+                  "line": 33,
+                  "column": 3
+                },
+                {
+                  "title": "allows adding a product to cart",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1175,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T11:46:58.722Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "f77a26b762255a776dfc-cdfdf38ad4cdce6c5726",
+                  "file": "challenge-12.spec.ts",
+                  "line": 43,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "12-full-marketplace",
-      "timestamp": "2026-08-06T07:14:36.691Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:47:00.850Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the ShopScreen component and the styles.",
-        "The use of TypeScript type annotations is consistent and helps to ensure the correctness of the code.",
-        "The component is well-organized, with a clear and concise implementation of the ShopScreen component."
-      ],
-      "improvements": [
-        "The useEffect hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component is updated.",
-        "The fetch API call could be wrapped in a try-catch block to handle any potential errors that may occur.",
-        "The styles could be extracted into a separate file to improve maintainability and reusability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, with a clear and concise implementation of the ShopScreen component. However, there are some areas for improvement, such as adding a dependency array to the useEffect hook and wrapping the fetch API call in a try-catch block. With some minor adjustments, this code could be even more robust and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198886, Requested 1437. Please try again in 2m19.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "12-full-marketplace",
-      "timestamp": "2026-08-06T07:14:36.691Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:47:00.850Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the ShopScreen component and the styles.",
-        "The use of TypeScript type annotations is consistent and helps to ensure the correctness of the code.",
-        "The component is well-organized, with a clear and concise implementation of the ShopScreen component."
-      ],
-      "improvements": [
-        "The useEffect hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component is updated.",
-        "The fetch API call could be wrapped in a try-catch block to handle any potential errors that may occur.",
-        "The styles could be extracted into a separate file to improve maintainability and reusability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, with a clear and concise implementation of the ShopScreen component. However, there are some areas for improvement, such as adding a dependency array to the useEffect hook and wrapping the fetch API call in a try-catch block. With some minor adjustments, this code could be even more robust and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198886, Requested 1437. Please try again in 2m19.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "13-fitness-tracker",
     "challengeName": "Fitness Tracker",
-    "timestamp": "2026-08-06T07:14:37.194Z",
+    "timestamp": "2026-09-03T12:08:32.403Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 88
+      "e2eTests": 100,
+      "aiReview": 0
     },
-    "totalScore": 75.7,
-    "passed": false,
+    "totalScore": 85,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1508,7 +3516,7 @@
               "ancestorTitles": [
                 "challenge-13"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-13 passes baseline",
@@ -1520,20 +3528,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000483068,
+          "endTime": 1788437318801,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-13.test.tsx",
-          "startTime": 1786000482389,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-13.test.tsx",
+          "startTime": 1788437318279,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\workouts.tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1562,64 +3584,173 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-13.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 3,
+      "passedTests": 3,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-13.spec.ts",
+          "file": "challenge-13.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 13 - Fitness Tracker",
+              "file": "challenge-13.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display the Fitness Tracker screen",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 3639,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:08:59.669Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b108b4dbebb7686e0d0c-b9cf3cc389dbae9b7c8a",
+                  "file": "challenge-13.spec.ts",
+                  "line": 9,
+                  "column": 3
+                },
+                {
+                  "title": "should log a workout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1155,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:09:04.407Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b108b4dbebb7686e0d0c-80d21f9f18740a9a7f9c",
+                  "file": "challenge-13.spec.ts",
+                  "line": 17,
+                  "column": 3
+                },
+                {
+                  "title": "should clear inputs after logging a workout",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1351,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:09:05.582Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "b108b4dbebb7686e0d0c-f4d35d8bd0de544b1685",
+                  "file": "challenge-13.spec.ts",
+                  "line": 30,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "13-fitness-tracker",
-      "timestamp": "2026-08-06T07:14:48.225Z",
-      "score": 88,
+      "timestamp": "2026-09-03T12:09:08.683Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native components is well-implemented, making the code efficient and scalable.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is not properly handling errors. It's recommended to add try-catch blocks to handle potential errors when saving data to AsyncStorage.",
-        "The `logWorkout` function is not checking if the workout already exists in the list before adding it. This could lead to duplicate workouts being added. It's recommended to add a check to prevent this.",
-        "The code could benefit from more descriptive variable names. For example, `next` could be renamed to `updatedWorkouts` to make its purpose clearer."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The provided code is well-structured and efficient, but there are some areas for improvement to make it more robust and maintainable. With a few tweaks, this code could be even more effective and scalable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198562, Requested 1451. Please try again in 5.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     },
     "aiResults": {
       "challengeId": "13-fitness-tracker",
-      "timestamp": "2026-08-06T07:14:48.225Z",
-      "score": 88,
+      "timestamp": "2026-09-03T12:09:08.683Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native components is well-implemented, making the code efficient and scalable.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is not properly handling errors. It's recommended to add try-catch blocks to handle potential errors when saving data to AsyncStorage.",
-        "The `logWorkout` function is not checking if the workout already exists in the list before adding it. This could lead to duplicate workouts being added. It's recommended to add a check to prevent this.",
-        "The code could benefit from more descriptive variable names. For example, `next` could be renamed to `updatedWorkouts` to make its purpose clearer."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The provided code is well-structured and efficient, but there are some areas for improvement to make it more robust and maintainable. With a few tweaks, this code could be even more effective and scalable."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198562, Requested 1451. Please try again in 5.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
     "challengeId": "14-anime-streaming-ui",
     "challengeName": "Anime Streaming UI",
-    "timestamp": "2026-08-06T07:14:49.182Z",
+    "timestamp": "2026-09-03T12:06:48.227Z",
     "scores": {
       "functionalTests": 100,
-      "codeQuality": 50,
+      "codeQuality": 100,
       "architecture": 100,
       "bestPractices": 100,
-      "e2eTests": 0,
-      "aiReview": 0
+      "e2eTests": 100,
+      "aiReview": 83
     },
-    "totalScore": 62.5,
-    "passed": false,
+    "totalScore": 97.45,
+    "passed": true,
     "errors": [],
     "warnings": [],
     "testResults": {
@@ -1635,7 +3766,7 @@
               "ancestorTitles": [
                 "challenge-14"
               ],
-              "duration": 4,
+              "duration": 3,
               "failureDetails": [],
               "failureMessages": [],
               "fullName": "challenge-14 passes baseline",
@@ -1647,20 +3778,34 @@
               "title": "passes baseline"
             }
           ],
-          "endTime": 1786000495115,
+          "endTime": 1788437214615,
           "message": "",
-          "name": "C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-14.test.tsx",
-          "startTime": 1786000494459,
+          "name": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\challenge-14.test.tsx",
+          "startTime": 1788437214063,
           "status": "passed",
           "summary": ""
         }
       ]
     },
     "lintResults": {
-      "score": 50,
-      "passed": false,
-      "error": "Could not parse linting results",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalIssues": 0,
+      "errors": 0,
+      "warnings": 0,
+      "details": [
+        {
+          "filePath": "D:\\SPARK+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\app\\anime\\[id].tsx",
+          "messages": [],
+          "suppressedMessages": [],
+          "errorCount": 0,
+          "fatalErrorCount": 0,
+          "warningCount": 0,
+          "fixableErrorCount": 0,
+          "fixableWarningCount": 0,
+          "usedDeprecatedRules": []
+        }
+      ]
     },
     "architectureResults": {
       "score": 100,
@@ -1689,34 +3834,205 @@
       "note": "No best practices requirements specified in challenge"
     },
     "e2eResults": {
-      "score": 0,
-      "passed": false,
-      "error": "E2E test file not found: C:\\Users\\Diksha Gaonkar\\OneDrive\\Desktop\\spark+\\mobile-challenge-engine\\courses\\04-challenge-missions\\project\\tests\\e2e\\challenge-14.spec.ts",
-      "details": []
+      "score": 100,
+      "passed": true,
+      "totalTests": 4,
+      "passedTests": 4,
+      "failedTests": 0,
+      "details": [
+        {
+          "title": "challenge-14.spec.ts",
+          "file": "challenge-14.spec.ts",
+          "column": 0,
+          "line": 0,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Challenge 14 - Anime Streaming UI",
+              "file": "challenge-14.spec.ts",
+              "line": 3,
+              "column": 6,
+              "specs": [
+                {
+                  "title": "should display the anime detail screen",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 5189,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:07:15.208Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-e52b51dd4466f9f5f1ef",
+                  "file": "challenge-14.spec.ts",
+                  "line": 9,
+                  "column": 3
+                },
+                {
+                  "title": "should display the episodes list",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 1438,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:07:21.853Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-f7a183b8a6b2b92bba8c",
+                  "file": "challenge-14.spec.ts",
+                  "line": 16,
+                  "column": 3
+                },
+                {
+                  "title": "should display the anime banner",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 953,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:07:23.330Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-ac2c0e59db2365928ac3",
+                  "file": "challenge-14.spec.ts",
+                  "line": 34,
+                  "column": 3
+                },
+                {
+                  "title": "should provide a back button",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 120000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 986,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-09-03T12:07:24.311Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "be2334d46d68155f57f3-7ef20b5f96760ef34cd5",
+                  "file": "challenge-14.spec.ts",
+                  "line": 41,
+                  "column": 3
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "screenshots": []
     },
     "aiReviewResults": {
       "challengeId": "14-anime-streaming-ui",
-      "timestamp": "2026-08-06T07:15:00.197Z",
-      "score": 0,
+      "timestamp": "2026-09-03T12:07:26.502Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4283, Requested 1763. Please try again in 459.999999ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Clear separation of concerns with useEffect for title update",
+        "Consistent styling and use of testID for testing",
+        "Good use of FlatList for episodes"
+      ],
+      "improvements": [
+        "Add PropTypes or TypeScript types for navigation and params",
+        "Remove unused imports (e.g., Image, FlatList) if not needed",
+        "Consider extracting episode item into separate component for reusability"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is clean, well‑structured, and testable, but could benefit from stronger typing and component decomposition for future scalability."
     },
     "aiResults": {
       "challengeId": "14-anime-streaming-ui",
-      "timestamp": "2026-08-06T07:15:00.197Z",
-      "score": 0,
+      "timestamp": "2026-09-03T12:07:26.502Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4283, Requested 1763. Please try again in 459.999999ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Clear separation of concerns with useEffect for title update",
+        "Consistent styling and use of testID for testing",
+        "Good use of FlatList for episodes"
+      ],
+      "improvements": [
+        "Add PropTypes or TypeScript types for navigation and params",
+        "Remove unused imports (e.g., Image, FlatList) if not needed",
+        "Consider extracting episode item into separate component for reusability"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is clean, well‑structured, and testable, but could benefit from stronger typing and component decomposition for future scalability."
     }
   }
 ]

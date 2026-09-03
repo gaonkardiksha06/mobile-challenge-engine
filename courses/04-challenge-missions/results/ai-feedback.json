@@ -4,22 +4,15 @@
     "challengeName": "Habit Tracker",
     "aiReview": {
       "challengeId": "01-habit-tracker",
-      "timestamp": "2026-08-06T07:12:19.538Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:41:04.526Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between different features.",
-        "The use of TypeScript and React hooks makes the code more maintainable and efficient.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `useEffect` hook is used extensively in the code, which can make it harder to understand the component's lifecycle. Consider breaking down the effects into smaller, more manageable chunks.",
-        "The `persistHabits` function is called multiple times in the code, which can lead to unnecessary re-renders. Consider memoizing the function or using a more efficient storage solution.",
-        "The `onCalcPress` function uses a `try-catch` block to handle errors, but it would be better to handle errors more explicitly and provide a more informative error message to the user."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and maintainable, but there are some areas that could be improved for better performance and error handling. With some refactoring and optimization, the code could reach a score of 90% or higher."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 197767, Requested 2447. Please try again in 1m32.448s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -27,15 +20,22 @@
     "challengeName": "Pokemon Explorer",
     "aiReview": {
       "challengeId": "02-pokemon-explorer",
-      "timestamp": "2026-08-06T07:12:31.516Z",
-      "score": 0,
+      "timestamp": "2026-09-03T11:41:49.212Z",
+      "score": 83,
       "feedback": [],
-      "strengths": [],
-      "improvements": [],
-      "readability": 0,
-      "maintainability": 0,
-      "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4549, Requested 1706. Please try again in 2.55s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "strengths": [
+        "Clear separation of concerns with useEffect for data fetching",
+        "Good use of testID props for automated testing",
+        "Consistent styling and theming"
+      ],
+      "improvements": [
+        "Add explicit error handling for network failures and display user-friendly message",
+        "Type guard for id to ensure it's a string before using in fetch",
+        "Consider memoizing derived arrays (types, stats, moves) to avoid re-computation on each render"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is well-structured, readable, and follows React Native best practices, but could benefit from more robust error handling and performance optimizations."
     }
   },
   {
@@ -43,22 +43,15 @@
     "challengeName": "Notes App",
     "aiReview": {
       "challengeId": "03-notes-app",
-      "timestamp": "2026-08-06T07:12:42.617Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:24.757Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is called multiple times with different arguments. Consider refactoring it to handle different scenarios more elegantly.",
-        "The `deleteNote` function modifies the `notes` state directly. Consider using a more functional approach to update the state.",
-        "The styles are defined inline in the component. Consider extracting them into a separate file or using a CSS-in-JS solution for better maintainability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and functional, but could benefit from some improvements to make it more maintainable and efficient. With some refactoring, it has the potential to be a high-quality Notes App."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199525, Requested 1398. Please try again in 6m38.736s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -66,22 +59,15 @@
     "challengeName": "Calculator",
     "aiReview": {
       "challengeId": "04-calculator",
-      "timestamp": "2026-08-06T07:12:56.345Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:42:54.178Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a clear structure, making it easy to navigate and understand.",
-        "The use of TypeScript and React Native components is well-implemented, and the code is free of major syntax errors.",
-        "The code includes test IDs for interactive elements, which is a great practice for automated testing."
-      ],
-      "improvements": [
-        "The `onCalcPress` function is complex and could be refactored into smaller, more manageable functions to improve readability and maintainability.",
-        "The `useEffect` hook for fetching memes could be improved by adding a retry mechanism to handle cases where the API request fails.",
-        "The `styles` object is large and could be broken down into smaller, more focused objects to improve maintainability and reduce the risk of style conflicts."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and well-implemented, but there are some areas for improvement to take it to the next level. With some refactoring and optimization, this code could be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199457, Requested 2430. Please try again in 13m35.184s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -89,7 +75,7 @@
     "challengeName": "Meme Viewer",
     "aiReview": {
       "challengeId": "05-meme-viewer",
-      "timestamp": "2026-08-06T07:13:08.583Z",
+      "timestamp": "2026-09-03T11:43:22.110Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -97,7 +83,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4558, Requested 2269. Please try again in 8.27s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199392, Requested 2327. Please try again in 12m22.608s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -105,22 +91,15 @@
     "challengeName": "Realtime Chat",
     "aiReview": {
       "challengeId": "06-realtime-chat",
-      "timestamp": "2026-08-06T07:13:22.310Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:43:48.486Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and data management.",
-        "The use of TypeScript is a great choice, as it helps catch type-related errors early and improves code maintainability.",
-        "The code includes proper error handling and edge cases, such as trimming the input before sending a message."
-      ],
-      "improvements": [
-        "Consider adding a loading indicator or a message to indicate that the chat is loading or fetching data from the database.",
-        "The `FeedPostLike` type is not used anywhere in the code. Consider removing it to declutter the code and avoid confusion.",
-        "The `styles` object is defined at the bottom of the file. Consider moving it to the top of the file, as it's a constant and doesn't depend on any other variables."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-written and demonstrates a good understanding of React, TypeScript, and Firebase. With a few minor improvements, it can be even more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199331, Requested 1422. Please try again in 5m25.296s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -128,22 +107,15 @@
     "challengeName": "Expense Tracker",
     "aiReview": {
       "challengeId": "07-expense-tracker",
-      "timestamp": "2026-08-06T07:13:34.955Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:44:17.326Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The use of Redux toolkit's createSlice function simplifies the creation of the expense slice and makes it easier to manage state.",
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of type annotations and interfaces helps to improve code readability and maintainability."
-      ],
-      "improvements": [
-        "The useExpenseForm function is not necessary and can be removed as it's not being used anywhere in the code. It's better to keep the state management within the components.",
-        "The selectCategoryTotals and selectMonthlySummary functions can be memoized using React's useMemo hook to prevent unnecessary recalculations.",
-        "The expenseSlice reducer can be improved by adding a more robust error handling mechanism to handle cases where the action payload is not in the expected format."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows best practices for Redux state management. However, there are some areas that can be improved to make the code more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199264, Requested 1096. Please try again in 2m35.519999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -151,22 +123,15 @@
     "challengeName": "Movie App",
     "aiReview": {
       "challengeId": "08-movie-app",
-      "timestamp": "2026-08-06T07:13:47.547Z",
-      "score": 83,
+      "timestamp": "2026-09-03T11:44:47.595Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-structured and follows a clear and consistent naming convention.",
-        "The use of TypeScript is well-implemented, and the type definitions are clear and concise.",
-        "The code includes a loading indicator and an error message, which is a good practice for user experience."
-      ],
-      "improvements": [
-        "The `fetch` call is not handled properly in case of an error. It's better to use `try-catch` block or `async/await` syntax to handle errors.",
-        "The code does not include any accessibility features, such as screen reader support or high contrast mode. Adding these features would improve the overall accessibility of the app.",
-        "The styles are defined in a separate object, but it would be better to extract them into a separate file or a CSS-in-JS solution, such as styled-components, to keep the code organized and reusable."
-      ],
-      "readability": 85,
-      "maintainability": 80,
-      "overall": "The code is well-structured and follows good practices, but there are some areas that need improvement to make it more maintainable and accessible."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199194, Requested 1681. Please try again in 6m18s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -174,22 +139,15 @@
     "challengeName": "AI Recipe App",
     "aiReview": {
       "challengeId": "09-ai-recipe-app",
-      "timestamp": "2026-08-06T07:14:00.056Z",
-      "score": 88,
+      "timestamp": "2026-09-03T11:45:16.411Z",
+      "score": 0,
       "feedback": [],
-      "strengths": [
-        "The code is well-organized and follows a consistent naming convention.",
-        "The use of TypeScript and React Native provides a solid foundation for the application.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `generateRecipes` function is quite long and complex. Consider breaking it down into smaller, more manageable functions.",
-        "The error handling in the `generateRecipes` function is quite basic. Consider adding more robust error handling and logging to help diagnose issues.",
-        "The code could benefit from more comments and documentation to explain the purpose and behavior of each function and component."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and follows good practices, but could benefit from some improvements to make it more maintainable and efficient."
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199127, Requested 2042. Please try again in 8m25.008s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -197,7 +155,7 @@
     "challengeName": "Food Delivery",
     "aiReview": {
       "challengeId": "10-food-delivery",
-      "timestamp": "2026-08-06T07:14:12.327Z",
+      "timestamp": "2026-09-03T11:45:42.245Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -205,7 +163,7 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4418, Requested 1626. Please try again in 440ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 199068, Requested 1149. Please try again in 1m33.744s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   },
   {
@@ -213,76 +171,7 @@
     "challengeName": "Social Media Platform",
     "aiReview": {
       "challengeId": "11-social-media-platform",
-      "timestamp": "2026-08-06T07:14:23.856Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the component and the styles.",
-        "The use of TypeScript and React Native components is well-implemented, making the code easy to understand and maintain.",
-        "The code includes a clear and concise implementation of the Firebase Firestore database, which is well-integrated with the React component."
-      ],
-      "improvements": [
-        "The `useEffect` hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component mounts. This can be achieved by adding `[firestore]` to the dependency array.",
-        "The `styles` object could be extracted into a separate file to improve maintainability and reusability. This would also make it easier to manage and update the styles across the application.",
-        "The `Post` type could be improved by adding more properties to represent the actual data structure of the posts. This would make the code more robust and easier to maintain."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and easy to follow, with a clear implementation of the Firebase Firestore database and React Native components. However, there are some areas for improvement, such as adding a dependency array to the `useEffect` hook and extracting the styles into a separate file."
-    }
-  },
-  {
-    "challengeId": "12-full-marketplace",
-    "challengeName": "Full Marketplace",
-    "aiReview": {
-      "challengeId": "12-full-marketplace",
-      "timestamp": "2026-08-06T07:14:36.691Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between the ShopScreen component and the styles.",
-        "The use of TypeScript type annotations is consistent and helps to ensure the correctness of the code.",
-        "The component is well-organized, with a clear and concise implementation of the ShopScreen component."
-      ],
-      "improvements": [
-        "The useEffect hook could be improved by adding a dependency array to prevent unnecessary re-renders when the component is updated.",
-        "The fetch API call could be wrapped in a try-catch block to handle any potential errors that may occur.",
-        "The styles could be extracted into a separate file to improve maintainability and reusability."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The code is well-structured and maintainable, with a clear and concise implementation of the ShopScreen component. However, there are some areas for improvement, such as adding a dependency array to the useEffect hook and wrapping the fetch API call in a try-catch block. With some minor adjustments, this code could be even more robust and efficient."
-    }
-  },
-  {
-    "challengeId": "13-fitness-tracker",
-    "challengeName": "Fitness Tracker",
-    "aiReview": {
-      "challengeId": "13-fitness-tracker",
-      "timestamp": "2026-08-06T07:14:48.225Z",
-      "score": 88,
-      "feedback": [],
-      "strengths": [
-        "The code is well-structured and easy to follow, with clear separation of concerns between components and logic.",
-        "The use of TypeScript and React Native components is well-implemented, making the code efficient and scalable.",
-        "The code includes test IDs for interactive elements, making it easier to write automated tests."
-      ],
-      "improvements": [
-        "The `save` function is not properly handling errors. It's recommended to add try-catch blocks to handle potential errors when saving data to AsyncStorage.",
-        "The `logWorkout` function is not checking if the workout already exists in the list before adding it. This could lead to duplicate workouts being added. It's recommended to add a check to prevent this.",
-        "The code could benefit from more descriptive variable names. For example, `next` could be renamed to `updatedWorkouts` to make its purpose clearer."
-      ],
-      "readability": 85,
-      "maintainability": 90,
-      "overall": "The provided code is well-structured and efficient, but there are some areas for improvement to make it more robust and maintainable. With a few tweaks, this code could be even more effective and scalable."
-    }
-  },
-  {
-    "challengeId": "14-anime-streaming-ui",
-    "challengeName": "Anime Streaming UI",
-    "aiReview": {
-      "challengeId": "14-anime-streaming-ui",
-      "timestamp": "2026-08-06T07:15:00.197Z",
+      "timestamp": "2026-09-03T11:46:11.722Z",
       "score": 0,
       "feedback": [],
       "strengths": [],
@@ -290,7 +179,62 @@
       "readability": 0,
       "maintainability": 0,
       "overall": "",
-      "error": "Groq API error (429): Rate limit reached for model `llama-3.1-8b-instant` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per minute (TPM): Limit 6000, Used 4283, Requested 1763. Please try again in 459.999999ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198999, Requested 1146. Please try again in 1m2.639999999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "12-full-marketplace",
+    "challengeName": "Full Marketplace",
+    "aiReview": {
+      "challengeId": "12-full-marketplace",
+      "timestamp": "2026-09-03T11:47:00.850Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198886, Requested 1437. Please try again in 2m19.536s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
+    }
+  },
+  {
+    "challengeId": "14-anime-streaming-ui",
+    "challengeName": "Anime Streaming UI",
+    "aiReview": {
+      "challengeId": "14-anime-streaming-ui",
+      "timestamp": "2026-09-03T12:07:26.502Z",
+      "score": 83,
+      "feedback": [],
+      "strengths": [
+        "Clear separation of concerns with useEffect for title update",
+        "Consistent styling and use of testID for testing",
+        "Good use of FlatList for episodes"
+      ],
+      "improvements": [
+        "Add PropTypes or TypeScript types for navigation and params",
+        "Remove unused imports (e.g., Image, FlatList) if not needed",
+        "Consider extracting episode item into separate component for reusability"
+      ],
+      "readability": 85,
+      "maintainability": 80,
+      "overall": "The component is clean, well‑structured, and testable, but could benefit from stronger typing and component decomposition for future scalability."
+    }
+  },
+  {
+    "challengeId": "13-fitness-tracker",
+    "challengeName": "Fitness Tracker",
+    "aiReview": {
+      "challengeId": "13-fitness-tracker",
+      "timestamp": "2026-09-03T12:09:08.683Z",
+      "score": 0,
+      "feedback": [],
+      "strengths": [],
+      "improvements": [],
+      "readability": 0,
+      "maintainability": 0,
+      "overall": "",
+      "error": "Groq API error (429): Rate limit reached for model `openai/gpt-oss-20b` in organization `org_01kzawy3nyeqgamh635r41dn09` service tier `on_demand` on tokens per day (TPD): Limit 200000, Used 198562, Requested 1451. Please try again in 5.616s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing"
     }
   }
 ]
