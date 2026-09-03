@@ -1,13 +1,13 @@
 {
-  "lastUpdated": "2026-09-03T12:09:09.829Z",
+  "lastUpdated": "2026-09-03T13:22:47.273Z",
   "pathway": {
     "name": "Mobile & Full-Stack Engineer",
     "version": "1.0.0",
-    "overallScore": 86.5,
-    "completionPercentage": 91.4,
+    "overallScore": 89.9,
+    "completionPercentage": 100,
     "badgeLevel": "silver",
     "totalChallenges": 35,
-    "completedChallenges": 32
+    "completedChallenges": 35
   },
   "courses": {
     "01-react-native-fundamentals": {
@@ -537,55 +537,55 @@
     "05-deployment": {
       "courseId": "05-deployment",
       "courseName": "Deployment",
-      "averageScore": 75,
-      "completionPercentage": 0,
-      "badgeLevel": "none",
+      "averageScore": 97.5,
+      "completionPercentage": 100,
+      "badgeLevel": "gold",
       "totalChallenges": 3,
-      "completedChallenges": 0,
+      "completedChallenges": 3,
       "challenges": {
         "01-apk-build": {
           "challengeId": "01-apk-build",
           "challengeName": "APK Build",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:15:06.080Z",
+          "passed": true,
+          "score": 97.3,
+          "lastRun": "2026-09-03T13:20:50.319Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 82
           }
         },
         "02-expo-eas": {
           "challengeId": "02-expo-eas",
           "challengeName": "Expo EAS",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:15:19.827Z",
+          "passed": true,
+          "score": 97.3,
+          "lastRun": "2026-09-03T13:21:29.092Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 100,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 82
           }
         },
         "03-play-store-prep": {
           "challengeId": "03-play-store-prep",
           "challengeName": "Play Store Prep",
-          "passed": false,
-          "score": 74.95,
-          "lastRun": "2026-08-06T07:15:31.401Z",
+          "passed": true,
+          "score": 97.9,
+          "lastRun": "2026-09-03T13:22:03.697Z",
           "scores": {
             "functionalTests": 100,
-            "codeQuality": 50,
+            "codeQuality": 98,
             "architecture": 100,
             "bestPractices": 100,
-            "e2eTests": 0,
-            "aiReview": 83
+            "e2eTests": 100,
+            "aiReview": 88
           }
         }
       }
